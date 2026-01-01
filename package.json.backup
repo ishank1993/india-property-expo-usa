@@ -1,6 +1,64 @@
 {
   "name": "@figma/my-make-file",
-  "private": true,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}  );    />      onError={onError}      style={style}      className={className}      height={height}      width={width}      alt={alt}      src={src}    <LazyImage  return (  // For non-priority images, use lazy loading  }    );      />        onError={onError}        decoding="async"        loading="eager"        style={style}        className={className}        height={height}        width={width}        alt={alt}        src={src}      <img    return (  if (priority) {  // For priority images, load immediately}: OptimizedImageProps) {  onError,  style,  priority = false,  className = '',  height,  width,  alt,  src,export function OptimizedImage({ */ * Automatically adds proper width/height to prevent CLS * Uses lazy loading by default unless priority is set * OptimizedImage - Wrapper component for images with optimization/**}  onError?: (e: React.SyntheticEvent<HTMLImageElement, Event>) => void;  style?: React.CSSProperties;  priority?: boolean; // If true, loads immediately without lazy loading  className?: string;  height?: number;  width?: number;  alt: string;  src: string;interface OptimizedImageProps {  "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -55,7 +113,7 @@
     "react-popper": "2.3.0",
     "react-resizable-panels": "2.1.7",
     "react-responsive-masonry": "2.7.1",
-    "react-router-dom": "7.11.0",
+    "react-router-dom": "^7.11.0",
     "react-slick": "0.31.0",
     "recharts": "2.15.2",
     "sonner": "2.0.3",
@@ -67,7 +125,9 @@
     "@tailwindcss/vite": "4.1.12",
     "@vitejs/plugin-react": "4.7.0",
     "tailwindcss": "4.1.12",
-    "vite": "6.3.5"
+    "vite": "6.3.5",
+    "vite-plugin-compression2": "^1.3.0",
+    "terser": "^5.36.0"
   },
   "peerDependencies": {
     "react": "18.3.1",
