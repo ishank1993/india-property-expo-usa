@@ -29,10 +29,9 @@ export function LazyImage({
   ...props
 }: LazyImageProps) {
   const [imageSrc, setImageSrc] = useState<string | undefined>(undefined);
-  const [imageRef, isIntersecting] = useIntersectionObserver({
+  const { ref: imageRef, isIntersecting } = useIntersectionObserver({
     threshold: 0.01,
     rootMargin: '100px',
-    freezeOnceVisible: true,
   });
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
