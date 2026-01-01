@@ -37,7 +37,9 @@ export function BuilderLogos() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-orange-50/90 to-white/95 backdrop-blur-sm" />
       </div>
-header className="text-center mb-12">
+      
+      <div className="container mx-auto px-6 relative z-10">
+        <header className="text-center mb-12">
           <div className="inline-block bg-gradient-to-r from-orange-600 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">
             Trusted Partners
           </div>
@@ -47,9 +49,7 @@ header className="text-center mb-12">
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Direct access to India's most reputed real estate developers
           </p>
-        </headerirect access to India's most reputed real estate developers
-          </p>
-        </div>
+        </header>
 
         {/* Logo Grid */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center mb-10">

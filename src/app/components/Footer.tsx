@@ -97,7 +97,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                 </a>
               ))}
             </div>
-          </div>
+          </section>
 
           {/* Quick Links */}
           <div>
