@@ -11,9 +11,24 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   {
+    url: "/images/gallery/singapore-3.jpg",
+    title: "Singapore Merlion",
+    category: "singapore"
+  },
+  {
     url: "/images/gallery/event-1.jpg",
     title: "Past NRI Property Expo",
     category: "event"
+  },
+  {
+    url: "/images/gallery/networking-2.jpg",
+    title: "Networking Sessions",
+    category: "networking"
+  },
+  {
+    url: "/images/gallery/singapore-1.jpg",
+    title: "Marina Bay Singapore",
+    category: "singapore"
   },
   {
     url: "/images/gallery/event-2.jpg",
@@ -21,19 +36,14 @@ const galleryImages: GalleryImage[] = [
     category: "event"
   },
   {
-    url: "/images/gallery/singapore-1.jpg",
-    title: "Singapore Merlion",
-    category: "singapore"
-  },
-  {
-    url: "/images/gallery/singapore-2.jpg",
-    title: "Marina Bay Singapore",
-    category: "singapore"
-  },
-  {
-    url: "/images/gallery/singapore-3.jpg",
+    url: "/images/gallery/singapore-6.jpg",
     title: "Gardens by the Bay",
     category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-1.jpg",
+    title: "Developer Meetings",
+    category: "networking"
   },
   {
     url: "/images/gallery/singapore-4.jpg",
@@ -41,29 +51,19 @@ const galleryImages: GalleryImage[] = [
     category: "singapore"
   },
   {
-    url: "/images/gallery/singapore-5.jpg",
+    url: "/images/gallery/singapore-7.jpg",
     title: "Singapore at Night",
     category: "singapore"
   },
   {
-    url: "/images/gallery/singapore-6.jpg",
+    url: "/images/gallery/singapore-2.jpg",
     title: "Little India Singapore",
     category: "singapore"
   },
   {
-    url: "/images/gallery/singapore-7.jpg",
+    url: "/images/gallery/singapore-5.jpg",
     title: "Sentosa Island",
     category: "singapore"
-  },
-  {
-    url: "/images/gallery/networking-1.jpg",
-    title: "Networking Sessions",
-    category: "networking"
-  },
-  {
-    url: "/images/gallery/networking-2.jpg",
-    title: "Developer Meetings",
-    category: "networking"
   }
 ];
 

@@ -5,10 +5,15 @@ This folder contains photos for the event photo gallery on your website.
 ## Image Guidelines
 
 **Recommended Specifications:**
-- Format: JPG or WebP
+- Format: JPG or WebP (WebP preferred for better compression)
 - Dimensions: 1200x800px or 1080x720px (landscape orientation works best)
-- File size: Under 500KB each (optimize for web)
-- Quality: 80-85% compression
+- File size: Under 300KB each for optimal performance
+- Quality: 75-80% compression (use tools like TinyPNG, ImageOptim, or Squoosh)
+
+**Optimization Tools:**
+- Online: https://squoosh.app or https://tinypng.com
+- Mac: ImageOptim (free app)
+- Command line: `convert input.jpg -quality 75 -resize 1200x800 output.jpg`
 
 ## Image Categories
 
@@ -46,6 +51,11 @@ event-1.jpg
 event-2.jpg
 singapore-1.jpg
 singapore-2.jpg
+singapore-3.jpg
+singapore-4.jpg
+singapore-5.jpg
+singapore-6.jpg
+singapore-7.jpg
 networking-1.jpg
 networking-2.jpg
 ```
