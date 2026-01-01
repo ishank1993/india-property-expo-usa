@@ -155,10 +155,14 @@ const galleryImages: GalleryImage[] = [
 export function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [activeFilter, setActiveFilter] = useState<"all" | "event" | "singapore" | "networking">("all");
+  const [showAll, setShowAll] = useState(false);
 
   const filteredImages = activeFilter === "all" 
     ? galleryImages 
     : galleryImages.filter(img => img.category === activeFilter);
+
+  // Show only 4 images on mobile initially, all on desktop
+  const displayedImages = showAll ? filteredImages : filteredImages.slice(0, 4);
 
   const handlePrevious = () => {
     if (selectedImage === null) return;
@@ -204,7 +208,10 @@ export function Gallery() {
           ].map(filter => (
             <button
               key={filter.key}
-              onClick={() => setActiveFilter(filter.key as any)}
+              onClick={() => {
+                setActiveFilter(filter.key as any);
+                setShowAll(false); // Reset to show limited images when filter changes
+              }}
               className={`px-6 py-2.5 rounded-full font-semibold transition-all duration-300 ${
                 activeFilter === filter.key
                   ? "bg-gradient-to-r from-orange-600 to-green-600 text-white shadow-lg scale-105"
@@ -221,7 +228,7 @@ export function Gallery() {
           layout
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
         >
-          {filteredImages.map((image, index) => (
+          {displayedImages.map((image, index) => (
             <motion.div
               key={image.url}
               layout
@@ -272,6 +279,21 @@ export function Gallery() {
             </motion.div>
           ))}
         </motion.div>
+
+        {/* View More Button - Only show if there are more images to display */}
+        {!showAll && filteredImages.length > 4 && (
+          <div className="text-center mt-10">
+            <button
+              onClick={() => setShowAll(true)}
+              className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+            >
+              <span>View All {filteredImages.length} Photos</span>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
+              </svg>
+            </button>
+          </div>
+        )}
 
         {/* Bottom Text */}
         <div className="text-center mt-12">
