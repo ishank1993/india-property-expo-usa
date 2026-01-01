@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
+import { useIntersectionObserver } from '../../hooks/useIntersectionObserver.ts';
 
 interface LazyImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string;
