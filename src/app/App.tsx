@@ -291,9 +291,9 @@ export default function App() {
           <IndiaPresence />
           <WhyAttend onRegisterClick={openRegister} />
           <InvestmentOpportunities />
+          <Location />
           <Gallery />
           <FAQSection />
-          <Location />
           <Testimonials />
         </main>
         <Footer 
