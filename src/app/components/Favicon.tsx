@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 export function Favicon() {
-  useEffect(() => {
-    const link: HTMLLinkElement = document.querySelector("link[rel*='icon']") || document.createElement('link');
-    link.type = 'image/png';
-    link.rel = 'icon';
-    link.href = '/logo.png';
-    document.getElementsByTagName('head')[0].appendChild(link);
-  }, []);
-
+  // Favicon is now set in index.html for better performance and reliability
+  // This component can be kept for backward compatibility or removed
   return null;
 }
