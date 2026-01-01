@@ -1,0 +1,204 @@
+================================================================================
+    NRI PROPERTY EXPO - VERCEL DEPLOYMENT (SIMPLEST METHOD)
+================================================================================
+
+📋 WHAT YOU NEED:
+- GitHub account (free)
+- Vercel account (free)
+- 5 minutes of time
+
+================================================================================
+STEP 1: PUSH CODE TO GITHUB
+================================================================================
+
+1. Go to https://github.com/new
+
+2. Create new repository:
+   Name: nri-property-expo-singapore
+   Privacy: Private (or Public)
+   ✓ Do NOT add README, .gitignore, or license
+
+3. Click "Create repository"
+
+4. Copy the commands shown and run them in your project folder:
+   
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/YOUR_USERNAME/nri-property-expo-singapore.git
+   git branch -M main
+   git push -u origin main
+
+   (Replace YOUR_USERNAME with your GitHub username)
+
+5. ✅ Code is now on GitHub!
+
+================================================================================
+STEP 2: DEPLOY ON VERCEL
+================================================================================
+
+1. Go to https://vercel.com
+
+2. Click "Sign Up" or "Login"
+
+3. Choose "Continue with GitHub"
+
+4. Click "Add New..." → "Project"
+
+5. Find your repository: "nri-property-expo-singapore"
+
+6. Click "Import"
+
+7. Settings will auto-fill:
+   - Framework Preset: Vite ✓
+   - Build Command: npm run build ✓
+   - Output Directory: dist ✓
+   
+   Don't change anything!
+
+8. Click "Deploy"
+
+9. Wait 2-3 minutes...
+
+10. ✅ DONE! Your site is live!
+
+================================================================================
+STEP 3: TEST YOUR LIVE SITE
+================================================================================
+
+1. Click the URL Vercel gives you (e.g., https://nri-property-expo-singapore.vercel.app)
+
+2. Test these:
+   ✓ Click "Register" button
+   ✓ Fill form and submit
+   ✓ Check success message
+   ✓ Go to [YOUR_URL]/#admin
+   ✓ Login: admin / admin123
+   ✓ See your registration data
+
+3. If all work → SUCCESS! 🎉
+
+================================================================================
+OPTIONAL: ADD CUSTOM DOMAIN
+================================================================================
+
+1. Buy a domain (e.g., nripropertyexpo.com)
+
+2. In Vercel dashboard:
+   - Click your project
+   - Settings → Domains
+   - Add your domain
+
+3. Add DNS records from Vercel to your domain registrar
+
+4. Wait 10-60 minutes for DNS propagation
+
+5. ✅ Your custom domain is live!
+
+================================================================================
+FUTURE UPDATES
+================================================================================
+
+To update your website later:
+
+1. Make changes to your code
+
+2. Run these commands:
+   git add .
+   git commit -m "Update website"
+   git push
+
+3. Vercel auto-deploys! ✅
+   (No need to do anything else)
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+Problem: Build fails on Vercel
+Solution: Run "npm run build" locally first to check for errors
+
+Problem: Blank page after deploy
+Solution: Check browser console (F12) for errors
+
+Problem: Registration form doesn't work
+Solution: Check Supabase Edge Functions are deployed
+
+Problem: Can't push to GitHub
+Solution: Check you have write access to the repository
+
+================================================================================
+HELP & SUPPORT
+================================================================================
+
+Vercel Docs:    https://vercel.com/docs
+Vercel Discord: https://vercel.com/discord
+Vercel Support: support@vercel.com
+
+GitHub Help:    https://docs.github.com
+
+================================================================================
+QUICK REFERENCE
+================================================================================
+
+Your GitHub repo:
+→ https://github.com/YOUR_USERNAME/nri-property-expo-singapore
+
+Your Vercel dashboard:
+→ https://vercel.com/dashboard
+
+Your live website:
+→ https://nri-property-expo-singapore.vercel.app
+  (Vercel gives you this URL)
+
+Admin dashboard:
+→ https://YOUR_URL/#admin
+  Login: admin / admin123
+
+================================================================================
+DEPLOYMENT CHECKLIST
+================================================================================
+
+Before deploying:
+[ ] Code tested locally (npm run build works)
+[ ] All changes committed
+[ ] GitHub repository created
+
+During deployment:
+[ ] Code pushed to GitHub
+[ ] Vercel project created
+[ ] Build settings correct
+[ ] Deployment successful
+
+After deployment:
+[ ] Live URL opens
+[ ] All pages load
+[ ] Register button works
+[ ] Form submits successfully
+[ ] Admin dashboard accessible
+[ ] Mobile view looks good
+
+================================================================================
+SUCCESS!
+================================================================================
+
+╔═══════════════════════════════════════════════╗
+║                                               ║
+║     🎉 YOUR WEBSITE IS NOW LIVE! 🎉          ║
+║                                               ║
+║   ✅ Hosted on Vercel (free)                 ║
+║   ✅ Global CDN (fast)                       ║
+║   ✅ HTTPS enabled (secure)                  ║
+║   ✅ Auto-deploys on push                    ║
+║   ✅ Production ready                        ║
+║                                               ║
+╚═══════════════════════════════════════════════╝
+
+Share your website with the world! 🌍
+
+================================================================================
+TOTAL TIME: 5 MINUTES
+DIFFICULTY: EASY
+COST: FREE
+RESULT: LIVE WEBSITE ✅
+================================================================================
