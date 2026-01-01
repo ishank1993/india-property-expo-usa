@@ -3,21 +3,21 @@ import { motion } from "motion/react";
 
 // DATA: This configuration assumes you have uploaded logo images to a 'public/logos' folder
 const builders = [
-  { name: "Godrej Properties", logo: "/logos/godrej.png" },
-  { name: "Lodha", logo: "/logos/lodha.png" },
-  { name: "Rustomjee", logo: "/logos/rustomjee.png" },
-  { name: "Sobha", logo: "/logos/sobha.png" },
-  { name: "Raymond Realty", logo: "/logos/raymond.png" },
-  { name: "Puravankara", logo: "/logos/puravankara.png" },
-  { name: "L&T Realty", logo: "/logos/lnt.png" },
-  { name: "Kolte Patil", logo: "/logos/koltepatil.png" },
-  { name: "Kalpataru", logo: "/logos/kalpataru.png" },
-  { name: "BPTP", logo: "/logos/bptp.png" },
-  { name: "Prestige Group", logo: "/logos/prestige.png" },
-  { name: "Brigade Group", logo: "/logos/brigade.png" },
-  { name: "Oberoi Realty", logo: "/logos/oberoi.png" },
-  { name: "Mahindra Lifespaces", logo: "/logos/mahindra.png" },
-  { name: "Shapoorji Pallonji", logo: "/logos/shapoorji.png" },
+  { name: "Godrej Properties", logo: "/logos/godrej.png", size: "normal" },
+  { name: "Lodha", logo: "/logos/lodha.png", size: "normal" },
+  { name: "Rustomjee", logo: "/logos/rustomjee.png", size: "normal" },
+  { name: "Sobha", logo: "/logos/sobha.png", size: "normal" },
+  { name: "Raymond Realty", logo: "/logos/raymond.png", size: "normal" },
+  { name: "Puravankara", logo: "/logos/puravankara.png", size: "normal" },
+  { name: "L&T Realty", logo: "/logos/lnt.png", size: "normal" },
+  { name: "Kolte Patil", logo: "/logos/koltepatil.png", size: "large" },
+  { name: "Kalpataru", logo: "/logos/kalpataru.png", size: "normal" },
+  { name: "BPTP", logo: "/logos/bptp.png", size: "normal" },
+  { name: "Prestige Group", logo: "/logos/prestige.png", size: "large" },
+  { name: "Brigade Group", logo: "/logos/brigade.png", size: "large" },
+  { name: "Oberoi Realty", logo: "/logos/oberoi.png", size: "large" },
+  { name: "Mahindra Lifespaces", logo: "/logos/mahindra.png", size: "large" },
+  { name: "Shapoorji Pallonji", logo: "/logos/shapoorji.png", size: "large" },
 ];
 
 export function BuilderLogos() {
@@ -63,7 +63,7 @@ export function BuilderLogos() {
                     <img 
                         src={builder.logo} 
                         alt={builder.name} 
-                        className="max-h-16 max-w-full object-contain transition-all"
+                        className={`${builder.size === "large" ? "max-h-20" : "max-h-16"} max-w-full object-contain transition-all`}
                         onError={(e) => {
                             // Fallback if logo fails to load (e.g. file not uploaded yet)
                             e.currentTarget.style.display = 'none';
