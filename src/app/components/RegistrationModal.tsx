@@ -108,11 +108,6 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       return;
     }
     
-    if (!formData.preferredCity) {
-      toast.error("Please select your preferred investment city");
-      return;
-    }
-    
     if (!formData.agreeToTerms) {
       toast.error("Please agree to the terms and privacy policy to continue");
       return;
@@ -299,8 +294,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
 
           {/* Preferred Investment City */}
           <div className="space-y-1 sm:space-y-2.5">
-            <Label htmlFor="preferredCity" className="text-xs sm:text-sm">City of Interest *</Label>
-            <Select onValueChange={(value) => handleInputChange("preferredCity", value)} required>
+            <Label htmlFor="preferredCity" className="text-xs sm:text-sm">City of Interest (Optional)</Label>
+            <Select onValueChange={(value) => handleInputChange("preferredCity", value)}>
               <SelectTrigger className="h-10 sm:h-11 text-xs sm:text-sm">
                 <SelectValue placeholder="Select city or exploring" />
               </SelectTrigger>
