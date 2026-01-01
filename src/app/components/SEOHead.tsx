@@ -157,10 +157,56 @@ export function SEOHead({
       ]
     };
     
+    // Add FAQ schema for rich snippets
+    const faqSchema = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "When is the India Property Expo 2026 in Singapore?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The India Property Expo 2026 will be held on January 31st and February 1st, 2026, from 10:00 AM to 7:00 PM at Novotel Singapore on Kitchener."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is registration free for the property expo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, registration is completely free. Attendees get complimentary high tea and free consultations with property developers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many developers will be present at the expo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Over 35 trusted real estate developers from India will be present, showcasing 500+ verified projects across 15+ cities."
+          }
+        }
+      ]
+    };
+    
+    // Add WebSite schema for search box
+    const websiteSchema = {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NRI Nivesh",
+      "url": "https://nrinivesh.com",
+      "description": "Leading NRI property investment platform for global Indians",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://nrinivesh.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    };
+    
     // Combine all schemas
     const structuredData = {
       "@context": "https://schema.org",
-      "@graph": [eventSchema, organizationSchema, breadcrumbSchema]
+      "@graph": [eventSchema, organizationSchema, breadcrumbSchema, faqSchema, websiteSchema]
     };
     
     let scriptTag = document.querySelector('script[type="application/ld+json"]');

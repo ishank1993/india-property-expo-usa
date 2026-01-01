@@ -22,10 +22,12 @@ const builders = [
 
 export function BuilderLogos() {
   return (
-    <section className="py-20 relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden" aria-labelledby="builders-heading">
       {/* Background with Singapore Daytime Skyline */}
       <div 
         className="absolute inset-0 z-0"
+        role="img"
+        aria-label="Singapore daytime skyline background"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1610956667016-15debe929a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwZGF5dGltZXxlbnwxfHx8fDE3NjcxNjc3MTd8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
           backgroundSize: 'cover',
@@ -35,17 +37,17 @@ export function BuilderLogos() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-orange-50/90 to-white/95 backdrop-blur-sm" />
       </div>
-
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
+header className="text-center mb-12">
           <div className="inline-block bg-gradient-to-r from-orange-600 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">
             Trusted Partners
           </div>
-          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-3">
+          <h2 id="builders-heading" className="text-4xl md:text-5xl font-black text-gray-900 mb-3">
             Meet <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">35+ Top Developers</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Direct access to India's most reputed real estate developers
+          </p>
+        </headerirect access to India's most reputed real estate developers
           </p>
         </div>
 
@@ -62,7 +64,10 @@ export function BuilderLogos() {
                 >
                     <img 
                         src={builder.logo} 
-                        alt={builder.name} 
+                        alt={`${builder.name} logo - Premium real estate developer`} 
+                        width="200"
+                        height="80"
+                        loading="lazy"
                         className={`${builder.size === "large" ? "max-h-28" : "max-h-16"} max-w-full object-contain transition-all`}
                         onError={(e) => {
                             // Fallback if logo fails to load (e.g. file not uploaded yet)

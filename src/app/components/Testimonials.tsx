@@ -55,21 +55,21 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section className="py-24 bg-gradient-to-b from-white via-orange-50/40 to-white relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-b from-white via-orange-50/40 to-white relative overflow-hidden" aria-labelledby="testimonials-heading">
       {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-orange-500/10 rounded-full blur-[120px] pointer-events-none" aria-hidden="true" />
+      <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[120px] pointer-events-none" aria-hidden="true" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16">
+        <header className="text-center mb-16">
           <div className="inline-block bg-gradient-to-r from-orange-600 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">
             Client Stories
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 id="testimonials-heading" className="text-3xl md:text-5xl font-bold text-gray-900 mb-6">
             Trusted by <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">Global Indians</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto rounded-full" />
-        </div>
+          <div className="w-24 h-1 bg-gradient-to-r from-transparent via-orange-500 to-transparent mx-auto rounded-full" aria-hidden="true" />
+        </header>
 
         <div className="px-4 md:px-12">
           <Carousel
@@ -93,8 +93,15 @@ export function Testimonials() {
                       {/* User Profile */}
                       <div className="flex items-center space-x-4 mb-6">
                         <div className="relative">
-                            <img src={item.img} alt={item.name} className="w-14 h-14 rounded-full object-cover border-2 border-orange-400 group-hover:border-green-400 transition-colors" />
-                            <div className="absolute -bottom-1 -right-1 bg-gradient-to-br from-orange-500 to-green-500 rounded-full p-1">
+                            <img 
+                              src={item.img} 
+                              alt={`${item.name} - ${item.location}`} 
+                              width="56"
+                              height="56"
+                              loading="lazy"
+                              className="w-14 h-14 rounded-full object-cover border-2 border-orange-400 group-hover:border-green-400 transition-colors" 
+                            />
+                            <div className="absolute -bottom-1 -right-1 bg-gradient-to-br from-orange-500 to-green-500 rounded-full p-1" aria-hidden="true">
                                 <Quote className="w-2 h-2 text-white fill-white" />
                             </div>
                         </div>
@@ -113,8 +120,8 @@ export function Testimonials() {
                       
                       {/* Text */}
                       <p className="text-gray-700 italic leading-relaxed text-sm flex-grow">
-                        "{item.text}"
-                      </p>
+                        "{item.text}"aria-label="View previous testimonial" />
+            <CarouselNext className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -right-4 lg:-right-8 shadow-lg" aria-label="View next testimonial
                     </div>
                   </div>
                 </CarouselItem>

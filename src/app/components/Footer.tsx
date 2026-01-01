@@ -47,16 +47,18 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
   };
 
   return (
-    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-orange-900 to-green-900 text-white pt-20 pb-10 border-t-4 border-orange-500">
+    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-orange-900 to-green-900 text-white pt-20 pb-10 border-t-4 border-orange-500" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           
           {/* Brand & Mission */}
-          <div className="space-y-6">
+          <section className="space-y-6" aria-labelledby="footer-brand">
             <div className="flex items-center space-x-2">
               <img 
                 src="/logo.png" 
-                alt="NRI Nivesh" 
+                alt="NRI Nivesh - India Property Expo Singapore logo" 
+                width="160"
+                height="40"
                 className="h-10 w-auto object-contain"
                 onError={(e) => {
                     e.currentTarget.style.display = 'none';
@@ -70,7 +72,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                 }}
               />
             </div>
-            <p className="text-orange-200 leading-relaxed text-sm">
+            <p id="footer-brand" className="text-orange-200 leading-relaxed text-sm">
               Empowering NRIs globally with trusted Indian real estate opportunities. We bring the best of India's property market to your doorstep.
             </p>
             <a 
@@ -78,6 +80,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
               target="_blank" 
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white font-bold rounded-lg shadow-lg transition-all hover:scale-105"
+              aria-label="Visit NRI Nivesh main website"
             >
               🌐 Visit Main Website
             </a>

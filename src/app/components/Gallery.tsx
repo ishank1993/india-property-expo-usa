@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronLeft, ChevronRight, Camera } from "lucide-react";
+import { LazyImage } from "@/components/common/LazyImage";
 
 interface GalleryImage {
   url: string;
@@ -145,11 +146,21 @@ export function Gallery() {
               transition={{ duration: 0.3 }}
               className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer aspect-square"
               onClick={() => setSelectedImage(index)}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  setSelectedImage(index);
+                }
+              }}
+              aria-label={`View ${image.title}`}
             >
               {/* Image */}
-              <img
+              <LazyImage
                 src={image.url}
                 alt={image.title}
+                width={400}
+                height={400}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               

@@ -61,16 +61,28 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
           ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
           : "bg-gradient-to-r from-gray-900/95 via-orange-900/95 to-green-900/95 backdrop-blur-md py-4"
       }`}
+      role="navigation"
+      aria-label="Main navigation"
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
         {/* Logo */}
         <div 
           className="flex items-center cursor-pointer group" 
           onClick={handleLogoClick}
+          role="button"
+          tabIndex={0}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              handleLogoClick();
+            }
+          }}
+          aria-label="Go to homepage"
         >
           <img 
             src="/logo.png" 
-            alt="NRI Nivesh" 
+            alt="NRI Nivesh - India Property Expo Singapore logo" 
+            width="160"
+            height="48"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
                 e.currentTarget.style.display = 'none';
@@ -87,7 +99,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
         </div>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6" role="menubar">
           {/* Navigation Links */}
           {onNavigateHome && (
             <button

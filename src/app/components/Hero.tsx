@@ -8,10 +8,12 @@ interface HeroProps {
 
 export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" role="banner" aria-label="Hero section for India Property Expo 2026">
       {/* Background Image - Singapore Skyline */}
       <div 
         className="absolute inset-0 z-0"
+        role="img"
+        aria-label="Singapore skyline at night"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1628933978056-81ee94ad6856?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwbmlnaHR8ZW58MXx8fHwxNzY3MTY0MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080')`,
           backgroundSize: 'cover',
@@ -33,9 +35,9 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 py-20 relative z-10">
+      <article className="container mx-auto px-6 py-20 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
+          <header className="text-center mb-12">
             {/* Event Badge */}
             <div className="inline-flex items-center space-x-3 mb-6 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
               <span className="w-2.5 h-2.5 bg-orange-500 rounded-full animate-ping absolute" />
@@ -177,12 +179,12 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
             <p className="text-orange-200 text-sm mt-4">⚡ Limited Slots Available • First Come First Served</p>
           </div>
         </div>
-      </div>
+      </article>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-orange-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-orange-400 rounded-full mt-2 animate-pulse" />
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce\" role=\"presentation\" aria-hidden=\"true\">
+        <div className="w-6 h-10 border-2 border-orange-400 rounded-full flex justify-center\">
+          <div className="w-1 h-3 bg-orange-400 rounded-full mt-2 animate-pulse\" />
         </div>
       </div>
     </section>
