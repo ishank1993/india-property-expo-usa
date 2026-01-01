@@ -120,15 +120,21 @@ export function Testimonials() {
                       
                       {/* Text */}
                       <p className="text-gray-700 italic leading-relaxed text-sm flex-grow">
-                        "{item.text}"aria-label="View previous testimonial" />
-            <CarouselNext className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -right-4 lg:-right-8 shadow-lg" aria-label="View next testimonial
+                        "{item.text}"
+                      </p>
                     </div>
                   </div>
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -left-4 lg:-left-8 shadow-lg" />
-            <CarouselNext className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -right-4 lg:-right-8 shadow-lg" />
+            <CarouselPrevious 
+              className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -left-4 lg:-left-8 shadow-lg" 
+              aria-label="View previous testimonial" 
+            />
+            <CarouselNext 
+              className="bg-white/90 border-orange-300 text-orange-600 hover:bg-orange-600 hover:text-white transition-colors -right-4 lg:-right-8 shadow-lg" 
+              aria-label="View next testimonial" 
+            />
           </Carousel>
         </div>
       </div>
