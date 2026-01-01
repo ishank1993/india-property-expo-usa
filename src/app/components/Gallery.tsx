@@ -11,59 +11,59 @@ interface GalleryImage {
 
 const galleryImages: GalleryImage[] = [
   {
-    url: "https://images.unsplash.com/photo-1760963719896-381873e1009c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9wZXJ0eSUyMGV4aGliaXRpb24lMjBldmVudHxlbnwxfHx8fDE3NjcxNzE0MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "/images/gallery/event-1.jpg",
     title: "Past NRI Property Expo",
     category: "event"
   },
   {
-    url: "https://images.unsplash.com/photo-1707412948209-e5143b6e2b49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBtZXJsaW9ufGVufDF8fHx8MTc2NzE3MTQxNnww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Singapore Merlion",
-    category: "singapore"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1686455746285-4a921419bc6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBtYXJpbmElMjBiYXl8ZW58MXx8fHwxNzY3MTA1MjA4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Marina Bay Singapore",
-    category: "singapore"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1571645163064-77faa9676a46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGNvbmZlcmVuY2UlMjBuZXR3b3JraW5nfGVufDF8fHx8MTc2NzExNDA0MHww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Networking Sessions",
-    category: "networking"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1674043549378-a70e861d33ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBnYXJkZW5zJTIwYmF5fGVufDF8fHx8MTc2NzE3MTQxN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Gardens by the Bay",
-    category: "singapore"
-  },
-  {
-    url: "https://images.unsplash.com/photo-1560439514-4e9645039924?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmFkZSUyMHNob3clMjBib290aHxlbnwxfHx8fDE3NjcxNDYzNjN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "/images/gallery/event-2.jpg",
     title: "Exhibition Booths",
     category: "event"
   },
   {
-    url: "https://images.unsplash.com/photo-1642749774926-1a12096637f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBjaGluYXRvd24lMjB0ZW1wbGV8ZW58MXx8fHwxNzY3MTcxNDIwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "/images/gallery/singapore-1.jpg",
+    title: "Singapore Merlion",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/singapore-2.jpg",
+    title: "Marina Bay Singapore",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/singapore-3.jpg",
+    title: "Gardens by the Bay",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/singapore-4.jpg",
     title: "Singapore Chinatown",
     category: "singapore"
   },
   {
-    url: "https://images.unsplash.com/photo-1665231521902-8b3ca6804110?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBjaXR5JTIwbmlnaHR8ZW58MXx8fHwxNzY3MTcxNDIxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "/images/gallery/singapore-5.jpg",
     title: "Singapore at Night",
     category: "singapore"
   },
   {
-    url: "https://images.unsplash.com/photo-1733914460220-6922f987fd7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBsaXR0bGUlMjBpbmRpYXxlbnwxfHx8fDE3NjcxNzE0ODV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+    url: "/images/gallery/singapore-6.jpg",
     title: "Little India Singapore",
     category: "singapore"
   },
   {
-    url: "https://images.unsplash.com/photo-1758518730384-be3d205838e8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZSUyMG1lZXRpbmd8ZW58MXx8fHwxNzY3MDk0NDk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Developer Meetings",
+    url: "/images/gallery/singapore-7.jpg",
+    title: "Sentosa Island",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-1.jpg",
+    title: "Networking Sessions",
     category: "networking"
   },
   {
-    url: "https://images.unsplash.com/photo-1667563521161-75da42fda161?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzaW5nYXBvcmUlMjBzZW50b3NhfGVufDF8fHx8MTc2NzE3MTQ4Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-    title: "Sentosa Island",
-    category: "singapore"
+    url: "/images/gallery/networking-2.jpg",
+    title: "Developer Meetings",
+    category: "networking"
   }
 ];
 
