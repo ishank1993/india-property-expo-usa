@@ -12,57 +12,142 @@ interface GalleryImage {
 const galleryImages: GalleryImage[] = [
   {
     url: "/images/gallery/singapore-3.jpg",
-    title: "Singapore Merlion",
+    title: "Singapore Landmark",
     category: "singapore"
   },
   {
     url: "/images/gallery/event-1.jpg",
-    title: "Past NRI Property Expo",
+    title: "Property Expo Event",
     category: "event"
   },
   {
     url: "/images/gallery/networking-2.jpg",
-    title: "Networking Sessions",
+    title: "Business Networking",
     category: "networking"
   },
   {
-    url: "/images/gallery/singapore-1.jpg",
-    title: "Marina Bay Singapore",
+    url: "/images/gallery/singapore-7.jpg",
+    title: "Singapore Views",
     category: "singapore"
   },
   {
-    url: "/images/gallery/event-2.jpg",
-    title: "Exhibition Booths",
+    url: "/images/gallery/event-5.jpg",
+    title: "Exhibition Hall",
     category: "event"
   },
   {
-    url: "/images/gallery/singapore-6.jpg",
-    title: "Gardens by the Bay",
+    url: "/images/gallery/singapore-1.jpg",
+    title: "Marina Bay",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-4.jpg",
+    title: "Developer Consultation",
+    category: "networking"
+  },
+  {
+    url: "/images/gallery/event-8.jpg",
+    title: "Expo Venue",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-11.jpg",
+    title: "Singapore Cityscape",
     category: "singapore"
   },
   {
     url: "/images/gallery/networking-1.jpg",
-    title: "Developer Meetings",
+    title: "Professional Meeting",
     category: "networking"
   },
   {
-    url: "/images/gallery/singapore-4.jpg",
-    title: "Singapore Chinatown",
+    url: "/images/gallery/event-3.jpg",
+    title: "Property Showcase",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-5.jpg",
+    title: "Gardens by the Bay",
     category: "singapore"
   },
   {
-    url: "/images/gallery/singapore-7.jpg",
+    url: "/images/gallery/event-10.jpg",
+    title: "Exhibition Booths",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-9.jpg",
+    title: "Sentosa Island",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-6.jpg",
+    title: "Networking Session",
+    category: "networking"
+  },
+  {
+    url: "/images/gallery/singapore-2.jpg",
+    title: "Singapore Skyline",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/event-7.jpg",
+    title: "Past NRI Expo",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-12.jpg",
+    title: "Little India",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-3.jpg",
+    title: "Business Discussion",
+    category: "networking"
+  },
+  {
+    url: "/images/gallery/event-2.jpg",
+    title: "Property Event",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-4.jpg",
+    title: "Chinatown",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/event-9.jpg",
+    title: "Trade Show",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-6.jpg",
+    title: "Singapore Architecture",
+    category: "singapore"
+  },
+  {
+    url: "/images/gallery/networking-5.jpg",
+    title: "Client Meeting",
+    category: "networking"
+  },
+  {
+    url: "/images/gallery/event-4.jpg",
+    title: "Exhibition Space",
+    category: "event"
+  },
+  {
+    url: "/images/gallery/singapore-8.jpg",
     title: "Singapore at Night",
     category: "singapore"
   },
   {
-    url: "/images/gallery/singapore-2.jpg",
-    title: "Little India Singapore",
-    category: "singapore"
+    url: "/images/gallery/event-6.jpg",
+    title: "Property Fair",
+    category: "event"
   },
   {
-    url: "/images/gallery/singapore-5.jpg",
-    title: "Sentosa Island",
+    url: "/images/gallery/singapore-10.jpg",
+    title: "Merlion Park",
     category: "singapore"
   }
 ];
@@ -158,7 +243,7 @@ export function Gallery() {
               {/* Image */}
               <LazyImage
                 src={image.url}
-                alt={image.title}
+                alt={`${image.title} - India Property Expo Singapore 2026`}
                 width={400}
                 height={400}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -245,7 +330,7 @@ export function Gallery() {
             >
               <img
                 src={filteredImages[selectedImage].url}
-                alt={filteredImages[selectedImage].title}
+                alt={`${filteredImages[selectedImage].title} - India Property Expo Singapore 2026`}
                 className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               <div className="mt-6 text-center">
