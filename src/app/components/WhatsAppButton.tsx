@@ -7,10 +7,10 @@ export function WhatsAppButton() {
   const [showTooltip, setShowTooltip] = useState(true);
 
   useEffect(() => {
-    // Show button after a delay
+    // Show button immediately
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 3000);
+    }, 1000);
 
     // Hide tooltip after some time
     const tooltipTimer = setTimeout(() => {
@@ -37,7 +37,7 @@ export function WhatsAppButton() {
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           exit={{ scale: 0, opacity: 0 }}
-          className="fixed bottom-6 right-6 z-50 flex items-end gap-3"
+          className="fixed bottom-6 right-6 z-[9999] flex items-end gap-3"
         >
           {/* Tooltip */}
           <AnimatePresence>
@@ -66,13 +66,13 @@ export function WhatsAppButton() {
             onClick={handleWhatsAppClick}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            className="w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:shadow-[0_0_40px_rgba(37,211,102,0.8)] transition-shadow group relative overflow-hidden ring-4 ring-orange-500/20"
+            className="w-20 h-20 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl hover:shadow-[0_0_40px_rgba(37,211,102,0.8)] transition-shadow group relative overflow-hidden ring-4 ring-[#25D366]/30"
             aria-label="Chat on WhatsApp"
           >
             {/* Ripple effect */}
             <div className="absolute inset-0 bg-white/20 rounded-full animate-ping" />
             
-            <MessageCircle className="w-8 h-8 text-white relative z-10 group-hover:scale-110 transition-transform" />
+            <MessageCircle className="w-10 h-10 text-white relative z-10 group-hover:scale-110 transition-transform" strokeWidth={2.5} />
           </motion.button>
         </motion.div>
       )}

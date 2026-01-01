@@ -63,7 +63,7 @@ export function BuilderLogos() {
                     <img 
                         src={builder.logo} 
                         alt={builder.name} 
-                        className={`${builder.size === "large" ? "max-h-20" : "max-h-16"} max-w-full object-contain transition-all`}
+                        className={`${builder.size === "large" ? "max-h-28" : "max-h-16"} max-w-full object-contain transition-all`}
                         onError={(e) => {
                             // Fallback if logo fails to load (e.g. file not uploaded yet)
                             e.currentTarget.style.display = 'none';
