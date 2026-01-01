@@ -1,0 +1,20 @@
+# robots.txt for NRI Nivesh India Property Expo 2025
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nrinivesh.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

@@ -1,0 +1,46 @@
+@import 'tailwindcss' source(none);
+@source '../**/*.{js,ts,jsx,tsx}';
+
+@import 'tw-animate-css';
+
+/* Custom animations */
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-reverse-slow {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin-slow 40s linear infinite;
+  }
+  
+  .animate-spin-reverse-slow {
+    animation: spin-reverse-slow 30s linear infinite;
+  }
+  
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+}
