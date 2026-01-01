@@ -121,7 +121,7 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
                 <span>Free 1-on-1 Consultations</span>
               </div>
             </div>
-          </div>
+          </header>
 
           {/* Event Details Cards */}
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
