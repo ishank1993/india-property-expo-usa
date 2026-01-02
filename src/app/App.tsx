@@ -15,6 +15,7 @@ import { RegistrationModal } from "./components/RegistrationModal";
 import { Favicon } from "./components/Favicon";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 import { SEOHead } from "./components/SEOHead";
+import { MetaPixel } from "./components/MetaPixel";
 import { WealthPage } from "./components/WealthPage";
 import { FAQSection } from "./components/FAQSection";
 import { CookieConsent } from "./components/CookieConsent";
@@ -23,6 +24,7 @@ import { TermsConditions } from "./components/TermsConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { Disclaimer } from "./components/Disclaimer";
 import { AdminDashboard } from "./components/AdminDashboard";
+import { trackPageView } from "@/utils/metaConversionApi";
 
 // Main App Component - Mobile Optimized Form
 export default function App() {
@@ -53,6 +55,9 @@ export default function App() {
     if (hash === 'admin') {
       setCurrentPage('admin');
     }
+    
+    // Track initial page view
+    trackPageView();
   }, []);
 
   // Timed modal popup logic with specific intervals: 10s, 40s, 1min, 1min
@@ -112,10 +117,12 @@ export default function App() {
   const navigateToWealth = () => {
     setCurrentPage("wealth");
     window.scrollTo(0, 0);
+    trackPageView(); // Track page navigation
   };
   const navigateToHome = () => {
     setCurrentPage("home");
     window.scrollTo(0, 0);
+    trackPageView(); // Track page navigation
   };
 
   const navigateToTerms = () => {
@@ -141,6 +148,7 @@ export default function App() {
     return (
       <>
         <SEOHead />
+        <MetaPixel />
         <WealthPage 
           onRegisterClick={openRegister} 
           onNavigateHome={navigateToHome}
@@ -160,6 +168,7 @@ export default function App() {
           title="Terms & Conditions | NRI Nivesh Property Expo 2026"
           description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 in Singapore. Understand your rights and responsibilities when using our platform."
         />
+        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -190,6 +199,7 @@ export default function App() {
           title="Privacy Policy | NRI Nivesh Property Expo 2026"
           description="Learn how NRI Nivesh protects your personal data and privacy in compliance with Singapore's PDPA regulations."
         />
+        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -220,6 +230,7 @@ export default function App() {
           title="Disclaimer | NRI Nivesh Property Expo 2026"
           description="Important disclaimer about property investment information. This site is for informational purposes only and not financial, tax, or legal advice."
         />
+        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -250,6 +261,7 @@ export default function App() {
           title="Admin Dashboard | NRI Nivesh Property Expo 2026"
           description="Access the admin dashboard to manage registrations and view analytics for NRI Nivesh India Property Expo 2026 in Singapore."
         />
+        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -276,6 +288,7 @@ export default function App() {
   return (
     <>
       <SEOHead />
+      <MetaPixel />
       <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
         <Favicon />
         <Navbar 

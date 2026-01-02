@@ -8,6 +8,7 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { trackCompleteRegistration } from "@/utils/metaConversionApi";
 import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
@@ -140,6 +141,22 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       }
 
       console.log("✅ Registration successful:", result);
+      
+      // Track Meta Conversion Event
+      trackCompleteRegistration({
+        email: formData.email,
+        phone: `${formData.countryCode}${formData.phone}`,
+        firstName: formData.fullName,
+        city: formData.preferredCity,
+        country: 'SG' // Singapore
+      }, {
+        event_type: 'property_expo_registration',
+        date_of_visit: formData.dateOfVisit,
+        preferred_city: formData.preferredCity,
+        educational_session: formData.educationalSession,
+        value: 0,
+        currency: 'SGD'
+      });
       
       setIsSuccess(true);
       
