@@ -197,8 +197,8 @@ export function Disclaimer() {
             </p>
             <div className="p-4 bg-gray-50 rounded-lg">
               <p className="text-gray-700">
-                <strong>Email:</strong> info@nrinivesh.com<br />
-                <strong>Website:</strong> www.nrinivesh.com
+                <strong>Email:</strong> info@nrinivesh.in<br />
+                <strong>Website:</strong> www.nrinivesh.in
               </p>
             </div>
           </section>

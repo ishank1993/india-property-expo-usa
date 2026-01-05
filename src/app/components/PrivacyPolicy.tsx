@@ -170,7 +170,7 @@ export function PrivacyPolicy() {
               <p className="text-gray-700">
                 <strong>Data Protection Officer:</strong><br />
                 Email: info@nrinivesh.in<br />
-                Website: www.nrinivesh.com
+                Website: www.nrinivesh.in
               </p>
             </div>
           </section>

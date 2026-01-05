@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://nrinivesh.com/sitemap.xml
+Sitemap: https://nrinivesh.in/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 10

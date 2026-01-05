@@ -6,7 +6,7 @@
   
   <!-- Homepage -->
   <url>
-    <loc>https://nrinivesh.com/</loc>
+    <loc>https://nrinivesh.in/</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- Wealth Page -->
   <url>
-    <loc>https://nrinivesh.com/wealth</loc>
+    <loc>https://nrinivesh.in/wealth</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
   
   <!-- Terms & Conditions -->
   <url>
-    <loc>https://nrinivesh.com/terms</loc>
+    <loc>https://nrinivesh.in/terms</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -30,15 +30,23 @@
   
   <!-- Privacy Policy -->
   <url>
-    <loc>https://nrinivesh.com/privacy</loc>
+    <loc>https://nrinivesh.in/privacy</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
+  <!-- Privacy Policy - Standalone Page -->
+  <url>
+    <loc>https://nrinivesh.in/privacy-policy</loc>
+    <lastmod>2026-01-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
   <!-- Disclaimer -->
   <url>
-    <loc>https://nrinivesh.com/disclaimer</loc>
+    <loc>https://nrinivesh.in/disclaimer</loc>
     <lastmod>2026-01-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

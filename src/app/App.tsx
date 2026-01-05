@@ -22,6 +22,7 @@ import { CookieConsent } from "./components/CookieConsent";
 import { ComplianceFooter } from "./components/ComplianceFooter";
 import { TermsConditions } from "./components/TermsConditions";
 import { PrivacyPolicy } from "./components/PrivacyPolicy";
+import { PrivacyPolicyStandalone } from "./components/PrivacyPolicyStandalone";
 import { Disclaimer } from "./components/Disclaimer";
 import { AdminDashboard } from "./components/AdminDashboard";
 import { trackPageView } from "@/utils/metaConversionApi";
@@ -29,7 +30,7 @@ import { trackPageView } from "@/utils/metaConversionApi";
 // Main App Component - Mobile Optimized Form
 export default function App() {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState<"home" | "wealth" | "terms" | "privacy" | "disclaimer" | "admin">("home");
+  const [currentPage, setCurrentPage] = useState<"home" | "wealth" | "terms" | "privacy" | "privacy-policy" | "disclaimer" | "admin">("home");
   const [popupCount, setPopupCount] = useState(0);
   const [hasSubmitted, setHasSubmitted] = useState(false);
 
@@ -54,6 +55,16 @@ export default function App() {
     const hash = window.location.hash.slice(1);
     if (hash === 'admin') {
       setCurrentPage('admin');
+    } else if (hash === 'privacy-policy') {
+      setCurrentPage('privacy-policy');
+    } else if (hash === 'privacy') {
+      setCurrentPage('privacy');
+    } else if (hash === 'terms') {
+      setCurrentPage('terms');
+    } else if (hash === 'disclaimer') {
+      setCurrentPage('disclaimer');
+    } else if (hash === 'wealth') {
+      setCurrentPage('wealth');
     }
     
     // Track initial page view
@@ -133,6 +144,10 @@ export default function App() {
     setCurrentPage("privacy");
     window.scrollTo(0, 0);
   };
+  const navigateToPrivacyPolicy = () => {
+    setCurrentPage("privacy-policy");
+    window.scrollTo(0, 0);
+  };
   const navigateToDisclaimer = () => {
     setCurrentPage("disclaimer");
     window.scrollTo(0, 0);
@@ -179,7 +194,7 @@ export default function App() {
           />
           <TermsConditions />
           <Footer 
-            onNavigateToPrivacy={navigateToPrivacy}
+            onNavigateToPrivacy={navigateToPrivacyPolicy}
             onNavigateToTerms={navigateToTerms}
             onNavigateToDisclaimer={navigateToDisclaimer}
           />
@@ -210,7 +225,40 @@ export default function App() {
           />
           <PrivacyPolicy />
           <Footer 
-            onNavigateToPrivacy={navigateToPrivacy}
+            onNavigateToPrivacy={navigateToPrivacyPolicy}
+            onNavigateToTerms={navigateToTerms}
+            onNavigateToDisclaimer={navigateToDisclaimer}
+          />
+          <ComplianceFooter />
+        </div>
+        <RegistrationModal isOpen={isRegisterOpen} onClose={closeRegister} onSuccess={handleRegistrationSuccess} />
+        <Toaster />
+      </>
+    );
+  }
+
+  // If on privacy-policy page (standalone), render new PrivacyPolicyPage
+  if (currentPage === "privacy-policy") {
+    return (
+      <>
+        <SEOHead 
+          title="Privacy Policy | NRI Nivesh"
+          description="Privacy Policy for NRI Nivesh. Learn how we collect, use, and protect your personal data in compliance with Singapore PDPA, Meta (Facebook/Instagram) Lead Ads, and Google regulations."
+          canonical="https://www.nrinivesh.in/privacy-policy"
+        />
+        <MetaPixel />
+        <div className="min-h-screen bg-white">
+          <Favicon />
+          <Navbar 
+            onRegisterClick={openRegister}
+            onNavigateHome={navigateToHome}
+            onNavigateWealth={navigateToWealth}
+            currentPage="home"
+          />
+          {/* Import and render the new standalone privacy policy page */}
+          <PrivacyPolicyStandalone />
+          <Footer 
+            onNavigateToPrivacy={navigateToPrivacyPolicy}
             onNavigateToTerms={navigateToTerms}
             onNavigateToDisclaimer={navigateToDisclaimer}
           />
@@ -241,7 +289,7 @@ export default function App() {
           />
           <Disclaimer />
           <Footer 
-            onNavigateToPrivacy={navigateToPrivacy}
+            onNavigateToPrivacy={navigateToPrivacyPolicy}
             onNavigateToTerms={navigateToTerms}
             onNavigateToDisclaimer={navigateToDisclaimer}
           />
@@ -272,7 +320,7 @@ export default function App() {
           />
           <AdminDashboard />
           <Footer 
-            onNavigateToPrivacy={navigateToPrivacy}
+            onNavigateToPrivacy={navigateToPrivacyPolicy}
             onNavigateToTerms={navigateToTerms}
             onNavigateToDisclaimer={navigateToDisclaimer}
           />
@@ -310,7 +358,7 @@ export default function App() {
           <Testimonials />
         </main>
         <Footer 
-          onNavigateToPrivacy={navigateToPrivacy}
+          onNavigateToPrivacy={navigateToPrivacyPolicy}
           onNavigateToTerms={navigateToTerms}
           onNavigateToDisclaimer={navigateToDisclaimer}
         />

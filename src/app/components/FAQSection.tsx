@@ -138,7 +138,7 @@ export function FAQSection() {
             <strong>Still have questions?</strong> Our team is here to help!
           </p>
           <p className="text-sm text-gray-600">
-            Email us at <a href="mailto:info@nrinivesh.com" className="text-orange-600 underline">info@nrinivesh.com</a> or 
+            Email us at <a href="mailto:info@nrinivesh.in" className="text-orange-600 underline">info@nrinivesh.in</a> or 
             visit us at the expo for personalized assistance.
           </p>
         </div>
