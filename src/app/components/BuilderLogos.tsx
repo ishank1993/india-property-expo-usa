@@ -68,6 +68,7 @@ export function BuilderLogos() {
                         width="200"
                         height="80"
                         loading="lazy"
+                        decoding="async"
                         className={`${builder.size === "large" ? "max-h-28" : "max-h-16"} max-w-full object-contain transition-all`}
                         onError={(e) => {
                             // Fallback if logo fails to load (e.g. file not uploaded yet)

@@ -99,6 +99,7 @@ export function Testimonials() {
                               width="56"
                               height="56"
                               loading="lazy"
+                              decoding="async"
                               className="w-14 h-14 rounded-full object-cover border-2 border-orange-400 group-hover:border-green-400 transition-colors" 
                             />
                             <div className="absolute -bottom-1 -right-1 bg-gradient-to-br from-orange-500 to-green-500 rounded-full p-1" aria-hidden="true">

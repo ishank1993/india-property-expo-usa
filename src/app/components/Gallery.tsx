@@ -353,6 +353,9 @@ export function Gallery() {
               <img
                 src={filteredImages[selectedImage].url}
                 alt={`${filteredImages[selectedImage].title} - India Property Expo Singapore 2026`}
+                width="1200"
+                height="800"
+                loading="eager"
                 className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
               />
               <div className="mt-6 text-center">

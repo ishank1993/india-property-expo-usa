@@ -11,7 +11,7 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" role="banner" aria-label="Hero section for India Property Expo 2026">
       {/* Background Image - Singapore Skyline */}
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 will-change-auto"
         role="img"
         aria-label="Singapore skyline at night"
         style={{

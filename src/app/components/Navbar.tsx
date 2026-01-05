@@ -88,6 +88,9 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
             alt="NRI Nivesh - India Property Expo Singapore logo" 
             width="160"
             height="48"
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
                 e.currentTarget.style.display = 'none';

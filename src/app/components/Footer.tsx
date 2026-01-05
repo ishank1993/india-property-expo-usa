@@ -59,6 +59,8 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                 alt="NRI Nivesh - India Property Expo Singapore logo" 
                 width="160"
                 height="40"
+                loading="lazy"
+                decoding="async"
                 className="h-10 w-auto object-contain"
                 onError={(e) => {
                     e.currentTarget.style.display = 'none';
