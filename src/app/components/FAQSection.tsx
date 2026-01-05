@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "What are the event dates, timings, and venue?",
-    answer: "The India Property Expo 2026 will be held on Friday, 31st January and Saturday, 1st February 2026, from 10:00 AM to 7:00 PM each day. The venue is Novotel Singapore on Kitchener, located at 180 Kitchener Road, Singapore 208539. It's conveniently accessible via MRT (Farrer Park station) and has ample parking facilities."
+    answer: "The India Property Expo 2026 will be held on Saturday, 31st January and Sunday, 1st February 2026, from 10:00 AM to 7:00 PM each day. The venue is Novotel Singapore on Kitchener, located at 180 Kitchener Road, Singapore 208539. It's conveniently accessible via MRT (Farrer Park station) and has ample parking facilities."
   },
   {
     question: "Will there be any special offers or pre-launch projects?",

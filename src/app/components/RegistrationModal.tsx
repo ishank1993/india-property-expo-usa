@@ -293,8 +293,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 <SelectValue placeholder="Select your preferred date" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="jan-31" className="text-xs sm:text-sm">31st Jan (Fri) 10am-7pm</SelectItem>
-                <SelectItem value="feb-1" className="text-xs sm:text-sm">1st Feb (Sat) 10am-7pm</SelectItem>
+                <SelectItem value="jan-31" className="text-xs sm:text-sm">31st Jan (Sat) 10am-7pm</SelectItem>
+                <SelectItem value="feb-1" className="text-xs sm:text-sm">1st Feb (Sun) 10am-7pm</SelectItem>
                 <SelectItem value="both" className="text-xs sm:text-sm">Both Days</SelectItem>
               </SelectContent>
             </Select>
