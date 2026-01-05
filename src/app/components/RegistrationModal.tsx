@@ -73,7 +73,6 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
     phone: "",
     dateOfVisit: "",
     preferredCity: "",
-    educationalSession: "",
     consultationService: "",
     agreeToTerms: false,
   });
@@ -128,7 +127,6 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             countryCode: formData.countryCode,
             dateOfVisit: formData.dateOfVisit,
             preferredCity: formData.preferredCity,
-            educationalSession: formData.educationalSession || "none",
             consultationService: formData.consultationService || "none",
           }),
         }
@@ -154,7 +152,6 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
         date_of_visit: formData.dateOfVisit,
         preferred_city: formData.preferredCity,
         educational_session: formData.educationalSession,
-        value: 0,
         currency: 'SGD'
       });
       
@@ -178,8 +175,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           preferredCity: "",
           educationalSession: "",
           consultationService: "",
-          agreeToTerms: false,
-        });
+          ;
         if (onSuccess) {
           onSuccess();
         }
@@ -216,6 +212,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       <DialogContent className="sm:max-w-2xl p-3 sm:p-6">
         <DialogHeader className="space-y-1 sm:space-y-3 mb-1 sm:mb-0">
           <DialogTitle className="text-base sm:text-2xl font-bold text-center bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent px-1 sm:px-2 pr-8 sm:pr-10">
+            🎯 Secure Your FREE Passmax-h-[90vh] overflow-y-auto p-3 sm:p-6">
+        <DialogHeader className="space-y-1 sm:space-y-2 mb-1 sm:mb-0">
+          <DialogTitle className="text-base sm:text-2xl font-bold text-center bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent px-1 sm:px-2 pr-8 sm:pr-10">
             🎯 Secure Your FREE Pass
           </DialogTitle>
           <DialogDescription className="text-center text-[10px] sm:text-base px-1 sm:px-2 leading-tight sm:leading-normal">
@@ -225,9 +224,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-6 pt-1 sm:pt-4">
-          {/* Full Name */}
-          <div className="space-y-1 sm:space-y-2.5">
+        <form onSubmit={handleSubmit} className="space-y-2.5 sm:space-y-4 pt-1 sm:pt-3bel>
+            <Input
+              id="fullName"1.5">
             <Label htmlFor="fullName" className="text-xs sm:text-sm">Full Name *</Label>
             <Input
               id="fullName"
@@ -236,14 +235,14 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               value={formData.fullName}
               onChange={(e) => handleInputChange("fullName", e.target.value)}
               required
-              className="w-full h-10 sm:h-11 text-sm sm:text-base"
+              className="w-full h-9 sm:h-10 text-sm sm:text-base"
               aria-required="true"
             />
           </div>
 
           {/* Email and Phone */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
-            <div className="space-y-1 sm:space-y-2.5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-3">
+            <div className="space-y-1 sm:space-y-1.5">
               <Label htmlFor="email" className="text-xs sm:text-sm">Email Address *</Label>
               <Input
                 id="email"
@@ -252,18 +251,18 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
                 required
-                className="h-10 sm:h-11 text-sm sm:text-base"
+                className="h-9 sm:h-10 text-sm sm:text-base"
                 aria-required="true"
               />
             </div>
-            <div className="space-y-1 sm:space-y-2.5">
+            <div className="space-y-1 sm:space-y-1.5">
               <Label htmlFor="phone" className="text-xs sm:text-sm">Phone Number *</Label>
               <div className="flex gap-1.5 sm:gap-2">
                 <Select 
                   value={formData.countryCode} 
                   onValueChange={(value) => handleInputChange("countryCode", value)}
                 >
-                  <SelectTrigger className="w-[90px] sm:w-[120px] h-10 sm:h-11 text-xs sm:text-sm">
+                  <SelectTrigger className="w-[90px] sm:w-[120px] h-9 sm:h-10 text-xs sm:text-sm">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
@@ -281,7 +280,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value.replace(/\D/g, ""))}
                   required
-                  className="flex-1 h-10 sm:h-11 text-sm sm:text-base"
+                  className="flex-1 h-9 sm:h-10 text-sm sm:text-base"
                   pattern="\d{7,15}"
                   aria-required="true"
                 />
@@ -290,10 +289,10 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </div>
 
           {/* Date of Visit */}
-          <div className="space-y-1 sm:space-y-2.5">
+          <div className="space-y-1 sm:space-y-1.5">
             <Label htmlFor="dateOfVisit" className="text-xs sm:text-sm">When Will You Visit? (Optional)</Label>
             <Select onValueChange={(value) => handleInputChange("dateOfVisit", value)}>
-              <SelectTrigger className="h-10 sm:h-11 text-xs sm:text-sm">
+              <SelectTrigger className="h-9 sm:h-10 text-xs sm:text-sm">
                 <SelectValue placeholder="Select your preferred date" />
               </SelectTrigger>
               <SelectContent>
@@ -305,10 +304,10 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </div>
 
           {/* Preferred Investment City */}
-          <div className="space-y-1 sm:space-y-2.5">
+          <div className="space-y-1 sm:space-y-1.5">
             <Label htmlFor="preferredCity" className="text-xs sm:text-sm font-semibold">City of Interest (Optional)</Label>
             <Select onValueChange={(value) => handleInputChange("preferredCity", value)}>
-              <SelectTrigger className="h-10 sm:h-11 text-xs sm:text-sm">
+              <SelectTrigger className="h-9 sm:h-10 text-xs sm:text-sm">
                 <SelectValue placeholder="Select city or exploring" />
               </SelectTrigger>
               <SelectContent>
@@ -323,29 +322,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             </Select>
           </div>
 
-          {/* Educational Session */}
-          <div className="space-y-1 sm:space-y-2.5">
-            <Label htmlFor="educationalSession" className="text-xs sm:text-sm font-semibold">
-              📚 Educational Sessions (Optional)
-            </Label>
-            <p className="text-[9px] sm:text-xs text-gray-500 -mt-0.5 mb-1">
-              Free seminars on NRI-focused topics
-            </p>
-            <Select onValueChange={(value) => handleInputChange("educationalSession", value)}>
-              <SelectTrigger className="text-xs sm:text-sm border-2 border-orange-200 focus:border-orange-500">
-                <SelectValue placeholder="Select a session (optional)" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="gift-city" className="text-xs sm:text-sm">🏛️ GIFT City Property Information</SelectItem>
-                <SelectItem value="nri-tax-clinic" className="text-xs sm:text-sm">💼 NRI Tax Planning & Returns</SelectItem>
-                <SelectItem value="will-inheritance" className="text-xs sm:text-sm">📜 Will & Estate Planning for NRIs</SelectItem>
-                <SelectItem value="all-sessions" className="text-xs sm:text-sm">✅ All Educational Sessions</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
           {/* Consultation Service */}
-          <div className="space-y-1 sm:space-y-2.5">
+          <div className="space-y-1 sm:space-y-1.5">
             <Label htmlFor="consultationService" className="text-xs sm:text-sm font-semibold">
               🤝 One-on-One Consultation (Optional)
             </Label>
@@ -353,7 +331,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               Book personalized advisory sessions with experts
             </p>
             <Select onValueChange={(value) => handleInputChange("consultationService", value)}>
-              <SelectTrigger className="h-10 sm:h-11 text-xs sm:text-sm">
+              <SelectTrigger className="h-9 sm:h-10 text-xs sm:text-sm">
                 <SelectValue placeholder="Select consultation type" />
               </SelectTrigger>
               <SelectContent>
@@ -368,10 +346,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </div>
 
           {/* Terms Agreement */}
-          <div className="flex items-start space-x-2 pt-1 bg-gray-50 p-2.5 sm:p-4 rounded-lg border border-gray-200">
-            <Checkbox
-              id="agreeToTerms"
-              checked={formData.agreeToTerms}
+          <div className="flex items-start space-x-2 pt-1 bg-gray-50 p-2 sm:p-3
               onCheckedChange={(checked) => handleInputChange("agreeToTerms", checked as boolean)}
               className="mt-0.5 h-4 w-4 sm:h-5 sm:w-5"
             />
@@ -408,4 +383,17 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       </DialogContent>
     </Dialog>
   );
-}
+}4 sm:py-6 h-auto shadow-lg"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
+                Registering...
+              </>
+            ) : (
+              "🎯 Register Now - FREE"
+            )}
+          </Button>
+
+          <p className="text-[9px] sm:text-xs text-center text-gray-500 pt-0
