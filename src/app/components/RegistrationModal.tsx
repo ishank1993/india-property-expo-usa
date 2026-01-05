@@ -355,7 +355,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               className="text-[10px] sm:text-sm text-gray-600 leading-tight sm:leading-relaxed cursor-pointer"
             >
               I agree to receive event updates. I accept the{" "}
-              <span className="text-orange-600 underline">Privacy Policy</span> and{" "}
+              <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline hover:text-orange-700">Privacy Policy</a> and{" "}
               <span className="text-green-600 underline">Terms</span>.
             </label>
           </div>

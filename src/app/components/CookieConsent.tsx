@@ -58,7 +58,7 @@ export function CookieConsent() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 We use cookies and similar technologies to improve your browsing experience, analyze site traffic, and show personalized content. 
                 By clicking "Accept All", you consent to our use of cookies. You can manage preferences or reject non-essential cookies.{" "}
-                <a href="#privacy" className="text-orange-600 underline hover:text-orange-700">
+                <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline hover:text-orange-700">
                   Learn more in our Privacy Policy
                 </a>
               </p>

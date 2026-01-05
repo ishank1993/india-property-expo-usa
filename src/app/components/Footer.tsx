@@ -117,7 +117,15 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
             
             <h3 className="text-lg font-bold mt-8 mb-6 text-green-300">Legal</h3>
             <ul className="space-y-3 text-orange-200">
-              {["Privacy Policy", "Terms & Conditions", "Disclaimer"].map((link) => (
+              <li>
+                <a 
+                  href="/privacy-policy.html" 
+                  className="hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              {["Terms & Conditions", "Disclaimer"].map((link) => (
                 <li key={link}>
                   <a 
                     href="#" 
