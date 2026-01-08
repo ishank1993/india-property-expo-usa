@@ -1,7 +1,12 @@
 import { Hono } from "npm:hono";
 import { cors } from "npm:hono/cors";
 import { logger } from "npm:hono/logger";
-import * as kv from "./kv_store.tsx";
+import { createClient } from "npm:@supabase/supabase-js@2";
+
+// Initialize Supabase client
+const supabaseUrl = Deno.env.get("SUPABASE_URL") || "";
+const supabaseServiceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
+const supabase = createClient(supabaseUrl, supabaseServiceKey);
 
 const app = new Hono();
 
@@ -42,27 +47,36 @@ app.post("/make-server-232426bc/register", async (c) => {
 
     // Generate unique registration ID
     const registrationId = `reg_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
-    const timestamp = new Date().toISOString();
 
     // Prepare registration data
     const registrationData = {
       id: registrationId,
-      fullName,
-      email,
+      full_name: fullName,
+      email: email.toLowerCase(),
       phone: `${countryCode}${phone}`,
-      countryCode,
-      dateOfVisit,
-      preferredCity,
-      educationalSession: body.educationalSession || "none",
-      consultationService: body.consultationService || "none",
-      registeredAt: timestamp,
+      country_code: countryCode,
+      date_of_visit: dateOfVisit,
+      preferred_city: preferredCity,
+      educational_session: body.educationalSession || "none",
+      consultation_service: body.consultationService || "none",
       source: "website",
       status: "confirmed"
     };
 
-    // Store in KV store with email as secondary key for lookup
-    await kv.set(`registration:${registrationId}`, registrationData);
-    await kv.set(`email:${email.toLowerCase()}`, registrationId);
+    // Insert into Supabase table
+    const { data, error } = await supabase
+      .from('registrations')
+      .insert([registrationData])
+      .select()
+      .single();
+
+    if (error) {
+      console.error("❌ Database error:", error);
+      return c.json({ 
+        success: false, 
+        error: error.message 
+      }, 500);
+    }
 
     console.log(`✅ Registration successful: ${registrationId} - ${email}`);
 
@@ -70,20 +84,75 @@ app.post("/make-server-232426bc/register", async (c) => {
       success: true,
       message: "Registration successful",
       registrationId,
-      data: registrationData
-    });
+      data: {
+        id: data.id,
+        fullName: data.full_name,
+        email: data.email,
+        phone: data.phone,
+        countryCode: data.country_code,
+        dateOfVisit: data.date_of_visit,
+        preferredCity: data.preferred_city,
+        ed{ data, error } = await supabase
+      .from('registrations')
+      .select('*')
+      .eq('email', email)
+      .single();
+    
+    if (error || !data) {
+      return c.json({ 
+        success: false, 
+        message: "Registration not found" 
+      }, 404);
+    }
 
-  } catch (error) {
-    console.error("❌ Registration error:", error);
-    return c.json({ 
-      success: false, 
-      error: error.message || "Failed to process registration" 
-    }, 500);
-  }
-});
+    return c.json({
+      success: true,
+      data: {
+        id: data.id,
+        fullName: data.full_name,
+        email: data.email,
+        phone: data.phone,
+        countryCode: data.country_code,
+        dateOfVisit: data.date_of_visit,
+        preferredCity: data.preferred_city,
+        educationalSession: data.educational_session,
+        consultationService: data.consultation_service,
+        registeredAt: data.registered_at,
+        source: data.source,
+        status: data.status
+      }{ data, error } = await supabase
+      .from('registrations')
+      .select('*')
+      .order('registered_at', { ascending: false });
+    
+    if (error) {
+      console.error("❌ Fetch error:", error);
+      return c.json({ 
+        success: false, 
+        error: error.message 
+      }, 500);
+    }
 
-// Get registration by email (for checking duplicates)
-app.get("/make-server-232426bc/registration/:email", async (c) => {
+    // Transform data to match expected format
+    const transformedData = data.map(reg => ({
+      id: reg.id,
+      fullName: reg.full_name,
+      email: reg.email,
+      phone: reg.phone,
+      countryCode: reg.country_code,
+      dateOfVisit: reg.date_of_visit,
+      preferredCity: reg.preferred_city,
+      educationalSession: reg.educational_session,
+      consultationService: reg.consultation_service,
+      registeredAt: reg.registered_at,
+      source: reg.source,
+      status: reg.status
+    }));
+    
+    return c.json({
+      success: true,
+      count: transformedData.length,
+      data: transformedData426bc/registration/:email", async (c) => {
   try {
     const email = c.req.param("email").toLowerCase();
     
