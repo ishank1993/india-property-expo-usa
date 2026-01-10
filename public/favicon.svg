@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <defs>
+    <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B35"/>
+      <stop offset="50%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#138808"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Circle -->
+  <circle cx="24" cy="24" r="22" fill="#FF6B35"/>
+  <!-- House Icon -->
+  <path d="M24 10L8 22v16h12v-10h8v10h12V22L24 10z" fill="white"/>
+  <!-- Roof Accent -->
+  <path d="M24 10L8 22l3 2.5L24 14l13 10.5 3-2.5L24 10z" fill="#138808"/>
+</svg>

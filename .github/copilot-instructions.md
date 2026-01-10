@@ -140,6 +140,20 @@ const response = await fetch(
 - Admin: [ADMIN_LOGIN_CREDENTIALS.md](../ADMIN_LOGIN_CREDENTIALS.md)
 - Performance: [PERFORMANCE_FIX_APPLIED.md](../PERFORMANCE_FIX_APPLIED.md)
 
+## Favicon Configuration (Bulletproof)
+
+All favicon files are in `/public/` and configured in [index.html](../index.html):
+- `favicon.ico` - Legacy browsers (48x48 ICO)
+- `favicon.svg` - Modern browsers (scalable SVG)
+- `favicon-16x16.png`, `favicon-32x32.png` - Standard PNGs
+- `apple-touch-icon.png` - iOS devices (180x180)
+- `android-chrome-192x192.png`, `android-chrome-512x512.png` - Android/PWA
+- `safari-pinned-tab.svg` - Safari pinned tabs (single-color silhouette)
+- `browserconfig.xml` - Microsoft tiles
+- `site.webmanifest` - PWA manifest with all icon sizes
+
+MIME types configured in [vercel.json](../vercel.json) with 1-year cache headers.
+
 ## Key Gotchas
 
 1. **Never modify `utils/supabase/info.tsx`** - auto-generated, contains live credentials
@@ -149,3 +163,4 @@ const response = await fetch(
 5. **Admin logout clears localStorage** - no backend session invalidation
 6. **Timed popups stop after form submission** - checks `hasSubmitted` state + localStorage
 7. **Deployment auto-triggers** - Figma Make or Vercel deploy on every git push to main branch
+8. **Favicon updates** - After changing any favicon file, clear browser cache (Ctrl+Shift+R)

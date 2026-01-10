@@ -1,7 +1,19 @@
-# robots.txt for NRI Nivesh India Property Expo 2025
+# robots.txt for NRI Nivesh India Property Expo 2026
 
 User-agent: *
 Allow: /
+
+# Explicitly allow favicon and icon files
+Allow: /favicon.ico
+Allow: /favicon.svg
+Allow: /favicon-16x16.png
+Allow: /favicon-32x32.png
+Allow: /apple-touch-icon.png
+Allow: /android-chrome-192x192.png
+Allow: /android-chrome-512x512.png
+Allow: /safari-pinned-tab.svg
+Allow: /site.webmanifest
+Allow: /browserconfig.xml
 
 # Sitemap
 Sitemap: https://nrinivesh.in/sitemap.xml

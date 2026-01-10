@@ -53,12 +53,32 @@
     <link rel="preconnect" href="https://connect.facebook.net" crossorigin />
     <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     
-    <!-- Favicon Configuration -->
-    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <!-- Favicon Configuration - Bulletproof Setup -->
+    <!-- ICO favicon for legacy browsers (IE, older browsers) -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" type="image/x-icon" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    
+    <!-- PNG favicons for modern browsers -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png" />
+    
+    <!-- SVG favicon for modern browsers (scalable) -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Apple Touch Icon for iOS devices -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    
+    <!-- Safari Pinned Tab -->
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#FF6B35" />
+    
+    <!-- Web App Manifest for PWA -->
     <link rel="manifest" href="/site.webmanifest" />
+    
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-TileColor" content="#FF6B35" />
+    <meta name="msapplication-config" content="/browserconfig.xml" />
       
       <!-- Preload LCP Image (Hero Background) -->
       <link rel="preload" as="image" href="https://images.unsplash.com/photo-1628933978056-81ee94ad6856?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwbmlnaHR8ZW58MXx8fHwxNzY3MTY0MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080" fetchpriority="high" />
