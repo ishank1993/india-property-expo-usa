@@ -113,7 +113,7 @@ export function SEOHead({
         "price": "0",
         "priceCurrency": "SGD",
         "availability": "https://schema.org/InStock",
-        "validFrom": "2026-01-01"
+        "validFrom": "2026-03-18"
       },
       "performer": {
         "@type": "Organization",
