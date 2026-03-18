@@ -298,7 +298,7 @@ export function Gallery() {
         {/* Bottom Text */}
         <div className="text-center mt-12">
           <p className="text-gray-600 text-lg">
-            📸 More photos will be added from the upcoming <span className="font-bold text-orange-600">January 31st & February 1st</span> event!
+            📸 More photos will be added from the upcoming <span className="font-bold text-orange-600">April 18th & 19th</span> event!
           </p>
         </div>
       </div>

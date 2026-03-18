@@ -132,7 +132,7 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
                   <Calendar className="text-white w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl text-orange-300 mb-1">31st JAN & 1st FEB</h3>
+                  <h3 className="font-bold text-2xl text-orange-300 mb-1">18th APR & 19th APR</h3>
                   <p className="text-orange-200 font-medium">Saturday - Sunday</p>
                   <p className="text-orange-300 text-sm mt-1">10:00 AM - 7:00 PM</p>
                 </div>
