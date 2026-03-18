@@ -20,7 +20,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
         <DialogHeader>
           <DialogTitle>Terms & Conditions</DialogTitle>
           <DialogDescription>
-            Last updated: January 2026
+            Last updated: March 2026
           </DialogDescription>
         </DialogHeader>
         <ScrollArea className="h-[60vh] pr-4">

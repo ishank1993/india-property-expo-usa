@@ -14,7 +14,7 @@ export function Disclaimer() {
               </h1>
             </div>
             <p className="text-center text-gray-600">
-              Last Updated: January 1, 2026
+              Last Updated: March 18, 2026
             </p>
           </div>
         </div>

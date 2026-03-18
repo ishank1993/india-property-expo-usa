@@ -10,7 +10,7 @@ export function PrivacyPolicyStandalone() {
               Privacy Policy
             </h1>
             <p className="text-center text-gray-600">
-              Last Updated: January 5, 2026
+              Last Updated: March 18, 2026
             </p>
           </div>
         </div>
