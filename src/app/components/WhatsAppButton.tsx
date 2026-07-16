@@ -24,7 +24,7 @@ export function WhatsAppButton() {
   }, []);
 
   const handleWhatsAppClick = () => {
-    const phoneNumber = "919372772669"; // Format: country code + number without + or spaces
+    const phoneNumber = "919372772668"; // Format: country code + number without + or spaces
     const message = encodeURIComponent("Hi! I'm interested in the NRI Property Expo in Singapore.");
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappUrl, "_blank", "noopener,noreferrer");

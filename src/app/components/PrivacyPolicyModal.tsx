@@ -63,7 +63,7 @@ export function PrivacyPolicyModal({ isOpen, onClose }: PrivacyPolicyModalProps)
             <section>
               <h3 className="font-bold text-base mb-2">6. Contact Us</h3>
               <p>
-                If you have any questions about this Privacy Policy, please contact us at info@nrinivesh.in or call +91 93727 72669.
+                If you have any questions about this Privacy Policy, please contact us at info@nrinivesh.in or call +91 93727 72668.
               </p>
             </section>
           </div>

@@ -156,7 +156,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
             <ul className="space-y-4 text-orange-200">
               <li className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <span>+91 93727 72669</span>
+                <span>+91 93727 72668</span>
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-orange-400 flex-shrink-0" />

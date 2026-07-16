@@ -70,7 +70,7 @@ export function TermsModal({ isOpen, onClose }: TermsModalProps) {
             <section>
               <h3 className="font-bold text-base mb-2">7. Contact</h3>
               <p>
-                For questions regarding these terms, please contact us at info@nrinivesh.in or call +91 93727 72669.
+                For questions regarding these terms, please contact us at info@nrinivesh.in or call +91 93727 72668.
               </p>
             </section>
           </div>
