@@ -164,7 +164,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <span>Novotel Kitchener Road,<br />180 Kitchener Road, Singapore 208539</span>
+                <span>Sheraton Towers Singapore,<br />39 Scotts Road, Singapore 228230</span>
               </li>
             </ul>
           </div>
