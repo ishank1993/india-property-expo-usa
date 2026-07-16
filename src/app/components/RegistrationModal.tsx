@@ -15,7 +15,7 @@ import { Checkbox } from "./ui/checkbox";
 import { toast } from "sonner";
 import { Loader2, CheckCircle2 } from "lucide-react";
 
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxfYma2JkTYBtPlpIJPHQY4lFs8B8FVOdLsK3I1A8-R2CH3eazLmrXDkBuPbGRWZcZM/exec";
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbzA08KCv3DFbFMcKUzpMi5Ug-xUd0_tqDmicwg-xr0ENcNtx7OfJdGvqTaHzHOkYxWw/exec";
 
 interface RegistrationModalProps {
   isOpen: boolean;
