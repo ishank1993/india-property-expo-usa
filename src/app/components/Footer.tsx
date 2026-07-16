@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Facebook, Instagram, Linkedin, Phone, Mail, MapPin } from "lucide-react";
 import { PrivacyPolicyModal } from "./PrivacyPolicyModal";
 import { TermsModal } from "./TermsModal";
@@ -107,14 +108,22 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
             <ul className="space-y-3 text-orange-200">
               {["About The Expo", "Venues & Location"].map((link) => (
                 <li key={link}>
-                  <a 
-                    href="#" 
+                  <a
+                    href="#"
                     className="hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer"
                   >
                     {link}
                   </a>
                 </li>
               ))}
+              <li>
+                <Link
+                  to="/blog"
+                  className="hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer"
+                >
+                  NRI Property Blog
+                </Link>
+              </li>
             </ul>
             
             <h3 className="text-lg font-bold mt-8 mb-6 text-green-300">Legal</h3>

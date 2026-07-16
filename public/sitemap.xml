@@ -52,4 +52,36 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- Blog Index -->
+  <url>
+    <loc>https://nrinivesh.in/blog</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Buying Property in India from Singapore (pillar) -->
+  <url>
+    <loc>https://nrinivesh.in/blog/buying-property-india-from-singapore-nri-guide</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: GIFT City vs Real Estate -->
+  <url>
+    <loc>https://nrinivesh.in/blog/gift-city-vs-real-estate-singapore-nri</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: NRI Property Tax Filing -->
+  <url>
+    <loc>https://nrinivesh.in/blog/nri-property-tax-filing-singapore</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

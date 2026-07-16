@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import { BlogIndexPage } from "./components/blog/BlogIndexPage";
+import { BlogPostPage } from "./components/blog/BlogPostPage";
 import { Navbar } from "./components/Navbar";
 import { Hero } from "./components/Hero";
 import { ServicesSection } from "./components/ServicesSection";
@@ -27,8 +30,20 @@ import { Disclaimer } from "./components/Disclaimer";
 import { AdminDashboard } from "./components/AdminDashboard";
 import { trackPageView } from "@/utils/metaConversionApi";
 
-// Main App Component - Mobile Optimized Form
+// Top-level router: blog gets real URL paths, everything else keeps
+// the existing hash-based page switching in MainApp.
 export default function App() {
+  return (
+    <Routes>
+      <Route path="/blog" element={<BlogIndexPage />} />
+      <Route path="/blog/:slug" element={<BlogPostPage />} />
+      <Route path="*" element={<MainApp />} />
+    </Routes>
+  );
+}
+
+// Main App Component - Mobile Optimized Form
+function MainApp() {
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState<"home" | "wealth" | "terms" | "privacy" | "privacy-policy" | "disclaimer" | "admin">("home");
   const [popupCount, setPopupCount] = useState(0);

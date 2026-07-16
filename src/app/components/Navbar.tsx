@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import { Menu, X, Home, Landmark } from "lucide-react";
+import { Menu, X, Home, Landmark, BookOpen } from "lucide-react";
 
 interface NavbarProps {
     onRegisterClick?: () => void;
@@ -141,6 +142,16 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
             </button>
           )}
 
+          <Link
+            to="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+            className={`flex items-center space-x-1.5 font-medium hover:text-orange-400 transition-colors ${
+              isScrolled ? "text-gray-800" : "text-orange-200"
+            }`}
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>Blog</span>
+          </Link>
           <a
             href="#venues"
             onClick={(e) => {
@@ -226,6 +237,15 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               <span>Tax Clinic & GIFT City</span>
             </button>
           )}
+
+          <Link
+            to="/blog"
+            onClick={() => setMobileMenuOpen(false)}
+            className="flex items-center space-x-3 font-semibold text-lg text-orange-300 hover:text-orange-400 hover:bg-orange-900/30 transition-all duration-300 px-4 py-3 rounded-lg"
+          >
+            <BookOpen className="w-5 h-5" />
+            <span>Blog</span>
+          </Link>
 
           {["Venues", "Contact"].map((item) => (
             <a
