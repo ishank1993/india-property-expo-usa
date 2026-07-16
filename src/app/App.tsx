@@ -259,7 +259,7 @@ function MainApp() {
         <SEOHead 
           title="Privacy Policy | NRI Nivesh"
           description="Privacy Policy for NRI Nivesh. Learn how we collect, use, and protect your personal data in compliance with Singapore PDPA, Meta (Facebook/Instagram) Lead Ads, and Google regulations."
-          canonical="https://www.nrinivesh.in/privacy-policy"
+          canonical="https://nriniveshexposg.com/privacy-policy"
         />
         <MetaPixel />
         <div className="min-h-screen bg-white">

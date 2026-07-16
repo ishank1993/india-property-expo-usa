@@ -17,7 +17,7 @@ import {
 import { getBlogPost, blogPosts } from "../../content/blogPosts";
 import { BlogContent } from "./BlogContent";
 
-const SITE_URL = "https://nrinivesh.in";
+const SITE_URL = "https://nriniveshexposg.com";
 
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();

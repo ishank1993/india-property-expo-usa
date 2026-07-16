@@ -12,8 +12,8 @@ export function SEOHead({
   title = "India Property Expo 2026 Singapore | Meet 35+ Developers | 500+ Premium Projects | Free Entry",
   description = "Join Singapore's Largest India Property Exhibition 2026. Meet 35+ trusted developers face-to-face. Explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR & 15+ cities. Get FREE NRI tax advisory, legal guidance & home loan assistance. Register free for exclusive pre-launch information.",
   keywords = "India property expo Singapore 2026, NRI property exhibition Singapore, property India from Singapore, India real estate exhibition Singapore, NRI property developers Singapore, property information India for NRI, Indian real estate expo Singapore, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property, Pune Goa Hyderabad property NRI, property exhibition Singapore 2026, NRI wealth management Singapore, India information NRI",
-  canonical = "https://nrinivesh.in/singapore-property-expo-2026",
-  ogImage = "https://nrinivesh.in/og-image.jpg"
+  canonical = "https://nriniveshexposg.com/",
+  ogImage = "https://nriniveshexposg.com/og-image.jpg"
 }: SEOHeadProps) {
   
   useEffect(() => {
@@ -105,7 +105,7 @@ export function SEOHead({
       "organizer": {
         "@type": "Organization",
         "name": "NRI Nivesh",
-        "url": "https://nrinivesh.com"
+        "url": "https://nriniveshexposg.com"
       },
       "offers": {
         "@type": "Offer",
@@ -126,8 +126,8 @@ export function SEOHead({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "NRI Nivesh",
-      "url": "https://nrinivesh.in",
-      "logo": "https://nrinivesh.in/logo.png",
+      "url": "https://nriniveshexposg.com",
+      "logo": "https://nriniveshexposg.com/logo.png",
       "description": "Leading NRI property investment platform connecting global Indians with premium real estate opportunities in India",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -146,7 +146,7 @@ export function SEOHead({
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://nrinivesh.com"
+          "item": "https://nriniveshexposg.com"
         },
         {
           "@type": "ListItem",
@@ -194,11 +194,11 @@ export function SEOHead({
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "NRI Nivesh",
-      "url": "https://nrinivesh.in",
+      "url": "https://nriniveshexposg.com",
       "description": "Leading NRI property investment platform for global Indians",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://nrinivesh.in/search?q={search_term_string}",
+        "target": "https://nriniveshexposg.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     };

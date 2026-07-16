@@ -10,7 +10,7 @@ import { RegistrationModal } from "../RegistrationModal";
 import { Toaster } from "../ui/sonner";
 import { blogPosts } from "../../content/blogPosts";
 
-const SITE_URL = "https://nrinivesh.in";
+const SITE_URL = "https://nriniveshexposg.com";
 
 export function BlogIndexPage() {
   const navigate = useNavigate();

@@ -16,7 +16,7 @@ Allow: /site.webmanifest
 Allow: /browserconfig.xml
 
 # Sitemap
-Sitemap: https://nrinivesh.in/sitemap.xml
+Sitemap: https://nriniveshexposg.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 10
