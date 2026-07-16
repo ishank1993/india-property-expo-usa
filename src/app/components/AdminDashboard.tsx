@@ -167,6 +167,8 @@ export function AdminDashboard() {
 
   const formatDateOfVisit = (value: string) => {
     const map: Record<string, string> = {
+      "aug-1": "1 Aug 2026",
+      "aug-2": "2 Aug 2026",
       "apr-18": "18 Apr 2026",
       "apr-19": "19 Apr 2026",
       // Legacy values (for historical records)
@@ -245,9 +247,9 @@ export function AdminDashboard() {
               <CardContent className="pt-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-green-600 font-semibold">18th Apr Visitors</p>
+                    <p className="text-sm text-green-600 font-semibold">1st Aug Visitors</p>
                     <p className="text-3xl font-bold text-green-700">
-                      {registrations.filter(r => r.dateOfVisit === "apr-18" || r.dateOfVisit === "both").length}
+                      {registrations.filter(r => r.dateOfVisit === "aug-1" || r.dateOfVisit === "apr-18" || r.dateOfVisit === "both").length}
                     </p>
                   </div>
                   <div className="text-2xl">📅</div>
@@ -259,9 +261,9 @@ export function AdminDashboard() {
               <CardContent className="pt-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-blue-600 font-semibold">19th Apr Visitors</p>
+                    <p className="text-sm text-blue-600 font-semibold">2nd Aug Visitors</p>
                     <p className="text-3xl font-bold text-blue-700">
-                      {registrations.filter(r => r.dateOfVisit === "apr-19" || r.dateOfVisit === "both").length}
+                      {registrations.filter(r => r.dateOfVisit === "aug-2" || r.dateOfVisit === "apr-19" || r.dateOfVisit === "both").length}
                     </p>
                   </div>
                   <div className="text-2xl">📅</div>

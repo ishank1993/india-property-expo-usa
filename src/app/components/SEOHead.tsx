@@ -87,18 +87,18 @@ export function SEOHead({
       "name": "India Property Expo 2026 - Singapore Edition",
       "description": description,
       "image": ogImage,
-      "startDate": "2026-04-18T10:00:00+08:00",
-      "endDate": "2026-04-19T19:00:00+08:00",
+      "startDate": "2026-08-01T10:00:00+08:00",
+      "endDate": "2026-08-02T19:00:00+08:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
-        "name": "Novotel Singapore on Kitchener",
+        "name": "Sheraton Towers Singapore",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "180 Kitchener Road",
+          "streetAddress": "39 Scotts Road",
           "addressLocality": "Singapore",
-          "postalCode": "208539",
+          "postalCode": "228230",
           "addressCountry": "SG"
         }
       },
@@ -167,7 +167,7 @@ export function SEOHead({
           "name": "When is the India Property Expo 2026 in Singapore?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The India Property Expo 2026 will be held on April 18th and April 19th, 2026, from 10:00 AM to 7:00 PM at Novotel Singapore on Kitchener."
+            "text": "The India Property Expo 2026 will be held on August 1st and August 2nd, 2026, from 10:00 AM to 7:00 PM at Sheraton Towers Singapore."
           }
         },
         {

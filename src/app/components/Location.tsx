@@ -24,10 +24,10 @@ export function Location() {
                   <MapPin className="text-white w-6 h-6" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-gray-800">Novotel Kitchener Road</h3>
+                  <h3 className="font-bold text-xl text-gray-800">Sheraton Towers Singapore</h3>
                   <p className="text-gray-600 mt-1">
-                    180 Kitchener Road,<br />
-                    Singapore 208539
+                    39 Scotts Road,<br />
+                    Singapore 228230
                   </p>
                 </div>
               </div>
@@ -39,8 +39,8 @@ export function Location() {
                 <div>
                   <h3 className="font-bold text-xl text-gray-800">How to Reach</h3>
                   <p className="text-gray-600 mt-1">
-                    • Near Lavender MRT Station (5 min walk)<br />
-                    • Near Farrer Park MRT Station (7 min walk)<br />
+                    • Near Newton MRT Station (5 min walk)<br />
+                    • Near Orchard MRT Station (10 min walk)<br />
                     • Complimentary parking available
                   </p>
                 </div>
@@ -48,7 +48,7 @@ export function Location() {
             </div>
 
             <Button 
-              onClick={() => window.open('https://www.google.com/maps/dir//Novotel+Singapore+on+Kitchener,+180+Kitchener+Road,+Singapore+208539', '_blank')}
+              onClick={() => window.open('https://www.google.com/maps/dir//Sheraton+Towers+Singapore,+39+Scotts+Road,+Singapore+228230', '_blank')}
               className="w-fit bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
             >
               📍 Get Directions
@@ -57,8 +57,8 @@ export function Location() {
 
           {/* Map Side */}
           <div className="h-[400px] lg:h-auto w-full bg-gray-200 relative">
-             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7620669445367!2d103.84874831475394!3d1.3093419990419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19bfe15bb149%3A0x8b8b8b8b8b8b8b8b!2sNovotel%20Singapore%20on%20Kitchener!5e0!3m2!1sen!2ssg!4v1629876543210!5m2!1sen!2ssg" 
+             <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.774656757!2d103.8282837!3d1.3083553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1991f44e0169%3A0x7ff4a8da58234d97!2sSheraton%20Towers%20Singapore!5e0!3m2!1sen!2ssg!4v1629876543210!5m2!1sen!2ssg" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 

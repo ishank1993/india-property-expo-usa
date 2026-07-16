@@ -132,7 +132,7 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
                   <Calendar className="text-white w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl text-orange-300 mb-1">18th APR & 19th APR</h3>
+                  <h3 className="font-bold text-2xl text-orange-300 mb-1">1st AUG & 2nd AUG</h3>
                   <p className="text-orange-200 font-medium">Saturday - Sunday</p>
                   <p className="text-orange-300 text-sm mt-1">10:00 AM - 7:00 PM</p>
                 </div>
@@ -146,9 +146,9 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
                   <MapPin className="text-white w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-green-300 mb-1">Novotel Kitchener</h3>
-                  <p className="text-green-200 text-sm">180 Kitchener Road</p>
-                  <p className="text-green-300 text-sm mt-1">Singapore 208539</p>
+                  <h3 className="font-bold text-xl text-green-300 mb-1">Sheraton Hotel</h3>
+                  <p className="text-green-200 text-sm">39 Scotts Road</p>
+                  <p className="text-green-300 text-sm mt-1">Singapore 228230</p>
                 </div>
               </div>
             </div>

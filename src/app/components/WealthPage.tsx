@@ -482,7 +482,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">Event Venue</span>
                 </h2>
-                <p className="text-xl text-gray-600">Join us at Novotel Singapore on Kitchener Road</p>
+                <p className="text-xl text-gray-600">Join us at Sheraton Towers Singapore, Scotts Road</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 bg-white rounded-3xl shadow-2xl overflow-hidden">
@@ -493,10 +493,10 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       <Landmark className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-gray-800">Novotel Kitchener Road</h3>
+                      <h3 className="font-bold text-xl text-gray-800">Sheraton Towers Singapore</h3>
                       <p className="text-gray-600 mt-1">
-                        180 Kitchener Road,<br />
-                        Singapore 208539
+                        39 Scotts Road,<br />
+                        Singapore 228230
                       </p>
                     </div>
                   </div>
@@ -508,14 +508,14 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                     <div>
                       <h3 className="font-bold text-xl text-gray-800">Event Date</h3>
                       <p className="text-gray-600 mt-1">
-                        Date & Time: TBD<br />
+                        1st & 2nd August 2026 | 10am–7pm<br />
                         Check-in starts 30 minutes before sessions
                       </p>
                     </div>
                   </div>
 
                   <Button 
-                    onClick={() => window.open('https://www.google.com/maps/dir//Novotel+Singapore+on+Kitchener,+180+Kitchener+Road,+Singapore+208539', '_blank')}
+                    onClick={() => window.open('https://www.google.com/maps/dir//Sheraton+Towers+Singapore,+39+Scotts+Road,+Singapore+228230', '_blank')}
                     className="w-fit bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
                   >
                     📍 Get Directions
@@ -525,7 +525,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 {/* Right: Map */}
                 <div className="h-[400px] md:h-auto w-full bg-gray-200">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7620669445367!2d103.84874831475394!3d1.3093419990419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19bfe15bb149%3A0x8b8b8b8b8b8b8b8b!2sNovotel%20Singapore%20on%20Kitchener!5e0!3m2!1sen!2ssg!4v1629876543210!5m2!1sen!2ssg" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.774656757!2d103.8282837!3d1.3083553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1991f44e0169%3A0x7ff4a8da58234d97!2sSheraton%20Towers%20Singapore!5e0!3m2!1sen!2ssg!4v1629876543210!5m2!1sen!2ssg" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
