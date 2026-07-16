@@ -112,20 +112,19 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
     setIsSubmitting(true);
 
     try {
-      await fetch(GOOGLE_SHEETS_URL, {
-        method: "POST",
-        mode: "no-cors",
-        headers: { "Content-Type": "text/plain" },
-        body: JSON.stringify({
-          fullName: formData.fullName,
-          email: formData.email,
-          phone: formData.phone,
-          countryCode: formData.countryCode,
-          dateOfVisit: formData.dateOfVisit,
-          preferredCity: formData.preferredCity,
-          consultationService: formData.consultationService || "none",
-        }),
+      const params = new URLSearchParams({
+        action: "write",
+        fullName: formData.fullName,
+        email: formData.email,
+        countryCode: formData.countryCode,
+        phone: formData.phone,
+        dateOfVisit: formData.dateOfVisit || "",
+        preferredCity: formData.preferredCity || "",
+        consultationService: formData.consultationService || "none",
       });
+      const response = await fetch(`${GOOGLE_SHEETS_URL}?${params}`);
+      const result = await response.json();
+      if (!result.success) throw new Error("Failed to save registration");
 
       // Track Meta Conversion Event
       trackCompleteRegistration({
