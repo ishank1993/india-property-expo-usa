@@ -4,8 +4,9 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from ".
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Loader2, RefreshCw, Download, Users, LogOut } from "lucide-react";
 import { toast } from "sonner";
-import { projectId, publicAnonKey } from "../../../utils/supabase/info";
 import { AdminLogin } from "./AdminLogin";
+
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxfYma2JkTYBtPlpIJPHQY4lFs8B8FVOdLsK3I1A8-R2CH3eazLmrXDkBuPbGRWZcZM/exec";
 
 interface Registration {
   id: string;
@@ -70,14 +71,7 @@ export function AdminDashboard() {
     setError(null);
 
     try {
-      const response = await fetch(
-        `https://${projectId}.supabase.co/functions/v1/make-server-232426bc/registrations`,
-        {
-          headers: {
-            "Authorization": `Bearer ${publicAnonKey}`,
-          },
-        }
-      );
+      const response = await fetch(GOOGLE_SHEETS_URL);
 
       if (!response.ok) {
         throw new Error("Failed to fetch registrations");
@@ -156,13 +150,8 @@ export function AdminDashboard() {
   };
 
   const formatDate = (dateString: string) => {
-    return new Date(dateString).toLocaleString("en-SG", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
+    // Google Sheets already returns a pre-formatted SGT string
+    return dateString || "-";
   };
 
   const formatDateOfVisit = (value: string) => {

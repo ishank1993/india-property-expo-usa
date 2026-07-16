@@ -14,7 +14,8 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from ".
 import { Checkbox } from "./ui/checkbox";
 import { toast } from "sonner";
 import { Loader2, CheckCircle2 } from "lucide-react";
-import { projectId, publicAnonKey } from "../../../utils/supabase/info";
+
+const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbxfYma2JkTYBtPlpIJPHQY4lFs8B8FVOdLsK3I1A8-R2CH3eazLmrXDkBuPbGRWZcZM/exec";
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -111,42 +112,28 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
     setIsSubmitting(true);
 
     try {
-      // Call Supabase backend API
-      const response = await fetch(
-        `https://${projectId}.supabase.co/functions/v1/make-server-232426bc/register`,
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${publicAnonKey}`,
-          },
-          body: JSON.stringify({
-            fullName: formData.fullName,
-            email: formData.email,
-            phone: formData.phone,
-            countryCode: formData.countryCode,
-            dateOfVisit: formData.dateOfVisit,
-            preferredCity: formData.preferredCity,
-            consultationService: formData.consultationService || "none",
-          }),
-        }
-      );
+      await fetch(GOOGLE_SHEETS_URL, {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "text/plain" },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          countryCode: formData.countryCode,
+          dateOfVisit: formData.dateOfVisit,
+          preferredCity: formData.preferredCity,
+          consultationService: formData.consultationService || "none",
+        }),
+      });
 
-      const result = await response.json();
-
-      if (!response.ok || !result.success) {
-        throw new Error(result.error || "Failed to register");
-      }
-
-      console.log("✅ Registration successful:", result);
-      
       // Track Meta Conversion Event
       trackCompleteRegistration({
         email: formData.email,
         phone: `${formData.countryCode}${formData.phone}`,
         firstName: formData.fullName,
         city: formData.preferredCity,
-        country: 'SG' // Singapore
+        country: 'SG'
       }, {
         event_type: 'property_expo_registration',
         date_of_visit: formData.dateOfVisit,
@@ -154,15 +141,11 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
         value: 0,
         currency: 'SGD'
       });
-      
+
       setIsSuccess(true);
-      
-      // Store submission in localStorage
       localStorage.setItem('registrationSubmitted', 'true');
-      localStorage.setItem('registrationId', result.registrationId);
-      
-      toast.success("🎉 Registration Confirmed! Check your email for event details.");
-      
+      toast.success("🎉 Registration Confirmed! See you at the expo!");
+
       setTimeout(() => {
         onClose();
         setIsSuccess(false);
@@ -176,13 +159,11 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           consultationService: "",
           agreeToTerms: false,
         });
-        if (onSuccess) {
-          onSuccess();
-        }
+        if (onSuccess) onSuccess();
       }, 2500);
     } catch (error) {
       console.error("❌ Registration error:", error);
-      toast.error(`Registration failed: ${error.message || "Please try again."}`);
+      toast.error("Registration failed. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
