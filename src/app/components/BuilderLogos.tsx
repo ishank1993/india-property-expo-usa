@@ -37,7 +37,13 @@ export function BuilderLogos() {
       >
         <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-orange-50/90 to-white/95 backdrop-blur-sm" />
       </div>
-      
+
+      {/* Fade-in from the dark Hero section above, for a seamless transition */}
+      <div
+        className="absolute top-0 left-0 right-0 h-32 z-[1] bg-gradient-to-b from-black/50 via-black/10 to-transparent pointer-events-none"
+        aria-hidden="true"
+      />
+
       <div className="container mx-auto px-6 relative z-10">
         <header className="text-center mb-12">
           <div className="inline-block bg-gradient-to-r from-orange-600 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">

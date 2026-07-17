@@ -362,8 +362,8 @@ function MainApp() {
         />
         <main>
           <Hero onRegisterClick={openRegister} onNavigateToWealth={navigateToWealth} />
-          <ServicesSection onRegisterClick={openRegister} />
           <BuilderLogos />
+          <ServicesSection onRegisterClick={openRegister} />
           <IndiaPresence />
           <WhyAttend onRegisterClick={openRegister} />
           <InvestmentOpportunities />
