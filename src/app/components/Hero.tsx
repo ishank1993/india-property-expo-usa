@@ -1,4 +1,4 @@
-import { Calendar, MapPin, Clock, Users, TrendingUp, Award, Sparkles, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Clock, Users, TrendingUp, Award, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface HeroProps {
@@ -8,9 +8,9 @@ interface HeroProps {
 
 export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0b0906]" role="banner" aria-label="Hero section for India Property Expo 2026">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden" role="banner" aria-label="Hero section for India Property Expo 2026">
       {/* Background Image - Singapore Skyline */}
-      <div
+      <div 
         className="absolute inset-0 z-0 will-change-auto"
         role="img"
         aria-label="Singapore skyline at night"
@@ -21,150 +21,170 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Refined single-tone overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/72 to-[#0b0906]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_60%_45%_at_50%_0%,rgba(217,166,90,0.10),transparent)]" />
+        {/* Enhanced Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/30 via-transparent to-green-900/30" />
+      </div>
+
+      {/* Animated Particles/Dots */}
+      <div className="absolute inset-0 z-[1]">
+        <div className="absolute top-20 left-10 w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
+        <div className="absolute top-40 right-20 w-3 h-3 bg-green-500 rounded-full animate-pulse delay-100" />
+        <div className="absolute bottom-40 left-20 w-2 h-2 bg-orange-400 rounded-full animate-pulse delay-200" />
+        <div className="absolute bottom-20 right-40 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-300" />
       </div>
 
       {/* Content */}
-      <article className="container mx-auto px-6 py-24 relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <article className="container mx-auto px-6 py-20 relative z-10">
+        <div className="max-w-6xl mx-auto">
           <header className="text-center mb-12">
-            {/* Kicker */}
-            <div className="inline-flex items-center gap-3 mb-8 animate-fade-up">
-              <span className="w-8 h-px bg-amber-300/50" />
-              <span className="font-body text-amber-200/90 text-xs font-semibold tracking-[0.25em] uppercase">
-                Singapore Edition &middot; 1&ndash;2 August 2026
-              </span>
-              <span className="w-8 h-px bg-amber-300/50" />
+            {/* Event Badge */}
+            <div className="inline-flex items-center space-x-3 mb-6 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
+              <span className="w-2.5 h-2.5 bg-orange-500 rounded-full animate-ping absolute" />
+              <span className="w-2.5 h-2.5 bg-orange-500 rounded-full" />
+              <span className="text-orange-300 font-semibold tracking-wider uppercase text-sm">Exclusive Singapore Edition 2026</span>
             </div>
-
+            
             {/* Main Headline */}
-            <h1 className="font-display text-5xl sm:text-6xl md:text-7xl text-white leading-[1.05] mb-6 animate-fade-up" style={{ animationDelay: '90ms' }}>
-              India Property Expo
-              <span className="block italic font-light text-amber-100/90 text-4xl sm:text-5xl md:text-6xl mt-2">
-                in Singapore
+            <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
+              <span className="text-white inline-block">
+                INDIA PROPERTY EXPO
+              </span>
+              <br />
+              <span className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mt-2 inline-block">
+                IN SINGAPORE 2026
               </span>
             </h1>
 
             {/* Subheadline - MAS Compliant: Informational */}
-            <p className="font-body text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: '180ms' }}>
-              Meet <span className="text-amber-200 font-semibold">35+ trusted developers</span> face-to-face, explore{" "}
-              <span className="text-amber-200 font-semibold">500+ verified projects</span>, and get curated insights
-              built for NRI investors.
+            <p className="text-xl md:text-2xl text-gray-100 font-medium max-w-3xl mx-auto mb-8 leading-relaxed">
+              Meet <span className="text-orange-400 font-bold">35+ Trusted Developers</span> Face-to-Face • Explore <span className="text-green-400 font-bold">500+ Verified Projects</span> • Discover <span className="text-white font-bold">Curated Insights & Offerings</span>
             </p>
 
-            {/* Primary CTA */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mb-2 animate-fade-up" style={{ animationDelay: '270ms' }}>
-              <Button
+            {/* Primary CTA - Large & Prominent */}
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
+              <Button 
                 onClick={onRegisterClick}
-                className="bg-amber-400 hover:bg-amber-300 text-neutral-900 font-semibold font-body text-base px-9 py-6 rounded-full transition-colors duration-300"
+                className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-bold text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.6)] hover:shadow-[0_0_60px_rgba(249,115,22,0.8)] transition-all duration-300 transform hover:scale-105 animate-bounce"
                 aria-label="Register for free India Property Expo in Singapore"
               >
-                Register &mdash; It&apos;s Free
+                🎯 REGISTER FREE NOW
               </Button>
-              <button
+              <Button 
                 onClick={onRegisterClick}
-                className="group inline-flex items-center gap-2 font-body text-white/70 hover:text-white font-medium transition-colors duration-300"
+                variant="outline"
+                className="border-2 border-green-500 text-green-300 hover:bg-green-600/20 font-bold text-lg px-10 py-7 rounded-full backdrop-blur-sm transition-all duration-300"
                 aria-label="Book your consultation slot"
               >
-                Book a private consultation
-                <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={1.5} />
-              </button>
+                📅 Book Your Slot
+              </Button>
             </div>
 
-            {/* NRI Tax Clinic & GIFT City Baatchit */}
+            {/* NEW: NRI Tax Clinic & GIFT City Baatchit Banner */}
             {onNavigateToWealth && (
-              <div className="mt-10 flex justify-center animate-fade-up" style={{ animationDelay: '360ms' }}>
-                <div
-                  onClick={onNavigateToWealth}
-                  role="button"
-                  tabIndex={0}
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
-                      e.preventDefault();
-                      onNavigateToWealth();
-                    }
-                  }}
-                  aria-label="Navigate to NRI Tax Clinic and GIFT City Baatchit"
-                  className="group max-w-xl w-full text-left bg-white/[0.03] hover:bg-white/[0.06] border border-white/10 hover:border-amber-300/30 rounded-2xl p-6 backdrop-blur-sm transition-all duration-300 cursor-pointer"
-                >
-                  <div className="flex items-center gap-2 mb-2">
-                    <Sparkles className="w-4 h-4 text-amber-300" strokeWidth={1.5} />
-                    <span className="font-body text-amber-300 text-xs font-semibold uppercase tracking-widest">
-                      Beyond Real Estate
-                    </span>
+              <div className="mb-12">
+                <div className="inline-block bg-gradient-to-r from-blue-600/90 to-purple-600/90 backdrop-blur-md rounded-2xl p-6 border-2 border-blue-400/50 shadow-[0_0_40px_rgba(59,130,246,0.5)] hover:shadow-[0_0_60px_rgba(59,130,246,0.7)] transition-all duration-300 transform hover:scale-105 cursor-pointer max-w-2xl"
+                     onClick={onNavigateToWealth}
+                     role="button"
+                     tabIndex={0}
+                     aria-label="Navigate to NRI Tax Clinic and GIFT City Baatchit">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Sparkles className="w-6 h-6 text-yellow-300 animate-pulse" />
+                    <span className="text-yellow-300 font-bold text-sm uppercase tracking-wider">BONUS: Beyond Real Estate</span>
                   </div>
-                  <h3 className="font-display text-xl md:text-2xl text-white mb-1.5">
-                    NRI Tax Clinic &amp; GIFT City Baatchit
+                  <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
+                    🏦 NRI Tax Clinic & GIFT City Baatchit
                   </h3>
-                  <p className="font-body text-white/55 text-sm leading-relaxed mb-3">
-                    Regulatory updates, processes and global-level opportunities available to NRI participants in GIFT City.
+                  <p className="text-blue-100 mb-4">
+                    Get to know what's happening in GIFT City and how it benefits NRIs — discover regulatory updates, processes and global-level opportunities available to NRI participants.
                   </p>
-                  <span className="inline-flex items-center gap-1.5 font-body text-white text-sm font-medium">
-                    Explore complete information
-                    <ArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1" strokeWidth={1.5} />
-                  </span>
+                  <div className="flex items-center justify-center space-x-2 text-white font-semibold">
+                    <span>Explore Complete Information</span>
+                    <span className="text-2xl">→</span>
+                  </div>
                 </div>
               </div>
             )}
 
             {/* Trust Indicators */}
-            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mt-12 font-body text-sm text-white/50 animate-fade-up" style={{ animationDelay: '450ms' }}>
-              <span className="inline-flex items-center gap-2">
-                <Award className="w-4 h-4 text-amber-300/80" strokeWidth={1.5} />
-                Trusted by 100,000+ NRIs
-              </span>
-              <span className="hidden sm:inline text-white/20">&middot;</span>
-              <span className="inline-flex items-center gap-2">
-                <TrendingUp className="w-4 h-4 text-amber-300/80" strokeWidth={1.5} />
-                Exclusive pre-launch information
-              </span>
-              <span className="hidden sm:inline text-white/20">&middot;</span>
-              <span className="inline-flex items-center gap-2">
-                <Users className="w-4 h-4 text-amber-300/80" strokeWidth={1.5} />
-                Free 1-on-1 consultations
-              </span>
+            <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-200 mb-12">
+              <div className="flex items-center gap-2">
+                <Award className="w-5 h-5 text-orange-400" />
+                <span>Trusted by 100,000+ NRIs</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <TrendingUp className="w-5 h-5 text-green-400" />
+                <span>Exclusive Pre-Launch Information</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Users className="w-5 h-5 text-orange-400" />
+                <span>Free 1-on-1 Consultations</span>
+              </div>
             </div>
           </header>
 
-          {/* Event Details Strip */}
-          <div className="animate-fade-up" style={{ animationDelay: '540ms' }}>
-            <div className="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-white/10 border border-white/10 rounded-2xl bg-white/[0.03] backdrop-blur-sm overflow-hidden">
-              <div className="flex items-center gap-4 px-6 py-5">
-                <Calendar className="w-5 h-5 text-amber-300 shrink-0" strokeWidth={1.5} />
-                <div>
-                  <p className="font-body text-white font-medium">1&ndash;2 August</p>
-                  <p className="font-body text-white/45 text-sm">Sat&ndash;Sun, 10am&ndash;7pm</p>
+          {/* Event Details Cards */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            {/* Date Card */}
+            <div className="group bg-gradient-to-br from-orange-900/40 to-orange-800/30 backdrop-blur-lg rounded-2xl p-6 border border-orange-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                  <Calendar className="text-white w-7 h-7" />
                 </div>
-              </div>
-              <div className="flex items-center gap-4 px-6 py-5">
-                <MapPin className="w-5 h-5 text-amber-300 shrink-0" strokeWidth={1.5} />
                 <div>
-                  <p className="font-body text-white font-medium">Sheraton Towers</p>
-                  <p className="font-body text-white/45 text-sm">39 Scotts Road, S228230</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-4 px-6 py-5">
-                <Clock className="w-5 h-5 text-amber-300 shrink-0" strokeWidth={1.5} />
-                <div>
-                  <p className="font-body text-white font-medium">Free Entry</p>
-                  <p className="font-body text-white/45 text-sm">High tea &amp; consultations</p>
+                  <h3 className="font-bold text-2xl text-orange-300 mb-1">1st AUG & 2nd AUG</h3>
+                  <p className="text-orange-200 font-medium">Saturday - Sunday</p>
+                  <p className="text-orange-300 text-sm mt-1">10:00 AM - 7:00 PM</p>
                 </div>
               </div>
             </div>
-            <p className="text-center font-body text-white/35 text-xs tracking-wide mt-6">
-              Limited slots &mdash; registration required
-            </p>
+
+            {/* Venue Card */}
+            <div className="group bg-gradient-to-br from-green-900/40 to-green-800/30 backdrop-blur-lg rounded-2xl p-6 border border-green-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 hover:scale-105">
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                  <MapPin className="text-white w-7 h-7" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-xl text-green-300 mb-1">Sheraton Hotel</h3>
+                  <p className="text-green-200 text-sm">39 Scotts Road</p>
+                  <p className="text-green-300 text-sm mt-1">Singapore 228230</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Bonus Card */}
+            <div className="group bg-gradient-to-br from-orange-900/40 to-orange-800/30 backdrop-blur-lg rounded-2xl p-6 border border-orange-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
+              <div className="flex items-start space-x-4">
+                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                  <Clock className="text-white w-7 h-7" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-xl text-orange-300 mb-1">FREE Entry</h3>
+                  <p className="text-orange-200 text-sm">Complimentary High Tea</p>
+                  <p className="text-orange-300 text-sm mt-1">Expert Consultations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Secondary CTA */}
+          <div className="text-center mt-12">
+            <Button 
+              onClick={onRegisterClick}
+              className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-bold text-lg px-10 py-6 rounded-full shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:shadow-[0_0_50px_rgba(34,197,94,0.7)] transition-all duration-300"
+            >
+              ✨ Secure Your Free Pass Today
+            </Button>
+            <p className="text-orange-200 text-sm mt-4">⚡ Limited Slots Available • First Come First Served</p>
           </div>
         </div>
       </article>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10" role="presentation" aria-hidden="true">
-        <div className="flex flex-col items-center gap-2 opacity-50">
-          <span className="font-body text-[10px] tracking-[0.3em] uppercase text-white/50">Scroll</span>
-          <div className="w-px h-10 bg-gradient-to-b from-white/40 to-transparent" />
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce" role="presentation" aria-hidden="true">
+        <div className="w-6 h-10 border-2 border-orange-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-orange-400 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>
