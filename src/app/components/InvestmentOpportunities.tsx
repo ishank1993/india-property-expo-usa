@@ -32,7 +32,7 @@ export function InvestmentOpportunities({ onRegisterClick }: InvestmentOpportuni
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">Property Options Available</span>
           </h2>
           <p className="text-gray-600 text-xl max-w-2xl mx-auto">
-            Diverse property types showcased from 30 lakhs to 15 crores across 15+ Indian cities
+            Diverse property types showcased from 30 lakhs to 200 crores across 15+ Indian cities
           </p>
         </div>
 
