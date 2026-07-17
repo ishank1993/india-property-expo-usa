@@ -49,7 +49,7 @@ export function IndiaPresence() {
               <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
                 Invest Across <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-white to-green-400 bg-[length:200%_auto] animate-gradient">
-                    15+ Indian Cities
+                    35+ Indian Cities
                 </span>
                 <span className="block text-2xl mt-4 text-orange-300">From Singapore</span>
               </h2>
@@ -70,7 +70,7 @@ export function IndiaPresence() {
                   <div className="flex items-center gap-2 mb-2">
                     <MapPin className="w-5 h-5 text-green-400" />
                   </div>
-                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-green-400 transition-colors">15+</h3>
+                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-green-400 transition-colors">35+</h3>
                   <p className="text-xs text-orange-200 uppercase tracking-widest font-medium">Indian Cities</p>
                 </div>
               </div>

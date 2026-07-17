@@ -65,7 +65,7 @@ export function ServicesSection({ onRegisterClick }: ServicesSectionProps) {
             Your Gateway to <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">Verified Premium Properties</span> in India
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Stop browsing endless listings online. <span className="font-bold text-orange-600">Meet India's most trusted developers face-to-face</span> right here in Singapore and explore <span className="font-bold text-green-600">500+ hand-picked, verified projects</span> across <span className="font-bold text-orange-600">15+ prime Indian cities</span>.
+            Stop browsing endless listings online. <span className="font-bold text-orange-600">Meet India's most trusted developers face-to-face</span> right here in Singapore and explore <span className="font-bold text-green-600">500+ hand-picked, verified projects</span> across <span className="font-bold text-orange-600">35+ prime Indian cities</span>.
           </p>
           <p className="text-lg text-gray-500 mt-4">
             From residential apartments to luxury villas, commercial spaces to land — discover your perfect property with expert guidance.
@@ -120,7 +120,7 @@ export function ServicesSection({ onRegisterClick }: ServicesSectionProps) {
         <div className="mb-16 bg-gradient-to-br from-orange-50 to-green-50 rounded-3xl p-12">
           <h3 className="text-3xl font-bold text-center text-gray-900 mb-10">
             <MapPin className="inline-block w-8 h-8 text-orange-600 mr-2 mb-1" />
-            Properties Across 15+ Major Indian Cities
+            Properties Across 35+ Major Indian Cities
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
             {cities.map((city, index) => (

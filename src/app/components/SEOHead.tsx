@@ -10,7 +10,7 @@ interface SEOHeadProps {
 
 export function SEOHead({
   title = "India Property Expo 2026 Singapore | Meet 35+ Developers | 500+ Premium Projects | Free Entry",
-  description = "Join Singapore's Largest India Property Exhibition 2026. Meet 35+ trusted developers face-to-face. Explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR & 15+ cities. Get FREE NRI tax advisory, legal guidance & home loan assistance. Register free for exclusive pre-launch information.",
+  description = "Join Singapore's Largest India Property Exhibition 2026. Meet 35+ trusted developers face-to-face. Explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR & 35+ cities. Get FREE NRI tax advisory, legal guidance & home loan assistance. Register free for exclusive pre-launch information.",
   keywords = "India property expo Singapore 2026, NRI property exhibition Singapore, property India from Singapore, India real estate exhibition Singapore, NRI property developers Singapore, property information India for NRI, Indian real estate expo Singapore, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property, Pune Goa Hyderabad property NRI, property exhibition Singapore 2026, NRI wealth management Singapore, India information NRI",
   canonical = "https://nriniveshexposg.com/",
   ogImage = "https://nriniveshexposg.com/og-image.jpg"
@@ -183,7 +183,7 @@ export function SEOHead({
           "name": "How many developers will be present at the expo?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Over 35 trusted real estate developers from India will be present, showcasing 500+ verified projects across 15+ cities."
+            "text": "Over 35 trusted real estate developers from India will be present, showcasing 500+ verified projects across 35+ cities."
           }
         }
       ]

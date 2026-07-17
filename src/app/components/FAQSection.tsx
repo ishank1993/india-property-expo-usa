@@ -17,7 +17,7 @@ const faqs = [
   },
   {
     question: "What types of properties will be showcased?",
-    answer: "The expo features 500+ premium projects including residential apartments, luxury villas, plotted developments, commercial properties, and GIFT City property options. Properties are available across 15+ major cities including Mumbai, Bangalore, Delhi NCR, Pune, Hyderabad, Chennai, and Goa, with prices ranging from ₹30 lakhs to ₹200 crores."
+    answer: "The expo features 500+ premium projects including residential apartments, luxury villas, plotted developments, commercial properties, and GIFT City property options. Properties are available across 35+ major cities including Mumbai, Bangalore, Delhi NCR, Pune, Hyderabad, Chennai, and Goa, with prices ranging from ₹30 lakhs to ₹200 crores."
   },
   {
     question: "How do I invest in Indian property as an NRI from Singapore?",
