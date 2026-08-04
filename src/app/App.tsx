@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { BlogIndexPage } from "./components/blog/BlogIndexPage";
 import { BlogPostPage } from "./components/blog/BlogPostPage";
 import { Navbar } from "./components/Navbar";
@@ -44,6 +44,7 @@ export default function App() {
 
 // Main App Component - Mobile Optimized Form
 function MainApp() {
+  const routerNavigate = useNavigate();
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
   const [currentPage, setCurrentPage] = useState<"home" | "wealth" | "terms" | "privacy" | "privacy-policy" | "disclaimer" | "admin">("home");
   const [popupCount, setPopupCount] = useState(0);
@@ -65,23 +66,27 @@ function MainApp() {
     }
   }, []);
 
-  // Handle URL hash for admin access
+  // Resolve which page to show from the real URL path first (so a direct
+  // visit or crawl of e.g. /wealth or /terms serves the right content),
+  // falling back to the legacy #hash links for backward compatibility.
   useEffect(() => {
+    const path = window.location.pathname;
     const hash = window.location.hash.slice(1);
-    if (hash === 'admin') {
-      setCurrentPage('admin');
-    } else if (hash === 'privacy-policy') {
-      setCurrentPage('privacy-policy');
-    } else if (hash === 'privacy') {
-      setCurrentPage('privacy');
-    } else if (hash === 'terms') {
-      setCurrentPage('terms');
-    } else if (hash === 'disclaimer') {
-      setCurrentPage('disclaimer');
-    } else if (hash === 'wealth') {
+
+    if (path === '/wealth' || hash === 'wealth') {
       setCurrentPage('wealth');
+    } else if (path === '/terms' || hash === 'terms') {
+      setCurrentPage('terms');
+    } else if (path === '/privacy-policy' || hash === 'privacy-policy') {
+      setCurrentPage('privacy-policy');
+    } else if (path === '/privacy' || hash === 'privacy') {
+      setCurrentPage('privacy');
+    } else if (path === '/disclaimer' || hash === 'disclaimer') {
+      setCurrentPage('disclaimer');
+    } else if (hash === 'admin') {
+      setCurrentPage('admin');
     }
-    
+
     // Track initial page view
     trackPageView();
   }, []);
@@ -142,29 +147,35 @@ function MainApp() {
 
   const navigateToWealth = () => {
     setCurrentPage("wealth");
+    routerNavigate("/wealth");
     window.scrollTo(0, 0);
     trackPageView(); // Track page navigation
   };
   const navigateToHome = () => {
     setCurrentPage("home");
+    routerNavigate("/");
     window.scrollTo(0, 0);
     trackPageView(); // Track page navigation
   };
 
   const navigateToTerms = () => {
     setCurrentPage("terms");
+    routerNavigate("/terms");
     window.scrollTo(0, 0);
   };
   const navigateToPrivacy = () => {
     setCurrentPage("privacy");
+    routerNavigate("/privacy");
     window.scrollTo(0, 0);
   };
   const navigateToPrivacyPolicy = () => {
     setCurrentPage("privacy-policy");
+    routerNavigate("/privacy-policy");
     window.scrollTo(0, 0);
   };
   const navigateToDisclaimer = () => {
     setCurrentPage("disclaimer");
+    routerNavigate("/disclaimer");
     window.scrollTo(0, 0);
   };
 
@@ -177,7 +188,11 @@ function MainApp() {
   if (currentPage === "wealth") {
     return (
       <>
-        <SEOHead />
+        <SEOHead
+          title="NRI Tax Clinic & GIFT City Baatchit | NRI Nivesh Singapore"
+          description="Free NRI Tax Clinic and GIFT City Baatchit for Singapore NRIs. Learn about GIFT City regulatory updates, tax planning, and global investment opportunities beyond real estate."
+          canonical="https://nriniveshexposg.com/wealth"
+        />
         <MetaPixel />
         <WealthPage 
           onRegisterClick={openRegister} 
@@ -194,9 +209,10 @@ function MainApp() {
   if (currentPage === "terms") {
     return (
       <>
-        <SEOHead 
+        <SEOHead
           title="Terms & Conditions | NRI Nivesh Property Expo 2026"
           description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 in Singapore. Understand your rights and responsibilities when using our platform."
+          canonical="https://nriniveshexposg.com/terms"
         />
         <MetaPixel />
         <div className="min-h-screen bg-white">
@@ -225,9 +241,10 @@ function MainApp() {
   if (currentPage === "privacy") {
     return (
       <>
-        <SEOHead 
+        <SEOHead
           title="Privacy Policy | NRI Nivesh Property Expo 2026"
           description="Learn how NRI Nivesh protects your personal data and privacy in compliance with Singapore's PDPA regulations."
+          canonical="https://nriniveshexposg.com/privacy"
         />
         <MetaPixel />
         <div className="min-h-screen bg-white">
@@ -289,9 +306,10 @@ function MainApp() {
   if (currentPage === "disclaimer") {
     return (
       <>
-        <SEOHead 
+        <SEOHead
           title="Disclaimer | NRI Nivesh Property Expo 2026"
           description="Important disclaimer about property investment information. This site is for informational purposes only and not financial, tax, or legal advice."
+          canonical="https://nriniveshexposg.com/disclaimer"
         />
         <MetaPixel />
         <div className="min-h-screen bg-white">
@@ -320,9 +338,10 @@ function MainApp() {
   if (currentPage === "admin") {
     return (
       <>
-        <SEOHead 
+        <SEOHead
           title="Admin Dashboard | NRI Nivesh Property Expo 2026"
           description="Access the admin dashboard to manage registrations and view analytics for NRI Nivesh India Property Expo 2026 in Singapore."
+          noindex
         />
         <MetaPixel />
         <div className="min-h-screen bg-white">

@@ -6,6 +6,7 @@ interface SEOHeadProps {
   keywords?: string;
   canonical?: string;
   ogImage?: string;
+  noindex?: boolean;
 }
 
 export function SEOHead({
@@ -13,18 +14,19 @@ export function SEOHead({
   description = "Join Singapore's Largest India Property Exhibition 2026. Meet 35+ trusted developers face-to-face. Explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR & 35+ cities. Get FREE NRI tax advisory, legal guidance & home loan assistance. Register free for exclusive pre-launch information.",
   keywords = "India property expo Singapore 2026, NRI property exhibition Singapore, property India from Singapore, India real estate exhibition Singapore, NRI property developers Singapore, property information India for NRI, Indian real estate expo Singapore, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property, Pune Goa Hyderabad property NRI, property exhibition Singapore 2026, NRI wealth management Singapore, India information NRI",
   canonical = "https://nriniveshexposg.com/",
-  ogImage = "https://nriniveshexposg.com/og-image.jpg"
+  ogImage = "https://nriniveshexposg.com/og-image.jpg",
+  noindex = false
 }: SEOHeadProps) {
-  
+
   useEffect(() => {
     // Set document title
     document.title = title;
-    
+
     // Set or update meta tags
     const metaTags = [
       { name: 'description', content: description },
       { name: 'keywords', content: keywords },
-      { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+      { name: 'robots', content: noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
       { name: 'author', content: 'NRI Nivesh' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1.0' },
       { name: 'theme-color', content: '#FF6B35' },
@@ -217,7 +219,7 @@ export function SEOHead({
     }
     scriptTag.textContent = JSON.stringify(structuredData);
     
-  }, [title, description, keywords, canonical, ogImage]);
+  }, [title, description, keywords, canonical, ogImage, noindex]);
   
   return null;
 }
