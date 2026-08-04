@@ -179,7 +179,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               Your free pass is confirmed. Check your email for event details and exclusive pre-launch offers.
             </p>
             <p className="text-xs sm:text-sm text-orange-600 font-semibold px-2">
-              See you at Sheraton Hotel on 1st Aug or 2nd Aug!
+              See you at Sheraton Hotel on 5th Sep or 6th Sep!
             </p>
           </div>
         </DialogContent>
@@ -197,7 +197,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           <DialogDescription className="text-center text-[10px] sm:text-base px-1 sm:px-2 leading-tight sm:leading-normal">
             Singapore's Largest India Property Exhibition
             <br className="hidden sm:block" />
-            <span className="text-orange-600 font-semibold text-[10px] sm:text-base"> 📅 1 Aug & 2 Aug 2026</span>
+            <span className="text-orange-600 font-semibold text-[10px] sm:text-base"> 📅 5 Sep & 6 Sep 2026</span>
           </DialogDescription>
         </DialogHeader>
 
@@ -273,8 +273,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 <SelectValue placeholder="Select your preferred date" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="aug-1" className="text-xs sm:text-sm">1st Aug (Sat) 10am-7pm</SelectItem>
-                <SelectItem value="aug-2" className="text-xs sm:text-sm">2nd Aug (Sun) 10am-7pm</SelectItem>
+                <SelectItem value="sep-5" className="text-xs sm:text-sm">5th Sep (Sat) 10am-7pm</SelectItem>
+                <SelectItem value="sep-6" className="text-xs sm:text-sm">6th Sep (Sun) 10am-7pm</SelectItem>
                 <SelectItem value="both" className="text-xs sm:text-sm">Both Days</SelectItem>
               </SelectContent>
             </Select>

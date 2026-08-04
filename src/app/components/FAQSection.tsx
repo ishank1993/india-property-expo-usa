@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     question: "What are the event dates, timings, and venue?",
-    answer: "The India Property Expo 2026 will be held on Saturday, 1st August and Sunday, 2nd August 2026, from 10:00 AM to 7:00 PM each day. The venue is Sheraton Towers Singapore, located at 39 Scotts Road, Singapore 228230. It's conveniently accessible via MRT (Newton station, 5 min walk) and has ample parking facilities."
+    answer: "The India Property Expo 2026 will be held on Saturday, 5th September and Sunday, 6th September 2026, from 10:00 AM to 7:00 PM each day. The venue is Sheraton Towers Singapore, located at 39 Scotts Road, Singapore 228230. It's conveniently accessible via MRT (Newton station, 5 min walk) and has ample parking facilities."
   },
   {
     question: "Will there be any special offers or pre-launch projects?",

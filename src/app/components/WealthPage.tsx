@@ -508,7 +508,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                     <div>
                       <h3 className="font-bold text-xl text-gray-800">Event Date</h3>
                       <p className="text-gray-600 mt-1">
-                        1st & 2nd August 2026 | 10am–7pm<br />
+                        5th & 6th September 2026 | 10am–7pm<br />
                         Check-in starts 30 minutes before sessions
                       </p>
                     </div>
