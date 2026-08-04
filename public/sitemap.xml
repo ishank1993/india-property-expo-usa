@@ -84,4 +84,28 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog: Best Bangalore Projects for NRI Investment -->
+  <url>
+    <loc>https://nriniveshexposg.com/blog/best-bangalore-projects-nri-investment-singapore</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Pune vs Hyderabad -->
+  <url>
+    <loc>https://nriniveshexposg.com/blog/pune-vs-hyderabad-property-investment-nri-singapore</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog: Luxury Real Estate Mumbai & Gurgaon -->
+  <url>
+    <loc>https://nriniveshexposg.com/blog/luxury-real-estate-mumbai-gurgaon-nri-singapore</loc>
+    <lastmod>2026-07-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

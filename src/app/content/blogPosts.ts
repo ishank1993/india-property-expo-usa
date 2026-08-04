@@ -544,6 +544,508 @@ export const blogPosts: BlogPost[] = [
       },
     ],
   },
+
+  // ------------------------------------------------------------------
+  // CB-SGP-004
+  // ------------------------------------------------------------------
+  {
+    slug: "best-bangalore-projects-nri-investment-singapore",
+    title: "Best Real Estate Projects in Bangalore for Singapore NRI Investment (2026)",
+    dek: "Sarjapur Road, Devanahalli, Whitefield, and Budigere Cross — which Bangalore micro-market and developer actually fits what you're optimizing for.",
+    metaTitle: "Best Bangalore Real Estate Projects for Singapore NRIs",
+    metaDescription:
+      "Sarjapur Road, Devanahalli, Whitefield — which Bangalore micro-market and developer actually fits your goals as a Singapore NRI investor? Here's the honest breakdown.",
+    publishDate: "2026-07-16",
+    readingTime: "11 min read",
+    content: [
+      {
+        type: "p",
+        text: 'If you\'re a Singapore NRI and Bangalore keeps coming up as "the one to look at," there\'s a reason. It\'s the only Indian city where the tenant pool and the investor pool are practically the same profile — IT professionals who could just as easily be you, five years ago.',
+      },
+      {
+        type: "p",
+        text: 'That doesn\'t make every project in Bangalore a good buy. It makes the city worth being specific about, instead of vaguely "interested in."',
+      },
+      { type: "h2", text: "Why Bangalore Keeps Winning the NRI Conversation" },
+      {
+        type: "p",
+        text: "Most NRI property conversations eventually land on Bangalore, and it's not sentiment — it's the tenant math. A city built around IT parks generates a steady stream of renters with stable, above-average incomes, which is exactly the demand profile that keeps rental yields from collapsing the way they do in oversupplied markets.",
+      },
+      {
+        type: "p",
+        text: "The catch: Bangalore isn't one market. It's several micro-markets moving at different speeds, and the developer and location matter more here than almost anywhere else in India.",
+      },
+      { type: "h2", text: "Sarjapur Road — The Micro-Market Most NRIs Actually Want" },
+      {
+        type: "p",
+        text: "If there's a single most-asked-about location among Singapore-based NRI investors, it's Sarjapur Road. The reasons are consistent across the buyers we hear from: proximity to multiple IT hubs, a growing cluster of international schools (relevant if the plan is eventual return), and rental demand that's held up better than newer, less-established corridors.",
+      },
+      {
+        type: "p",
+        text: "Puravankara, Godrej Properties, and Assetz Property Group all have active projects along this stretch. The practical difference between them tends to come down to delivery track record and clubhouse/amenity scale rather than dramatic price gaps — worth comparing directly rather than picking on brand recognition alone.",
+      },
+      { type: "h2", text: "North Bangalore (Devanahalli) — Where the Appreciation Numbers Are Loudest" },
+      {
+        type: "p",
+        text: "Devanahalli and the broader North Bangalore corridor near Kempegowda International Airport have posted the strongest reported appreciation in the city recently — industry data has cited villa appreciation in the low-to-mid teens percentage range for 2026, though any single-year figure like that should be treated as a data point, not a promise.",
+      },
+      {
+        type: "p",
+        text: "Prestige Group has been expanding aggressively here, building lakeside, township-scale developments with wide internal roads and large clubhouse footprints — the kind of large-format project that tends to hold value well precisely because of its scale.",
+      },
+      {
+        type: "p",
+        text: "The honest tradeoff: North Bangalore's growth is real, but it's also newer and less proven than Bangalore's established IT corridors. You're buying more upside with a slightly longer patience requirement.",
+      },
+      { type: "h2", text: "Whitefield — The Steady, Less Exciting Choice (That's Not a Bad Thing)" },
+      {
+        type: "p",
+        text: "Whitefield doesn't generate the same appreciation headlines as Devanahalli, and that's exactly its appeal. It's an established IT corridor with a mature rental market, which means more predictable occupancy and less speculation-driven price volatility.",
+      },
+      {
+        type: "p",
+        text: "Sobha has a strong, long-standing presence in and around this belt, including Sobha Infinia in Koramangala and Sobha Neopolis off the Marathahalli-ORR stretch — both frequently cited for construction quality, which matters more in Bangalore than in newer markets where fewer projects have had time to prove out.",
+      },
+      {
+        type: "p",
+        text: "For an NRI prioritizing stable rental income over aggressive appreciation, Whitefield-adjacent inventory is the less glamorous, more defensible choice.",
+      },
+      { type: "h2", text: "East Bangalore — Budigere Cross and Old Madras Road" },
+      {
+        type: "p",
+        text: "Brigade Group has built a significant presence along the Budigere Cross and Old Madras Road corridor. This area sits a notch behind Sarjapur Road and Whitefield in current rental demand, but it's priced accordingly, and the infrastructure investment happening along this stretch is the kind that tends to close the gap over a 5-7 year horizon rather than overnight.",
+      },
+      { type: "h2", text: "How to Actually Compare These Options" },
+      {
+        type: "p",
+        text: 'Don\'t start with "which project has the best amenities." Start with what you\'re optimizing for:',
+      },
+      {
+        type: "ul",
+        items: [
+          "**Rental yield now, with less appreciation risk** — Whitefield-adjacent Sobha developments, or established Sarjapur Road inventory.",
+          "**Appreciation over the next 5-10 years, with more patience required** — Devanahalli/North Bangalore, Prestige's township-scale projects.",
+          "**Balance of both** — Sarjapur Road remains the most-cited answer for a reason, though it's also the most competitively priced corridor as a result.",
+        ],
+      },
+      {
+        type: "p",
+        text: "None of this is a recommendation to buy a specific unit sight unseen. It's a framework for narrowing four strong developers down to the two or three worth an actual site visit or a detailed conversation with an advisor.",
+      },
+      { type: "h2", text: "What to Verify Before You Commit to Any of These" },
+      {
+        type: "ul",
+        items: [
+          "**RERA registration status** — confirm directly on the Karnataka RERA portal, not from a broker's assurance.",
+          "**Current pricing and inventory** — every figure and appreciation percentage cited above reflects reported 2026 market data and changes regularly; treat it as directional, not a quote.",
+          "**Builder delivery track record** on their *previous* projects specifically, not just the one being pitched to you.",
+          "**Actual rental demand in the immediate vicinity**, not the broader corridor — a project five minutes from an IT park behaves very differently from one twenty minutes away, even with the same area name attached.",
+        ],
+      },
+      {
+        type: "crosslink",
+        text: "Once you've picked a micro-market, the next decision is execution — how payment must flow, whether you need to fly back for anything, and how to structure a Power of Attorney safely. Our complete guide to buying property in India as a Singapore NRI walks through exactly that.",
+        slug: "buying-property-india-from-singapore-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "Whichever corridor you land on, factor in what happens after you own it — rental income is taxable in India from day one, and a future sale triggers TDS on the full sale value unless you plan ahead. Our guide covers what happens at tax time once you own this property.",
+        slug: "nri-property-tax-filing-singapore",
+      },
+      {
+        type: "crosslink",
+        text: "And if you're still deciding whether a physical asset is even the right move for this portion of your capital, it's worth comparing this to a GIFT City investment before you commit either way.",
+        slug: "gift-city-vs-real-estate-singapore-nri",
+      },
+      {
+        type: "crosslink",
+        text: "Bangalore isn't the only IT-driven city worth comparing on this basis — if you're also weighing Pune or Hyderabad, the yield and diversification tradeoffs work differently there than they do across Bangalore's micro-markets.",
+        slug: "pune-vs-hyderabad-property-investment-nri-singapore",
+      },
+      {
+        type: "cta",
+        text: "Want to compare these micro-markets with a Bangalore real estate advisor face to face?",
+      },
+      { type: "h2", text: "The Bottom Line for Bangalore" },
+      {
+        type: "p",
+        text: "Bangalore's strength for NRI investors isn't any single project — it's the depth of established developers and proven micro-markets to choose from, which is more than most Indian cities can offer. The work is in matching the right corridor to what you're actually optimizing for, then doing the verification homework before any money moves.",
+      },
+      {
+        type: "quote",
+        text: "This article is for informational purposes and reflects reported market data as of 2026. Project details, pricing, and appreciation figures change frequently and should be independently verified with the developer, a licensed broker, and the Karnataka RERA portal before making any investment decision. This is not personalized investment advice, and no project mentioned here is a paid partner or sponsor of NRI Investment Expo.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which area in Bangalore is best for NRI property investment?",
+        answer:
+          "Sarjapur Road is the most commonly cited micro-market among Singapore-based NRI investors, due to strong IT-hub proximity, international school access, and consistent rental demand. North Bangalore (Devanahalli) has shown stronger recent appreciation, while Whitefield offers steadier, more established rental income.",
+      },
+      {
+        question: "Which developers are considered reliable for NRI investment in Bangalore?",
+        answer:
+          "Sobha, Prestige Group, Brigade Group, Puravankara, Godrej Properties, and Assetz Property Group are among Bangalore's most established developers, each with a multi-decade delivery track record. Reliability still varies by specific project — check each developer's history on the exact project type you're considering, not just their overall brand name.",
+      },
+      {
+        question: "Is North Bangalore or established areas like Whitefield better for NRI investors?",
+        answer:
+          "It depends on your priority. North Bangalore near Devanahalli has posted stronger recent appreciation but carries more execution and timeline risk as a newer corridor. Whitefield and similar established areas offer steadier rental income with less appreciation upside — a lower-risk, lower-reward profile by comparison.",
+      },
+      {
+        question: "Can Singapore NRIs buy under-construction projects in Bangalore?",
+        answer:
+          "Yes, provided the project is RERA-registered, which is now standard practice for legitimate developers in Karnataka. Confirm registration directly on the Karnataka RERA portal before paying any booking amount, and understand that under-construction purchases carry timeline and delivery risk that completed inventory doesn't.",
+      },
+      {
+        question: "What rental yields can NRIs expect from Bangalore property?",
+        answer:
+          "Yields vary significantly by micro-market and property type, generally landing in a low-single-digit percentage range typical of Indian metro residential real estate, with established IT-corridor locations like Whitefield and Sarjapur Road typically outperforming newer, less-proven corridors on occupancy consistency.",
+      },
+      {
+        question: "How do I verify a Bangalore project is legitimate before investing from Singapore?",
+        answer:
+          "Check RERA registration on the Karnataka RERA portal, request the developer's delivery history on prior projects, verify the encumbrance certificate through the local sub-registrar, and ideally have an independent party physically inspect the site rather than relying solely on the developer's marketing materials or a broker's assurance.",
+      },
+      {
+        question: "Should I choose a project based on the developer or the location first?",
+        answer:
+          "Location first, developer second — a strong developer in a weak rental micro-market still underperforms a solid mid-tier developer in a high-demand corridor. That said, within any given strong location, developer track record on timely delivery becomes the deciding factor between otherwise similar options.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-SGP-005
+  // ------------------------------------------------------------------
+  {
+    slug: "pune-vs-hyderabad-property-investment-nri-singapore",
+    title: "Pune vs Hyderabad: Where Should Singapore NRIs Invest in Indian Real Estate?",
+    dek: "Higher yield in Hyderabad's concentrated IT corridor, or Pune's steadier, more diversified base — the real tradeoff behind a comparison that usually stops too early.",
+    metaTitle: "Pune vs Hyderabad: Best City for Singapore NRI Investment",
+    metaDescription:
+      "Higher yield in Hyderabad or diversified stability in Pune? A real comparison of rental yields, developers, and risk for Singapore-based NRI investors.",
+    publishDate: "2026-07-16",
+    readingTime: "11 min read",
+    content: [
+      {
+        type: "p",
+        text: 'These two cities get compared constantly in NRI investment circles, and the comparison usually stops at "both are good IT cities." That\'s true and also useless — it doesn\'t tell you which one fits your specific goal.',
+      },
+      {
+        type: "p",
+        text: "Pune and Hyderabad solve different problems. One is the value-and-appreciation play. The other is the higher-yield, higher-conviction IT bet. Here's the actual difference, not the surface-level version.",
+      },
+      { type: "h2", text: "The Headline Numbers, With Context" },
+      {
+        type: "p",
+        text: "Reported 2026 rental yields put Hyderabad in a 4-6% band and Pune in a 3-4% band, with select Pune micro-markets touching closer to 5%. Read those numbers as directional, not as a promise for any specific unit — yield depends entirely on the exact building and its distance from actual employment centers, not the city average.",
+      },
+      {
+        type: "p",
+        text: "The gap exists for a structural reason: Hyderabad's IT corridor is more concentrated — Financial District, Gachibowli, and HITEC City sit close together and host the Indian offices of Apple, Google, Microsoft, Meta, and Amazon within a tight radius. Pune's tech and auto-corridor employment is more spread out, which softens rental demand concentration even as it broadens the number of viable investment areas.",
+      },
+      { type: "h2", text: "Pune: The Established, Diversified Choice" },
+      {
+        type: "p",
+        text: "Pune's advantage isn't a single hot corridor — it's that the city has multiple credible micro-markets simultaneously, which spreads risk across auto-sector, IT-sector, and education-driven demand rather than betting on one industry.",
+      },
+      {
+        type: "p",
+        text: "Lodha Group has a strong premium presence here, with developments like Lodha Bellissimo and Lodha Codename Goldcrest positioned at the higher end of Pune's residential market — the kind of large-scale branded development that tends to hold resale value better than smaller, independent builders.",
+      },
+      {
+        type: "p",
+        text: "Godrej Properties and Kohinoor Group are both active with IT-corridor-adjacent residential projects that lean more toward the mid-to-upper segment — generally the more liquid resale category for an NRI who wants an easier eventual exit than ultra-luxury inventory typically offers.",
+      },
+      {
+        type: "p",
+        text: "Pune's honest limitation: entry prices in its most desirable pockets have risen enough that the value gap versus Bangalore or Hyderabad has narrowed. It's still a reasonable buy — it's just no longer the clearly-cheaper option it was several years ago.",
+      },
+      { type: "h2", text: "Hyderabad: The Concentrated IT Bet" },
+      {
+        type: "p",
+        text: "Hyderabad's Financial District and HITEC City corridor is doing something few Indian cities can match — a tight geographic cluster of the exact multinational employers that produce the NRI-tenant profile in the first place.",
+      },
+      {
+        type: "p",
+        text: "Brigade Group's Brigade Gateway development in Kokapet sits close to this corridor, positioned toward the premium end with larger-format units. Godrej Properties has Godrej Regal Pavilion in the Gachibowli belt, closer to the mid-to-upper segment and the kind of ticket size more Singapore NRIs are actually working with on a first India property purchase.",
+      },
+      {
+        type: "p",
+        text: "Beyond the two large national developers, the broader Gachibowli-HITEC City-Manikonda-Bachupally corridor has a wide range of active local and regional projects — this is where doing developer-specific homework matters more than in Pune, since Hyderabad's developer landscape includes more regional players alongside the national names, and delivery track records vary more widely as a result.",
+      },
+      {
+        type: "p",
+        text: "Hyderabad's honest limitation: the concentration that drives its yield advantage also means it's a more single-industry bet. If the IT sector in that specific corridor slows, the demand pool doesn't have the same diversification Pune's multi-sector base provides.",
+      },
+      { type: "h2", text: "Side by Side" },
+      {
+        type: "table",
+        headers: ["", "Pune", "Hyderabad"],
+        rows: [
+          ["Typical rental yield", "3-4% (select areas ~5%)", "4-6%"],
+          ["Demand driver", "IT + auto sector + education, diversified", "IT corridor (Financial District/HITEC/Gachibowli), concentrated"],
+          ["Entry price trend", "Rising, narrowing value gap", "Still comparatively competitive"],
+          ["Developer landscape", "Fewer players, more nationally established", "Mix of national names + more regional players"],
+          ["Best fit for", "Diversification-minded, longer patience for appreciation", "Yield-focused, comfortable with concentrated IT-sector exposure"],
+        ],
+      },
+      { type: "h2", text: "Which One Actually Fits a Singapore NRI" },
+      {
+        type: "p",
+        text: "If your priority is rental income relative to purchase price, Hyderabad's numbers currently make a stronger case — the concentration of major tech employers around Financial District and Gachibowli is a genuine structural advantage, not just marketing.",
+      },
+      {
+        type: "p",
+        text: "If your priority is a more diversified, lower-single-industry-risk bet with a well-established mid-to-premium developer landscape, Pune remains the steadier choice — you're trading some yield for broader economic base.",
+      },
+      {
+        type: "p",
+        text: "Neither is the wrong answer. The mistake is choosing based on which city a WhatsApp group happened to be discussing that week, instead of which risk profile actually matches your goal.",
+      },
+      { type: "h2", text: "Before You Commit to Either City" },
+      {
+        type: "ul",
+        items: [
+          "**Confirm RERA registration on the relevant state portal** — Maharashtra RERA for Pune, Telangana RERA (TS-RERA) for Hyderabad. Registration numbers should be checkable independently, not just quoted to you by a sales team.",
+          "**Get the developer's delivery history on their *previous* two or three projects specifically** — not the flagship project they're currently marketing.",
+          '**Have someone independently verify the property\'s actual distance to the employment corridor** it\'s being sold against — "10 minutes from Gachibowli" and "10 minutes from Gachibowli in off-peak traffic" are not the same claim.',
+        ],
+      },
+      {
+        type: "crosslink",
+        text: "Whichever city you lean toward, the execution mechanics are identical — payment through the right account, a properly scoped Power of Attorney if you can't be there in person, and title verification before any money moves. Our complete guide to buying property in India as a Singapore NRI covers all of it.",
+        slug: "buying-property-india-from-singapore-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "And once you own it, rental income and any eventual sale both come with their own tax mechanics — TDS on sale is calculated on the full price, not your gain, unless you plan ahead. Our guide covers what happens at tax time once you own this property.",
+        slug: "nri-property-tax-filing-singapore",
+      },
+      {
+        type: "crosslink",
+        text: "If Bangalore is also on your shortlist, its micro-markets — Sarjapur Road, Devanahalli, Whitefield — carry a different yield-versus-appreciation tradeoff again, worth comparing directly rather than assuming all three IT-driven cities behave the same way.",
+        slug: "best-bangalore-projects-nri-investment-singapore",
+      },
+      {
+        type: "cta",
+        text: "Want a side-by-side breakdown from advisors who cover both cities?",
+      },
+      { type: "h2", text: "Making the Choice" },
+      {
+        type: "p",
+        text: "Pune and Hyderabad aren't competing for the same investor profile, even though they get compared as if they are. Hyderabad rewards conviction in a concentrated IT bet with a real yield advantage. Pune rewards patience with a broader, steadier economic base. Pick based on which tradeoff you're actually comfortable with — not based on whichever city came up most recently in conversation.",
+      },
+      {
+        type: "quote",
+        text: "This article is for informational purposes and reflects reported market data as of 2026. Project details, pricing, yields, and RERA status change frequently and should be independently verified with the developer, a licensed broker, and the relevant state RERA portal before making any investment decision. This is not personalized investment advice, and no project mentioned here is a paid partner or sponsor of NRI Investment Expo.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which city gives better rental yield for NRIs — Pune or Hyderabad?",
+        answer:
+          "Hyderabad generally offers higher reported rental yields, in a 4-6% range, driven by the concentrated Financial District/HITEC City/Gachibowli IT corridor. Pune's yields typically run 3-4%, with select micro-markets reaching closer to 5%, reflecting its more diversified but less geographically concentrated employment base.",
+      },
+      {
+        question: "Which developers are established in Pune for NRI investment?",
+        answer:
+          "Lodha Group has a strong premium presence with developments like Lodha Bellissimo, while Godrej Properties and Kohinoor Group are active in the mid-to-upper IT-corridor segment. Delivery track record on each developer's specific past projects should be verified independently rather than assumed from brand recognition alone.",
+      },
+      {
+        question: "Which areas in Hyderabad are best for NRI property investment?",
+        answer:
+          "Financial District, Gachibowli, and HITEC City form the core corridor most cited for NRI investment, given their proximity to major multinational employers. Brigade Gateway in Kokapet and Godrej Regal Pavilion in Gachibowli are among the more established national-developer projects in this belt.",
+      },
+      {
+        question: "Is Hyderabad riskier than Pune for real estate investment?",
+        answer:
+          "Hyderabad's yield advantage comes with more concentrated exposure to a single industry cluster, while Pune's demand is spread across IT, auto, and education sectors. Neither is objectively riskier — the risk profile differs, and the better fit depends on whether you prioritize yield or diversification.",
+      },
+      {
+        question: "How do I verify RERA registration for a property in Pune or Hyderabad?",
+        answer:
+          "Pune projects are registered under Maharashtra RERA (MahaRERA), and Hyderabad projects under Telangana RERA (TS-RERA). Both maintain public portals where you can independently verify a project's registration number, approved layout, and any complaint history rather than relying on a developer or broker's claim.",
+      },
+      {
+        question: "Do rental yields in Pune and Hyderabad justify the investment compared to Bangalore?",
+        answer:
+          "It depends on the specific project and micro-market rather than the city broadly. Hyderabad's yield range is currently competitive with or ahead of many Bangalore corridors, while Pune trades some yield for a more diversified economic base — a direct project-to-project comparison matters more than a city-level generalization.",
+      },
+      {
+        question: "Can I manage a Pune or Hyderabad property purchase entirely from Singapore?",
+        answer:
+          "Yes, using the same framework as any NRI property purchase — payment through NRE/NRO/FCNR accounts, a narrowly scoped Power of Attorney for someone handling on-ground steps, and independent verification of title and RERA status before committing funds.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-SGP-006
+  // ------------------------------------------------------------------
+  {
+    slug: "luxury-real-estate-mumbai-gurgaon-nri-singapore",
+    title: "Top Luxury Real Estate Projects in Mumbai and Gurgaon for Singapore NRIs",
+    dek: "Scarcity in Mumbai, momentum in Gurgaon — a real comparison for the Singapore NRI where ₹3-5 crore isn't the question, fit is.",
+    metaTitle: "Luxury Real Estate in Mumbai & Gurgaon for Singapore NRIs",
+    metaDescription:
+      "Scarcity in Mumbai or growth momentum in Gurgaon? A real comparison of luxury real estate, top developers, and pricing for Singapore-based NRI buyers.",
+    publishDate: "2026-07-16",
+    readingTime: "12 min read",
+    content: [
+      {
+        type: "p",
+        text: 'There\'s a specific kind of Singapore NRI this blog is for: senior enough in their career that ₹3-5 crore isn\'t a stretch, and the question isn\'t "can I afford India property" but "which city\'s luxury segment actually holds value the way I expect it to."',
+      },
+      {
+        type: "p",
+        text: "Mumbai and Gurgaon are India's two real answers to that question. They're not the same answer, though — and at this price point, the difference matters more than it does at the entry level.",
+      },
+      { type: "h2", text: "Why Luxury Real Estate Behaves Differently" },
+      {
+        type: "p",
+        text: "Below a certain price point, Indian residential real estate is largely a rental-yield game. Above it, in the true luxury segment, the calculus shifts toward scarcity, brand-name developer premiums, and long-term appreciation in a handful of genuinely limited locations. Yield becomes secondary. Address becomes primary.",
+      },
+      {
+        type: "p",
+        text: "That's true globally, and it's especially true in Mumbai and Gurgaon, where the top tier of inventory is small enough that specific buildings — not just neighborhoods — move independently of the broader market.",
+      },
+      { type: "h2", text: "Mumbai: Scarcity as the Entire Investment Thesis" },
+      {
+        type: "p",
+        text: "Mumbai's luxury market is built on a constraint that doesn't really exist anywhere else in India — there's almost no land left in the addresses that matter, and there never will be more.",
+      },
+      {
+        type: "p",
+        text: "Worli, Prabhadevi, Mahalaxmi, Bandra West, and Juhu are the five neighborhoods that consistently anchor Mumbai's luxury conversation. Lodha Group, Godrej Properties, K Raheja Corp, Rustomjee, L&T Realty, and Birla Estates are the developers with the most credible presence across these addresses — each with flagship towers that function almost like their own micro-brand within the broader Mumbai luxury market.",
+      },
+      {
+        type: "p",
+        text: "Demand for luxury Mumbai residential has reportedly grown in the low double digits over the past cycle, driven by a mix of domestic wealth creation, NRI capital, and new metro connectivity opening up previously harder-to-reach premium pockets. That growth context matters — it's not purely speculative demand, it's connectivity genuinely changing what's accessible.",
+      },
+      {
+        type: "p",
+        text: "The honest tradeoff: Mumbai luxury real estate is expensive in a way that limits your entry options, and liquidity on resale — even in this segment — is slower than in most global luxury property markets. You're buying scarcity, and scarcity cuts both ways when you eventually want to sell.",
+      },
+      { type: "h2", text: "Gurgaon: Where the Growth Story Is More Active Right Now" },
+      {
+        type: "p",
+        text: "Gurgaon's luxury segment is having a different kind of moment — less about historical scarcity, more about infrastructure inflection points landing at the same time.",
+      },
+      {
+        type: "p",
+        text: "The Dwarka Expressway is now operational, cutting commute times to Delhi and the airport corridor meaningfully. The upcoming Jewar (Noida International) Airport is expected to reshape the broader NCR connectivity map further, though its full operational timeline and impact radius are still developing — worth tracking rather than treating as already priced in.",
+      },
+      {
+        type: "p",
+        text: "DLF remains the name most associated with Gurgaon luxury, with The Camellias and The Crest widely regarded as among India's most recognized ultra-luxury addresses — the kind of project name that carries weight in conversation the way a handful of Mumbai buildings do. M3M India's Golf Hills and Paras Floret sit in the same premium tier, alongside active luxury development from Emaar India, Sobha, Smartworld Developers, and Elan Group.",
+      },
+      {
+        type: "p",
+        text: "Reported pricing across Gurgaon's luxury segment spans roughly ₹3.4 crore at the entry end to ₹30 crore-plus for the top tier — a wider band than Mumbai's luxury market, which means there's more room to find a genuine luxury address without necessarily competing at the very top of the price ladder.",
+      },
+      { type: "h2", text: "Side by Side, For This Specific Buyer" },
+      {
+        type: "table",
+        headers: ["", "Mumbai", "Gurgaon"],
+        rows: [
+          ["Core thesis", "Absolute land scarcity in fixed prime addresses", "Infrastructure-driven growth inflection"],
+          ["Price band", "Consistently high, narrower entry range", "Wider band — entry-luxury to ultra-luxury"],
+          ["Key developers", "Lodha, Godrej, K Raheja Corp, Rustomjee, L&T Realty, Birla Estates", "DLF, M3M India, Emaar India, Sobha, Smartworld, Elan Group"],
+          ["Growth driver", "Metro connectivity opening new premium pockets", "Dwarka Expressway (operational), Jewar Airport (developing)"],
+          ["Liquidity on resale", "Slower — scarcity cuts both ways", "Generally faster given broader inventory and price range"],
+        ],
+      },
+      { type: "h2", text: "Which One Fits Your Actual Goal" },
+      {
+        type: "p",
+        text: "If the goal is the most defensible, scarcity-backed long-term hold — and you're comfortable with slower liquidity in exchange for that — Mumbai's constrained luxury addresses are the stronger structural bet. This is patient capital, not a five-year flip.",
+      },
+      {
+        type: "p",
+        text: "If the goal is exposure to an active growth story with more entry points across the price ladder, Gurgaon currently offers more room to find the right project without needing Mumbai-level capital to get into a genuine luxury address.",
+      },
+      {
+        type: "p",
+        text: "Both are legitimate paths. What's not legitimate is treating either city's brand name alone as due diligence — at this price point, the specific building and developer matter as much as the city.",
+      },
+      { type: "h2", text: "What Changes at This Price Point" },
+      {
+        type: "p",
+        text: "Due diligence gets more specialized, not less. Title verification, RERA registration, and encumbrance checks still apply exactly as they would on a mid-market purchase — high price doesn't exempt a project from needing the same paperwork scrutiny.",
+      },
+      {
+        type: "p",
+        text: "Financing structures differ. Many luxury purchases at this level are partly or fully self-funded rather than loan-heavy, which changes how you should think about repatriation planning for both the initial outlay and any eventual sale proceeds.",
+      },
+      {
+        type: "crosslink",
+        text: "Legal and tax structuring deserves dedicated advice before you commit, not after — the FEMA and capital gains mechanics are the same rules that apply to any NRI property purchase, but the absolute rupee amounts at stake make getting professional advice upfront considerably cheaper than fixing a structuring mistake later. Our guide to NRI property tax filing from Singapore covers the mechanics in full.",
+        slug: "nri-property-tax-filing-singapore",
+      },
+      {
+        type: "crosslink",
+        text: "The payment trail and Power of Attorney rules don't change at this price point either — they just carry more weight when the numbers involved are larger. Our complete guide to buying property in India as a Singapore NRI covers both in detail.",
+        slug: "buying-property-india-from-singapore-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "And if part of this capital could just as easily sit in a liquid, tax-efficient instrument instead of a physical address, it's worth comparing this against a GIFT City allocation before deciding how much goes into bricks and mortar.",
+        slug: "gift-city-vs-real-estate-singapore-nri",
+      },
+      {
+        type: "cta",
+        text: "Want dedicated legal and tax structuring advice for a luxury India property purchase?",
+      },
+      { type: "h2", text: "Making the Call at This Price Point" },
+      {
+        type: "p",
+        text: "Mumbai and Gurgaon both give a Singapore NRI with serious capital a legitimate path into Indian luxury real estate — they just reward different things. Mumbai rewards patience and conviction in permanent scarcity. Gurgaon rewards being early to an infrastructure story that's still unfolding. Know which one you're actually signing up for before the paperwork starts.",
+      },
+      {
+        type: "quote",
+        text: "This article is for informational purposes and reflects reported market data as of 2026. Project details, pricing, and infrastructure timelines change frequently and should be independently verified with the developer, a licensed broker, and the relevant state RERA portal before making any investment decision. This is not personalized investment advice, and no project mentioned here is a paid partner or sponsor of NRI Investment Expo.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which is better for NRI investment — Mumbai or Gurgaon luxury real estate?",
+        answer:
+          "It depends on your priority. Mumbai offers land-scarcity-driven, long-term value in a handful of fixed prime addresses with slower resale liquidity. Gurgaon offers an active infrastructure-driven growth story with a wider price band and generally faster resale liquidity. Neither is universally better — the right fit depends on your time horizon and risk tolerance.",
+      },
+      {
+        question: "What are the top luxury neighborhoods in Mumbai for NRI buyers?",
+        answer:
+          "Worli, Prabhadevi, Mahalaxmi, Bandra West, and Juhu are the five neighborhoods that most consistently anchor Mumbai's luxury real estate market, with limited available land keeping demand concentrated in these specific addresses.",
+      },
+      {
+        question: "Which developers build the top luxury projects in Gurgaon?",
+        answer:
+          "DLF is the most established name, with The Camellias and The Crest widely regarded as India's most recognized ultra-luxury addresses. M3M India, Emaar India, Sobha, Smartworld Developers, and Elan Group are also active in Gurgaon's premium and ultra-luxury segment.",
+      },
+      {
+        question: "How much does luxury real estate cost in Gurgaon?",
+        answer:
+          "Reported pricing spans roughly ₹3.4 crore at the entry-luxury end to ₹30 crore-plus for ultra-luxury inventory, a considerably wider price band than Mumbai's luxury market — giving buyers more room to find a genuine luxury address without competing at the very top price tier.",
+      },
+      {
+        question: "Is Mumbai or Gurgaon luxury property easier to resell?",
+        answer:
+          "Gurgaon generally offers faster resale liquidity given its broader inventory and wider price range, while Mumbai's scarcity-driven luxury segment tends to move more slowly on resale — the same constraint that supports its long-term value also limits how quickly a sale typically closes.",
+      },
+      {
+        question: "Do the same NRI property rules apply to luxury purchases?",
+        answer:
+          "Yes. FEMA payment rules, TDS on sale, capital gains treatment, and repatriation limits apply the same way regardless of price point. What changes at higher price points is the importance of getting dedicated legal and tax structuring advice before committing, given the larger absolute amounts involved.",
+      },
+      {
+        question: "Is the Jewar Airport a reason to invest in Gurgaon now?",
+        answer:
+          "It's a genuine infrastructure catalyst worth tracking, alongside the now-operational Dwarka Expressway, but its full timeline and connectivity impact are still developing. Treat it as a supporting factor in a Gurgaon investment decision, not the sole reason to commit capital.",
+      },
+    ],
+  },
 ];
 
 export function getBlogPost(slug: string): BlogPost | undefined {
