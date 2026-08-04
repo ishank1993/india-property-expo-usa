@@ -10,11 +10,11 @@
     </BrowserRouter>
   );
 
-  // Signal to the build-time prerenderer (see vite.config.ts) that the
+  // Signal to the build-time prerenderer (scripts/prerender.mjs) that the
   // route has painted, including the meta tags/JSON-LD that SEOHead
   // injects in a useEffect after mount.
   requestAnimationFrame(() => {
     requestAnimationFrame(() => {
-      document.dispatchEvent(new Event("render-event"));
+      (window as unknown as { __PRERENDERED__?: boolean }).__PRERENDERED__ = true;
     });
   });

@@ -2,53 +2,11 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
-import prerender from '@prerenderer/rollup-plugin'
-
-// Keep in sync with the slugs in src/app/content/blogPosts.ts — add a new
-// entry here whenever a blog post is added so it gets pre-rendered too.
-const blogSlugs = [
-  'buying-property-india-from-singapore-nri-guide',
-  'gift-city-vs-real-estate-singapore-nri',
-  'nri-property-tax-filing-singapore',
-  'best-bangalore-projects-nri-investment-singapore',
-  'pune-vs-hyderabad-property-investment-nri-singapore',
-  'luxury-real-estate-mumbai-gurgaon-nri-singapore',
-]
-
-const prerenderRoutes = [
-  '/',
-  '/wealth',
-  '/terms',
-  '/privacy',
-  '/privacy-policy',
-  '/disclaimer',
-  '/blog',
-  ...blogSlugs.map((slug) => `/blog/${slug}`),
-]
 
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    prerender({
-      routes: prerenderRoutes,
-      renderer: '@prerenderer/renderer-puppeteer',
-      rendererOptions: {
-        renderAfterDocumentEvent: 'render-event',
-        headless: true,
-        launchOptions: {
-          args: ['--no-sandbox', '--disable-setuid-sandbox'],
-        },
-      },
-      postProcess(renderedRoute) {
-        // The Meta Pixel script runs during the local prerender pass and
-        // bakes the build server's address into a tracking pixel URL —
-        // point it at the real domain instead.
-        renderedRoute.html = renderedRoute.html
-          .replace(/https?:\/\/(localhost|127\.0\.0\.1):\d+/gi, 'https://nriniveshexposg.com')
-          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, 'domain=nriniveshexposg.com');
-      },
-    }),
   ],
   resolve: {
     alias: {
