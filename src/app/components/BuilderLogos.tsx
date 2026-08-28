@@ -18,16 +18,36 @@ const builders = [
   { name: "Oberoi Realty", logo: "/logos/oberoi.png", size: "large" },
   { name: "Mahindra Lifespaces", logo: "/logos/mahindra.png", size: "large" },
   { name: "Shapoorji Pallonji", logo: "/logos/shapoorji.png", size: "large" },
+  { name: "DLF", logo: "/logos/dlf.png", size: "normal" },
+  { name: "Tata Housing", logo: "/logos/tatahousing.png", size: "normal" },
+  { name: "Hiranandani Group", logo: "/logos/hiranandani.png", size: "normal" },
+  { name: "Embassy Group", logo: "/logos/embassy.png", size: "normal" },
+  { name: "Sunteck Realty", logo: "/logos/sunteck.png", size: "normal" },
+  { name: "Piramal Realty", logo: "/logos/piramal.png", size: "normal" },
+  { name: "Adani Realty", logo: "/logos/adani.png", size: "normal" },
+  { name: "Runwal Group", logo: "/logos/runwal.png", size: "normal" },
+  { name: "Birla Estates", logo: "/logos/birlaestates.png", size: "normal" },
+  { name: "Max Estates", logo: "/logos/maxestates.png", size: "normal" },
+  { name: "M3M India", logo: "/logos/m3m.png", size: "normal" },
+  { name: "Signature Global", logo: "/logos/signatureglobal.png", size: "normal" },
+  { name: "Sattva Group", logo: "/logos/sattva.png", size: "normal" },
+  { name: "Casagrand", logo: "/logos/casagrand.png", size: "normal" },
+  { name: "TVS Emerald", logo: "/logos/tvsemerald.png", size: "normal" },
+  { name: "Provident Housing", logo: "/logos/provident.png", size: "normal" },
+  { name: "Assetz Property Group", logo: "/logos/assetz.png", size: "normal" },
+  { name: "Total Environment", logo: "/logos/totalenvironment.png", size: "normal" },
+  { name: "Vatika Group", logo: "/logos/vatika.png", size: "normal" },
+  { name: "Gaursons India", logo: "/logos/gaursons.png", size: "normal" },
 ];
 
 export function BuilderLogos() {
   return (
     <section className="py-20 relative overflow-hidden" aria-labelledby="builders-heading">
-      {/* Background with Singapore Daytime Skyline */}
+      {/* Background with Bahrain Daytime Skyline */}
       <div 
         className="absolute inset-0 z-0"
         role="img"
-        aria-label="Singapore daytime skyline background"
+        aria-label="Bahrain daytime skyline background"
         style={{
           backgroundImage: `url('https://images.unsplash.com/photo-1610956667016-15debe929a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwZGF5dGltZXxlbnwxfHx8fDE3NjcxNjc3MTd8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
           backgroundSize: 'cover',
@@ -35,7 +55,7 @@ export function BuilderLogos() {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-orange-50/90 to-white/95 backdrop-blur-sm" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-red-50/90 to-white/95 backdrop-blur-sm" />
       </div>
 
       {/* Fade-in from the dark Hero section above, for a seamless transition */}
@@ -46,11 +66,11 @@ export function BuilderLogos() {
 
       <div className="container mx-auto px-6 relative z-10">
         <header className="text-center mb-12">
-          <div className="inline-block bg-gradient-to-r from-orange-600 to-green-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">
+          <div className="inline-block bg-gradient-to-r from-red-600 to-amber-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-4">
             Trusted Partners
           </div>
           <h2 id="builders-heading" className="text-4xl md:text-5xl font-black text-gray-900 mb-3">
-            Meet <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">35+ Top Developers</span>
+            Meet <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">35+ Top Developers</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Direct access to India's most reputed real estate developers
@@ -66,7 +86,7 @@ export function BuilderLogos() {
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.05 }}
-                    className="flex justify-center items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl border border-orange-100 hover:border-orange-300 transition-all duration-300 hover:scale-105 min-h-[120px]"
+                    className="flex justify-center items-center p-6 bg-white rounded-xl shadow-md hover:shadow-xl border border-red-100 hover:border-red-300 transition-all duration-300 hover:scale-105 min-h-[120px]"
                 >
                     <img 
                         src={builder.logo} 
@@ -90,8 +110,8 @@ export function BuilderLogos() {
         </div>
         
         <div className="text-center">
-            <div className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-orange-100 to-green-100 border-2 border-orange-200">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600 font-bold text-lg">
+            <div className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-red-100 to-amber-100 border-2 border-red-200">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600 font-bold text-lg">
                 + Many More Leading Developers
               </span>
             </div>

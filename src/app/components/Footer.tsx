@@ -48,7 +48,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
   };
 
   return (
-    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-orange-900 to-green-900 text-white pt-20 pb-10 border-t-4 border-orange-500" role="contentinfo">
+    <footer id="contact" className="bg-gradient-to-br from-gray-900 via-red-900 to-amber-900 text-white pt-20 pb-10 border-t-4 border-red-500" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
           
@@ -57,7 +57,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
             <div className="flex items-center space-x-2">
               <img 
                 src="/logo.png" 
-                alt="NRI Nivesh - India Property Expo Singapore logo" 
+                alt="NRI Nivesh - India Property Expo Bahrain logo" 
                 width="160"
                 height="40"
                 loading="lazy"
@@ -68,21 +68,21 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                     const parent = e.currentTarget.parentElement;
                     if (parent) {
                         const span = document.createElement('span');
-                        span.className = "text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-400 tracking-tight";
+                        span.className = "text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-400 tracking-tight";
                         span.innerText = "NRI Nivesh";
                         parent.appendChild(span);
                     }
                 }}
               />
             </div>
-            <p id="footer-brand" className="text-orange-200 leading-relaxed text-sm">
+            <p id="footer-brand" className="text-red-200 leading-relaxed text-sm">
               Empowering NRIs globally with trusted Indian real estate opportunities. We bring the best of India's property market to your doorstep.
             </p>
             <a 
               href="https://www.nrinivesh.in" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-block px-6 py-3 bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white font-bold rounded-lg shadow-lg transition-all hover:scale-105"
+              className="inline-block px-6 py-3 bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white font-bold rounded-lg shadow-lg transition-all hover:scale-105"
               aria-label="Visit NRI Nivesh main website"
             >
               🌐 Visit Main Website
@@ -94,7 +94,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                   href={href} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-600 to-green-600 hover:from-orange-500 hover:to-green-500 flex items-center justify-center transition-all hover:scale-110 shadow-lg"
+                  className="w-10 h-10 rounded-full bg-gradient-to-br from-red-600 to-amber-600 hover:from-red-500 hover:to-amber-500 flex items-center justify-center transition-all hover:scale-110 shadow-lg"
                 >
                   <Icon className="w-5 h-5" />
                 </a>
@@ -104,8 +104,8 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-orange-300">Quick Links</h3>
-            <ul className="space-y-3 text-orange-200">
+            <h3 className="text-lg font-bold mb-6 text-red-300">Quick Links</h3>
+            <ul className="space-y-3 text-red-200">
               {["About The Expo", "Venues & Location"].map((link) => (
                 <li key={link}>
                   <a
@@ -126,8 +126,8 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
               </li>
             </ul>
             
-            <h3 className="text-lg font-bold mt-8 mb-6 text-green-300">Legal</h3>
-            <ul className="space-y-3 text-orange-200">
+            <h3 className="text-lg font-bold mt-8 mb-6 text-amber-300">Legal</h3>
+            <ul className="space-y-3 text-red-200">
               <li>
                 <a 
                   href="/privacy-policy.html" 
@@ -152,26 +152,26 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-bold mb-6 text-orange-300">Contact Us</h3>
-            <ul className="space-y-4 text-orange-200">
+            <h3 className="text-lg font-bold mb-6 text-red-300">Contact Us</h3>
+            <ul className="space-y-4 text-red-200">
               <li className="flex items-start space-x-3">
-                <Phone className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 text-red-400 flex-shrink-0" />
                 <span>+91 93727 72668</span>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail className="w-5 h-5 text-orange-400 flex-shrink-0" />
+                <Mail className="w-5 h-5 text-red-400 flex-shrink-0" />
                 <span>info@nrinivesh.in</span>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 text-orange-400 flex-shrink-0" />
-                <span>Sheraton Towers Singapore,<br />39 Scotts Road, Singapore 228230</span>
+                <MapPin className="w-5 h-5 text-red-400 flex-shrink-0" />
+                <span>Manama, Kingdom of Bahrain<br /><span className="text-amber-300">Venue address sent to confirmed RSVPs</span></span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
-          <p className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-400">© 2026 NRI Nivesh Property Expo. All rights reserved.</p>
+          <p className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-400">© 2026 NRI Nivesh Property Expo. All rights reserved.</p>
           <p>Designed for Excellence.</p>
         </div>
       </div>

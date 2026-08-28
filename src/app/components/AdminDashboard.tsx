@@ -156,8 +156,8 @@ export function AdminDashboard() {
 
   const formatDateOfVisit = (value: string) => {
     const map: Record<string, string> = {
-      "sep-5": "5 Sep 2026",
-      "sep-6": "6 Sep 2026",
+      "oct-23": "23 Oct 2026",
+      "oct-24": "24 Oct 2026",
       // Legacy values (for historical records)
       "aug-1": "1 Aug 2026",
       "aug-2": "2 Aug 2026",
@@ -180,7 +180,7 @@ export function AdminDashboard() {
         <CardHeader>
           <div className="flex items-center justify-between flex-wrap gap-4">
             <div>
-              <CardTitle className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent">
+              <CardTitle className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
                 📊 Registration Dashboard
               </CardTitle>
               <CardDescription className="mt-2">
@@ -203,7 +203,7 @@ export function AdminDashboard() {
               <Button
                 onClick={exportToCSV}
                 disabled={registrations.length === 0}
-                className="bg-green-600 hover:bg-green-700"
+                className="bg-amber-600 hover:bg-amber-700"
               >
                 <Download className="h-4 w-4 mr-2" />
                 Export CSV
@@ -222,25 +222,25 @@ export function AdminDashboard() {
         <CardContent>
           {/* Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-            <Card className="bg-gradient-to-br from-orange-50 to-orange-100 border-orange-200">
+            <Card className="bg-gradient-to-br from-red-50 to-red-100 border-red-200">
               <CardContent className="pt-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-orange-600 font-semibold">Total Registrations</p>
-                    <p className="text-3xl font-bold text-orange-700">{registrations.length}</p>
+                    <p className="text-sm text-red-600 font-semibold">Total Registrations</p>
+                    <p className="text-3xl font-bold text-red-700">{registrations.length}</p>
                   </div>
-                  <Users className="h-10 w-10 text-orange-500 opacity-50" />
+                  <Users className="h-10 w-10 text-red-500 opacity-50" />
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+            <Card className="bg-gradient-to-br from-amber-50 to-amber-100 border-amber-200">
               <CardContent className="pt-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-green-600 font-semibold">5th Sep Visitors</p>
-                    <p className="text-3xl font-bold text-green-700">
-                      {registrations.filter(r => r.dateOfVisit === "sep-5" || r.dateOfVisit === "aug-1" || r.dateOfVisit === "apr-18" || r.dateOfVisit === "both").length}
+                    <p className="text-sm text-amber-600 font-semibold">23rd Oct Visitors</p>
+                    <p className="text-3xl font-bold text-amber-700">
+                      {registrations.filter(r => r.dateOfVisit === "oct-23" || r.dateOfVisit === "aug-1" || r.dateOfVisit === "apr-18" || r.dateOfVisit === "both").length}
                     </p>
                   </div>
                   <div className="text-2xl">📅</div>
@@ -252,9 +252,9 @@ export function AdminDashboard() {
               <CardContent className="pt-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-sm text-blue-600 font-semibold">6th Sep Visitors</p>
+                    <p className="text-sm text-blue-600 font-semibold">24th Oct Visitors</p>
                     <p className="text-3xl font-bold text-blue-700">
-                      {registrations.filter(r => r.dateOfVisit === "sep-6" || r.dateOfVisit === "aug-2" || r.dateOfVisit === "apr-19" || r.dateOfVisit === "both").length}
+                      {registrations.filter(r => r.dateOfVisit === "oct-24" || r.dateOfVisit === "aug-2" || r.dateOfVisit === "apr-19" || r.dateOfVisit === "both").length}
                     </p>
                   </div>
                   <div className="text-2xl">📅</div>
@@ -274,7 +274,7 @@ export function AdminDashboard() {
           {/* Loading State */}
           {isLoading && registrations.length === 0 && (
             <div className="flex items-center justify-center py-12">
-              <Loader2 className="h-8 w-8 animate-spin text-orange-600" />
+              <Loader2 className="h-8 w-8 animate-spin text-red-600" />
               <span className="ml-3 text-gray-600">Loading registrations...</span>
             </div>
           )}
@@ -319,14 +319,14 @@ export function AdminDashboard() {
                           {reg.educationalSession === "none" ? (
                             <span className="text-gray-400">-</span>
                           ) : (
-                            <span className="text-green-600">✓</span>
+                            <span className="text-amber-600">✓</span>
                           )}
                         </TableCell>
                         <TableCell className="text-xs">
                           {reg.consultationService === "none" ? (
                             <span className="text-gray-400">-</span>
                           ) : (
-                            <span className="text-orange-600">✓</span>
+                            <span className="text-red-600">✓</span>
                           )}
                         </TableCell>
                         <TableCell className="text-xs text-gray-600">

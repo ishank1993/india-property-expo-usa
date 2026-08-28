@@ -38,7 +38,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
     name: "",
     email: "",
     whatsapp: "",
-    country: "Singapore"
+    country: "Bahrain"
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -60,37 +60,37 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
           {/* Background with Diaspora Flow Map */}
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-white to-green-50" />
+            <div className="absolute inset-0 bg-gradient-to-br from-red-50 via-white to-amber-50" />
             
             {/* Subtle World Map Background */}
             <div className="absolute inset-0 opacity-5">
               <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M200,300 Q400,250 600,300 T1000,300" stroke="#ff6b35" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
-                <path d="M600,300 Q700,400 800,350 T1200,400" stroke="#22c55e" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
-                <circle cx="600" cy="300" r="8" fill="#ff6b35"/>
-                <circle cx="400" cy="250" r="6" fill="#22c55e"/>
-                <circle cx="1000" cy="300" r="6" fill="#ff6b35"/>
-                <circle cx="800" cy="350" r="6" fill="#22c55e"/>
+                <path d="M200,300 Q400,250 600,300 T1000,300" stroke="#ce1126" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
+                <path d="M600,300 Q700,400 800,350 T1200,400" stroke="#D4AF37" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
+                <circle cx="600" cy="300" r="8" fill="#ce1126"/>
+                <circle cx="400" cy="250" r="6" fill="#D4AF37"/>
+                <circle cx="1000" cy="300" r="6" fill="#ce1126"/>
+                <circle cx="800" cy="350" r="6" fill="#D4AF37"/>
               </svg>
             </div>
             
             {/* Animated Gradient Orbs */}
-            <div className="absolute top-20 right-20 w-96 h-96 bg-orange-200/30 rounded-full blur-3xl animate-pulse" />
-            <div className="absolute bottom-20 left-20 w-96 h-96 bg-green-200/30 rounded-full blur-3xl animate-pulse delay-1000" />
+            <div className="absolute top-20 right-20 w-96 h-96 bg-red-200/30 rounded-full blur-3xl animate-pulse" />
+            <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-200/30 rounded-full blur-3xl animate-pulse delay-1000" />
           </div>
 
           {/* Content */}
           <div className="container mx-auto px-6 py-32 relative z-10">
             <div className="max-w-5xl mx-auto text-center">
               {/* Badge */}
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-100 to-green-100 px-6 py-2.5 rounded-full border border-orange-200 mb-8">
-                <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-                <span className="text-orange-700 font-semibold tracking-wide text-sm">Part of NRI Property Expo 2026</span>
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-100 to-amber-100 px-6 py-2.5 rounded-full border border-red-200 mb-8">
+                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                <span className="text-red-700 font-semibold tracking-wide text-sm">Part of NRI Property Expo 2026</span>
               </div>
 
               {/* Headline */}
               <h1 className="text-5xl md:text-6xl lg:text-7xl mb-6 leading-tight">
-                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-orange-600 via-gray-900 to-green-600">
+                <span className="inline-block text-transparent bg-clip-text bg-gradient-to-r from-red-600 via-gray-900 to-amber-600">
                   NRI GIFT City Knowledge Pavilion
                 </span>
                 <br />
@@ -99,7 +99,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 </span>
               </h1>
 
-              {/* Subheadline - MAS Compliant */}
+              {/* Subheadline - Informational only */}
               <p className="text-xl md:text-2xl text-gray-600 font-medium max-w-4xl mx-auto mb-8 leading-relaxed">
                 Many NRIs struggle to resolve taxation and regulatory issues while living abroad. NRIs also want clarity on what is happening inside GIFT City across multi-currency regulations, compliance, taxation, repatriation, banking and more — this pavilion is designed to educate, simplify and guide NRIs through these complex topics.
               </p>
@@ -112,14 +112,14 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
                 <Button 
                   onClick={onRegisterClick}
-                  className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                  className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white text-lg px-10 py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                 >
                   📞 Book Consultation
                 </Button>
                 <Button 
                   onClick={() => document.getElementById('venue-section')?.scrollIntoView({ behavior: 'smooth' })}
                   variant="outline"
-                  className="border-2 border-green-600 text-green-700 hover:bg-green-50 text-lg px-10 py-7 rounded-full transition-all duration-300"
+                  className="border-2 border-amber-600 text-amber-700 hover:bg-amber-50 text-lg px-10 py-7 rounded-full transition-all duration-300"
                 >
                   📍 Venue
                 </Button>
@@ -134,7 +134,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                   { icon: MessageCircle, label: "One-on-One Support Sessions Available" }
                 ].map((item, i) => (
                   <div key={i} className="flex flex-col items-center space-y-2">
-                    <item.icon className="w-8 h-8 text-orange-600" />
+                    <item.icon className="w-8 h-8 text-red-600" />
                     <span className="text-sm text-gray-600 font-medium text-center">{item.label}</span>
                   </div>
                 ))}
@@ -147,9 +147,9 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="bg-white rounded-3xl shadow-xl p-12 border-t-4 border-orange-500">
+              <div className="bg-white rounded-3xl shadow-xl p-12 border-t-4 border-red-500">
                 <div className="flex items-start space-x-4 mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-amber-500 rounded-full flex items-center justify-center flex-shrink-0">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
@@ -170,9 +170,9 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
             <div className="max-w-7xl mx-auto">
               {/* Header */}
               <div className="text-center mb-16">
-                <div className="inline-flex items-center space-x-2 bg-orange-100 px-4 py-2 rounded-full mb-4">
-                  <Landmark className="w-5 h-5 text-orange-600" />
-                  <span className="text-orange-700 font-semibold text-sm">Educational Content</span>
+                <div className="inline-flex items-center space-x-2 bg-red-100 px-4 py-2 rounded-full mb-4">
+                  <Landmark className="w-5 h-5 text-red-600" />
+                  <span className="text-red-700 font-semibold text-sm">Educational Content</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">
                   Educational Sessions Available at the Expo
@@ -222,9 +222,9 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 ].map((session, i) => (
                   <div 
                     key={i}
-                    className="group bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-orange-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                    className="group bg-white rounded-2xl p-8 border-2 border-gray-100 hover:border-red-300 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                   >
-                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${session.color === 'orange' ? 'from-orange-500 to-orange-600' : 'from-green-500 to-green-600'} flex items-center justify-center mb-6`}>
+                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${session.color === 'orange' ? 'from-red-500 to-red-600' : 'from-amber-500 to-amber-600'} flex items-center justify-center mb-6`}>
                       <session.icon className="w-7 h-7 text-white" />
                     </div>
                     <h3 className="text-xl mb-3 text-gray-900 font-bold">{session.title}</h3>
@@ -237,7 +237,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
               <div className="text-center mt-12">
                 <Button 
                   onClick={onRegisterClick}
-                  className="bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Register for Sessions <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -247,17 +247,17 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         </section>
 
         {/* Will and Inheritance for NRIs in India */}
-        <section className="py-24 bg-gradient-to-br from-gray-50 to-orange-50">
+        <section className="py-24 bg-gradient-to-br from-gray-50 to-red-50">
           <div className="container mx-auto px-6">
             <div className="max-w-5xl mx-auto">
               <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
                 <div className="grid md:grid-cols-2">
                   {/* Left: Icon Visual */}
-                  <div className="bg-gradient-to-br from-orange-600 to-green-600 p-12 flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-red-600 to-amber-600 p-12 flex items-center justify-center">
                     <div className="text-center">
                       <Shield className="w-24 h-24 text-white mx-auto mb-6" />
                       <h3 className="text-3xl text-white mb-2">Will and Inheritance for NRIs in India</h3>
-                      <p className="text-orange-100">Secure Your Legacy</p>
+                      <p className="text-red-100">Secure Your Legacy</p>
                     </div>
                   </div>
 
@@ -282,7 +282,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                         "Transfer of Property (NRI to Family)"
                       ].map((item, i) => (
                         <div key={i} className="flex items-center space-x-3">
-                          <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0" />
+                          <CheckCircle2 className="w-5 h-5 text-amber-600 flex-shrink-0" />
                           <span className="text-gray-700">{item}</span>
                         </div>
                       ))}
@@ -290,7 +290,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
 
                     <Button 
                       onClick={onRegisterClick}
-                      className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                      className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                     >
                       <Phone className="w-5 h-5 mr-2" />
                       Speak to Estate Lawyer
@@ -309,9 +309,9 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
               <div className="grid md:grid-cols-2 gap-12 items-center">
                 {/* Left: Content */}
                 <div>
-                  <div className="inline-flex items-center space-x-2 bg-green-100 px-4 py-2 rounded-full mb-6">
-                    <FileText className="w-5 h-5 text-green-600" />
-                    <span className="text-green-700 font-semibold text-sm">Expert Tax Advisory</span>
+                  <div className="inline-flex items-center space-x-2 bg-amber-100 px-4 py-2 rounded-full mb-6">
+                    <FileText className="w-5 h-5 text-amber-600" />
+                    <span className="text-amber-700 font-semibold text-sm">Expert Tax Advisory</span>
                   </div>
                   
                   <h2 className="text-4xl md:text-5xl mb-4 text-gray-900">
@@ -319,21 +319,21 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                   </h2>
                   
                   <div className="space-y-2 mb-6">
-                    <p className="text-lg text-green-700 font-semibold">→ Returning NRIs — Learn to become tax-efficient</p>
-                    <p className="text-lg text-orange-700 font-semibold">�� How to follow a better tax structure while abroad</p>
-                    <p className="text-lg text-green-700 font-semibold">→ How to manage ESOPs as an NRI</p>
+                    <p className="text-lg text-amber-700 font-semibold">→ Returning NRIs — Learn to become tax-efficient</p>
+                    <p className="text-lg text-red-700 font-semibold">�� How to follow a better tax structure while abroad</p>
+                    <p className="text-lg text-amber-700 font-semibold">→ How to manage ESOPs as an NRI</p>
                   </div>
 
                   <div className="space-y-4 mb-8">
                     {[
-                      "NRI tax filing for India + UAE + Canada + UK + Singapore",
+                      "NRI tax filing for India + UAE + Canada + UK + Bahrain",
                       "DTAA (Double Taxation Avoidance Agreement) planning",
                       "Avoiding double tax on global income",
                       "TDS optimization on Indian investments",
                       "Residential status determination"
                     ].map((item, i) => (
                       <div key={i} className="flex items-start space-x-3">
-                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-orange-500 to-green-500 flex items-center justify-center flex-shrink-0 mt-0.5">
+                        <div className="w-6 h-6 rounded-full bg-gradient-to-br from-red-500 to-amber-500 flex items-center justify-center flex-shrink-0 mt-0.5">
                           <span className="text-white text-xs font-bold">{i + 1}</span>
                         </div>
                         <p className="text-gray-700 text-lg">{item}</p>
@@ -343,20 +343,20 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
 
                   <Button 
                     onClick={onRegisterClick}
-                    className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white text-lg px-10 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     Register for Tax Clinic <ArrowRight className="w-5 h-5 ml-2" />
                   </Button>
                 </div>
 
                 {/* Right: Visual Card */}
-                <div className="bg-gradient-to-br from-orange-50 to-green-50 rounded-3xl p-12 border-2 border-orange-200">
+                <div className="bg-gradient-to-br from-red-50 to-amber-50 rounded-3xl p-12 border-2 border-red-200">
                   <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-to-br from-orange-600 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-red-600 to-amber-600 rounded-full flex items-center justify-center mx-auto mb-6">
                       <BarChart3 className="w-10 h-10 text-white" />
                     </div>
                     <h3 className="text-2xl mb-4 text-gray-900">Tax Savings</h3>
-                    <p className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600 mb-4">
+                    <p className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600 mb-4">
                       Up to 70%
                     </p>
                     <p className="text-gray-600 mb-6">With proper DTAA & planning</p>
@@ -372,14 +372,14 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         </section>
 
         {/* Attend Wealth & Knowledge Sessions */}
-        <section className="py-24 bg-gradient-to-br from-gray-900 via-orange-900 to-green-900 text-white">
+        <section className="py-24 bg-gradient-to-br from-gray-900 via-red-900 to-amber-900 text-white">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               {/* Header */}
               <div className="text-center mb-16">
                 <div className="inline-flex items-center space-x-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full mb-4">
-                  <Calendar className="w-5 h-5 text-orange-300" />
-                  <span className="text-orange-200 font-semibold text-sm">Live at the Expo</span>
+                  <Calendar className="w-5 h-5 text-red-300" />
+                  <span className="text-red-200 font-semibold text-sm">Live at the Expo</span>
                 </div>
                 <h2 className="text-4xl md:text-5xl mb-4">
                   Attend Wealth & Knowledge Sessions
@@ -392,8 +392,8 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 {/* NRI Tax Clinic */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-start justify-between mb-4">
-                    <FileText className="w-8 h-8 text-orange-400" />
-                    <span className="text-green-300 text-sm font-semibold">Session A</span>
+                    <FileText className="w-8 h-8 text-red-400" />
+                    <span className="text-amber-300 text-sm font-semibold">Session A</span>
                   </div>
                   
                   <h3 className="text-2xl mb-4 font-bold">NRI Tax Clinic</h3>
@@ -405,7 +405,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       "One-on-one advisory signups inside venue"
                     ].map((point, i) => (
                       <div key={i} className="flex items-start space-x-2">
-                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
                         <span className="text-sm text-gray-300">{point}</span>
                       </div>
                     ))}
@@ -415,8 +415,8 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 {/* Will & Inheritance */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-start justify-between mb-4">
-                    <Shield className="w-8 h-8 text-orange-400" />
-                    <span className="text-green-300 text-sm font-semibold">Session B</span>
+                    <Shield className="w-8 h-8 text-red-400" />
+                    <span className="text-amber-300 text-sm font-semibold">Session B</span>
                   </div>
                   
                   <h3 className="text-2xl mb-4 font-bold">Will & Inheritance for NRIs</h3>
@@ -429,7 +429,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       "Transfer of property guidance"
                     ].map((point, i) => (
                       <div key={i} className="flex items-start space-x-2">
-                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
                         <span className="text-sm text-gray-300">{point}</span>
                       </div>
                     ))}
@@ -439,8 +439,8 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 {/* GIFT City for NRIs */}
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 transform hover:-translate-y-1">
                   <div className="flex items-start justify-between mb-4">
-                    <Landmark className="w-8 h-8 text-orange-400" />
-                    <span className="text-green-300 text-sm font-semibold">Session C</span>
+                    <Landmark className="w-8 h-8 text-red-400" />
+                    <span className="text-amber-300 text-sm font-semibold">Session C</span>
                   </div>
                   
                   <h3 className="text-2xl mb-4 font-bold">GIFT City for NRIs</h3>
@@ -452,7 +452,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       "How NRIs can participate compliantly"
                     ].map((point, i) => (
                       <div key={i} className="flex items-start space-x-2">
-                        <div className="w-1.5 h-1.5 bg-green-400 rounded-full mt-2 flex-shrink-0" />
+                        <div className="w-1.5 h-1.5 bg-amber-400 rounded-full mt-2 flex-shrink-0" />
                         <span className="text-sm text-gray-300">{point}</span>
                       </div>
                     ))}
@@ -464,7 +464,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
               <div className="text-center mt-12">
                 <Button 
                   onClick={onRegisterClick}
-                  className="bg-gradient-to-r from-orange-500 to-green-500 hover:from-orange-600 hover:to-green-600 text-white text-lg px-12 py-7 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
+                  className="bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-600 hover:to-amber-600 text-white text-lg px-12 py-7 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:scale-105"
                 >
                   <Calendar className="w-5 h-5 mr-2" />
                   Reserve Seat →
@@ -475,64 +475,76 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         </section>
 
         {/* Venue Section */}
-        <section id="venue-section" className="py-24 bg-gradient-to-br from-orange-50 via-white to-green-50">
+        <section id="venue-section" className="py-24 bg-gradient-to-br from-red-50 via-white to-amber-50">
           <div className="container mx-auto px-6">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-12">
                 <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-600 to-green-600">Event Venue</span>
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">Event Venue</span>
                 </h2>
-                <p className="text-xl text-gray-600">Join us at Sheraton Towers Singapore, Scotts Road</p>
+                <p className="text-xl text-gray-600">Join us in Manama — venue address sent to confirmed RSVPs</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 bg-white rounded-3xl shadow-2xl overflow-hidden">
                 {/* Left: Venue Info */}
                 <div className="p-10 flex flex-col justify-center space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center flex-shrink-0">
                       <Landmark className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-gray-800">Sheraton Towers Singapore</h3>
+                      <h3 className="font-bold text-xl text-gray-800">Manama, Kingdom of Bahrain</h3>
                       <p className="text-gray-600 mt-1">
-                        39 Scotts Road,<br />
-                        Singapore 228230
+                        Central Manama venue<br />
+                        <span className="text-red-700 font-semibold">Address emailed to confirmed RSVPs</span>
                       </p>
                     </div>
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center flex-shrink-0">
                       <Calendar className="text-white w-6 h-6" />
                     </div>
                     <div>
                       <h3 className="font-bold text-xl text-gray-800">Event Date</h3>
                       <p className="text-gray-600 mt-1">
-                        5th & 6th September 2026 | 10am–7pm<br />
+                        23rd & 24th October 2026 | 10am–7pm<br />
                         Check-in starts 30 minutes before sessions
                       </p>
                     </div>
                   </div>
 
                   <Button 
-                    onClick={() => window.open('https://www.google.com/maps/dir//Sheraton+Towers+Singapore,+39+Scotts+Road,+Singapore+228230', '_blank')}
-                    className="w-fit bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
+                    onClick={onRegisterClick}
+                    className="w-fit bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
                   >
-                    📍 Get Directions
+                    🎟️ RSVP &amp; Get the Address First
                   </Button>
                 </div>
 
-                {/* Right: Map */}
-                <div className="h-[400px] md:h-auto w-full bg-gray-200">
-                  <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.774656757!2d103.8282837!3d1.3083553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1991f44e0169%3A0x7ff4a8da58234d97!2sSheraton%20Towers%20Singapore!5e0!3m2!1sen!2ssg!4v1629876543210!5m2!1sen!2ssg" 
-                    width="100%" 
-                    height="100%" 
-                    style={{ border: 0 }} 
-                    allowFullScreen={true} 
-                    loading="lazy"
-                    title="Google Map"
+                {/* Right: RSVP panel (no map until the venue is confirmed) */}
+                <div className="min-h-[400px] md:h-auto w-full relative bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white flex flex-col justify-center p-10">
+                  <div
+                    className="absolute inset-y-0 left-0 w-8 bg-white/95"
+                    style={{
+                      clipPath:
+                        "polygon(0 0, 60% 0, 100% 10%, 60% 20%, 100% 30%, 60% 40%, 100% 50%, 60% 60%, 100% 70%, 60% 80%, 100% 90%, 60% 100%, 0 100%)",
+                    }}
+                    aria-hidden="true"
                   />
+                  <div className="pl-6">
+                    <h3 className="text-2xl font-black mb-3">RSVP-only, by design</h3>
+                    <p className="text-red-50 leading-relaxed mb-6">
+                      Tax clinics and GIFT City sessions run in small groups so every
+                      question gets answered. We confirm your seat and your slot by email
+                      once you RSVP — including the venue address.
+                    </p>
+                    <ul className="space-y-2.5 text-red-50 text-sm">
+                      <li>• Your advisor briefed on your situation beforehand</li>
+                      <li>• Session times that fit around your day</li>
+                      <li>• Venue, parking and arrival details ahead of the doors</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -543,7 +555,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
         <section className="py-24 bg-white">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto">
-              <div className="bg-white rounded-3xl shadow-2xl p-12 border-t-4 border-orange-500">
+              <div className="bg-white rounded-3xl shadow-2xl p-12 border-t-4 border-red-500">
                 {/* Header */}
                 <div className="text-center mb-10">
                   <h2 className="text-3xl md:text-4xl mb-4 text-gray-900">
@@ -565,7 +577,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       required
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -579,7 +591,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       required
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
                       placeholder="your.email@example.com"
                     />
                   </div>
@@ -593,8 +605,8 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       required
                       value={formData.whatsapp}
                       onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
-                      placeholder="+65 XXXX XXXX"
+                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
+                      placeholder="+973 XXXX XXXX"
                     />
                   </div>
 
@@ -606,9 +618,9 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       required
                       value={formData.country}
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
-                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-orange-500 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
                     >
-                      <option value="Singapore">Singapore</option>
+                      <option value="Bahrain">Bahrain</option>
                       <option value="UAE">UAE</option>
                       <option value="UK">United Kingdom</option>
                       <option value="USA">United States</option>
@@ -620,7 +632,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
 
                   <Button 
                     type="submit"
-                    className="w-full bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white text-lg py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white text-lg py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
                   >
                     🎯 Get Access Now
                   </Button>

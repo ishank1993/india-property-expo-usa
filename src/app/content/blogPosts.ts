@@ -31,18 +31,18 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-003 — pillar piece
   // ------------------------------------------------------------------
   {
-    slug: "buying-property-india-from-singapore-nri-guide",
-    title: "Buying Property in India from Singapore: The Complete NRI Guide",
+    slug: "buying-property-india-from-bahrain-nri-guide",
+    title: "Buying Property in India from Bahrain: The Complete NRI Guide",
     dek: "The payment trail, the Power of Attorney, and the due diligence checklist that decide whether your purchase is smooth or a headache.",
-    metaTitle: "Buying Property in India from Singapore: NRI Guide",
+    metaTitle: "Buying Property in India from Bahrain: NRI Guide",
     metaDescription:
-      "Everything a Singapore NRI needs before buying India property — FEMA rules, financing, Power of Attorney, and due diligence, explained clearly.",
+      "Everything a Bahrain NRI needs before buying India property — FEMA rules, financing, Power of Attorney, and due diligence, explained clearly.",
     publishDate: "2026-07-16",
     readingTime: "12 min read",
     content: [
       {
         type: "p",
-        text: 'Your parents have started saying "the flat" instead of "a flat." That\'s usually the sign someone\'s about to buy Indian property from Singapore for the first time, whether they\'ve admitted it to themselves yet or not.',
+        text: 'Your parents have started saying "the flat" instead of "a flat." That\'s usually the sign someone\'s about to buy Indian property from Bahrain for the first time, whether they\'ve admitted it to themselves yet or not.',
       },
       {
         type: "p",
@@ -78,14 +78,14 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "Why this matters more than it sounds: the payment trail is exactly what banks, registrars, and tax authorities look at if a transaction ever gets questioned — during resale, during an inheritance dispute, or during a routine income tax scrutiny years later. A clean NRE-to-seller payment trail closes that question before it's even asked. An informal route leaves you explaining yourself later, sometimes to people who weren't part of the original decision.",
       },
-      { type: "h2", text: "Financing: Getting a Home Loan as an NRI in Singapore" },
+      { type: "h2", text: "Financing: Getting a Home Loan as an NRI in Bahrain" },
       {
         type: "p",
-        text: "Indian banks do lend to NRIs, and Singapore-based applicants are a well-established customer segment for most major lenders — this isn't a novelty product anyone needs to be talked into offering you.",
+        text: "Indian banks do lend to NRIs, and Bahrain-based applicants are a well-established customer segment for most major lenders — this isn't a novelty product anyone needs to be talked into offering you.",
       },
       {
         type: "p",
-        text: "The loan gets repaid from your NRE or NRO account, or via direct remittance, and eligibility typically factors in your Singapore income, existing obligations, and the property's value. Specific interest rates and loan-to-value ratios vary meaningfully by bank and change with RBI policy rate movements — treat any number you see quoted online as a starting point for a conversation, not a locked-in figure, and confirm current terms directly with the lender before budgeting around them.",
+        text: "The loan gets repaid from your NRE or NRO account, or via direct remittance, and eligibility typically factors in your Bahrain income, existing obligations, and the property's value. Specific interest rates and loan-to-value ratios vary meaningfully by bank and change with RBI policy rate movements — treat any number you see quoted online as a starting point for a conversation, not a locked-in figure, and confirm current terms directly with the lender before budgeting around them.",
       },
       {
         type: "p",
@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Execution: The PoA needs to be properly drafted (ideally by a lawyer familiar with NRI transactions, not a generic template), then notarized and attested through the Indian High Commission in Singapore. Skipping proper attestation is a common shortcut that creates real legal exposure later.",
+        text: "Execution: The PoA needs to be properly drafted (ideally by a lawyer familiar with NRI transactions, not a generic template), then notarized and attested through the Indian High Commission in Bahrain. Skipping proper attestation is a common shortcut that creates real legal exposure later.",
       },
       {
         type: "p",
@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "crosslink",
         text: "If you plan to rent the property out, that income becomes taxable in India from day one, credited to your NRO account, with its own annual filing requirement. If you plan to sell eventually, the sale triggers TDS calculated on the full sale value by default — something you can manage in advance through a Lower Deduction Certificate rather than dealing with after the fact. Our companion guide covers what happens at tax time once you own this property in full detail.",
-        slug: "nri-property-tax-filing-singapore",
+        slug: "nri-property-tax-filing-bahrain",
       },
       {
         type: "p",
@@ -152,12 +152,12 @@ export const blogPosts: BlogPost[] = [
       {
         type: "crosslink",
         text: "Not sure a physical asset is even the right move for your capital? It's worth taking a step back and comparing this to a GIFT City investment before you commit.",
-        slug: "gift-city-vs-real-estate-singapore-nri",
+        slug: "gift-city-vs-real-estate-bahrain-nri",
       },
       { type: "h2", text: "Buying With Confidence, Not Just Hope" },
       {
         type: "p",
-        text: "The legal path to owning property in India as a Singapore NRI has been open and clear for years. What separates a smooth purchase from a stressful one isn't luck — it's whether the payment trail, the Power of Attorney, and the due diligence were treated as seriously as the decision to buy in the first place.",
+        text: "The legal path to owning property in India as a Bahrain NRI has been open and clear for years. What separates a smooth purchase from a stressful one isn't luck — it's whether the payment trail, the Power of Attorney, and the due diligence were treated as seriously as the decision to buy in the first place.",
       },
       {
         type: "quote",
@@ -166,7 +166,7 @@ export const blogPosts: BlogPost[] = [
     ],
     faqs: [
       {
-        question: "Can NRIs in Singapore buy property in India?",
+        question: "Can NRIs in Bahrain buy property in India?",
         answer:
           "Yes. NRIs can buy residential and commercial property in India without RBI permission, but not agricultural land, plantation property, or farmhouses. Payment must come from an NRE, NRO, or FCNR account or direct inward remittance, and the purchase can be managed remotely through a properly drafted Power of Attorney.",
       },
@@ -176,9 +176,9 @@ export const blogPosts: BlogPost[] = [
           "Not necessarily. With a properly drafted, narrowly scoped Power of Attorney executed by someone you trust, most of the transaction — document signing, registration, possession — can be handled without your physical presence, though many buyers still choose to visit for final verification.",
       },
       {
-        question: "Can I get a home loan from Singapore to buy Indian property?",
+        question: "Can I get a home loan from Bahrain to buy Indian property?",
         answer:
-          "Yes. Most major Indian banks lend to NRIs, including those based in Singapore, with repayment from NRE, NRO accounts, or direct remittance. Loan terms depend on your income, the property value, and current bank policy — confirm exact rates and eligibility directly with the lender.",
+          "Yes. Most major Indian banks lend to NRIs, including those based in Bahrain, with repayment from NRE, NRO accounts, or direct remittance. Loan terms depend on your income, the property value, and current bank policy — confirm exact rates and eligibility directly with the lender.",
       },
       {
         question: "What documents prove clear title on Indian property?",
@@ -188,15 +188,15 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Is a Power of Attorney safe for buying property remotely?",
         answer:
-          "It's safe when narrowly scoped to the specific transaction, professionally drafted, and properly attested through the Indian High Commission in Singapore. It becomes risky when it's overly broad, informally drafted, or given to someone without appropriate due diligence on trust and potential conflicts of interest.",
+          "It's safe when narrowly scoped to the specific transaction, professionally drafted, and properly attested through the Indian High Commission in Bahrain. It becomes risky when it's overly broad, informally drafted, or given to someone without appropriate due diligence on trust and potential conflicts of interest.",
       },
       {
         question: "How much rental income tax will I owe on Indian property?",
         answer:
-          "Rental income is taxable in India from the first rupee earned, after a standard 30% deduction on net annual value and any eligible home loan interest. It must be credited to your NRO account and reported in an annual Indian tax return, regardless of whether Singapore separately taxes the income.",
+          "Rental income is taxable in India from the first rupee earned, after a standard 30% deduction on net annual value and any eligible home loan interest. It must be credited to your NRO account and reported in an annual Indian tax return, regardless of whether Bahrain separately taxes the income.",
       },
       {
-        question: "Can I sell the property later and bring the money back to Singapore?",
+        question: "Can I sell the property later and bring the money back to Bahrain?",
         answer:
           "Yes, subject to repatriation limits — generally up to USD 1 million per financial year through the NRE route — and documentation including Form 15CA/15CB filed through your bank. TDS at the time of sale is calculated on the full sale value unless you've obtained a Lower Deduction Certificate in advance.",
       },
@@ -207,18 +207,18 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-001
   // ------------------------------------------------------------------
   {
-    slug: "gift-city-vs-real-estate-singapore-nri",
-    title: "GIFT City vs Indian Real Estate: Where Should Singapore NRIs Put Their Next Investment?",
+    slug: "gift-city-vs-real-estate-bahrain-nri",
+    title: "GIFT City vs Indian Real Estate: Where Should Bahrain NRIs Put Their Next Investment?",
     dek: "GIFT City and Indian real estate aren't actually solving the same problem. Here's how to choose based on what you're optimizing for.",
-    metaTitle: "GIFT City vs Real Estate: Where Singapore NRIs Invest",
+    metaTitle: "GIFT City vs Real Estate: Where Bahrain NRIs Invest",
     metaDescription:
-      "A Singapore NRI's real numbers comparison — GIFT City bonds/funds vs Indian property. Tax, liquidity, repatriation, and which one actually fits you.",
+      "A Bahrain NRI's real numbers comparison — GIFT City bonds/funds vs Indian property. Tax, liquidity, repatriation, and which one actually fits you.",
     publishDate: "2026-07-16",
     readingTime: "11 min read",
     content: [
       {
         type: "p",
-        text: "Three hundred and fifty thousand Indians are building careers in Singapore right now. A good number of them have a spare SGD 80,000 to 150,000 sitting in a savings account, doing nothing, while they debate two options they keep hearing about at every dinner party: a GIFT City bond or fund, or a second flat back home.",
+        text: "Well over three hundred thousand Indians are building careers in Bahrain right now. A good number of them have a spare BHD 20,000 to 40,000 sitting in a savings account, doing nothing, while they debate two options they keep hearing about at every dinner party: a GIFT City bond or fund, or a second flat back home.",
       },
       {
         type: "p",
@@ -228,7 +228,7 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "This isn't a \"which is better\" article. It's a \"which is better for you, specifically\" article — because the honest answer depends on what you're actually optimizing for.",
       },
-      { type: "h2", text: "The Real Decision Singapore NRIs Are Facing in 2026" },
+      { type: "h2", text: "The Real Decision Bahrain NRIs Are Facing in 2026" },
       {
         type: "p",
         text: "If you already have an NRE fixed deposit and a SIP running, you're past the beginner stage. The next decision is where the next chunk of capital goes — and that's where GIFT City and Indian real estate start competing for the same rupees.",
@@ -242,13 +242,13 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "GIFT City — the Gujarat International Finance Tec-City, India's dedicated International Financial Services Centre — was built specifically to let NRIs invest in India-linked instruments without routing through India's domestic banking and tax system.",
       },
-      { type: "p", text: "For a Singapore NRI, three products matter most:" },
+      { type: "p", text: "For a Bahrain NRI, three products matter most:" },
       {
         type: "ul",
         items: [
           "**Rupee-denominated bonds (Masala Bonds).** These are debt instruments issued by Indian corporates and listed on the IFSC exchange. Interest on bonds listed before July 1, 2023 gets taxed at a concessional 4% rate; bonds listed after that date sit at 9% — both far below what NRI interest income normally attracts. You're taking on the issuer's credit risk, not India's sovereign risk, so due diligence on the specific bond still matters.",
-          "**Category III AIFs on specified securities.** This is the one most Singapore NRIs haven't heard of, and it's the strongest tax outcome in the entire GIFT City ecosystem — funds that invest in specified securities and derivatives on the IFSC exchange carry zero capital gains tax in India for non-residents. Not a reduced rate. Zero.",
-          "**Global Savings Accounts (foreign currency).** IFSC Banking Units let you hold USD, SGD, GBP, and a few other currencies directly, earning somewhere in the 2.5-5% range depending on currency and tenure — lower than rupee deposits, but with none of the currency conversion friction.",
+          "**Category III AIFs on specified securities.** This is the one most Bahrain NRIs haven't heard of, and it's the strongest tax outcome in the entire GIFT City ecosystem — funds that invest in specified securities and derivatives on the IFSC exchange carry zero capital gains tax in India for non-residents. Not a reduced rate. Zero.",
+          "**Global Savings Accounts (foreign currency).** IFSC Banking Units let you hold USD, BHD, GBP, and a few other currencies directly, earning somewhere in the 2.5-5% range depending on currency and tenure — lower than rupee deposits, but with none of the currency conversion friction.",
         ],
       },
       {
@@ -259,7 +259,7 @@ export const blogPosts: BlogPost[] = [
       {
         type: "crosslink",
         text: "Buying property in India is legal for NRIs without RBI permission, full stop. You can buy residential or commercial property freely. You cannot buy agricultural land, plantation property, or farmhouses — that restriction surprises people more often than it should, given how long it's been in place. Our complete guide to buying property in India walks through the whole process, from payment rules to Power of Attorney.",
-        slug: "buying-property-india-from-singapore-nri-guide",
+        slug: "buying-property-india-from-bahrain-nri-guide",
       },
       {
         type: "p",
@@ -298,10 +298,10 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "Neither column is \"the winner.\" That's the point most comparisons miss by forcing a verdict where none exists.",
       },
-      { type: "h2", text: "Which One Fits Which Kind of Singapore NRI" },
+      { type: "h2", text: "Which One Fits Which Kind of Bahrain NRI" },
       {
         type: "p",
-        text: "If you're the person who checks your portfolio during your Singapore commute and wants clean numbers without a PoA, a lawyer, or a tenant — GIFT City is the more honest fit. It behaves like an investment, because it is one.",
+        text: "If you're the person who checks your portfolio during your Bahrain commute and wants clean numbers without a PoA, a lawyer, or a tenant — GIFT City is the more honest fit. It behaves like an investment, because it is one.",
       },
       {
         type: "internallink",
@@ -310,12 +310,12 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "There's also a third kind of Singapore NRI, and it's probably the largest group: someone with enough capital to not have to choose.",
+        text: "There's also a third kind of Bahrain NRI, and it's probably the largest group: someone with enough capital to not have to choose.",
       },
       { type: "h2", text: "Can You Do Both?" },
       {
         type: "p",
-        text: "For most NRIs in the SGD 12,000+/month income bracket with five-plus years of savings behind them, the answer is a simple allocation split rather than a binary decision. A common pattern among clients we've spoken with: GIFT City for the portion of capital that needs to stay liquid and tax-efficient, real estate for the portion earmarked as a long-term family asset that was always going to be a 10-15 year hold anyway.",
+        text: "For most NRIs in the BHD 3,000+/month income bracket with five-plus years of savings behind them, the answer is a simple allocation split rather than a binary decision. A common pattern among clients we've spoken with: GIFT City for the portion of capital that needs to stay liquid and tax-efficient, real estate for the portion earmarked as a long-term family asset that was always going to be a 10-15 year hold anyway.",
       },
       {
         type: "p",
@@ -357,7 +357,7 @@ export const blogPosts: BlogPost[] = [
           "Minimums vary by product and provider — bonds and funds each have their own entry thresholds, and IFSC Banking Unit accounts often have lower minimums than the investment products. Confirm current minimums with the specific provider before committing.",
       },
       {
-        question: "Does the India-Singapore DTAA reduce tax on either option?",
+        question: "Does the India-Bahrain DTAA reduce tax on either option?",
         answer:
           "For real estate, no — rental income and capital gains on Indian immovable property are taxed in India regardless of DTAA, since property income is source-state taxed under the treaty. For certain GIFT City fund structures, the tax treatment already sits at zero or near-zero under India's domestic IFSC rules, so DTAA isn't usually the operative mechanism there either.",
       },
@@ -367,9 +367,9 @@ export const blogPosts: BlogPost[] = [
           "Your residency status change would affect ongoing tax treatment going forward, since several of these benefits are specifically tied to non-resident status. This is worth discussing with an advisor before a return-to-India move, not after.",
       },
       {
-        question: "Is it risky to buy Indian property through a Power of Attorney from Singapore?",
+        question: "Is it risky to buy Indian property through a Power of Attorney from Bahrain?",
         answer:
-          "It's manageable risk, not zero risk. A narrowly drafted, transaction-specific PoA, properly attested through the Indian High Commission in Singapore, and paired with independent due diligence, is a well-established and safe path. A broad, informally drafted PoA handed to a relative to handle everything is where NRI property disputes actually originate.",
+          "It's manageable risk, not zero risk. A narrowly drafted, transaction-specific PoA, properly attested through the Indian High Commission in Bahrain, and paired with independent due diligence, is a well-established and safe path. A broad, informally drafted PoA handed to a relative to handle everything is where NRI property disputes actually originate.",
       },
     ],
   },
@@ -378,22 +378,22 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-002
   // ------------------------------------------------------------------
   {
-    slug: "nri-property-tax-filing-singapore",
-    title: "NRI Property Tax Filing Guide: Selling or Renting Out Indian Real Estate from Singapore",
+    slug: "nri-property-tax-filing-bahrain",
+    title: "NRI Property Tax Filing Guide: Selling or Renting Out Indian Real Estate from Bahrain",
     dek: "TDS on a property sale is calculated on the full sale value, not your profit, unless you apply for a certificate in advance. Here's the guide that closes that gap.",
-    metaTitle: "NRI Property Tax Filing from Singapore: TDS & DTAA",
+    metaTitle: "NRI Property Tax Filing from Bahrain: TDS & DTAA",
     metaDescription:
-      "Renting out or selling Indian property from Singapore? Here's exactly what tax applies, what's withheld, and how DTAA stops double taxation.",
+      "Renting out or selling Indian property from Bahrain? Here's exactly what tax applies, what's withheld, and how DTAA stops double taxation.",
     publishDate: "2026-07-16",
     readingTime: "12 min read",
     content: [
       {
         type: "p",
-        text: "Somewhere in Singapore right now, someone is staring at a TDS deduction on their property sale that's nearly a third higher than they expected. Not because the tax rate changed overnight. Because nobody told them TDS gets calculated on the full sale value, not the profit, unless you apply for a certificate in advance.",
+        text: "Somewhere in Bahrain right now, someone is staring at a TDS deduction on their property sale that's nearly a third higher than they expected. Not because the tax rate changed overnight. Because nobody told them TDS gets calculated on the full sale value, not the profit, unless you apply for a certificate in advance.",
       },
       {
         type: "p",
-        text: "That single gap in knowledge costs Singapore NRIs real money every single year. This is the guide that closes it.",
+        text: "That single gap in knowledge costs Bahrain NRIs real money every single year. This is the guide that closes it.",
       },
       { type: "h2", text: "Two Scenarios, Two Very Different Tax Treatments" },
       {
@@ -415,7 +415,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Here's the part that catches Singapore NRIs specifically off guard: Singapore's tax system is territorial. Foreign-sourced income — including your Indian rental income — generally isn't taxed in Singapore unless it's actually received in Singapore. That doesn't mean it's tax-free. It means the tax obligation sits entirely on the Indian side, and skipping the Indian filing because \"Singapore doesn't tax it anyway\" is exactly the mistake that gets flagged years later.",
+        text: "Here's the part that catches Bahrain NRIs specifically off guard: Bahrain levies no personal income tax, so nothing about your Indian rental income shows up on a Bahraini tax bill. That does not make it tax-free. It means the tax obligation sits entirely on the Indian side, and skipping the Indian filing because \"Bahrain doesn't tax it anyway\" is exactly the mistake that gets flagged years later.",
       },
       { type: "h2", text: "If You're Selling Your India Property" },
       {
@@ -442,28 +442,28 @@ export const blogPosts: BlogPost[] = [
         type: "p",
         text: "One more procedural shift worth knowing: TDS filings for non-resident sellers go through Form 27Q — being renumbered Form 144 from April 2026 — not Form 26QB, which is restricted to resident-seller transactions. If your buyer's CA files the wrong form, expect delays.",
       },
-      { type: "h2", text: "How the India-Singapore DTAA Prevents Double Taxation" },
+      { type: "h2", text: "How the India-Bahrain DTAA Prevents Double Taxation" },
       {
         type: "p",
         text: "Here's the honest version of what DTAA does and doesn't do for real estate, because most explanations get this wrong.",
       },
       {
         type: "p",
-        text: "Under Article 6 and Article 13 of the India-Singapore DTAA, rental income and capital gains from Indian immovable property are source-state taxed — meaning India retains the right to tax them, full stop. The DTAA doesn't move that tax obligation to Singapore or exempt you from it.",
+        text: "Under Article 6 and Article 13 of the India-Bahrain DTAA, rental income and capital gains from Indian immovable property are source-state taxed — meaning India retains the right to tax them, full stop. The DTAA doesn't move that tax obligation to Bahrain or exempt you from it.",
       },
       {
         type: "p",
-        text: "What the DTAA actually does, combined with Singapore's territorial tax system, is prevent that same income from being taxed again in Singapore — since Singapore generally doesn't tax foreign-sourced income unless it's remitted there. That's a meaningfully different thing from \"DTAA makes my rental income tax-free,\" which is the version that circulates in NRI WhatsApp groups and isn't quite right.",
+        text: "What actually spares you a second tax bill is simpler than the treaty: Bahrain levies no personal income tax at all, so there is no Bahraini tax on your Indian rental income or capital gains to begin with. The DTAA matters for other things — but that's a meaningfully different thing from \"DTAA makes my rental income tax-free,\" which is the version that circulates in NRI WhatsApp groups and isn't quite right. Your India-side tax obligation stands either way.",
       },
       {
         type: "p",
-        text: "To formally claim DTAA benefits — relevant mostly for other income categories, since property income is source-taxed regardless — you'd typically need to establish Singapore tax residency (183+ days in the relevant year), file Form 10F with Indian tax authorities, and submit a Certificate of Residence from Singapore's tax authority. Worth having on file even for property transactions, since it supports your overall residency position.",
+        text: "To formally claim DTAA benefits — relevant mostly for other income categories, since property income is source-taxed regardless — you'd typically need a Tax Residency Certificate for Bahrain (issued by the National Bureau for Revenue) plus Form 10F filed with the Indian tax authorities. Worth having on file even for property transactions, since it supports your overall residency position. Confirm the current process with a qualified advisor before you rely on it.",
       },
       {
         type: "quote",
-        text: "This section explains the mechanism, not your specific filing position. Confirm your obligations under IRAS rules with a Singapore tax advisor alongside your Indian CA.",
+        text: "This section explains the mechanism, not your specific filing position. Confirm your position with a Bahrain-based tax advisor alongside your Indian CA.",
       },
-      { type: "h2", text: "Step-by-Step: Filing Your Return as a Singapore NRI" },
+      { type: "h2", text: "Step-by-Step: Filing Your Return as a Bahrain NRI" },
       {
         type: "ul",
         items: [
@@ -484,33 +484,33 @@ export const blogPosts: BlogPost[] = [
           "Skipping the Indian filing entirely because rent or sale proceeds \"already got taxed\" through TDS. TDS is a withholding, not a final settlement — the return is still required.",
           "Assuming a Lower Deduction Certificate can be requested after the sale agreement is signed. It can't meaningfully help you at that point; the TDS calculation is already locked to the transaction.",
           "Crediting rental income to an NRE account instead of NRO. It's the wrong account category for India-sourced income and creates a paper trail mismatch that tax authorities notice.",
-          "Treating \"Singapore doesn't tax foreign income\" as equivalent to \"I don't need to file in India.\" These are unrelated facts that happen to sit next to each other in the same sentence far too often.",
+          "Treating \"Bahrain doesn't tax foreign income\" as equivalent to \"I don't need to file in India.\" These are unrelated facts that happen to sit next to each other in the same sentence far too often.",
         ],
       },
       {
         type: "crosslink",
-        text: "None of this matters until you actually own property in India, of course. If you're still at the purchase stage, our guide to buying property in India as a Singapore NRI covers the payment trail and Power of Attorney decisions that determine whether you land in a clean tax position later.",
-        slug: "buying-property-india-from-singapore-nri-guide",
+        text: "None of this matters until you actually own property in India, of course. If you're still at the purchase stage, our guide to buying property in India as a Bahrain NRI covers the payment trail and Power of Attorney decisions that determine whether you land in a clean tax position later.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
       },
       {
         type: "cta",
-        text: "Want to be matched with a CA who specializes in Singapore-India NRI tax filing?",
+        text: "Want to be matched with a CA who specializes in Bahrain-India NRI tax filing?",
       },
       { type: "h2", text: "Getting This Right the First Time" },
       {
         type: "p",
-        text: "The gap between what most Singapore NRIs assume about property tax and what actually applies is exactly where money gets lost — either through over-withheld TDS sitting idle for a year, or through a filing gap that surfaces as a notice much later. Neither outcome is necessary once you know which of the two scenarios you're actually in.",
+        text: "The gap between what most Bahrain NRIs assume about property tax and what actually applies is exactly where money gets lost — either through over-withheld TDS sitting idle for a year, or through a filing gap that surfaces as a notice much later. Neither outcome is necessary once you know which of the two scenarios you're actually in.",
       },
       {
         type: "quote",
-        text: "This article is for informational purposes and does not constitute personalized tax advice. Indian tax rates, forms, and DTAA provisions referenced above are current as of 2026 and subject to change with Finance Act updates — confirm your specific filing obligations with a qualified CA experienced in NRI taxation, and consult a Singapore tax advisor on your IRAS position.",
+        text: "This article is for informational purposes and does not constitute personalized tax advice. Indian tax rates, forms, and DTAA provisions referenced above are current as of 2026 and subject to change with Finance Act updates — confirm your specific filing obligations with a qualified CA experienced in NRI taxation, and confirm your Bahrain-side position with a local advisor.",
       },
     ],
     faqs: [
       {
         question: "Do NRIs pay tax on rental income from India property?",
         answer:
-          "Yes. Rental income from Indian property is taxable in India for NRIs regardless of residency. It must be credited to an NRO account, is subject to TDS where applicable, and must be reported in an Indian income tax return. The India-Singapore DTAA prevents this income from being taxed twice, not from being taxed at all.",
+          "Yes. Rental income from Indian property is taxable in India for NRIs regardless of residency. It must be credited to an NRO account, is subject to TDS where applicable, and must be reported in an Indian income tax return. The India-Bahrain DTAA prevents this income from being taxed twice, not from being taxed at all.",
       },
       {
         question: "Is TDS on property sale calculated on my profit or the full sale price?",
@@ -523,9 +523,9 @@ export const blogPosts: BlogPost[] = [
           "It's a certificate from the Indian tax department authorizing the buyer to withhold TDS at a reduced rate based on your computed capital gain rather than the full sale value. Apply before finalizing the sale agreement — once signed, it's too late to meaningfully reduce the withholding on that transaction.",
       },
       {
-        question: "Does the India-Singapore DTAA make my rental income tax-free?",
+        question: "Does the India-Bahrain DTAA make my rental income tax-free?",
         answer:
-          "No. Rental income and capital gains on Indian immovable property remain taxable in India under the treaty's source-state rules. What the DTAA and Singapore's territorial tax system together prevent is India-taxed property income being taxed a second time in Singapore.",
+          "No. Rental income and capital gains on Indian immovable property remain taxable in India under the treaty's source-state rules. There is simply no second tax bill to worry about: Bahrain levies no personal income tax, so the same income is never taxed twice.",
       },
       {
         question: "Which account should receive my Indian rental income?",
@@ -533,7 +533,7 @@ export const blogPosts: BlogPost[] = [
           "Your NRO (Non-Resident Ordinary) account, not your NRE account. NRO is designated for India-sourced income like rent and dividends, while NRE is meant for funds remitted from abroad. Using the wrong account creates compliance mismatches.",
       },
       {
-        question: "How much of my property sale proceeds can I send back to Singapore?",
+        question: "How much of my property sale proceeds can I send back to Bahrain?",
         answer:
           "Repatriation of sale proceeds is generally capped at USD 1 million per financial year through the NRE route, subject to documentation including Form 15CA/15CB filed through your bank before the transfer.",
       },
@@ -549,18 +549,18 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-004
   // ------------------------------------------------------------------
   {
-    slug: "best-bangalore-projects-nri-investment-singapore",
-    title: "Best Real Estate Projects in Bangalore for Singapore NRI Investment (2026)",
+    slug: "best-bangalore-projects-nri-investment-bahrain",
+    title: "Best Real Estate Projects in Bangalore for Bahrain NRI Investment (2026)",
     dek: "Sarjapur Road, Devanahalli, Whitefield, and Budigere Cross — which Bangalore micro-market and developer actually fits what you're optimizing for.",
-    metaTitle: "Best Bangalore Real Estate Projects for Singapore NRIs",
+    metaTitle: "Best Bangalore Real Estate Projects for Bahrain NRIs",
     metaDescription:
-      "Sarjapur Road, Devanahalli, Whitefield — which Bangalore micro-market and developer actually fits your goals as a Singapore NRI investor? Here's the honest breakdown.",
+      "Sarjapur Road, Devanahalli, Whitefield — which Bangalore micro-market and developer actually fits your goals as a Bahrain NRI investor? Here's the honest breakdown.",
     publishDate: "2026-07-16",
     readingTime: "11 min read",
     content: [
       {
         type: "p",
-        text: 'If you\'re a Singapore NRI and Bangalore keeps coming up as "the one to look at," there\'s a reason. It\'s the only Indian city where the tenant pool and the investor pool are practically the same profile — IT professionals who could just as easily be you, five years ago.',
+        text: 'If you\'re a Bahrain NRI and Bangalore keeps coming up as "the one to look at," there\'s a reason. It\'s the only Indian city where the tenant pool and the investor pool are practically the same profile — IT professionals who could just as easily be you, five years ago.',
       },
       {
         type: "p",
@@ -578,7 +578,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "Sarjapur Road — The Micro-Market Most NRIs Actually Want" },
       {
         type: "p",
-        text: "If there's a single most-asked-about location among Singapore-based NRI investors, it's Sarjapur Road. The reasons are consistent across the buyers we hear from: proximity to multiple IT hubs, a growing cluster of international schools (relevant if the plan is eventual return), and rental demand that's held up better than newer, less-established corridors.",
+        text: "If there's a single most-asked-about location among Bahrain-based NRI investors, it's Sarjapur Road. The reasons are consistent across the buyers we hear from: proximity to multiple IT hubs, a growing cluster of international schools (relevant if the plan is eventual return), and rental demand that's held up better than newer, less-established corridors.",
       },
       {
         type: "p",
@@ -644,23 +644,23 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "crosslink",
-        text: "Once you've picked a micro-market, the next decision is execution — how payment must flow, whether you need to fly back for anything, and how to structure a Power of Attorney safely. Our complete guide to buying property in India as a Singapore NRI walks through exactly that.",
-        slug: "buying-property-india-from-singapore-nri-guide",
+        text: "Once you've picked a micro-market, the next decision is execution — how payment must flow, whether you need to fly back for anything, and how to structure a Power of Attorney safely. Our complete guide to buying property in India as a Bahrain NRI walks through exactly that.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
       },
       {
         type: "crosslink",
         text: "Whichever corridor you land on, factor in what happens after you own it — rental income is taxable in India from day one, and a future sale triggers TDS on the full sale value unless you plan ahead. Our guide covers what happens at tax time once you own this property.",
-        slug: "nri-property-tax-filing-singapore",
+        slug: "nri-property-tax-filing-bahrain",
       },
       {
         type: "crosslink",
         text: "And if you're still deciding whether a physical asset is even the right move for this portion of your capital, it's worth comparing this to a GIFT City investment before you commit either way.",
-        slug: "gift-city-vs-real-estate-singapore-nri",
+        slug: "gift-city-vs-real-estate-bahrain-nri",
       },
       {
         type: "crosslink",
         text: "Bangalore isn't the only IT-driven city worth comparing on this basis — if you're also weighing Pune or Hyderabad, the yield and diversification tradeoffs work differently there than they do across Bangalore's micro-markets.",
-        slug: "pune-vs-hyderabad-property-investment-nri-singapore",
+        slug: "pune-vs-hyderabad-property-investment-nri-bahrain",
       },
       {
         type: "cta",
@@ -680,7 +680,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Which area in Bangalore is best for NRI property investment?",
         answer:
-          "Sarjapur Road is the most commonly cited micro-market among Singapore-based NRI investors, due to strong IT-hub proximity, international school access, and consistent rental demand. North Bangalore (Devanahalli) has shown stronger recent appreciation, while Whitefield offers steadier, more established rental income.",
+          "Sarjapur Road is the most commonly cited micro-market among Bahrain-based NRI investors, due to strong IT-hub proximity, international school access, and consistent rental demand. North Bangalore (Devanahalli) has shown stronger recent appreciation, while Whitefield offers steadier, more established rental income.",
       },
       {
         question: "Which developers are considered reliable for NRI investment in Bangalore?",
@@ -693,7 +693,7 @@ export const blogPosts: BlogPost[] = [
           "It depends on your priority. North Bangalore near Devanahalli has posted stronger recent appreciation but carries more execution and timeline risk as a newer corridor. Whitefield and similar established areas offer steadier rental income with less appreciation upside — a lower-risk, lower-reward profile by comparison.",
       },
       {
-        question: "Can Singapore NRIs buy under-construction projects in Bangalore?",
+        question: "Can Bahrain NRIs buy under-construction projects in Bangalore?",
         answer:
           "Yes, provided the project is RERA-registered, which is now standard practice for legitimate developers in Karnataka. Confirm registration directly on the Karnataka RERA portal before paying any booking amount, and understand that under-construction purchases carry timeline and delivery risk that completed inventory doesn't.",
       },
@@ -703,7 +703,7 @@ export const blogPosts: BlogPost[] = [
           "Yields vary significantly by micro-market and property type, generally landing in a low-single-digit percentage range typical of Indian metro residential real estate, with established IT-corridor locations like Whitefield and Sarjapur Road typically outperforming newer, less-proven corridors on occupancy consistency.",
       },
       {
-        question: "How do I verify a Bangalore project is legitimate before investing from Singapore?",
+        question: "How do I verify a Bangalore project is legitimate before investing from Bahrain?",
         answer:
           "Check RERA registration on the Karnataka RERA portal, request the developer's delivery history on prior projects, verify the encumbrance certificate through the local sub-registrar, and ideally have an independent party physically inspect the site rather than relying solely on the developer's marketing materials or a broker's assurance.",
       },
@@ -719,12 +719,12 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-005
   // ------------------------------------------------------------------
   {
-    slug: "pune-vs-hyderabad-property-investment-nri-singapore",
-    title: "Pune vs Hyderabad: Where Should Singapore NRIs Invest in Indian Real Estate?",
+    slug: "pune-vs-hyderabad-property-investment-nri-bahrain",
+    title: "Pune vs Hyderabad: Where Should Bahrain NRIs Invest in Indian Real Estate?",
     dek: "Higher yield in Hyderabad's concentrated IT corridor, or Pune's steadier, more diversified base — the real tradeoff behind a comparison that usually stops too early.",
-    metaTitle: "Pune vs Hyderabad: Best City for Singapore NRI Investment",
+    metaTitle: "Pune vs Hyderabad: Best City for Bahrain NRI Investment",
     metaDescription:
-      "Higher yield in Hyderabad or diversified stability in Pune? A real comparison of rental yields, developers, and risk for Singapore-based NRI investors.",
+      "Higher yield in Hyderabad or diversified stability in Pune? A real comparison of rental yields, developers, and risk for Bahrain-based NRI investors.",
     publishDate: "2026-07-16",
     readingTime: "11 min read",
     content: [
@@ -769,7 +769,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "Brigade Group's Brigade Gateway development in Kokapet sits close to this corridor, positioned toward the premium end with larger-format units. Godrej Properties has Godrej Regal Pavilion in the Gachibowli belt, closer to the mid-to-upper segment and the kind of ticket size more Singapore NRIs are actually working with on a first India property purchase.",
+        text: "Brigade Group's Brigade Gateway development in Kokapet sits close to this corridor, positioned toward the premium end with larger-format units. Godrej Properties has Godrej Regal Pavilion in the Gachibowli belt, closer to the mid-to-upper segment and the kind of ticket size more Bahrain NRIs are actually working with on a first India property purchase.",
       },
       {
         type: "p",
@@ -791,7 +791,7 @@ export const blogPosts: BlogPost[] = [
           ["Best fit for", "Diversification-minded, longer patience for appreciation", "Yield-focused, comfortable with concentrated IT-sector exposure"],
         ],
       },
-      { type: "h2", text: "Which One Actually Fits a Singapore NRI" },
+      { type: "h2", text: "Which One Actually Fits a Bahrain NRI" },
       {
         type: "p",
         text: "If your priority is rental income relative to purchase price, Hyderabad's numbers currently make a stronger case — the concentration of major tech employers around Financial District and Gachibowli is a genuine structural advantage, not just marketing.",
@@ -815,18 +815,18 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "crosslink",
-        text: "Whichever city you lean toward, the execution mechanics are identical — payment through the right account, a properly scoped Power of Attorney if you can't be there in person, and title verification before any money moves. Our complete guide to buying property in India as a Singapore NRI covers all of it.",
-        slug: "buying-property-india-from-singapore-nri-guide",
+        text: "Whichever city you lean toward, the execution mechanics are identical — payment through the right account, a properly scoped Power of Attorney if you can't be there in person, and title verification before any money moves. Our complete guide to buying property in India as a Bahrain NRI covers all of it.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
       },
       {
         type: "crosslink",
         text: "And once you own it, rental income and any eventual sale both come with their own tax mechanics — TDS on sale is calculated on the full price, not your gain, unless you plan ahead. Our guide covers what happens at tax time once you own this property.",
-        slug: "nri-property-tax-filing-singapore",
+        slug: "nri-property-tax-filing-bahrain",
       },
       {
         type: "crosslink",
         text: "If Bangalore is also on your shortlist, its micro-markets — Sarjapur Road, Devanahalli, Whitefield — carry a different yield-versus-appreciation tradeoff again, worth comparing directly rather than assuming all three IT-driven cities behave the same way.",
-        slug: "best-bangalore-projects-nri-investment-singapore",
+        slug: "best-bangalore-projects-nri-investment-bahrain",
       },
       {
         type: "cta",
@@ -874,7 +874,7 @@ export const blogPosts: BlogPost[] = [
           "It depends on the specific project and micro-market rather than the city broadly. Hyderabad's yield range is currently competitive with or ahead of many Bangalore corridors, while Pune trades some yield for a more diversified economic base — a direct project-to-project comparison matters more than a city-level generalization.",
       },
       {
-        question: "Can I manage a Pune or Hyderabad property purchase entirely from Singapore?",
+        question: "Can I manage a Pune or Hyderabad property purchase entirely from Bahrain?",
         answer:
           "Yes, using the same framework as any NRI property purchase — payment through NRE/NRO/FCNR accounts, a narrowly scoped Power of Attorney for someone handling on-ground steps, and independent verification of title and RERA status before committing funds.",
       },
@@ -885,18 +885,18 @@ export const blogPosts: BlogPost[] = [
   // CB-SGP-006
   // ------------------------------------------------------------------
   {
-    slug: "luxury-real-estate-mumbai-gurgaon-nri-singapore",
-    title: "Top Luxury Real Estate Projects in Mumbai and Gurgaon for Singapore NRIs",
-    dek: "Scarcity in Mumbai, momentum in Gurgaon — a real comparison for the Singapore NRI where ₹3-5 crore isn't the question, fit is.",
-    metaTitle: "Luxury Real Estate in Mumbai & Gurgaon for Singapore NRIs",
+    slug: "luxury-real-estate-mumbai-gurgaon-nri-bahrain",
+    title: "Top Luxury Real Estate Projects in Mumbai and Gurgaon for Bahrain NRIs",
+    dek: "Scarcity in Mumbai, momentum in Gurgaon — a real comparison for the Bahrain NRI where ₹3-5 crore isn't the question, fit is.",
+    metaTitle: "Luxury Real Estate in Mumbai & Gurgaon for Bahrain NRIs",
     metaDescription:
-      "Scarcity in Mumbai or growth momentum in Gurgaon? A real comparison of luxury real estate, top developers, and pricing for Singapore-based NRI buyers.",
+      "Scarcity in Mumbai or growth momentum in Gurgaon? A real comparison of luxury real estate, top developers, and pricing for Bahrain-based NRI buyers.",
     publishDate: "2026-07-16",
     readingTime: "12 min read",
     content: [
       {
         type: "p",
-        text: 'There\'s a specific kind of Singapore NRI this blog is for: senior enough in their career that ₹3-5 crore isn\'t a stretch, and the question isn\'t "can I afford India property" but "which city\'s luxury segment actually holds value the way I expect it to."',
+        text: 'There\'s a specific kind of Bahrain NRI this blog is for: senior enough in their career that ₹3-5 crore isn\'t a stretch, and the question isn\'t "can I afford India property" but "which city\'s luxury segment actually holds value the way I expect it to."',
       },
       {
         type: "p",
@@ -981,18 +981,18 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "crosslink",
-        text: "Legal and tax structuring deserves dedicated advice before you commit, not after — the FEMA and capital gains mechanics are the same rules that apply to any NRI property purchase, but the absolute rupee amounts at stake make getting professional advice upfront considerably cheaper than fixing a structuring mistake later. Our guide to NRI property tax filing from Singapore covers the mechanics in full.",
-        slug: "nri-property-tax-filing-singapore",
+        text: "Legal and tax structuring deserves dedicated advice before you commit, not after — the FEMA and capital gains mechanics are the same rules that apply to any NRI property purchase, but the absolute rupee amounts at stake make getting professional advice upfront considerably cheaper than fixing a structuring mistake later. Our guide to NRI property tax filing from Bahrain covers the mechanics in full.",
+        slug: "nri-property-tax-filing-bahrain",
       },
       {
         type: "crosslink",
-        text: "The payment trail and Power of Attorney rules don't change at this price point either — they just carry more weight when the numbers involved are larger. Our complete guide to buying property in India as a Singapore NRI covers both in detail.",
-        slug: "buying-property-india-from-singapore-nri-guide",
+        text: "The payment trail and Power of Attorney rules don't change at this price point either — they just carry more weight when the numbers involved are larger. Our complete guide to buying property in India as a Bahrain NRI covers both in detail.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
       },
       {
         type: "crosslink",
         text: "And if part of this capital could just as easily sit in a liquid, tax-efficient instrument instead of a physical address, it's worth comparing this against a GIFT City allocation before deciding how much goes into bricks and mortar.",
-        slug: "gift-city-vs-real-estate-singapore-nri",
+        slug: "gift-city-vs-real-estate-bahrain-nri",
       },
       {
         type: "cta",
@@ -1001,7 +1001,7 @@ export const blogPosts: BlogPost[] = [
       { type: "h2", text: "Making the Call at This Price Point" },
       {
         type: "p",
-        text: "Mumbai and Gurgaon both give a Singapore NRI with serious capital a legitimate path into Indian luxury real estate — they just reward different things. Mumbai rewards patience and conviction in permanent scarcity. Gurgaon rewards being early to an infrastructure story that's still unfolding. Know which one you're actually signing up for before the paperwork starts.",
+        text: "Mumbai and Gurgaon both give a Bahrain NRI with serious capital a legitimate path into Indian luxury real estate — they just reward different things. Mumbai rewards patience and conviction in permanent scarcity. Gurgaon rewards being early to an infrastructure story that's still unfolding. Know which one you're actually signing up for before the paperwork starts.",
       },
       {
         type: "quote",

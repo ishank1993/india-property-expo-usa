@@ -18,11 +18,11 @@ const cityIcons = [
 
 export function IndiaPresence() {
   return (
-    <section className="relative py-24 overflow-hidden min-h-[800px] flex items-center bg-gradient-to-br from-orange-900 via-green-900 to-orange-800">
+    <section className="relative py-24 overflow-hidden min-h-[800px] flex items-center bg-gradient-to-br from-red-900 via-amber-900 to-red-800">
       
       {/* Background Effect */}
       <div className="absolute inset-0 w-full h-full z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-orange-900/50 via-green-900/50 to-orange-900/50" />
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900/50 via-amber-900/50 to-red-900/50" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(249,115,22,0.15)_0%,transparent_60%)]" />
         {/* Animated grid lines */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 mix-blend-overlay"></div>
@@ -39,50 +39,50 @@ export function IndiaPresence() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-500/20 to-transparent border-l-4 border-orange-400 px-6 py-2 mb-8 backdrop-blur-sm">
-                <Globe className="w-4 h-4 text-orange-400" />
-                <span className="text-orange-300 text-sm font-bold tracking-[0.2em] uppercase">
-                    🇸🇬 Singapore to India Connection
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-500/20 to-transparent border-l-4 border-red-400 px-6 py-2 mb-8 backdrop-blur-sm">
+                <Globe className="w-4 h-4 text-red-400" />
+                <span className="text-red-300 text-sm font-bold tracking-[0.2em] uppercase">
+                    🇧🇭 Bahrain to India Connection
                 </span>
               </div>
               
               <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-6">
                 Invest Across <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-white to-green-400 bg-[length:200%_auto] animate-gradient">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-amber-400 bg-[length:200%_auto] animate-gradient">
                     35+ Indian Cities
                 </span>
-                <span className="block text-2xl mt-4 text-orange-300">From Singapore</span>
+                <span className="block text-2xl mt-4 text-red-300">From Bahrain</span>
               </h2>
 
-              <p className="text-orange-100 text-lg leading-relaxed mb-10 border-l-4 border-orange-400/50 pl-6">
-                <span className="font-semibold text-white">Exclusively for Singapore-based NRIs, PIOs & OCIs.</span> Experience the finest real estate opportunities from every major corner of India without leaving the Lion City. We bring India's premium properties to Singapore.
+              <p className="text-red-100 text-lg leading-relaxed mb-10 border-l-4 border-red-400/50 pl-6">
+                <span className="font-semibold text-white">Exclusively for Bahrain-based NRIs, PIOs & OCIs.</span> Experience the finest real estate opportunities from every major corner of India without leaving the Kingdom. We bring India’s premium properties to Manama.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-10">
-                <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-orange-400/50 transition-all duration-300 group hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-red-400/50 transition-all duration-300 group hover:-translate-y-1">
                   <div className="flex items-center gap-2 mb-2">
-                    <Building2 className="w-5 h-5 text-orange-400" />
+                    <Building2 className="w-5 h-5 text-red-400" />
                   </div>
-                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-orange-400 transition-colors">100+</h3>
-                  <p className="text-xs text-orange-200 uppercase tracking-widest font-medium">Premium Projects</p>
+                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-red-400 transition-colors">100+</h3>
+                  <p className="text-xs text-red-200 uppercase tracking-widest font-medium">Premium Projects</p>
                 </div>
-                <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-green-400/50 transition-all duration-300 group hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-md p-6 rounded-2xl border border-white/10 hover:border-amber-400/50 transition-all duration-300 group hover:-translate-y-1">
                   <div className="flex items-center gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-green-400" />
+                    <MapPin className="w-5 h-5 text-amber-400" />
                   </div>
-                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-green-400 transition-colors">35+</h3>
-                  <p className="text-xs text-orange-200 uppercase tracking-widest font-medium">Indian Cities</p>
+                  <h3 className="text-4xl font-bold text-white mb-1 group-hover:text-amber-400 transition-colors">35+</h3>
+                  <p className="text-xs text-red-200 uppercase tracking-widest font-medium">Indian Cities</p>
                 </div>
               </div>
 
               <div className="flex flex-wrap gap-2">
                  {cities.map((city, i) => (
-                     <div key={i} className="flex items-center space-x-1 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-orange-400/50 hover:bg-orange-500/10 transition-colors cursor-default group">
-                         <MapPin className="w-3 h-3 text-orange-300 group-hover:text-orange-400 transition-colors" />
-                         <span className="text-xs font-medium text-orange-200 group-hover:text-white transition-colors">{city}</span>
+                     <div key={i} className="flex items-center space-x-1 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 hover:border-red-400/50 hover:bg-red-500/10 transition-colors cursor-default group">
+                         <MapPin className="w-3 h-3 text-red-300 group-hover:text-red-400 transition-colors" />
+                         <span className="text-xs font-medium text-red-200 group-hover:text-white transition-colors">{city}</span>
                      </div>
                  ))}
-                 <span className="text-xs font-medium px-3 py-1.5 rounded-full bg-transparent text-orange-300 border border-orange-400 border-dashed">
+                 <span className="text-xs font-medium px-3 py-1.5 rounded-full bg-transparent text-red-300 border border-red-400 border-dashed">
                      & more
                  </span>
               </div>
@@ -92,8 +92,8 @@ export function IndiaPresence() {
           {/* Right Visual - 6 Icons Orbital Layout */}
           <div className="lg:w-7/12 relative flex justify-center items-center h-[600px]">
              {/* Orbit Rings */}
-             <div className="absolute w-[450px] h-[450px] rounded-full border-2 border-orange-400/30 animate-spin-slow opacity-40" style={{ animationDuration: '40s' }} />
-             <div className="absolute w-[300px] h-[300px] rounded-full border-2 border-green-400/40 animate-spin-reverse-slow opacity-50" style={{ animationDuration: '30s' }} />
+             <div className="absolute w-[450px] h-[450px] rounded-full border-2 border-red-400/30 animate-spin-slow opacity-40" style={{ animationDuration: '40s' }} />
+             <div className="absolute w-[300px] h-[300px] rounded-full border-2 border-amber-400/40 animate-spin-reverse-slow opacity-50" style={{ animationDuration: '30s' }} />
              <div className="absolute w-[150px] h-[150px] rounded-full border border-white/20 animate-spin-slow opacity-30" style={{ animationDuration: '20s' }} />
              
              {/* Rotating Container */}
@@ -112,11 +112,11 @@ export function IndiaPresence() {
                     
                     // Alternate colors between orange and green
                     const isOrange = idx % 2 === 0;
-                    const borderColor = isOrange ? 'border-orange-500/70' : 'border-green-500/70';
-                    const iconColor = isOrange ? 'text-orange-600' : 'text-green-600';
-                    const hoverBorder = isOrange ? 'hover:border-orange-500' : 'hover:border-green-500';
-                    const hoverIcon = isOrange ? 'group-hover:text-orange-700' : 'group-hover:text-green-700';
-                    const shadowColor = isOrange ? 'hover:shadow-orange-500/30' : 'hover:shadow-green-500/30';
+                    const borderColor = isOrange ? 'border-red-500/70' : 'border-amber-500/70';
+                    const iconColor = isOrange ? 'text-red-600' : 'text-amber-600';
+                    const hoverBorder = isOrange ? 'hover:border-red-500' : 'hover:border-amber-500';
+                    const hoverIcon = isOrange ? 'group-hover:text-red-700' : 'group-hover:text-amber-700';
+                    const shadowColor = isOrange ? 'hover:shadow-red-500/30' : 'hover:shadow-amber-500/30';
 
                     return (
                         <motion.div 
@@ -148,23 +148,23 @@ export function IndiaPresence() {
                     initial={{ scale: 0 }}
                     whileInView={{ scale: 1 }}
                     transition={{ type: "spring", duration: 1.5, bounce: 0.4 }}
-                    className="w-40 h-40 bg-gradient-to-br from-white via-orange-50 to-white backdrop-blur-xl border-4 border-orange-500 rounded-full flex flex-col items-center justify-center shadow-2xl relative overflow-hidden"
+                    className="w-40 h-40 bg-gradient-to-br from-white via-red-50 to-white backdrop-blur-xl border-4 border-red-500 rounded-full flex flex-col items-center justify-center shadow-2xl relative overflow-hidden"
                  >
                     {/* Animated tricolor rings */}
-                    <div className="absolute inset-0 rounded-full border-2 border-orange-400 animate-ping opacity-30" />
-                    <div className="absolute inset-0 rounded-full border-2 border-green-400 animate-ping opacity-20" style={{ animationDelay: '0.5s' }} />
+                    <div className="absolute inset-0 rounded-full border-2 border-red-400 animate-ping opacity-30" />
+                    <div className="absolute inset-0 rounded-full border-2 border-amber-400 animate-ping opacity-20" style={{ animationDelay: '0.5s' }} />
                     
                     {/* Tricolor gradient background effect */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-white/50 to-green-500/5 animate-pulse" style={{ animationDuration: '3s' }} />
+                    <div className="absolute inset-0 bg-gradient-to-br from-red-500/5 via-white/50 to-amber-500/5 animate-pulse" style={{ animationDuration: '3s' }} />
                     
                     <div className="text-center z-10 relative">
-                        <span className="block text-4xl font-black text-orange-600 tracking-tight drop-shadow-lg leading-tight">PAN</span>
-                        <span className="block text-4xl font-black text-green-600 tracking-tight drop-shadow-lg -mt-2">INDIA</span>
+                        <span className="block text-4xl font-black text-red-600 tracking-tight drop-shadow-lg leading-tight">PAN</span>
+                        <span className="block text-4xl font-black text-amber-600 tracking-tight drop-shadow-lg -mt-2">INDIA</span>
                         
                         <div className="flex items-center justify-center gap-1 mt-2">
-                          <div className="w-2 h-2 rounded-full bg-orange-500"></div>
-                          <div className="w-2 h-2 rounded-full bg-white border border-orange-500"></div>
-                          <div className="w-2 h-2 rounded-full bg-green-600"></div>
+                          <div className="w-2 h-2 rounded-full bg-red-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-white border border-red-500"></div>
+                          <div className="w-2 h-2 rounded-full bg-amber-600"></div>
                         </div>
                     </div>
                  </motion.div>

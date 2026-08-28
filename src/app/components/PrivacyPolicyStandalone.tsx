@@ -4,7 +4,7 @@ export function PrivacyPolicyStandalone() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-orange-600 to-green-600 p-1 rounded-lg mb-8">
+        <div className="bg-gradient-to-r from-red-600 to-amber-600 p-1 rounded-lg mb-8">
           <div className="bg-white p-8 rounded-lg">
             <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2">
               Privacy Policy
@@ -54,9 +54,9 @@ export function PrivacyPolicyStandalone() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPA Compliance)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPL Compliance)</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Under Singapore's Personal Data Protection Act (PDPA), we process your data based on:
+              Under Bahrain's Personal Data Protection Law (PDPL), we process your data based on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Consent:</strong> You provide consent when registering for events or subscribing to newsletters</li>
@@ -115,7 +115,7 @@ export function PrivacyPolicyStandalone() {
             </p>
           </section>
 
-          <section className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+          <section className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-600">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Your Data Rights</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
               You have the right to:
@@ -136,7 +136,7 @@ export function PrivacyPolicyStandalone() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your data may be transferred to and processed in countries outside Singapore, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPA requirements.
+              Your data may be transferred to and processed in countries outside Bahrain, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPL requirements.
             </p>
           </section>
 
@@ -241,10 +241,10 @@ export function PrivacyPolicyStandalone() {
               In the unlikely event of a data breach that affects your personal information:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>Notification Timeline:</strong> We will notify affected users within 72 hours of discovering the breach, in compliance with Singapore PDPA requirements</li>
+              <li><strong>Notification Timeline:</strong> We will notify affected users within 72 hours of discovering the breach, in compliance with Bahrain PDPL requirements</li>
               <li><strong>Method of Notification:</strong> Email notification to the address you provided during registration</li>
               <li><strong>Information Provided:</strong> Nature of the breach, data affected, steps taken to mitigate harm, and recommended actions for users</li>
-              <li><strong>Regulatory Reporting:</strong> We will report significant breaches to the Personal Data Protection Commission (PDPC) in Singapore</li>
+              <li><strong>Regulatory Reporting:</strong> We will report significant breaches to the Personal Data Protection Commission (PDPC) in Bahrain</li>
               <li><strong>Remedial Actions:</strong> Immediate measures to secure systems, investigate the breach, and prevent future incidents</li>
             </ul>
             <p className="text-red-700 font-semibold mt-4">
@@ -299,19 +299,19 @@ export function PrivacyPolicyStandalone() {
               This Privacy Policy is governed by the laws of:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>Singapore:</strong> Compliance with Singapore's Personal Data Protection Act (PDPA) 2012 and its amendments</li>
+              <li><strong>Bahrain:</strong> Compliance with Bahrain's Personal Data Protection Law (PDPL), Law No. 30 of 2018</li>
               <li><strong>India:</strong> Compliance with India's Information Technology Act, 2000 and Digital Personal Data Protection Act (DPDPA) 2023</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-3">
               <strong>Dispute Resolution:</strong>
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>For Singapore residents: Disputes will be subject to the exclusive jurisdiction of the courts of Singapore</li>
+              <li>For Bahrain residents: Disputes will be subject to the exclusive jurisdiction of the courts of Bahrain</li>
               <li>For India residents: Disputes will be subject to the jurisdiction of courts in Delhi, India</li>
-              <li>For other jurisdictions: Disputes will be governed by the laws of Singapore</li>
+              <li>For other jurisdictions: Disputes will be governed by the laws of Bahrain</li>
             </ul>
             <p className="text-teal-700 font-semibold mt-4">
-              If you have privacy-related complaints, you may also contact the Personal Data Protection Commission (PDPC) in Singapore or the relevant data protection authority in your country.
+              If you have privacy-related complaints, you may also contact the Personal Data Protection Commission (PDPC) in Bahrain or the relevant data protection authority in your country.
             </p>
           </section>
 
@@ -329,9 +329,9 @@ export function PrivacyPolicyStandalone() {
             </div>
           </section>
 
-          <div className="mt-12 p-6 bg-orange-50 border-l-4 border-orange-600 rounded-lg">
+          <div className="mt-12 p-6 bg-red-50 border-l-4 border-red-600 rounded-lg">
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong className="text-orange-700">Your Consent:</strong> By using this website and registering for our events, you acknowledge that you have read and understood this Privacy Policy and consent to the collection, use, and sharing of your personal data as described herein.
+              <strong className="text-red-700">Your Consent:</strong> By using this website and registering for our events, you acknowledge that you have read and understood this Privacy Policy and consent to the collection, use, and sharing of your personal data as described herein.
             </p>
           </div>
         </div>

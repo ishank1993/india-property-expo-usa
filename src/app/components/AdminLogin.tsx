@@ -47,13 +47,13 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-50 via-white to-green-50 px-4 py-8">
-      <Card className="w-full max-w-md shadow-2xl border-2 border-orange-200">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-red-50 via-white to-amber-50 px-4 py-8">
+      <Card className="w-full max-w-md shadow-2xl border-2 border-red-200">
         <CardHeader className="space-y-3 text-center">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-orange-500 to-green-600 rounded-full flex items-center justify-center">
+          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-red-500 to-amber-600 rounded-full flex items-center justify-center">
             <Lock className="h-8 w-8 text-white" />
           </div>
-          <CardTitle className="text-3xl font-bold bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent">
+          <CardTitle className="text-3xl font-bold bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
             Admin Login
           </CardTitle>
           <CardDescription className="text-base">
@@ -78,7 +78,7 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
                 onChange={(e) => setUsername(e.target.value)}
                 required
                 disabled={isLoading}
-                className="h-12 text-base border-2 focus:border-orange-500"
+                className="h-12 text-base border-2 focus:border-red-500"
                 autoComplete="username"
               />
             </div>
@@ -97,7 +97,7 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
                   onChange={(e) => setPassword(e.target.value)}
                   required
                   disabled={isLoading}
-                  className="h-12 text-base border-2 focus:border-orange-500 pr-12"
+                  className="h-12 text-base border-2 focus:border-red-500 pr-12"
                   autoComplete="current-password"
                 />
                 <button
@@ -127,7 +127,7 @@ export function AdminLogin({ onLoginSuccess }: AdminLoginProps) {
             <Button
               type="submit"
               disabled={isLoading}
-              className="w-full h-12 text-base font-semibold bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white"
+              className="w-full h-12 text-base font-semibold bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white"
             >
               {isLoading ? (
                 <>

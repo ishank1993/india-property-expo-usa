@@ -4,7 +4,7 @@ export function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-orange-600 to-green-600 p-1 rounded-lg mb-8">
+        <div className="bg-gradient-to-r from-red-600 to-amber-600 p-1 rounded-lg mb-8">
           <div className="bg-white p-8 rounded-lg">
             <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2">
               Privacy Policy
@@ -54,9 +54,9 @@ export function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPA Compliance)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPL Compliance)</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Under Singapore's Personal Data Protection Act (PDPA), we process your data based on:
+              Under Bahrain's Personal Data Protection Law (PDPL), we process your data based on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Consent:</strong> You provide consent when registering for events or subscribing to newsletters</li>
@@ -115,7 +115,7 @@ export function PrivacyPolicy() {
             </p>
           </section>
 
-          <section className="bg-green-50 p-6 rounded-lg border-l-4 border-green-600">
+          <section className="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-600">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">7. Your Data Rights</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
               You have the right to:
@@ -136,7 +136,7 @@ export function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your data may be transferred to and processed in countries outside Singapore, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPA requirements.
+              Your data may be transferred to and processed in countries outside Bahrain, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPL requirements.
             </p>
           </section>
 
@@ -175,9 +175,9 @@ export function PrivacyPolicy() {
             </div>
           </section>
 
-          <div className="mt-12 p-6 bg-orange-50 border-l-4 border-orange-600 rounded-lg">
+          <div className="mt-12 p-6 bg-red-50 border-l-4 border-red-600 rounded-lg">
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong className="text-orange-700">Your Consent:</strong> By using this website and registering for our events, you acknowledge that you have read and understood this Privacy Policy and consent to the collection, use, and sharing of your personal data as described herein.
+              <strong className="text-red-700">Your Consent:</strong> By using this website and registering for our events, you acknowledge that you have read and understood this Privacy Policy and consent to the collection, use, and sharing of your personal data as described herein.
             </p>
           </div>
         </div>

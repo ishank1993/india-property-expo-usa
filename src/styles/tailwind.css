@@ -3,6 +3,38 @@
 
 @import 'tw-animate-css';
 
+/* ============================================================
+   BAHRAIN EDITION PALETTE
+   Flag colours: red #CE1126 + white. Gold used as the single
+   supporting accent. Overrides Tailwind's default red/amber
+   scales so every existing utility class inherits the brand.
+   ============================================================ */
+@theme {
+  --color-red-50:  #fef2f3;
+  --color-red-100: #fde3e5;
+  --color-red-200: #fac7cb;
+  --color-red-300: #f49aa1;
+  --color-red-400: #e85f6b;
+  --color-red-500: #d92b3c;
+  --color-red-600: #ce1126; /* Bahrain flag red */
+  --color-red-700: #a80e1f;
+  --color-red-800: #870d1b;
+  --color-red-900: #6e0f1a;
+  --color-red-950: #3d0409;
+
+  --color-amber-50:  #fdf9ed;
+  --color-amber-100: #faf0d1;
+  --color-amber-200: #f4e0a3;
+  --color-amber-300: #eccd6f;
+  --color-amber-400: #e0c060;
+  --color-amber-500: #d4af37; /* gold accent */
+  --color-amber-600: #b8942a;
+  --color-amber-700: #96771f;
+  --color-amber-800: #78601c;
+  --color-amber-900: #624f1b;
+}
+
+
 /* Custom animations */
 @keyframes spin-slow {
   from {

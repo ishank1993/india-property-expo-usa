@@ -23,16 +23,16 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, "../dist");
 const PORT = 4321;
-const SITE_URL = "https://nriniveshexposg.com";
+const SITE_URL = "https://indiapropertyexpobahrain.com";
 
 // Keep in sync with the slugs in src/app/content/blogPosts.ts.
 const blogSlugs = [
-  "buying-property-india-from-singapore-nri-guide",
-  "gift-city-vs-real-estate-singapore-nri",
-  "nri-property-tax-filing-singapore",
-  "best-bangalore-projects-nri-investment-singapore",
-  "pune-vs-hyderabad-property-investment-nri-singapore",
-  "luxury-real-estate-mumbai-gurgaon-nri-singapore",
+  "buying-property-india-from-bahrain-nri-guide",
+  "gift-city-vs-real-estate-bahrain-nri",
+  "nri-property-tax-filing-bahrain",
+  "best-bangalore-projects-nri-investment-bahrain",
+  "pune-vs-hyderabad-property-investment-nri-bahrain",
+  "luxury-real-estate-mumbai-gurgaon-nri-bahrain",
 ];
 
 const routes = [
@@ -123,7 +123,7 @@ async function run() {
         let html = await page.content();
         html = html
           .replace(/https?:\/\/(localhost|127\.0\.0\.1):\d+/gi, SITE_URL)
-          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=nriniveshexposg.com");
+          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=indiapropertyexpobahrain.com");
 
         const outDir = route === "/" ? distDir : path.join(distDir, route);
         await mkdir(outDir, { recursive: true });

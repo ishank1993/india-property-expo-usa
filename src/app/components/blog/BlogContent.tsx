@@ -59,7 +59,7 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
               <ul key={key} className="space-y-3 pl-1">
                 {block.items.map((item, i) => (
                   <li key={`${key}-${i}`} className="flex items-start space-x-3">
-                    <span className="w-2 h-2 rounded-full bg-gradient-to-br from-orange-500 to-green-500 mt-2.5 flex-shrink-0" />
+                    <span className="w-2 h-2 rounded-full bg-gradient-to-br from-red-500 to-amber-500 mt-2.5 flex-shrink-0" />
                     <span className="text-lg text-gray-700 leading-relaxed">
                       {renderInline(item, `${key}-${i}`)}
                     </span>
@@ -73,7 +73,7 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
               <div key={key} className="overflow-x-auto rounded-2xl border border-gray-200 shadow-sm">
                 <table className="w-full text-left border-collapse">
                   <thead>
-                    <tr className="bg-gradient-to-r from-orange-50 to-green-50">
+                    <tr className="bg-gradient-to-r from-red-50 to-amber-50">
                       {block.headers.map((h, i) => (
                         <th
                           key={`${key}-h-${i}`}
@@ -106,7 +106,7 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
             return (
               <p
                 key={key}
-                className="text-sm text-gray-500 italic border-l-4 border-orange-300 pl-4 py-1"
+                className="text-sm text-gray-500 italic border-l-4 border-red-300 pl-4 py-1"
               >
                 {block.text}
               </p>
@@ -116,12 +116,12 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
             return (
               <div
                 key={key}
-                className="my-8 rounded-2xl bg-gradient-to-br from-orange-600 to-green-600 p-8 text-center shadow-lg"
+                className="my-8 rounded-2xl bg-gradient-to-br from-red-600 to-amber-600 p-8 text-center shadow-lg"
               >
                 <p className="text-white text-lg font-semibold mb-4">{block.text}</p>
                 <Button
                   onClick={onRegisterClick}
-                  className="bg-white text-orange-700 hover:bg-orange-50 font-bold px-8 py-6 rounded-full shadow-md"
+                  className="bg-white text-red-700 hover:bg-red-50 font-bold px-8 py-6 rounded-full shadow-md"
                 >
                   Register Free for NRI Investment Expo <ArrowRight className="w-5 h-5 ml-2" />
                 </Button>
@@ -133,7 +133,7 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
             return (
               <div
                 key={key}
-                className="rounded-2xl bg-orange-50 border border-orange-200 p-6"
+                className="rounded-2xl bg-red-50 border border-red-200 p-6"
               >
                 <p className="text-lg text-gray-700 leading-relaxed mb-3">
                   {renderInline(block.text, key)}
@@ -141,7 +141,7 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
                 {target && (
                   <Link
                     to={`/blog/${block.slug}`}
-                    className="inline-flex items-center font-semibold text-orange-700 hover:text-orange-800"
+                    className="inline-flex items-center font-semibold text-red-700 hover:text-red-800"
                   >
                     Read: {target.title} <ArrowRight className="w-4 h-4 ml-1" />
                   </Link>
@@ -152,13 +152,13 @@ export function BlogContent({ blocks, onRegisterClick }: BlogContentProps) {
 
           case "internallink":
             return (
-              <div key={key} className="rounded-2xl bg-green-50 border border-green-200 p-6">
+              <div key={key} className="rounded-2xl bg-amber-50 border border-amber-200 p-6">
                 <p className="text-lg text-gray-700 leading-relaxed mb-3">
                   {renderInline(block.text, key)}
                 </p>
                 <a
                   href={block.href}
-                  className="inline-flex items-center font-semibold text-green-700 hover:text-green-800"
+                  className="inline-flex items-center font-semibold text-amber-700 hover:text-amber-800"
                 >
                   Explore the GIFT City Knowledge Pavilion <ArrowRight className="w-4 h-4 ml-1" />
                 </a>

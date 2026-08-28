@@ -4,7 +4,7 @@ export function TermsConditions() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-orange-600 to-green-600 p-1 rounded-lg mb-8">
+        <div className="bg-gradient-to-r from-red-600 to-amber-600 p-1 rounded-lg mb-8">
           <div className="bg-white p-8 rounded-lg">
             <h1 className="text-3xl sm:text-4xl font-bold text-center mb-2">
               Terms & Conditions
@@ -73,7 +73,7 @@ export function TermsConditions() {
             </ul>
           </section>
 
-          <section className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
+          <section className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">6. No Guaranteed Returns</h2>
             <p className="text-gray-700 leading-relaxed font-medium">
               This website does NOT guarantee:
@@ -84,7 +84,7 @@ export function TermsConditions() {
               <li>Tax benefits</li>
               <li>Capital appreciation</li>
             </ul>
-            <p className="text-orange-700 font-semibold mt-4">
+            <p className="text-red-700 font-semibold mt-4">
               All investments involve risk. Past performance is not indicative of future results.
             </p>
           </section>
@@ -106,7 +106,7 @@ export function TermsConditions() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Data Protection & Privacy</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your use of this website is also governed by our Privacy Policy. We collect, store, and process personal data in accordance with applicable data protection laws including PDPA (Singapore).
+              Your use of this website is also governed by our Privacy Policy. We collect, store, and process personal data in accordance with applicable data protection laws including PDPL (Bahrain).
             </p>
           </section>
 
@@ -120,7 +120,7 @@ export function TermsConditions() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Governing Law & Jurisdiction</h2>
             <p className="text-gray-700 leading-relaxed">
-              These terms are governed by the laws of Singapore. Any dispute arising from the use of this website will be subject to the exclusive jurisdiction of the courts in Singapore.
+              These terms are governed by the laws of Bahrain. Any dispute arising from the use of this website will be subject to the exclusive jurisdiction of the courts in Bahrain.
             </p>
           </section>
 
@@ -137,9 +137,9 @@ export function TermsConditions() {
             </div>
           </section>
 
-          <div className="mt-12 p-6 bg-green-50 border-l-4 border-green-600 rounded-lg">
+          <div className="mt-12 p-6 bg-amber-50 border-l-4 border-amber-600 rounded-lg">
             <p className="text-sm text-gray-700 leading-relaxed">
-              <strong className="text-green-700">Important:</strong> By registering for the India Property Expo 2026 or using any services on this platform, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.
+              <strong className="text-amber-700">Important:</strong> By registering for the India Property Expo 2026 or using any services on this platform, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.
             </p>
           </div>
         </div>

@@ -17,7 +17,7 @@ import {
 import { getBlogPost, blogPosts } from "../../content/blogPosts";
 import { BlogContent } from "./BlogContent";
 
-const SITE_URL = "https://nriniveshexposg.com";
+const SITE_URL = "https://indiapropertyexpobahrain.com";
 
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -126,7 +126,7 @@ export function BlogPostPage() {
             <div className="max-w-3xl mx-auto">
               {/* Breadcrumb */}
               <nav className="mb-8 text-sm text-gray-500" aria-label="Breadcrumb">
-                <Link to="/blog" className="inline-flex items-center hover:text-orange-600 font-medium">
+                <Link to="/blog" className="inline-flex items-center hover:text-red-600 font-medium">
                   <ArrowLeft className="w-4 h-4 mr-1" /> Back to Blog
                 </Link>
               </nav>
@@ -188,7 +188,7 @@ export function BlogPostPage() {
                       <Link
                         key={p.slug}
                         to={`/blog/${p.slug}`}
-                        className="block bg-gray-50 hover:bg-orange-50 border border-gray-200 hover:border-orange-300 rounded-2xl p-6 transition-all"
+                        className="block bg-gray-50 hover:bg-red-50 border border-gray-200 hover:border-red-300 rounded-2xl p-6 transition-all"
                       >
                         <h3 className="font-bold text-gray-900 mb-2">{p.title}</h3>
                         <p className="text-sm text-gray-600 line-clamp-3">{p.dek}</p>

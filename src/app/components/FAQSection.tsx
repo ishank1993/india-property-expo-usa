@@ -8,7 +8,7 @@ import {
 
 const faqs = [
   {
-    question: "Who can attend the India Property Expo 2026 in Singapore?",
+    question: "Who can attend the India Property Expo 2026 in Bahrain?",
     answer: "The expo is open to all NRIs, PIOs, OCIs, and Resident Indians abroad who are interested in exploring property options in India. Whether you're a first-time buyer or an experienced investor, you're welcome to attend. Entry is FREE with pre-registration."
   },
   {
@@ -20,7 +20,7 @@ const faqs = [
     answer: "The expo features 500+ premium projects including residential apartments, luxury villas, plotted developments, commercial properties, and GIFT City property options. Properties are available across 35+ major cities including Mumbai, Bangalore, Delhi NCR, Pune, Hyderabad, Chennai, and Goa, with prices ranging from ₹30 lakhs to ₹200 crores."
   },
   {
-    question: "How do I invest in Indian property as an NRI from Singapore?",
+    question: "How do I invest in Indian property as an NRI from Bahrain?",
     answer: "NRIs can purchase residential and commercial properties in India (excluding agricultural land). The process involves: (1) Opening an NRE/NRO bank account, (2) Obtaining a PAN card, (3) Conducting property verification, (4) Completing legal documentation, (5) Making payment through proper banking channels. Our expo provides expert guidance on each step, including NRI home loan assistance and legal support."
   },
   {
@@ -57,11 +57,11 @@ const faqs = [
   },
   {
     question: "Is my personal information safe when I register?",
-    answer: "Yes, we take data privacy seriously and comply with Singapore's PDPA regulations. Your information is encrypted, securely stored, and used only for expo-related communication. We never sell your data to third parties. You can request data deletion anytime by contacting info@nrinivesh.in. Please review our Privacy Policy for complete details."
+    answer: "Yes, we take data privacy seriously and comply with Bahrain's PDPL requirements. Your information is encrypted, securely stored, and used only for expo-related communication. We never sell your data to third parties. You can request data deletion anytime by contacting info@nrinivesh.in. Please review our Privacy Policy for complete details."
   },
   {
     question: "What are the event dates, timings, and venue?",
-    answer: "The India Property Expo 2026 will be held on Saturday, 5th September and Sunday, 6th September 2026, from 10:00 AM to 7:00 PM each day. The venue is Sheraton Towers Singapore, located at 39 Scotts Road, Singapore 228230. It's conveniently accessible via MRT (Newton station, 5 min walk) and has ample parking facilities."
+    answer: "The Bahrain edition runs across the Bahrain weekend: Friday 23rd and Saturday 24th October 2026, from 10:00 AM to 7:00 PM each day, at a central Manama venue. This is an RSVP-only event — once you confirm your RSVP we email you the exact address, parking details and your suggested arrival time, so registered guests always hear first."
   },
   {
     question: "Will there be any special offers or pre-launch projects?",
@@ -106,7 +106,7 @@ export function FAQSection() {
     <section className="py-16 sm:py-24 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-4 sm:px-6 max-w-4xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-green-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent">
             Frequently Asked Questions
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -133,12 +133,12 @@ export function FAQSection() {
           ))}
         </Accordion>
 
-        <div className="mt-12 text-center p-6 bg-orange-50 rounded-lg border border-orange-200">
+        <div className="mt-12 text-center p-6 bg-red-50 rounded-lg border border-red-200">
           <p className="text-gray-700 mb-4">
             <strong>Still have questions?</strong> Our team is here to help!
           </p>
           <p className="text-sm text-gray-600">
-            Email us at <a href="mailto:info@nrinivesh.in" className="text-orange-600 underline">info@nrinivesh.in</a> or 
+            Email us at <a href="mailto:info@nrinivesh.in" className="text-red-600 underline">info@nrinivesh.in</a> or 
             visit us at the expo for personalized assistance.
           </p>
         </div>

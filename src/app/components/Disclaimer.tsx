@@ -5,10 +5,10 @@ export function Disclaimer() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <div className="bg-gradient-to-r from-orange-600 to-green-600 p-1 rounded-lg mb-8">
+        <div className="bg-gradient-to-r from-red-600 to-amber-600 p-1 rounded-lg mb-8">
           <div className="bg-white p-8 rounded-lg">
             <div className="flex items-center justify-center gap-3 mb-2">
-              <AlertTriangle className="w-8 h-8 text-orange-600" />
+              <AlertTriangle className="w-8 h-8 text-red-600" />
               <h1 className="text-3xl sm:text-4xl font-bold text-center">
                 Disclaimer
               </h1>
@@ -46,7 +46,7 @@ export function Disclaimer() {
             </ul>
           </section>
 
-          <section className="bg-orange-50 p-6 rounded-lg border-l-4 border-orange-600">
+          <section className="bg-red-50 p-6 rounded-lg border-l-4 border-red-600">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">2. No Guaranteed Returns or Benefits</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
               We do NOT guarantee or promise:
@@ -61,15 +61,15 @@ export function Disclaimer() {
               <li>GIFT City investment outcomes or regulatory approvals</li>
               <li>Eligibility for NRI-specific schemes or benefits</li>
             </ul>
-            <p className="text-orange-700 font-bold mt-4 text-lg">
+            <p className="text-red-700 font-bold mt-4 text-lg">
               ⚠️ All investments involve risk. Past performance is not indicative of future results.
             </p>
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Compliance with MAS/MARS Regulations (Singapore)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Regulatory Position (Kingdom of Bahrain)</h2>
             <p className="text-gray-700 leading-relaxed">
-              This website is informational only and complies with the Monetary Authority of Singapore (MAS) advertising regulations. We do not provide financial advisory services regulated under the Financial Advisers Act (FAA) or Securities and Futures Act (SFA).
+              This website is informational only. NRI Nivesh is not licensed by the Central Bank of Bahrain (CBB) and does not carry on any regulated financial service, investment advisory or investment business activity in the Kingdom of Bahrain. Nothing on this site is an offer, solicitation or recommendation to buy or sell any security or financial instrument.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               Any property investment information presented is general in nature and not tailored to individual financial situations, risk profiles, or investment objectives.
@@ -98,7 +98,7 @@ export function Disclaimer() {
               Before making any property investment or financial decision, users MUST consult:
             </p>
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
-              <li><strong>Licensed Financial Advisor:</strong> Registered with MAS (Singapore) or SEBI (India)</li>
+              <li><strong>Licensed Financial Advisor:</strong> CBB-licensed in Bahrain, or SEBI-registered in India</li>
               <li><strong>Tax Consultant:</strong> Qualified chartered accountant familiar with NRI taxation</li>
               <li><strong>Legal Attorney:</strong> Specialist in property law and cross-border transactions</li>
               <li><strong>Immigration Consultant:</strong> For residency or visa-related queries</li>

@@ -16,7 +16,7 @@ Allow: /site.webmanifest
 Allow: /browserconfig.xml
 
 # Sitemap
-Sitemap: https://nriniveshexposg.com/sitemap.xml
+Sitemap: https://indiapropertyexpobahrain.com/sitemap.xml
 
 # Crawl-delay
 Crawl-delay: 10

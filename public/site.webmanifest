@@ -1,7 +1,7 @@
 {
-  "name": "NRI Nivesh Property Expo 2026",
-  "short_name": "NRI Nivesh",
-  "description": "Singapore's Largest India Property Exhibition - Meet 35+ Developers",
+  "name": "India Property Expo 2026 \u2014 Bahrain",
+  "short_name": "NRI Nivesh BH",
+  "description": "Bahrain's Largest India Property Exhibition \u2014 23\u201324 October 2026, Manama. RSVP free.",
   "start_url": "/",
   "scope": "/",
   "icons": [
@@ -28,9 +28,12 @@
       "purpose": "any maskable"
     }
   ],
-  "theme_color": "#FF6B35",
+  "theme_color": "#CE1126",
   "background_color": "#ffffff",
   "display": "standalone",
   "orientation": "portrait-primary",
-  "categories": ["business", "real-estate"]
+  "categories": [
+    "business",
+    "real-estate"
+  ]
 }

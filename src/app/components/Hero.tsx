@@ -1,5 +1,6 @@
-import { Calendar, MapPin, Clock, Users, TrendingUp, Award, Sparkles } from "lucide-react";
+import { Calendar, MapPin, Clock, Users, TrendingUp, Award, Sparkles, Lock } from "lucide-react";
 import { Button } from "./ui/button";
+import { EVENT } from "../config/event";
 
 interface HeroProps {
   onRegisterClick: () => void;
@@ -9,29 +10,29 @@ interface HeroProps {
 export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden" role="banner" aria-label="Hero section for India Property Expo 2026">
-      {/* Background Image - Singapore Skyline */}
+      {/* Background Image - Bahrain Skyline */}
       <div 
         className="absolute inset-0 z-0 will-change-auto"
         role="img"
-        aria-label="Singapore skyline at night"
+        aria-label="Manama skyline and the Bahrain World Trade Center at dusk"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1628933978056-81ee94ad6856?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwbmlnaHR8ZW58MXx8fHwxNzY3MTY0MDM0fDA&ixlib=rb-4.1.0&q=80&w=1080')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1748066768504-99532da7d1e9?fm=jpg&q=75&w=1920&auto=format&fit=crop')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
       >
         {/* Enhanced Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/80" />
-        <div className="absolute inset-0 bg-gradient-to-r from-orange-900/30 via-transparent to-green-900/30" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/65 to-black/85" />
+        <div className="absolute inset-0 bg-gradient-to-r from-red-950/50 via-red-900/10 to-amber-900/25" />
       </div>
 
       {/* Animated Particles/Dots */}
       <div className="absolute inset-0 z-[1]">
-        <div className="absolute top-20 left-10 w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-        <div className="absolute top-40 right-20 w-3 h-3 bg-green-500 rounded-full animate-pulse delay-100" />
-        <div className="absolute bottom-40 left-20 w-2 h-2 bg-orange-400 rounded-full animate-pulse delay-200" />
-        <div className="absolute bottom-20 right-40 w-3 h-3 bg-green-400 rounded-full animate-pulse delay-300" />
+        <div className="absolute top-20 left-10 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+        <div className="absolute top-40 right-20 w-3 h-3 bg-amber-500 rounded-full animate-pulse delay-100" />
+        <div className="absolute bottom-40 left-20 w-2 h-2 bg-red-400 rounded-full animate-pulse delay-200" />
+        <div className="absolute bottom-20 right-40 w-3 h-3 bg-amber-400 rounded-full animate-pulse delay-300" />
       </div>
 
       {/* Content */}
@@ -40,9 +41,9 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
           <header className="text-center mb-12">
             {/* Event Badge */}
             <div className="inline-flex items-center space-x-3 mb-6 bg-white/10 backdrop-blur-sm px-6 py-3 rounded-full border border-white/20">
-              <span className="w-2.5 h-2.5 bg-orange-500 rounded-full animate-ping absolute" />
-              <span className="w-2.5 h-2.5 bg-orange-500 rounded-full" />
-              <span className="text-orange-300 font-semibold tracking-wider uppercase text-sm">Exclusive Singapore Edition 2026</span>
+              <span className="w-2.5 h-2.5 bg-red-500 rounded-full animate-ping absolute" />
+              <span className="w-2.5 h-2.5 bg-red-500 rounded-full" />
+              <span className="text-red-300 font-semibold tracking-wider uppercase text-sm">Exclusive Bahrain Edition • RSVP Only</span>
             </div>
             
             {/* Main Headline */}
@@ -52,32 +53,46 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
               </span>
               <br />
               <span className="text-white text-4xl md:text-5xl lg:text-6xl font-bold mt-2 inline-block">
-                IN SINGAPORE 2026
+                IN BAHRAIN 2026
               </span>
             </h1>
 
-            {/* Subheadline - MAS Compliant: Informational */}
+            {/* Subheadline - Informational only */}
             <p className="text-xl md:text-2xl text-gray-100 font-medium max-w-3xl mx-auto mb-8 leading-relaxed">
-              Meet <span className="text-orange-400 font-bold">35+ Trusted Developers</span> Face-to-Face • Explore <span className="text-green-400 font-bold">500+ Verified Projects</span> • Discover <span className="text-white font-bold">Curated Insights & Offerings</span>
+              Meet <span className="text-red-400 font-bold">35+ Trusted Developers</span> Face-to-Face • Explore <span className="text-amber-400 font-bold">500+ Verified Projects</span> • Get a <span className="text-white font-bold">Shortlist Built Around You</span>
             </p>
 
             {/* Primary CTA - Large & Prominent */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
               <Button 
                 onClick={onRegisterClick}
-                className="bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-700 hover:to-orange-600 text-white font-bold text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.6)] hover:shadow-[0_0_60px_rgba(249,115,22,0.8)] transition-all duration-300 transform hover:scale-105 animate-bounce"
-                aria-label="Register for free India Property Expo in Singapore"
+                className="bg-gradient-to-r from-red-600 to-red-500 hover:from-red-700 hover:to-red-600 text-white font-bold text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(249,115,22,0.6)] hover:shadow-[0_0_60px_rgba(249,115,22,0.8)] transition-all duration-300 transform hover:scale-105 animate-bounce"
+                aria-label="Register for free India Property Expo in Bahrain"
               >
-                🎯 REGISTER FREE NOW
+                🎯 RSVP FREE NOW
               </Button>
               <Button 
                 onClick={onRegisterClick}
                 variant="outline"
-                className="border-2 border-green-500 text-green-300 hover:bg-green-600/20 font-bold text-lg px-10 py-7 rounded-full backdrop-blur-sm transition-all duration-300"
+                className="border-2 border-amber-500 text-amber-300 hover:bg-amber-600/20 font-bold text-lg px-10 py-7 rounded-full backdrop-blur-sm transition-all duration-300"
                 aria-label="Book your consultation slot"
               >
-                📅 Book Your Slot
+                📅 Book Your 1-on-1 Slot
               </Button>
+            </div>
+
+            {/* RSVP notice — this is what makes the personalisation possible */}
+            <div className="max-w-3xl mx-auto mb-10">
+              <div className="flex flex-col sm:flex-row items-center gap-4 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl px-6 py-5 text-left">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center flex-shrink-0 shadow-lg">
+                  <Sparkles className="w-5 h-5 text-white" aria-hidden="true" />
+                </div>
+                <p className="text-gray-100 text-sm sm:text-base leading-relaxed">
+                  <span className="font-bold text-white">{EVENT.rsvp.headline}.</span>{" "}
+                  {EVENT.rsvp.reason}{" "}
+                  <span className="text-amber-300 font-semibold">Walk-ins can&apos;t be matched in advance.</span>
+                </p>
+              </div>
             </div>
 
             {/* NEW: NRI Tax Clinic & GIFT City Baatchit Banner */}
@@ -109,15 +124,15 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
             {/* Trust Indicators */}
             <div className="flex flex-wrap items-center justify-center gap-8 text-sm text-gray-200 mb-12">
               <div className="flex items-center gap-2">
-                <Award className="w-5 h-5 text-orange-400" />
+                <Award className="w-5 h-5 text-red-400" />
                 <span>Trusted by 100,000+ NRIs</span>
               </div>
               <div className="flex items-center gap-2">
-                <TrendingUp className="w-5 h-5 text-green-400" />
+                <TrendingUp className="w-5 h-5 text-amber-400" />
                 <span>Exclusive Pre-Launch Information</span>
               </div>
               <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-orange-400" />
+                <Users className="w-5 h-5 text-red-400" />
                 <span>Free 1-on-1 Consultations</span>
               </div>
             </div>
@@ -126,43 +141,43 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
           {/* Event Details Cards */}
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             {/* Date Card */}
-            <div className="group bg-gradient-to-br from-orange-900/40 to-orange-800/30 backdrop-blur-lg rounded-2xl p-6 border border-orange-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
+            <div className="group bg-gradient-to-br from-red-900/40 to-red-800/30 backdrop-blur-lg rounded-2xl p-6 border border-red-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
                   <Calendar className="text-white w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-2xl text-orange-300 mb-1">5th SEP & 6th SEP</h3>
-                  <p className="text-orange-200 font-medium">Saturday - Sunday</p>
-                  <p className="text-orange-300 text-sm mt-1">10:00 AM - 7:00 PM</p>
+                  <h3 className="font-bold text-2xl text-red-300 mb-1">23 &amp; 24 OCT</h3>
+                  <p className="text-red-200 font-medium">Friday &ndash; Saturday</p>
+                  <p className="text-red-300 text-sm mt-1">{EVENT.dates.hours}</p>
                 </div>
               </div>
             </div>
 
             {/* Venue Card */}
-            <div className="group bg-gradient-to-br from-green-900/40 to-green-800/30 backdrop-blur-lg rounded-2xl p-6 border border-green-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 hover:scale-105">
+            <div className="group bg-gradient-to-br from-amber-900/40 to-amber-800/30 backdrop-blur-lg rounded-2xl p-6 border border-amber-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(34,197,94,0.4)] transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
-                  <MapPin className="text-white w-7 h-7" />
+                <div className="w-14 h-14 bg-gradient-to-br from-amber-500 to-amber-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                  {EVENT.venue.announced ? <MapPin className="text-white w-7 h-7" /> : <Lock className="text-white w-7 h-7" />}
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-green-300 mb-1">Sheraton Hotel</h3>
-                  <p className="text-green-200 text-sm">39 Scotts Road</p>
-                  <p className="text-green-300 text-sm mt-1">Singapore 228230</p>
+                  <h3 className="font-bold text-xl text-amber-300 mb-1">Manama, Bahrain</h3>
+                  <p className="text-amber-200 text-sm">Venue revealed on RSVP</p>
+                  <p className="text-amber-300 text-sm mt-1">Confirmed guests emailed first</p>
                 </div>
               </div>
             </div>
 
             {/* Bonus Card */}
-            <div className="group bg-gradient-to-br from-orange-900/40 to-orange-800/30 backdrop-blur-lg rounded-2xl p-6 border border-orange-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
+            <div className="group bg-gradient-to-br from-red-900/40 to-red-800/30 backdrop-blur-lg rounded-2xl p-6 border border-red-400/30 shadow-xl hover:shadow-[0_0_30px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105">
               <div className="flex items-start space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
+                <div className="w-14 h-14 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg group-hover:rotate-6 transition-transform duration-300">
                   <Clock className="text-white w-7 h-7" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-xl text-orange-300 mb-1">FREE Entry</h3>
-                  <p className="text-orange-200 text-sm">Complimentary High Tea</p>
-                  <p className="text-orange-300 text-sm mt-1">Expert Consultations</p>
+                  <h3 className="font-bold text-xl text-red-300 mb-1">RSVP &amp; It&apos;s Free</h3>
+                  <p className="text-red-200 text-sm">Matched to your city &amp; budget</p>
+                  <p className="text-red-300 text-sm mt-1">1-on-1 advisor slot reserved</p>
                 </div>
               </div>
             </div>
@@ -172,19 +187,19 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
           <div className="text-center mt-12">
             <Button 
               onClick={onRegisterClick}
-              className="bg-gradient-to-r from-green-600 to-green-500 hover:from-green-700 hover:to-green-600 text-white font-bold text-lg px-10 py-6 rounded-full shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:shadow-[0_0_50px_rgba(34,197,94,0.7)] transition-all duration-300"
+              className="bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-lg px-10 py-6 rounded-full shadow-[0_0_30px_rgba(34,197,94,0.5)] hover:shadow-[0_0_50px_rgba(34,197,94,0.7)] transition-all duration-300"
             >
-              ✨ Secure Your Free Pass Today
+              ✨ Confirm Your RSVP — It’s Free
             </Button>
-            <p className="text-orange-200 text-sm mt-4">⚡ Limited Slots Available • First Come First Served</p>
+            <p className="text-red-200 text-sm mt-4">⚡ RSVP closes when the room is full • Confirmed guests get the venue address first</p>
           </div>
         </div>
       </article>
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce" role="presentation" aria-hidden="true">
-        <div className="w-6 h-10 border-2 border-orange-400 rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-orange-400 rounded-full mt-2 animate-pulse" />
+        <div className="w-6 h-10 border-2 border-red-400 rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-red-400 rounded-full mt-2 animate-pulse" />
         </div>
       </div>
     </section>

@@ -10,7 +10,7 @@ import { RegistrationModal } from "../RegistrationModal";
 import { Toaster } from "../ui/sonner";
 import { blogPosts } from "../../content/blogPosts";
 
-const SITE_URL = "https://nriniveshexposg.com";
+const SITE_URL = "https://indiapropertyexpobahrain.com";
 
 export function BlogIndexPage() {
   const navigate = useNavigate();
@@ -23,8 +23,8 @@ export function BlogIndexPage() {
   return (
     <>
       <SEOHead
-        title="NRI Property & Investment Guides for Singapore | NRI Nivesh Blog"
-        description="In-depth guides for Singapore NRIs on buying Indian property, GIFT City investing, and NRI tax filing — FEMA rules, TDS, DTAA, and Power of Attorney explained clearly."
+        title="NRI Property & Investment Guides for Bahrain | NRI Nivesh Blog"
+        description="In-depth guides for Bahrain NRIs on buying Indian property, GIFT City investing, and NRI tax filing — FEMA rules, TDS, DTAA, and Power of Attorney explained clearly."
         canonical={`${SITE_URL}/blog`}
         ogImage={`${SITE_URL}/og-image.jpg`}
       />
@@ -35,18 +35,18 @@ export function BlogIndexPage() {
           onNavigateWealth={() => navigate("/#wealth")}
         />
 
-        <section className="pt-32 pb-16 bg-gradient-to-br from-orange-50 via-white to-green-50">
+        <section className="pt-32 pb-16 bg-gradient-to-br from-red-50 via-white to-amber-50">
           <div className="container mx-auto px-6">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-orange-100 to-green-100 px-6 py-2.5 rounded-full border border-orange-200 mb-6">
-                <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
-                <span className="text-orange-700 font-semibold tracking-wide text-sm">NRI Nivesh Blog</span>
+              <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-100 to-amber-100 px-6 py-2.5 rounded-full border border-red-200 mb-6">
+                <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+                <span className="text-red-700 font-semibold tracking-wide text-sm">NRI Nivesh Blog</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
-                Property & Investment Guides for Singapore NRIs
+                Property & Investment Guides for Bahrain NRIs
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Clear, practical guidance on buying Indian property, comparing GIFT City to real estate, and filing NRI property tax from Singapore — written for people who've already done the basics.
+                Clear, practical guidance on buying Indian property, comparing GIFT City to real estate, and filing NRI property tax from Bahrain — written for people who've already done the basics.
               </p>
             </div>
           </div>
@@ -59,7 +59,7 @@ export function BlogIndexPage() {
                 <Link
                   key={post.slug}
                   to={`/blog/${post.slug}`}
-                  className="group flex flex-col bg-white border-2 border-gray-100 hover:border-orange-300 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+                  className="group flex flex-col bg-white border-2 border-gray-100 hover:border-red-300 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-4 text-xs text-gray-500 mb-4">
                     <span className="flex items-center gap-1.5">
@@ -75,11 +75,11 @@ export function BlogIndexPage() {
                       {post.readingTime}
                     </span>
                   </div>
-                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-orange-600 transition-colors">
+                  <h2 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors">
                     {post.title}
                   </h2>
                   <p className="text-gray-600 leading-relaxed mb-6 flex-1">{post.dek}</p>
-                  <span className="inline-flex items-center font-semibold text-orange-600 group-hover:text-orange-700">
+                  <span className="inline-flex items-center font-semibold text-red-600 group-hover:text-red-700">
                     Read the guide <ArrowRight className="w-4 h-4 ml-1.5 group-hover:translate-x-1 transition-transform" />
                   </span>
                 </Link>

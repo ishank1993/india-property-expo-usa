@@ -65,7 +65,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-white/95 backdrop-blur-md shadow-lg py-3"
-          : "bg-gradient-to-r from-gray-900/95 via-orange-900/95 to-green-900/95 backdrop-blur-md py-4"
+          : "bg-gradient-to-r from-gray-900/95 via-red-900/95 to-amber-900/95 backdrop-blur-md py-4"
       }`}
       role="navigation"
       aria-label="Main navigation"
@@ -86,7 +86,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
         >
           <img 
             src="/logo.png" 
-            alt="NRI Nivesh - India Property Expo Singapore logo" 
+            alt="NRI Nivesh - India Property Expo Bahrain logo" 
             width="160"
             height="48"
             loading="eager"
@@ -99,7 +99,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
                 const parent = e.currentTarget.parentElement;
                 if (parent) {
                     const span = document.createElement('span');
-                    span.className = "text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-green-400 tracking-tight";
+                    span.className = "text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-amber-400 tracking-tight";
                     span.innerText = "NRI Nivesh";
                     parent.appendChild(span);
                 }
@@ -115,10 +115,10 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               onClick={handleLogoClick}
               className={`flex items-center space-x-2 font-semibold transition-all duration-300 px-4 py-2 rounded-full ${
                 currentPage === "home"
-                  ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white shadow-md"
+                  ? "bg-gradient-to-r from-red-500 to-red-600 text-white shadow-md"
                   : isScrolled 
-                    ? "text-gray-800 hover:text-orange-600" 
-                    : "text-orange-200 hover:text-orange-400"
+                    ? "text-gray-800 hover:text-red-600" 
+                    : "text-red-200 hover:text-red-400"
               }`}
             >
               <Home className="w-4 h-4" />
@@ -131,10 +131,10 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               onClick={handleWealthClick}
               className={`flex items-center space-x-2 font-semibold transition-all duration-300 px-4 py-2 rounded-full ${
                 currentPage === "wealth"
-                  ? "bg-gradient-to-r from-green-500 to-green-600 text-white shadow-md"
+                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md"
                   : isScrolled 
-                    ? "text-gray-800 hover:text-green-600" 
-                    : "text-green-200 hover:text-green-400"
+                    ? "text-gray-800 hover:text-amber-600" 
+                    : "text-amber-200 hover:text-amber-400"
               }`}
             >
               <Landmark className="w-4 h-4" />
@@ -145,8 +145,8 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
           <Link
             to="/blog"
             onClick={() => setMobileMenuOpen(false)}
-            className={`flex items-center space-x-1.5 font-medium hover:text-orange-400 transition-colors ${
-              isScrolled ? "text-gray-800" : "text-orange-200"
+            className={`flex items-center space-x-1.5 font-medium hover:text-red-400 transition-colors ${
+              isScrolled ? "text-gray-800" : "text-red-200"
             }`}
           >
             <BookOpen className="w-4 h-4" />
@@ -158,8 +158,8 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               e.preventDefault();
               scrollToSection('venues');
             }}
-            className={`font-medium hover:text-orange-400 transition-colors cursor-pointer ${
-              isScrolled ? "text-gray-800" : "text-orange-200"
+            className={`font-medium hover:text-red-400 transition-colors cursor-pointer ${
+              isScrolled ? "text-gray-800" : "text-red-200"
             }`}
           >
             Venues
@@ -170,8 +170,8 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               e.preventDefault();
               scrollToSection('contact');
             }}
-            className={`font-medium hover:text-orange-400 transition-colors cursor-pointer ${
-              isScrolled ? "text-gray-800" : "text-orange-200"
+            className={`font-medium hover:text-red-400 transition-colors cursor-pointer ${
+              isScrolled ? "text-gray-800" : "text-red-200"
             }`}
           >
             Contact
@@ -180,15 +180,15 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
             href="https://www.nrinivesh.in"
             target="_blank"
             rel="noopener noreferrer"
-            className={`font-medium hover:text-orange-400 transition-colors ${
-              isScrolled ? "text-gray-800" : "text-orange-200"
+            className={`font-medium hover:text-red-400 transition-colors ${
+              isScrolled ? "text-gray-800" : "text-red-200"
             } underline underline-offset-4`}
           >
             Main Website
           </a>
           
           <Button
-            className="bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold border-none shadow-lg hover:shadow-xl transition-all"
+            className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold border-none shadow-lg hover:shadow-xl transition-all"
             onClick={handleRegisterClick}
           >
             🎯 Register Free
@@ -199,7 +199,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
         <div className="md:hidden">
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className={isScrolled ? "text-orange-600" : "text-orange-300"}
+            className={isScrolled ? "text-red-600" : "text-red-300"}
           >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -208,15 +208,15 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
 
       {/* Mobile Menu Overlay */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 right-0 bg-gradient-to-br from-gray-900 to-orange-900 shadow-xl p-6 flex flex-col space-y-4 md:hidden border-t border-orange-400/20">
+        <div className="absolute top-full left-0 right-0 bg-gradient-to-br from-gray-900 to-red-900 shadow-xl p-6 flex flex-col space-y-4 md:hidden border-t border-red-400/20">
           {/* Mobile Navigation Links */}
           {onNavigateHome && (
             <button
               onClick={handleLogoClick}
               className={`flex items-center space-x-3 font-semibold text-lg transition-all duration-300 px-4 py-3 rounded-lg ${
                 currentPage === "home"
-                  ? "bg-gradient-to-r from-orange-500 to-orange-600 text-white"
-                  : "text-orange-300 hover:text-orange-400 hover:bg-orange-900/30"
+                  ? "bg-gradient-to-r from-red-500 to-red-600 text-white"
+                  : "text-red-300 hover:text-red-400 hover:bg-red-900/30"
               }`}
             >
               <Home className="w-5 h-5" />
@@ -229,8 +229,8 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
               onClick={handleWealthClick}
               className={`flex items-center space-x-3 font-semibold text-lg transition-all duration-300 px-4 py-3 rounded-lg ${
                 currentPage === "wealth"
-                  ? "bg-gradient-to-r from-green-500 to-green-600 text-white"
-                  : "text-green-300 hover:text-green-400 hover:bg-green-900/30"
+                  ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white"
+                  : "text-amber-300 hover:text-amber-400 hover:bg-amber-900/30"
               }`}
             >
               <Landmark className="w-5 h-5" />
@@ -241,7 +241,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
           <Link
             to="/blog"
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center space-x-3 font-semibold text-lg text-orange-300 hover:text-orange-400 hover:bg-orange-900/30 transition-all duration-300 px-4 py-3 rounded-lg"
+            className="flex items-center space-x-3 font-semibold text-lg text-red-300 hover:text-red-400 hover:bg-red-900/30 transition-all duration-300 px-4 py-3 rounded-lg"
           >
             <BookOpen className="w-5 h-5" />
             <span>Blog</span>
@@ -255,7 +255,7 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
                 e.preventDefault();
                 scrollToSection(item.toLowerCase());
               }}
-              className="text-orange-300 font-medium text-lg hover:text-orange-400 transition-colors px-4 py-2 cursor-pointer"
+              className="text-red-300 font-medium text-lg hover:text-red-400 transition-colors px-4 py-2 cursor-pointer"
             >
               {item}
             </a>
@@ -265,14 +265,14 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
             href="https://www.nrinivesh.in"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-green-300 font-medium text-lg hover:text-green-400 transition-colors px-4 py-2 underline underline-offset-4"
+            className="text-amber-300 font-medium text-lg hover:text-amber-400 transition-colors px-4 py-2 underline underline-offset-4"
             onClick={() => setMobileMenuOpen(false)}
           >
             🌐 Main Website
           </a>
           
           <Button
-            className="bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white font-bold w-full"
+            className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold w-full"
             onClick={handleRegisterClick}
           >
             🎯 Register Free

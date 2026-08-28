@@ -46,8 +46,8 @@ export function CookieConsent() {
 
           <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center">
-                <Cookie className="w-6 h-6 text-orange-600" />
+              <div className="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center">
+                <Cookie className="w-6 h-6 text-red-600" />
               </div>
             </div>
 
@@ -58,7 +58,7 @@ export function CookieConsent() {
               <p className="text-sm text-gray-600 leading-relaxed">
                 We use cookies and similar technologies to improve your browsing experience, analyze site traffic, and show personalized content. 
                 By clicking "Accept All", you consent to our use of cookies. You can manage preferences or reject non-essential cookies.{" "}
-                <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-orange-600 underline hover:text-orange-700">
+                <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-red-600 underline hover:text-red-700">
                   Learn more in our Privacy Policy
                 </a>
               </p>
@@ -74,7 +74,7 @@ export function CookieConsent() {
               </Button>
               <Button
                 onClick={handleAccept}
-                className="bg-gradient-to-r from-orange-600 to-green-600 hover:from-orange-700 hover:to-green-700 text-white"
+                className="bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white"
               >
                 Accept All
               </Button>
