@@ -14,17 +14,8 @@ import { Checkbox } from "./ui/checkbox";
 import { toast } from "sonner";
 import { Loader2, CheckCircle2, Sparkles } from "lucide-react";
 import { EVENT } from "../config/event";
+import { submitLead } from "../config/leads";
 
-/**
- * Bahrain edition lead endpoint.
- *
- * Deploy `scripts/bahrain-leads.gs` as a Google Apps Script Web App bound to
- * the Bahrain leads sheet, then paste the resulting /exec URL here.
- * Sheet: https://docs.google.com/spreadsheets/d/1ckQ4-w6Q8a51nRJ0E1ViLwpNcFDvyJdRWMZrbMI71iA/edit
- *
- * See scripts/GOOGLE_SHEET_SETUP.md for the 6-step deploy walkthrough.
- */
-const GOOGLE_SHEETS_URL = "PASTE_YOUR_BAHRAIN_APPS_SCRIPT_EXEC_URL_HERE";
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -117,33 +108,18 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       return;
     }
 
-    if (GOOGLE_SHEETS_URL.startsWith("PASTE_")) {
-      console.error(
-        "RegistrationModal: GOOGLE_SHEETS_URL is not configured. " +
-          "Deploy scripts/bahrain-leads.gs and paste the /exec URL."
-      );
-      toast.error("Registration is not live yet. Please try again shortly.");
-      return;
-    }
-
     setIsSubmitting(true);
 
     try {
-      const params = new URLSearchParams({
-        action: "write",
-        edition: "Bahrain",
+      await submitLead({
         fullName: formData.fullName,
         email: formData.email,
         countryCode: formData.countryCode,
         phone: formData.phone,
-        dateOfVisit: formData.dateOfVisit || "",
-        preferredCity: formData.preferredCity || "",
-        consultationService: formData.consultationService || "none",
-        source: typeof window !== "undefined" ? window.location.pathname : "",
+        dateOfVisit: formData.dateOfVisit,
+        preferredCity: formData.preferredCity,
+        consultationService: formData.consultationService,
       });
-      const response = await fetch(`${GOOGLE_SHEETS_URL}?${params}`);
-      const result = await response.json();
-      if (!result.success) throw new Error("Failed to save registration");
 
       setIsSuccess(true);
       localStorage.setItem('registrationSubmitted', 'true');

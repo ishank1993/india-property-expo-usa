@@ -73,7 +73,7 @@ https://cbodmftxkjkutlrqamcn.supabase.co/functions/v1/make-server-232426bc/regis
       "fullName": "John Doe",
       "email": "john@example.com",
       "phone": "+6512345678",
-      "dateOfVisit": "jan-31",
+      "dateOfVisit": "apr-18",
       "preferredCity": "mumbai",
       "registeredAt": "2026-01-31T10:00:00.000Z",
       ...
@@ -146,8 +146,8 @@ Your new admin dashboard includes:
 
 ### 📊 Statistics Cards
 - Total Registrations
-- 31st Jan Visitors
-- 1st Feb Visitors
+- 18th Apr Visitors
+- 19th Apr Visitors
 
 ### 📋 Data Table
 Shows all registrations with:
@@ -280,7 +280,7 @@ Should return: `{"status":"ok"}`
   "email": "john@example.com",                 // Email address
   "phone": "+6512345678",                      // Phone with country code
   "countryCode": "+65",                        // Country code
-  "dateOfVisit": "jan-31",                     // jan-31, feb-1, or both
+  "dateOfVisit": "apr-18",                     // apr-18, apr-19, or both
   "preferredCity": "mumbai",                   // City slug
   "educationalSession": "gift-city",           // Session type or "none"
   "consultationService": "tax-advisory",       // Service type or "none"
@@ -291,8 +291,8 @@ Should return: `{"status":"ok"}`
 ```
 
 ### Date of Visit Values:
-- `jan-31` = 31st January only
-- `feb-1` = 1st February only
+- `apr-18` = 18th April only
+- `apr-19` = 19th April only
 - `both` = Both days
 
 ### City Values:

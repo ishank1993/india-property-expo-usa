@@ -107,7 +107,7 @@ Every registration includes:
 - ✅ Full Name
 - ✅ Email Address
 - ✅ Phone Number (with country code)
-- ✅ Date of Visit (31 Jan / 1 Feb / Both)
+- ✅ Date of Visit (18 Apr / 19 Apr / Both)
 - ✅ Preferred City
 - ✅ Educational Session (if selected)
 - ✅ Consultation Service (if selected)

@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "motion/react";
 
-// DATA: This configuration assumes you have uploaded logo images to a 'public/logos' folder
+// Only developers with a logo asset in public/logos are listed here.
+// Add the file, then add the row — the grid has no text-only fallback tiles.
 const builders = [
   { name: "Godrej Properties", logo: "/logos/godrej.png", size: "normal" },
   { name: "Lodha", logo: "/logos/lodha.png", size: "normal" },
@@ -18,38 +19,18 @@ const builders = [
   { name: "Oberoi Realty", logo: "/logos/oberoi.png", size: "large" },
   { name: "Mahindra Lifespaces", logo: "/logos/mahindra.png", size: "large" },
   { name: "Shapoorji Pallonji", logo: "/logos/shapoorji.png", size: "large" },
-  { name: "DLF", logo: "/logos/dlf.png", size: "normal" },
-  { name: "Tata Housing", logo: "/logos/tatahousing.png", size: "normal" },
-  { name: "Hiranandani Group", logo: "/logos/hiranandani.png", size: "normal" },
-  { name: "Embassy Group", logo: "/logos/embassy.png", size: "normal" },
-  { name: "Sunteck Realty", logo: "/logos/sunteck.png", size: "normal" },
-  { name: "Piramal Realty", logo: "/logos/piramal.png", size: "normal" },
-  { name: "Adani Realty", logo: "/logos/adani.png", size: "normal" },
-  { name: "Runwal Group", logo: "/logos/runwal.png", size: "normal" },
-  { name: "Birla Estates", logo: "/logos/birlaestates.png", size: "normal" },
-  { name: "Max Estates", logo: "/logos/maxestates.png", size: "normal" },
-  { name: "M3M India", logo: "/logos/m3m.png", size: "normal" },
-  { name: "Signature Global", logo: "/logos/signatureglobal.png", size: "normal" },
-  { name: "Sattva Group", logo: "/logos/sattva.png", size: "normal" },
-  { name: "Casagrand", logo: "/logos/casagrand.png", size: "normal" },
-  { name: "TVS Emerald", logo: "/logos/tvsemerald.png", size: "normal" },
-  { name: "Provident Housing", logo: "/logos/provident.png", size: "normal" },
-  { name: "Assetz Property Group", logo: "/logos/assetz.png", size: "normal" },
-  { name: "Total Environment", logo: "/logos/totalenvironment.png", size: "normal" },
-  { name: "Vatika Group", logo: "/logos/vatika.png", size: "normal" },
-  { name: "Gaursons India", logo: "/logos/gaursons.png", size: "normal" },
 ];
 
 export function BuilderLogos() {
   return (
     <section className="py-20 relative overflow-hidden" aria-labelledby="builders-heading">
-      {/* Background with Bahrain Daytime Skyline */}
+      {/* Background: Manama waterfront, heavily washed out behind the grid */}
       <div 
         className="absolute inset-0 z-0"
         role="img"
-        aria-label="Bahrain daytime skyline background"
+        aria-label="Manama waterfront skyline"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1610956667016-15debe929a3f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxTaW5nYXBvcmUlMjBza3lsaW5lJTIwZGF5dGltZXxlbnwxfHx8fDE3NjcxNjc3MTd8MA&ixlib=rb-4.1.0&q=80&w=1080')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1748366546170-1ee68388f183?fm=jpg&q=70&w=1600&auto=format&fit=crop')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
@@ -97,7 +78,7 @@ export function BuilderLogos() {
                         decoding="async"
                         className={`${builder.size === "large" ? "max-h-28" : "max-h-16"} max-w-full object-contain transition-all`}
                         onError={(e) => {
-                            // Fallback if logo fails to load (e.g. file not uploaded yet)
+                            // Safety net if an asset 404s; every listed builder has a logo file
                             e.currentTarget.style.display = 'none';
                             const parent = e.currentTarget.parentElement;
                             if (parent) {

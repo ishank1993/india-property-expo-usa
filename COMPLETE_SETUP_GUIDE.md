@@ -209,7 +209,7 @@ Every registration includes:
   "email": "john@example.com",
   "phone": "+6512345678",
   "countryCode": "+65",
-  "dateOfVisit": "jan-31",
+  "dateOfVisit": "apr-18",
   "preferredCity": "mumbai",
   "educationalSession": "gift-city",
   "consultationService": "tax-advisory",
@@ -228,7 +228,7 @@ Every registration includes:
 | `email` | Email address | `john@example.com` |
 | `phone` | Complete phone | `+6512345678` |
 | `countryCode` | Country code | `+65`, `+91`, `+1` |
-| `dateOfVisit` | Event date | `jan-31`, `feb-1`, `both` |
+| `dateOfVisit` | Event date | `apr-18`, `apr-19`, `both` |
 | `preferredCity` | City interest | `mumbai`, `bangalore`, etc. |
 | `educationalSession` | Session choice | `gift-city`, `fema`, `none` |
 | `consultationService` | Consultation | `tax-advisory`, `legal`, `none` |
@@ -241,8 +241,8 @@ Every registration includes:
 
 ### **Statistics Cards:**
 1. **Total Registrations** - All-time count
-2. **31st Jan Visitors** - Count for Day 1
-3. **1st Feb Visitors** - Count for Day 2
+2. **18th Apr Visitors** - Count for Day 1
+3. **19th Apr Visitors** - Count for Day 2
 
 ### **Data Table:**
 - Full Name

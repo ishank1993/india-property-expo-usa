@@ -34,7 +34,7 @@ Expected response: `{"status":"ok"}`
 ---
 
 ### 3. Update Content
-- [ ] Verify event dates are correct (31 Jan & 1 Feb 2026)
+- [ ] Verify event dates are correct (18 Apr & 19 Apr 2026)
 - [ ] Check venue address (Novotel Kitchener)
 - [ ] Update builder names if needed
 - [ ] Verify contact details (phone, email)
@@ -411,7 +411,7 @@ Dear [Name],
 
 We're excited to announce the NRI Nivesh India Property Exhibition 2026!
 
-📅 Date: 31st Jan - 1st Feb 2026
+📅 Date: 18th Apr - 19th Apr 2026
 📍 Venue: Novotel Kitchener Road, Singapore
 🎟️ Entry: Completely FREE
 
@@ -430,7 +430,7 @@ NRI Nivesh Team
 🌍 15+ Indian Cities
 💰 Properties from ₹30L to ₹15Cr
 
-📅 31 Jan - 1 Feb 2026
+📅 18 Apr - 19 Apr 2026
 📍 Novotel Kitchener, Singapore
 
 Register FREE 👉 [Link]

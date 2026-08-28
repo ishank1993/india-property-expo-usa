@@ -113,7 +113,7 @@ Step 7: User Actions Available
 │  │ Full Name:     [John Doe                    ] │         │
 │  │ Email:         [john@example.com            ] │         │
 │  │ Phone:         [+65] [12345678              ] │         │
-│  │ Date of Visit: [○ 31 Jan ● 1 Feb ○ Both    ] │         │
+│  │ Date of Visit: [○ 18 Apr ● 19 Apr ○ Both    ] │         │
 │  │ City:          [▼ Mumbai                    ] │         │
 │  │ Session:       [☑ GIFT City Tax Benefits    ] │         │
 │  │ Consultation:  [☑ Tax Advisory for NRIs     ] │         │
@@ -137,7 +137,7 @@ Step 7: User Actions Available
 │    "email": "john@example.com",                             │
 │    "phone": "+6512345678",                                  │
 │    "countryCode": "+65",                                    │
-│    "dateOfVisit": "feb-1",                                  │
+│    "dateOfVisit": "apr-19",                                  │
 │    "preferredCity": "mumbai",                               │
 │    "educationalSession": "gift-city",                       │
 │    "consultationService": "tax-advisory"                    │
@@ -178,7 +178,7 @@ Step 7: User Actions Available
 │  │                    │   "fullName": "John Doe",        │ │
 │  │                    │   "email": "john@example.com",   │ │
 │  │                    │   "phone": "+6512345678",        │ │
-│  │                    │   "dateOfVisit": "feb-1",        │ │
+    │                    │   "dateOfVisit": "apr-19",        │ │
 │  │                    │   "preferredCity": "mumbai",     │ │
 │  │                    │   "registeredAt": "2026-01-...", │ │
 │  │                    │   ...                            │ │
@@ -210,7 +210,7 @@ Step 7: User Actions Available
 ├────────────────────────────────────────────────────────────────┤
 │                                                                │
 │  ┌─────────────────┐ ┌─────────────────┐ ┌─────────────────┐ │
-│  │ TOTAL           │ │ 31st JAN        │ │ 1st FEB         │ │
+│  │ TOTAL           │ │ 18th APR        │ │ 19th APR         │ │
 │  │ REGISTRATIONS   │ │ VISITORS        │ │ VISITORS        │ │
 │  │                 │ │                 │ │                 │ │
 │  │      247        │ │      138        │ │      109        │ │
@@ -223,7 +223,7 @@ Step 7: User Actions Available
 │ #  │ Name       │ Email         │ Phone      │ City     │Date │
 ├────┼────────────┼───────────────┼────────────┼──────────┼─────┤
 │ 1  │ John Doe   │john@email.com │+6512345678 │ Mumbai   │31Jan│
-│ 2  │ Jane Smith │jane@email.com │+6598765432 │Bangalore │1 Feb│
+│ 2  │ Jane Smith │jane@email.com │+6598765432 │Bangalore │19 Apr│
 │ 3  │ Bob Johnson│bob@email.com  │+6587654321 │Delhi NCR │Both │
 │ .. │ ...        │ ...           │ ...        │ ...      │ ... │
 └────┴────────────┴───────────────┴────────────┴──────────┴─────┘
@@ -349,7 +349,7 @@ Step 6: File Downloaded
 │  │   "email": "john@example.com",                 │        │
 │  │   "phone": "+6512345678",                      │        │
 │  │   "countryCode": "+65",                        │        │
-│  │   "dateOfVisit": "feb-1",                      │        │
+│  │   "dateOfVisit": "apr-19",                      │        │
 │  │   "preferredCity": "mumbai",                   │        │
 │  │   "educationalSession": "gift-city",           │        │
 │  │   "consultationService": "tax-advisory",       │        │

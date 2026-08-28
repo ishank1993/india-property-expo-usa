@@ -25,6 +25,8 @@ import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { WhatsAppButton } from "./WhatsAppButton";
 import { Toaster } from "./ui/sonner";
+import { toast } from "sonner";
+import { submitLead } from "../config/leads";
 
 interface WealthPageProps {
   onRegisterClick: () => void;
@@ -41,9 +43,36 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
     country: "Bahrain"
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Previously this discarded everything the visitor typed and just opened the
+  // RSVP modal. Now the enquiry is saved to the leads sheet first, so a
+  // half-finished journey still reaches us.
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    onRegisterClick();
+
+    if (!formData.name.trim() || !formData.email.trim() || !formData.whatsapp.trim()) {
+      toast.error("Please fill in your name, email and WhatsApp number");
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      await submitLead({
+        fullName: formData.name,
+        email: formData.email,
+        phone: formData.whatsapp,
+        // Marks the row's origin — this form has no day/city/consult fields.
+        consultationService: "wealth-page-enquiry",
+      });
+      toast.success("Got it — now finish your RSVP to lock your slot.");
+    } catch (error) {
+      console.error("Wealth page enquiry failed:", error);
+      // Don't block the visitor — still send them to the full RSVP form.
+    } finally {
+      setIsSubmitting(false);
+      onRegisterClick();
+    }
   };
 
   return (
@@ -632,9 +661,10 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
 
                   <Button 
                     type="submit"
-                    className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white text-lg py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    disabled={isSubmitting}
+                    className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white text-lg py-7 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 disabled:opacity-70"
                   >
-                    🎯 Get Access Now
+                    {isSubmitting ? "Saving…" : "🎯 Get Access Now"}
                   </Button>
                 </form>
 

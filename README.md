@@ -14,7 +14,7 @@ A high-converting, SEO-optimized landing page for the NRI Nivesh India Property 
 
 - 🎯 **500+ Premium Projects** from 35+ trusted developers
 - 🌍 **15+ Indian Cities** with properties ranging from ₹30L to ₹15Cr
-- 📅 **Event Dates**: 31st January - 1st February 2026
+- 📅 **Event Dates**: 18th April - 19th April 2026
 - 📍 **Venue**: Novotel Kitchener Road, Singapore
 
 ## ✨ Features
@@ -173,7 +173,7 @@ Content-Type: application/json
   "email": "john@example.com",
   "phone": "12345678",
   "countryCode": "+65",
-  "dateOfVisit": "jan-31",
+  "dateOfVisit": "apr-18",
   "preferredCity": "mumbai",
   "educationalSession": "gift-city",
   "consultationService": "tax-advisory"
@@ -367,7 +367,7 @@ This project is proprietary and confidential. Unauthorized copying, distribution
 - Terms & Privacy acceptance
 
 ### Event Details
-- **Dates**: 31 Jan - 1 Feb 2026
+- **Dates**: 18 Apr - 19 Apr 2026
 - **Timings**: 10am - 7pm both days
 - **Venue**: Novotel Kitchener Road, Singapore
 - **Entry**: Completely FREE

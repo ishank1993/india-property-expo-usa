@@ -24,7 +24,7 @@ All registration data is stored in Supabase KV Store:
   email: "john@example.com",
   phone: "+6512345678",
   countryCode: "+65",
-  dateOfVisit: "jan-31",
+  dateOfVisit: "apr-18",
   preferredCity: "mumbai",
   educationalSession: "gift-city",
   consultationService: "tax-advisory",

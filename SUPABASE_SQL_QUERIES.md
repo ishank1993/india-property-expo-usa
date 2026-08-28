@@ -32,8 +32,8 @@ SELECT
   value->>'phone' AS phone,
   value->>'countryCode' AS country_code,
   CASE 
-    WHEN value->>'dateOfVisit' = 'jan-31' THEN '31 Jan 2026'
-    WHEN value->>'dateOfVisit' = 'feb-1' THEN '1 Feb 2026'
+    WHEN value->>'dateOfVisit' = 'apr-18' THEN '18 Apr 2026'
+    WHEN value->>'dateOfVisit' = 'apr-19' THEN '19 Apr 2026'
     WHEN value->>'dateOfVisit' = 'both' THEN 'Both Days'
     ELSE value->>'dateOfVisit'
   END AS date_of_visit,
@@ -73,8 +73,8 @@ Get a quick overview of your registrations:
 -- Registration Statistics Dashboard
 SELECT 
   COUNT(*) AS total_registrations,
-  COUNT(CASE WHEN value->>'dateOfVisit' = 'jan-31' THEN 1 END) AS jan_31_only,
-  COUNT(CASE WHEN value->>'dateOfVisit' = 'feb-1' THEN 1 END) AS feb_1_only,
+  COUNT(CASE WHEN value->>'dateOfVisit' = 'apr-18' THEN 1 END) AS apr_18_only,
+  COUNT(CASE WHEN value->>'dateOfVisit' = 'apr-19' THEN 1 END) AS apr_19_only,
   COUNT(CASE WHEN value->>'dateOfVisit' = 'both' THEN 1 END) AS both_days,
   COUNT(CASE WHEN value->>'educationalSession' != 'none' THEN 1 END) AS with_educational_session,
   COUNT(CASE WHEN value->>'consultationService' != 'none' THEN 1 END) AS with_consultation_service,
@@ -309,8 +309,8 @@ SELECT
   value->>'phone' AS complete_phone,
   value->>'countryCode' AS country_code,
   CASE 
-    WHEN value->>'dateOfVisit' = 'jan-31' THEN '31-Jan-2026'
-    WHEN value->>'dateOfVisit' = 'feb-1' THEN '01-Feb-2026'
+    WHEN value->>'dateOfVisit' = 'apr-18' THEN '18-Apr-2026'
+    WHEN value->>'dateOfVisit' = 'apr-19' THEN '19-Apr-2026'
     WHEN value->>'dateOfVisit' = 'both' THEN 'Both Days'
   END AS visit_date,
   INITCAP(REPLACE(value->>'preferredCity', '-', ' ')) AS city,
@@ -488,8 +488,8 @@ value->>'status'                → Status
 ```
 
 ### Date of Visit Values:
-- `jan-31` = 31st January only
-- `feb-1` = 1st February only
+- `apr-18` = 18th April only
+- `apr-19` = 19th April only
 - `both` = Both days
 
 ### Common City Values:

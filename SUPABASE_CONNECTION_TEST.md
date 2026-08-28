@@ -392,7 +392,7 @@ curl -X POST https://cbodmftxkjkutlrqamcn.supabase.co/functions/v1/make-server-2
     "email": "test@example.com",
     "phone": "12345678",
     "countryCode": "+65",
-    "dateOfVisit": "jan-31",
+    "dateOfVisit": "apr-18",
     "preferredCity": "mumbai",
     "educationalSession": "none",
     "consultationService": "none"

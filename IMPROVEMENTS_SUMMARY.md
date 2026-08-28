@@ -86,7 +86,7 @@ This document outlines all improvements made to the NRI Property Expo website wh
 
 **Success Message:**
 - FROM: "Registration successful! We'll contact you soon."
-- TO: "🎉 You're Registered! Your free pass is confirmed. Check your email for event details and exclusive pre-launch offers. See you at Novotel Kitchener on 31st Jan or 1st Feb!"
+- TO: "🎉 You're Registered! Your free pass is confirmed. Check your email for event details and exclusive pre-launch offers. See you at Novotel Kitchener on 18th Apr or 19th Apr!"
 
 ---
 

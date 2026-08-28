@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { LEADS_ENDPOINT } from "../config/leads";
 import { Button } from "./ui/button";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
@@ -6,7 +7,8 @@ import { Loader2, RefreshCw, Download, Users, LogOut } from "lucide-react";
 import { toast } from "sonner";
 import { AdminLogin } from "./AdminLogin";
 
-const GOOGLE_SHEETS_URL = "https://script.google.com/macros/s/AKfycbzA08KCv3DFbFMcKUzpMi5Ug-xUd0_tqDmicwg-xr0ENcNtx7OfJdGvqTaHzHOkYxWw/exec";
+// Shared across all editions — see src/app/config/leads.ts
+const GOOGLE_SHEETS_URL = LEADS_ENDPOINT;
 
 interface Registration {
   id: string;

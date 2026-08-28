@@ -14,6 +14,20 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
 
+  // Sibling expo editions. Bahrain is the current site, so it isn't listed.
+  const otherEditions = [
+    {
+      flag: "\u{1F1F8}\u{1F1EC}",
+      city: "Singapore",
+      href: "https://nriniveshexposg.com/",
+    },
+    {
+      flag: "\u{1F1E6}\u{1F1EA}",
+      city: "Abu Dhabi",
+      href: "https://www.indiapropertyexpoabudhabi.com/",
+    },
+  ];
+
   const socialLinks = [
     { Icon: Facebook, href: "https://www.facebook.com/p/NRI-Nivesh-61560752896860/" },
     { Icon: Instagram, href: "https://www.instagram.com/nrinivesh_/" },
@@ -144,6 +158,24 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
                     className="hover:text-white hover:translate-x-1 transition-all inline-block cursor-pointer"
                   >
                     {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="text-lg font-bold mt-8 mb-6 text-red-300">Other Editions</h3>
+            <ul className="space-y-3 text-red-200">
+              {otherEditions.map(({ flag, city, href }) => (
+                <li key={city}>
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white hover:translate-x-1 transition-all inline-flex items-center gap-2 cursor-pointer"
+                    aria-label={`India Property Expo ${city} \u2014 opens in a new tab`}
+                  >
+                    <span aria-hidden="true">{flag}</span>
+                    <span>India Property Expo {city}</span>
                   </a>
                 </li>
               ))}

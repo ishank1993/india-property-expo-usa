@@ -81,7 +81,7 @@ All buttons and forms on your website are **100% functional** and properly conne
 
 4. ✅ **Date of Visit**
    - Required dropdown
-   - Options: "31 Jan 2026", "1 Feb 2026", "Both Days"
+   - Options: "18 Apr 2026", "19 Apr 2026", "Both Days"
 
 5. ✅ **Preferred City**
    - Required dropdown
@@ -159,7 +159,7 @@ Value: {
   "email": "john@example.com",
   "phone": "+6512345678",
   "countryCode": "+65",
-  "dateOfVisit": "jan-31",
+  "dateOfVisit": "apr-18",
   "preferredCity": "mumbai",
   "educationalSession": "gift-city",
   "consultationService": "real-estate",

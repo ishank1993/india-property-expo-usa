@@ -74,7 +74,7 @@
 2. ✅ **Email** → Email validation, required
 3. ✅ **Country Code Dropdown** → 20 countries, default Singapore (+65)
 4. ✅ **Phone Number** → 7-15 digits validation, required
-5. ✅ **Date of Visit** → 31st Jan / 1st Feb / Both Days, required
+5. ✅ **Date of Visit** → 18th Apr / 19th Apr / Both Days, required
 6. ✅ **City of Interest** → 15 cities + Exploring/Multiple, required
 
 #### NEW: Enhanced Optional Fields

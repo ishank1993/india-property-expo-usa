@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -rniE \"august|aug 1|aug2|08-01|08/01|2026-08|1st.{0,3}2nd|saturday.{0,5}sunday\" --include=\"*.tsx\" --include=\"*.ts\" --include=\"*.html\" --include=\"*.json\" -l .)",
+      "Bash(date -j -f \"%Y-%m-%d\" \"2026-09-05\" \"+%A\")",
+      "Bash(python3 -c \"import datetime; print\\(datetime.date\\(2026,9,5\\).strftime\\('%A'\\)\\); print\\(datetime.date\\(2026,9,6\\).strftime\\('%A'\\)\\)\")",
+      "Bash(grep -rniE \"aug|1st|2nd|sat-sun|saturday.{0,5}sunday\" src/app/components --include=\"*.tsx\" -l)",
+      "Bash(node verify_dates.mjs)",
+      "Bash(pkill -f \"node verify_dates2\")",
+      "Bash(timeout 25 node -e ' *)",
+      "Bash(node verify_modal.mjs)",
+      "Bash(git commit -m ' *)",
+      "Bash(curl -s https://nriniveshexposg.com/robots.txt)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://nriniveshexposg.com/sitemap.xml)",
+      "Bash(curl -sI https://nriniveshexposg.com/assets/js/index-BksRxKnJ.js)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" https://nriniveshexposg.com/og-image.jpg)",
+      "Bash(npm -v)",
+      "Bash(curl -s -o /dev/null -w \"logo.png: %{http_code}\\\\n\" https://nriniveshexposg.com/logo.png)",
+      "Bash(sips -c 630 1200 /Users/ishankohli/Documents/GitHub/Singaporewebsitenriniveshlp/public/og-image.jpg)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/ishankohli/Documents/GitHub/Singaporewebsitenriniveshlp/public/og-image.jpg)",
+      "Bash(node verify_routing.mjs)",
+      "Bash(node verify_navigation.mjs)",
+      "Bash(npx vite *)",
+      "Bash(curl -s http://localhost:4183/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4183/wealth)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:4183/blog/best-bangalore-projects-nri-investment-singapore)",
+      "Bash(node verify_hydration.mjs)",
+      "Bash(lsof -ti:4183)",
+      "Bash(npm view *)",
+      "Bash(docker info *)",
+      "Read(//Applications/**)",
+      "Bash(open -a Docker)",
+      "Bash(docker run --rm --platform linux/amd64 -v /Users/ishankohli/Documents/GitHub/Singaporewebsitenriniveshlp:/repo -w /repo node:20-slim bash -c ' *)",
+      "Bash(docker run *)",
+      "Bash(npm uninstall *)",
+      "Bash(echo \"vite build exit code: $?\")",
+      "Bash(node -e ' *)",
+      "Bash(echo \"prerender step exit code: $?\")"
+    ]
+  }
+}

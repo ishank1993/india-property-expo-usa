@@ -219,7 +219,7 @@ When someone registers, this data is stored:
   "email": "john@example.com",
   "phone": "+6512345678",
   "countryCode": "+65",
-  "dateOfVisit": "jan-31",
+  "dateOfVisit": "apr-18",
   "preferredCity": "mumbai",
   "educationalSession": "gift-city",
   "consultationService": "tax-advisory",
@@ -252,8 +252,8 @@ Edit `/src/styles/theme.css`:
 
 ### Update Event Details:
 Search for these in all files:
-- "31st Jan" → Your date
-- "1st Feb" → Your date
+- "18th Apr" → Your date
+- "19th Apr" → Your date
 - "Novotel Kitchener" → Your venue
 - "10am-7pm" → Your timings
 
