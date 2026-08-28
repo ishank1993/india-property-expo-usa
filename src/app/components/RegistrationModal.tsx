@@ -8,7 +8,6 @@ import {
 } from "./ui/dialog";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import { trackCompleteRegistration } from "@/utils/metaConversionApi";
 import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
@@ -145,21 +144,6 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       const response = await fetch(`${GOOGLE_SHEETS_URL}?${params}`);
       const result = await response.json();
       if (!result.success) throw new Error("Failed to save registration");
-
-      // Track Meta Conversion Event
-      trackCompleteRegistration({
-        email: formData.email,
-        phone: `${formData.countryCode}${formData.phone}`,
-        firstName: formData.fullName,
-        city: formData.preferredCity,
-        country: 'BH'
-      }, {
-        event_type: 'property_expo_registration',
-        date_of_visit: formData.dateOfVisit,
-        preferred_city: formData.preferredCity,
-        value: 0,
-        currency: 'BHD'
-      });
 
       setIsSuccess(true);
       localStorage.setItem('registrationSubmitted', 'true');

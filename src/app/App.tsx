@@ -18,7 +18,6 @@ import { RegistrationModal } from "./components/RegistrationModal";
 import { Favicon } from "./components/Favicon";
 import { WhatsAppButton } from "./components/WhatsAppButton";
 import { SEOHead } from "./components/SEOHead";
-import { MetaPixel } from "./components/MetaPixel";
 import { WealthPage } from "./components/WealthPage";
 import { FAQSection } from "./components/FAQSection";
 import { CookieConsent } from "./components/CookieConsent";
@@ -28,7 +27,6 @@ import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { PrivacyPolicyStandalone } from "./components/PrivacyPolicyStandalone";
 import { Disclaimer } from "./components/Disclaimer";
 import { AdminDashboard } from "./components/AdminDashboard";
-import { trackPageView } from "@/utils/metaConversionApi";
 
 // Top-level router: blog gets real URL paths, everything else keeps
 // the existing hash-based page switching in MainApp.
@@ -87,8 +85,6 @@ function MainApp() {
       setCurrentPage('admin');
     }
 
-    // Track initial page view
-    trackPageView();
   }, []);
 
   // Timed modal popup logic with specific intervals: 10s, 40s, 1min, 1min
@@ -149,13 +145,11 @@ function MainApp() {
     setCurrentPage("wealth");
     routerNavigate("/wealth");
     window.scrollTo(0, 0);
-    trackPageView(); // Track page navigation
   };
   const navigateToHome = () => {
     setCurrentPage("home");
     routerNavigate("/");
     window.scrollTo(0, 0);
-    trackPageView(); // Track page navigation
   };
 
   const navigateToTerms = () => {
@@ -193,7 +187,6 @@ function MainApp() {
           description="Free NRI Tax Clinic and GIFT City Baatchit for Bahrain NRIs. Learn about GIFT City regulatory updates, tax planning, and global investment opportunities beyond real estate."
           canonical="https://indiapropertyexpobahrain.com/wealth"
         />
-        <MetaPixel />
         <WealthPage 
           onRegisterClick={openRegister} 
           onNavigateHome={navigateToHome}
@@ -214,7 +207,6 @@ function MainApp() {
           description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 in Bahrain. Understand your rights and responsibilities when using our platform."
           canonical="https://indiapropertyexpobahrain.com/terms"
         />
-        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -246,7 +238,6 @@ function MainApp() {
           description="Learn how NRI Nivesh protects your personal data and privacy in compliance with Bahrain's PDPL requirements."
           canonical="https://indiapropertyexpobahrain.com/privacy"
         />
-        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -278,7 +269,6 @@ function MainApp() {
           description="Privacy Policy for NRI Nivesh. Learn how we collect, use, and protect your personal data in compliance with Bahrain PDPL, Meta (Facebook/Instagram) Lead Ads, and Google regulations."
           canonical="https://indiapropertyexpobahrain.com/privacy-policy"
         />
-        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -311,7 +301,6 @@ function MainApp() {
           description="Important disclaimer about property investment information. This site is for informational purposes only and not financial, tax, or legal advice."
           canonical="https://indiapropertyexpobahrain.com/disclaimer"
         />
-        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -343,7 +332,6 @@ function MainApp() {
           description="Access the admin dashboard to manage registrations and view analytics for NRI Nivesh India Property Expo 2026 in Bahrain."
           noindex
         />
-        <MetaPixel />
         <div className="min-h-screen bg-white">
           <Favicon />
           <Navbar 
@@ -370,7 +358,6 @@ function MainApp() {
   return (
     <>
       <SEOHead />
-      <MetaPixel />
       <div className="min-h-screen bg-white font-sans text-gray-900 overflow-x-hidden">
         <Favicon />
         <Navbar 
