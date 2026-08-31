@@ -35,6 +35,14 @@ const blogSlugs = [
   "luxury-real-estate-mumbai-gurgaon-nri-bahrain",
 ];
 
+// Analytics/tag hosts that must never load while prerendering.
+// Matches <script src="..."> elements pointing at a blocked analytics host.
+const INJECTED_TAG_TAG =
+  /<script\b[^>]*\bsrc="[^"]*(?:googletagmanager\.com|google-analytics\.com|analytics\.google\.com|doubleclick\.net|connect\.facebook\.net)[^"]*"[^>]*>\s*<\/script>/gi;
+
+const BLOCKED_HOSTS =
+  /googletagmanager\.com|google-analytics\.com|analytics\.google\.com|doubleclick\.net|connect\.facebook\.net|facebook\.com\/tr/i;
+
 const routes = [
   "/",
   "/wealth",
@@ -108,6 +116,19 @@ async function run() {
     for (const route of routes) {
       const page = await browser.newPage();
       try {
+        // Block analytics during prerendering. Without this, every build
+        // fires a pageview per route into the live GTM container, and the
+        // saved HTML captures the tags GTM injects into the DOM — which
+        // then run a second time for real visitors, double-counting them.
+        await page.setRequestInterception(true);
+        page.on("request", (req) => {
+          if (BLOCKED_HOSTS.test(req.url())) {
+            req.abort().catch(() => {});
+            return;
+          }
+          req.continue().catch(() => {});
+        });
+
         await page.goto(`http://127.0.0.1:${PORT}${route}`, {
           waitUntil: "domcontentloaded",
           timeout: 30000,
@@ -123,7 +144,13 @@ async function run() {
         let html = await page.content();
         html = html
           .replace(/https?:\/\/(localhost|127\.0\.0\.1):\d+/gi, SITE_URL)
-          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=indiapropertyexpobahrain.com");
+          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=indiapropertyexpobahrain.com")
+          // Blocking the request stops the download, but the GTM snippet still
+          // inserts its <script> element into the DOM before that — and
+          // page.content() captures it. Left in, real visitors would load
+          // gtm.js twice (baked-in tag + the snippet inserting another).
+          // The inline snippet itself has no src and is deliberately kept.
+          .replace(INJECTED_TAG_TAG, "");
 
         const outDir = route === "/" ? distDir : path.join(distDir, route);
         await mkdir(outDir, { recursive: true });

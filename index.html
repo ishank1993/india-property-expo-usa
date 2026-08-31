@@ -2,8 +2,13 @@
   <!DOCTYPE html>
   <html lang="en-BH">
     <head>
-      <!-- Analytics: no container/pixel configured for the Bahrain edition yet.
-           Add the Bahrain GTM + Meta Pixel here when the properties exist. -->
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-TP5GHMLP');</script>
+      <!-- End Google Tag Manager -->
       
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,6 +45,7 @@
     <!-- Preconnect to external domains for faster loading -->
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="dns-prefetch" href="https://images.unsplash.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     
     <!-- Favicon Configuration - Bulletproof Setup -->
     <!-- ICO favicon for legacy browsers (IE, older browsers) -->
@@ -78,6 +84,11 @@
     </head>
 
     <body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TP5GHMLP"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
       <div id="root"></div>
       <script type="module" src="/src/main.tsx"></script>
     </body>
