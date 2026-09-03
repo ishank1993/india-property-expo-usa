@@ -160,6 +160,21 @@ export const blogPosts: BlogPost[] = [
         text: "The legal path to owning property in India as a Bahrain NRI has been open and clear for years. What separates a smooth purchase from a stressful one isn't luck — it's whether the payment trail, the Power of Attorney, and the due diligence were treated as seriously as the decision to buy in the first place.",
       },
       {
+        type: "crosslink",
+        text: "Once the tax is settled, moving the proceeds to Bahrain is a separate process with its own limits and forms — our repatriation guide covers it.",
+        slug: "repatriate-money-india-to-bahrain-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "Before you commit to any project, run it through the public RERA register — our 20-minute verification checklist shows exactly what to read.",
+        slug: "rera-verification-checklist-nri-bahrain",
+      },
+      {
+        type: "crosslink",
+        text: "Whichever route you choose, the account you hold the money in changes your tax and repatriation position — see our NRE, NRO and FCNR comparison.",
+        slug: "nre-nro-fcnr-accounts-bahrain-nri",
+      },
+      {
         type: "quote",
         text: "This article is for informational purposes and does not constitute personalized legal or financial advice. FEMA rules, financing terms, and tax figures referenced above are current as of 2026 and subject to change — confirm your specific situation with a qualified real estate lawyer, CA, or financial advisor before proceeding with a purchase.",
       },
@@ -672,6 +687,16 @@ export const blogPosts: BlogPost[] = [
         text: "Bangalore's strength for NRI investors isn't any single project — it's the depth of established developers and proven micro-markets to choose from, which is more than most Indian cities can offer. The work is in matching the right corridor to what you're actually optimizing for, then doing the verification homework before any money moves.",
       },
       {
+        type: "crosslink",
+        text: "Buying in Bangalore without flying back? The Power of Attorney guide covers how to complete registration from Manama.",
+        slug: "power-of-attorney-nri-property-india-bahrain",
+      },
+      {
+        type: "crosslink",
+        text: "Shortlisted a project in either city? Check the promoter's track record on the state RERA register first.",
+        slug: "rera-verification-checklist-nri-bahrain",
+      },
+      {
         type: "quote",
         text: "This article is for informational purposes and reflects reported market data as of 2026. Project details, pricing, and appreciation figures change frequently and should be independently verified with the developer, a licensed broker, and the Karnataka RERA portal before making any investment decision. This is not personalized investment advice, and no project mentioned here is a paid partner or sponsor of NRI Investment Expo.",
       },
@@ -1004,6 +1029,11 @@ export const blogPosts: BlogPost[] = [
         text: "Mumbai and Gurgaon both give a Bahrain NRI with serious capital a legitimate path into Indian luxury real estate — they just reward different things. Mumbai rewards patience and conviction in permanent scarcity. Gurgaon rewards being early to an infrastructure story that's still unfolding. Know which one you're actually signing up for before the paperwork starts.",
       },
       {
+        type: "crosslink",
+        text: "At these price points the exit matters as much as the entry — our repatriation guide covers the annual limits on moving proceeds to Bahrain.",
+        slug: "repatriate-money-india-to-bahrain-nri-guide",
+      },
+      {
         type: "quote",
         text: "This article is for informational purposes and reflects reported market data as of 2026. Project details, pricing, and infrastructure timelines change frequently and should be independently verified with the developer, a licensed broker, and the relevant state RERA portal before making any investment decision. This is not personalized investment advice, and no project mentioned here is a paid partner or sponsor of NRI Investment Expo.",
       },
@@ -1043,6 +1073,537 @@ export const blogPosts: BlogPost[] = [
         question: "Is the Jewar Airport a reason to invest in Gurgaon now?",
         answer:
           "It's a genuine infrastructure catalyst worth tracking, alongside the now-operational Dwarka Expressway, but its full timeline and connectivity impact are still developing. Treat it as a supporting factor in a Gurgaon investment decision, not the sole reason to commit capital.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-BHR-004 — repatriation
+  // ------------------------------------------------------------------
+  {
+    slug: "repatriate-money-india-to-bahrain-nri-guide",
+    title: "Getting Your Money Out: Repatriating Property Sale Proceeds from India to Bahrain",
+    dek: "Selling is the easy part. Moving the proceeds to Bahrain runs on a separate set of rules — a USD 1 million annual ceiling, two chartered accountant forms, and one account distinction that decides everything.",
+    metaTitle: "Repatriate Property Sale Money from India to Bahrain | NRI Guide",
+    metaDescription:
+      "How Bahrain NRIs move Indian property sale proceeds home: the USD 1 million limit, Form 15CA and 15CB, NRE vs NRO routing, and the mistakes that freeze transfers for months.",
+    publishDate: "2026-08-31",
+    readingTime: "11 min read",
+    content: [
+      {
+        type: "p",
+        text: "Most NRI property guides stop at the sale. The cheque clears in Mumbai, the guide ends, and everyone assumes the rest is a bank formality. It isn't. Moving that money to Bahrain runs on an entirely separate rulebook, and the people who get caught out are almost never the ones who did something wrong at the sale — they're the ones who never planned the exit.",
+      },
+      {
+        type: "p",
+        text: "This guide covers the part that actually strands money: how much you can send, which account it has to leave from, and the two forms without which your bank simply will not process the transfer.",
+      },
+      { type: "h2", text: "The USD 1 Million Rule — And What It Actually Limits" },
+      {
+        type: "p",
+        text: "Under the Reserve Bank of India's remittance scheme, an NRI may repatriate up to **USD 1 million per financial year** from the balances in an NRO account, including proceeds from the sale of immovable property. The financial year runs April to March, not January to December — a distinction that matters if you're timing a large sale.",
+      },
+      {
+        type: "p",
+        text: "Two things people commonly get wrong about this ceiling. First, it is a **per-person** limit, not per property or per transaction. If you and your spouse are joint owners, each of you has a separate limit, which effectively doubles the annual capacity for a jointly held asset. Second, the limit applies to the NRO route specifically. Funds already sitting in an NRE account are freely repatriable without counting against it.",
+      },
+      {
+        type: "p",
+        text: "Full current wording sits in the RBI's own [Master Direction on Remittance of Assets](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx). Rules here are revised periodically — treat any figure you read anywhere, including this page, as a starting point to confirm rather than a settled fact.",
+      },
+      { type: "h2", text: "NRE or NRO: The Distinction That Decides Everything" },
+      {
+        type: "p",
+        text: "This is the single most consequential decision, and it's made years before the sale — at the moment you paid for the property.",
+      },
+      {
+        type: "table",
+        headers: ["", "NRE account", "NRO account"],
+        rows: [
+          ["Holds", "Foreign earnings remitted into India", "Income arising in India — rent, dividends, sale proceeds"],
+          ["Repatriation", "Freely repatriable, principal and interest", "Capped at USD 1 million per financial year"],
+          ["Paperwork to send abroad", "Minimal", "Form 15CA + Form 15CB required"],
+          ["Interest taxed in India", "No", "Yes"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Here's the rule that catches people: if you originally bought the property using funds remitted from abroad through banking channels, the sale proceeds of up to two residential properties can be credited straight to your **NRE account** and repatriated without touching the USD 1 million ceiling. If you bought using rupee funds, or through an NRO account, or you've already used that two-property allowance, the proceeds go to NRO and the ceiling applies.",
+      },
+      {
+        type: "quote",
+        text: "The payment trail you created when buying determines the exit route available when selling. This is the strongest practical argument for paying through clean banking channels from day one.",
+      },
+      {
+        type: "crosslink",
+        text: "This is exactly why the payment trail matters so much at the purchase stage — our guide to buying property in India from Bahrain covers how to set it up correctly.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
+      },
+      { type: "h2", text: "Form 15CA and Form 15CB: The Gatekeepers" },
+      {
+        type: "p",
+        text: "No Indian bank will remit funds abroad from an NRO account without these two documents. They exist so the tax department can confirm tax was paid before money leaves the country.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Form 15CB** is a certificate from a practising Chartered Accountant confirming the nature of the remittance, the tax deducted, and the applicable treaty position. Your CA files it.",
+          "**Form 15CA** is your own declaration, submitted on the [income tax e-filing portal](https://www.incometax.gov.in/iec/foportal/), referencing the 15CB acknowledgement number.",
+          "Order matters: 15CB is filed first, then 15CA quotes it. Attempting them the other way round is the most common cause of a rejected submission.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Budget genuine time for this. Between arranging the CA, obtaining the certificate, filing, and the bank's own compliance review, two to four weeks is realistic. People who plan for two days are the ones who end up calling the branch daily.",
+      },
+      { type: "h2", text: "Tax First, Transfer Second" },
+      {
+        type: "p",
+        text: "Repatriation does not settle your tax position; it assumes you already have. When a buyer purchases from an NRI, TDS is deducted at source on the **full sale value**, not the gain — unless you obtained a lower deduction certificate in advance. Recovering the excess means filing an Indian return and waiting for a refund.",
+      },
+      {
+        type: "crosslink",
+        text: "The TDS mechanics, the lower deduction certificate, and how the India–Bahrain treaty actually applies are covered in full in our NRI property tax filing guide.",
+        slug: "nri-property-tax-filing-bahrain",
+      },
+      {
+        type: "p",
+        text: "One piece of good news specific to Bahrain: because Bahrain levies **no personal income tax**, there is no second tax bill waiting when the money lands. Your entire tax exposure sits on the Indian side. That is a genuine structural advantage over NRIs remitting to the UK, the US or Australia — but it does not reduce what India is owed.",
+      },
+      { type: "h2", text: "Four Mistakes That Strand Money" },
+      {
+        type: "ul",
+        items: [
+          "**Selling in March.** A sale completing near the financial year end leaves no room to use the current year's USD 1 million limit before it resets. Selling in April gives you a full year of headroom.",
+          "**Assuming joint ownership is automatic.** Both owners need their own NRO accounts and their own 15CA/15CB filings to use both limits.",
+          "**No lower deduction certificate.** Skipping it means excess TDS locked with the tax department until a refund is processed — often the better part of a year.",
+          "**A muddled payment trail.** If you cannot evidence how the original purchase was funded, the NRE route closes and you fall back to the capped NRO route.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "This article explains the mechanism, not your filing position. RBI limits, forms and treaty provisions change. Confirm your specific situation with a CA experienced in NRI remittances before you commit to a timeline.",
+      },
+      {
+        type: "cta",
+        text: "Bringing a sale — or a purchase — to the expo? Book a one-on-one repatriation and tax session when you RSVP.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How much money can I send from India to Bahrain in a year?",
+        answer:
+          "Up to USD 1 million per financial year from NRO account balances, including property sale proceeds. It is a per-person limit, so joint owners each have their own. Funds in an NRE account are freely repatriable and do not count against this ceiling.",
+      },
+      {
+        question: "Do I need Form 15CA and 15CB for every transfer?",
+        answer:
+          "For remittances abroad from an NRO account, yes — Form 15CB from a Chartered Accountant, then Form 15CA filed by you quoting it. Banks will not process the remittance without both. Transfers from an NRE account generally do not require them.",
+      },
+      {
+        question: "Can property sale proceeds go directly to my NRE account?",
+        answer:
+          "Only if the property was originally purchased with funds remitted from abroad through banking channels, and only for up to two residential properties. Otherwise proceeds are credited to NRO and the USD 1 million annual ceiling applies.",
+      },
+      {
+        question: "Will Bahrain tax the money when it arrives?",
+        answer:
+          "No. Bahrain levies no personal income tax, so there is no Bahraini tax on Indian property proceeds. Your tax obligation sits entirely on the Indian side and must be settled before repatriation.",
+      },
+      {
+        question: "How long does repatriation actually take?",
+        answer:
+          "Plan for two to four weeks once the sale has completed and tax is settled — arranging the CA certificate, filing both forms, and the bank's compliance review each take time. Sales completing close to the March financial year end can face additional delay.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-BHR-005 — NRE / NRO / FCNR
+  // ------------------------------------------------------------------
+  {
+    slug: "nre-nro-fcnr-accounts-bahrain-nri",
+    title: "NRE, NRO or FCNR: Which Account a Bahrain NRI Actually Needs",
+    dek: "Three account types, one decision that quietly determines your tax bill, your repatriation freedom and your currency risk for the next decade.",
+    metaTitle: "NRE vs NRO vs FCNR Accounts for Bahrain NRIs | Which to Use",
+    metaDescription:
+      "A plain comparison of NRE, NRO and FCNR accounts for NRIs in Bahrain — taxation, repatriation limits, currency risk, and which account to route property money through.",
+    publishDate: "2026-08-31",
+    readingTime: "9 min read",
+    content: [
+      {
+        type: "p",
+        text: "Ask ten Bahrain-based NRIs which account their Indian rent goes into and roughly three will say \"the normal one.\" There is no normal one. Once you become a non-resident, your old resident savings account is no longer valid for you to operate, and the account you open in its place quietly sets your tax exposure and your ability to move money home for years afterwards.",
+      },
+      {
+        type: "p",
+        text: "This is the short version, without the bank marketing.",
+      },
+      { type: "h2", text: "The Three Accounts, Side by Side" },
+      {
+        type: "table",
+        headers: ["", "NRE", "NRO", "FCNR (B)"],
+        rows: [
+          ["Held in", "Indian rupees", "Indian rupees", "Foreign currency — USD, GBP, EUR and others"],
+          ["What you put in", "Foreign earnings sent from abroad", "Income arising in India: rent, dividends, sale proceeds, pension", "Foreign earnings sent from abroad, as a term deposit"],
+          ["Interest taxed in India", "No", "Yes, at applicable rates with TDS", "No"],
+          ["Repatriation", "Free — principal and interest", "Capped at USD 1 million per financial year", "Free"],
+          ["Currency risk", "You carry it — rupee balance", "You carry it — rupee balance", "None until maturity — held in foreign currency"],
+          ["Joint holding", "With another NRI; with a resident relative on former-or-survivor basis", "With residents or NRIs", "With another NRI"],
+        ],
+      },
+      { type: "h2", text: "The Rule of Thumb" },
+      {
+        type: "ul",
+        items: [
+          "**Money coming from Bahrain into India** → NRE. Tax-free interest, freely repatriable, no ceiling.",
+          "**Money arising inside India** → NRO. You have no choice here: Indian rent and sale proceeds legally must be credited to an NRO account.",
+          "**Money you want to keep in dollars** → FCNR. Useful if you expect to bring the funds back out and don't want a rupee round trip in between.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Most Bahrain NRIs who own Indian property end up needing **both** an NRE and an NRO account. That is normal, not a sign something has gone wrong.",
+      },
+      { type: "h2", text: "The Currency Point Nobody Raises" },
+      {
+        type: "p",
+        text: "The Bahraini dinar is pegged to the US dollar, and has been for decades. That gives you something most NRIs don't have: a stable base currency. It also means the rupee's movement against the dollar is, effectively, the rupee's movement against your salary.",
+      },
+      {
+        type: "p",
+        text: "An NRE fixed deposit paying a headline rate well above what you'd earn on dollars looks compelling until you account for rupee depreciation over the deposit's life. FCNR sidesteps that by holding the deposit in foreign currency — you accept a lower nominal rate in exchange for removing the currency variable entirely. Neither is automatically correct; it depends on whether the money is coming back out or staying in India permanently.",
+      },
+      {
+        type: "quote",
+        text: "A higher interest rate in a depreciating currency is not the same as a higher return. Compare after currency, not before it.",
+      },
+      { type: "h2", text: "What Changed When You Moved" },
+      {
+        type: "p",
+        text: "Under FEMA, once you qualify as a non-resident, resident accounts must be redesignated — usually to NRO — rather than simply left running. Banks are increasingly systematic about enforcing this, and an un-redesignated account can complicate a property transaction at exactly the wrong moment.",
+      },
+      {
+        type: "p",
+        text: "The [Reserve Bank of India's deposit regulations](https://www.rbi.org.in/Scripts/BS_ViewMasDirections.aspx) set out the current position. If you moved to Bahrain and never told your Indian bank, that's the first call to make.",
+      },
+      { type: "h2", text: "How This Plays Into Property" },
+      {
+        type: "p",
+        text: "The account you pay from is not an administrative detail — it determines your exit. Property purchased with funds remitted through banking channels can have its sale proceeds credited back to NRE and repatriated freely, for up to two residential properties. Property paid for from NRO balances routes the proceeds back to NRO, where the annual ceiling applies.",
+      },
+      {
+        type: "crosslink",
+        text: "The full repatriation mechanics — limits, Form 15CA and 15CB, and the timing traps — are covered in our guide to moving money from India to Bahrain.",
+        slug: "repatriate-money-india-to-bahrain-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "And if you're at the buying stage, the payment trail chapter of our Bahrain NRI purchase guide explains how to set this up from the first instalment.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
+      },
+      {
+        type: "quote",
+        text: "Account rules, tax treatment and RBI limits change. This is a general explanation, not advice on your situation — confirm with your bank and a CA familiar with NRI accounts.",
+      },
+      {
+        type: "cta",
+        text: "Bring your account questions to the expo — tax and banking advisors run one-on-one sessions for RSVP'd guests.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I keep my old Indian savings account after moving to Bahrain?",
+        answer:
+          "No. Under FEMA, once you become a non-resident your resident account must be redesignated, typically to an NRO account. Continuing to operate it as a resident account is not compliant and can complicate property transactions later.",
+      },
+      {
+        question: "Where does rent from my Indian property have to go?",
+        answer:
+          "Into an NRO account. Income arising in India must be credited to NRO, not NRE. Interest on NRO balances is taxable in India and TDS applies.",
+      },
+      {
+        question: "Is NRE or FCNR better for a Bahrain NRI?",
+        answer:
+          "It depends on whether the money is coming back out. NRE pays higher nominal rupee rates but leaves you carrying rupee depreciation. FCNR holds the deposit in foreign currency at a lower rate with no currency risk until maturity. Since the dinar is pegged to the dollar, an FCNR dollar deposit is close to currency-neutral for you.",
+      },
+      {
+        question: "Do I need both an NRE and an NRO account?",
+        answer:
+          "Most Bahrain NRIs who own Indian property do. NRE receives money sent from Bahrain; NRO receives income arising in India such as rent or sale proceeds. They serve different legal purposes and are not interchangeable.",
+      },
+      {
+        question: "Is NRE interest really tax-free?",
+        answer:
+          "Interest on NRE and FCNR deposits is exempt from Indian income tax while you remain a non-resident. NRO interest is taxable in India. Because Bahrain has no personal income tax, there is no second tax layer on any of them at the Bahrain end.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-BHR-006 — Power of Attorney
+  // ------------------------------------------------------------------
+  {
+    slug: "power-of-attorney-nri-property-india-bahrain",
+    title: "Power of Attorney from Bahrain: Buying Indian Property Without Flying Back",
+    dek: "A PoA is the document that lets a purchase complete while you're at work in Manama. Drafted loosely, it's also the document that hands someone else control of your asset.",
+    metaTitle: "NRI Power of Attorney for Indian Property from Bahrain | Guide",
+    metaDescription:
+      "How Bahrain NRIs execute a Power of Attorney for Indian property: apostille vs consular attestation, special vs general PoA, stamping in India, and the clauses that protect you.",
+    publishDate: "2026-08-31",
+    readingTime: "10 min read",
+    content: [
+      {
+        type: "p",
+        text: "Registration in India requires someone to physically appear at the sub-registrar's office. If that someone can't be you, it has to be a person you have formally authorised — and the document doing the authorising is a Power of Attorney.",
+      },
+      {
+        type: "p",
+        text: "Most Bahrain NRIs treat the PoA as a formality to be rushed through so the deal can close. It is the opposite: it is the single most powerful document you will sign in the entire transaction, and the one where loose drafting causes the most damage.",
+      },
+      { type: "h2", text: "Special PoA, Not General PoA" },
+      {
+        type: "p",
+        text: "This is the decision that matters most, and it takes one sentence to explain.",
+      },
+      {
+        type: "ul",
+        items: [
+          "A **General Power of Attorney** grants broad authority over your affairs — potentially including the power to sell, mortgage or lease property you haven't even bought yet.",
+          "A **Special (or Specific) Power of Attorney** grants narrowly defined powers for one named transaction: this property, this act, this window of time.",
+        ],
+      },
+      {
+        type: "p",
+        text: "For a property purchase, use a Special PoA. Name the property by its full legal description. List the exact acts permitted — sign the sale deed, present it for registration, receive the registered document. State an expiry date. If the power to sell is not needed, do not include it.",
+      },
+      {
+        type: "quote",
+        text: "A General PoA given to a relative \"to keep things simple\" is how people lose control of assets. The convenience is real; so is the exposure.",
+      },
+      { type: "h2", text: "Executing It from Bahrain: Two Routes" },
+      {
+        type: "p",
+        text: "A PoA signed in Bahrain has to be made legally recognisable in India. There are two paths, and which one applies is a question of treaty status rather than preference.",
+      },
+      {
+        type: "table",
+        headers: ["", "Consular route", "Apostille route"],
+        rows: [
+          ["Where you sign", "At the Indian Embassy in Manama, before a consular officer", "Before a notary in Bahrain, then authenticated by the Bahraini authorities"],
+          ["Then", "Embassy attests the document", "Apostille certificate attached under the Hague Convention"],
+          ["On arrival in India", "Stamped and, where required, registered", "Stamped and, where required, registered"],
+          ["Typical use", "The conventional, widely accepted route for NRIs", "Available where both countries operate the Hague apostille framework"],
+        ],
+      },
+      {
+        type: "p",
+        text: "Confirm the currently accepted route for Bahrain with the [Embassy of India in Bahrain](https://www.eoibahrain.gov.in/) before you book anything. Consular procedures and appointment systems change, and sub-registrar offices in different Indian states are not uniformly flexible about which form of authentication they will accept.",
+      },
+      { type: "h2", text: "The Step Everyone Forgets: Stamping in India" },
+      {
+        type: "p",
+        text: "Attestation abroad is not the finish line. Once the PoA reaches India it generally must be **stamped** under the relevant state's Stamp Act, typically within a short window of arrival — often cited as three months. Stamp duty on a PoA varies by state and by whether the holder is a close relative.",
+      },
+      {
+        type: "p",
+        text: "An unstamped or improperly stamped PoA can be refused at the sub-registrar's counter on the day of registration, with the seller waiting and your travel already booked. This is the most common practical failure point, and it is entirely avoidable.",
+      },
+      { type: "h2", text: "Clauses Worth Insisting On" },
+      {
+        type: "ul",
+        items: [
+          "**Full property identification** — survey number, project, unit, boundaries. Not \"a flat in Bangalore.\"",
+          "**An exhaustive list of permitted acts**, with anything not listed expressly excluded.",
+          "**An expiry date** tied to the expected completion, not left open-ended.",
+          "**A no-sale clause** where the PoA exists only to complete a purchase.",
+          "**A named attorney**, with passport or Aadhaar details, and no power to delegate onward to a third party.",
+          "**A revocation mechanism** you can actually execute from Bahrain.",
+        ],
+      },
+      { type: "h2", text: "A Note on Buying Through a PoA" },
+      {
+        type: "p",
+        text: "There is a separate and important distinction: giving a PoA so someone can act for you is normal practice. **Buying a property where the seller is transferring through a \"GPA sale\"** is a different thing entirely, and the Supreme Court of India has held that such arrangements do not convey valid title. If a seller offers a General Power of Attorney transfer instead of a registered sale deed, that is a reason to stop, not to negotiate.",
+      },
+      {
+        type: "crosslink",
+        text: "How to check a project's registration and title before you get anywhere near a PoA is covered in our RERA verification guide.",
+        slug: "rera-verification-checklist-nri-bahrain",
+      },
+      {
+        type: "crosslink",
+        text: "And the wider purchase sequence — payment trail, banking channels, documentation — sits in our Bahrain NRI buying guide.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
+      },
+      {
+        type: "quote",
+        text: "PoA requirements differ by Indian state and change over time. Have the draft reviewed by an Indian property lawyer before you sign anything at the embassy — reviewing a draft costs a fraction of unwinding a bad one.",
+      },
+      {
+        type: "cta",
+        text: "Legal advisors run one-on-one PoA and documentation sessions at the expo. Reserve a slot when you RSVP.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I buy property in India without travelling from Bahrain?",
+        answer:
+          "Yes, by executing a Power of Attorney authorising someone in India to sign and present the documents for registration on your behalf. Use a Special PoA naming the specific property and the specific acts permitted, not a General PoA.",
+      },
+      {
+        question: "Does a PoA signed in Bahrain need embassy attestation?",
+        answer:
+          "It must be made legally recognisable in India, either by execution and attestation at the Indian Embassy in Manama or via notarisation and apostille where that route applies. Confirm the currently accepted route with the embassy, as procedures change.",
+      },
+      {
+        question: "Does the PoA need stamping in India as well?",
+        answer:
+          "Yes. Attestation abroad is not sufficient on its own. The document generally must be stamped under the relevant state's Stamp Act after arriving in India, often within about three months. An unstamped PoA can be rejected at the sub-registrar's office.",
+      },
+      {
+        question: "Should I give a General or Special Power of Attorney?",
+        answer:
+          "Special, in almost every case. It limits authority to one named property, an explicit list of acts, and a defined time window. A General PoA grants far broader control than a single purchase requires.",
+      },
+      {
+        question: "Is buying a property on GPA safe?",
+        answer:
+          "No. Buying where the seller transfers via a General Power of Attorney rather than a registered sale deed does not convey valid title under Indian law. Insist on a registered sale deed. This is separate from giving your own PoA to act on your behalf, which is normal practice.",
+      },
+    ],
+  },
+
+  // ------------------------------------------------------------------
+  // CB-BHR-007 — RERA verification
+  // ------------------------------------------------------------------
+  {
+    slug: "rera-verification-checklist-nri-bahrain",
+    title: "Verifying an Indian Project from Bahrain: The RERA Checklist That Takes 20 Minutes",
+    dek: "Every Indian state runs a free public RERA portal listing registered projects, promoter track records and filed complaints. Most NRI buyers never open one.",
+    metaTitle: "RERA Check for NRI Buyers from Bahrain | Verification Checklist",
+    metaDescription:
+      "A practical RERA verification checklist for Bahrain NRIs buying Indian property: how to find the registration number, read the promoter's complaint history, and spot the red flags.",
+    publishDate: "2026-08-31",
+    readingTime: "9 min read",
+    content: [
+      {
+        type: "p",
+        text: "The single biggest advantage NRI buyers have gained in the last decade has nothing to do with prices or interest rates. It's that since the Real Estate (Regulation and Development) Act came into force, every state maintains a **public, free, searchable register** of real estate projects — with the promoter's other projects, declared completion dates, and complaints filed against them.",
+      },
+      {
+        type: "p",
+        text: "You can check all of it from a laptop in Manama, before you speak to anyone. Twenty minutes of this is worth more than a month of brochures.",
+      },
+      { type: "h2", text: "Start Here: Find the Registration Number" },
+      {
+        type: "p",
+        text: "Any project being marketed to you should have a RERA registration number, and by law it should appear on the advertising itself. If a brochure, a hoarding photo or a WhatsApp forward doesn't show one, that is your first data point.",
+      },
+      {
+        type: "p",
+        text: "There is no single all-India RERA website — the Act is administered state by state, and each state runs its own register. You need the portal for the state the property sits in.",
+      },
+      {
+        type: "ul",
+        items: [
+          "**Maharashtra** (Mumbai, Pune) — [MahaRERA](https://maharera.maharashtra.gov.in/), generally the most detailed public record",
+          "**Karnataka** (Bangalore) — [K-RERA](https://rera.karnataka.gov.in/)",
+          "**Telangana** (Hyderabad) — [TG-RERA](https://rera.telangana.gov.in/)",
+          "**Haryana** (Gurgaon) — [HRERA](https://haryanarera.gov.in/), with separate Gurugram and Panchkula benches",
+        ],
+      },
+      { type: "h2", text: "What to Actually Read Once You're In" },
+      {
+        type: "p",
+        text: "Finding the listing is the easy part. Most buyers see \"registered\" and stop. The value is in the detail behind it.",
+      },
+      {
+        type: "table",
+        headers: ["Check", "What good looks like", "What should worry you"],
+        rows: [
+          ["Registration status", "Active, covering the tower or phase you're buying", "Expired, or covers a different phase of the same development"],
+          ["Declared completion date", "Realistic, and consistent with what sales staff told you", "A date already passed, or months earlier than the brochure claims"],
+          ["Promoter's other projects", "A record of delivered projects with dates met", "Multiple projects with repeatedly extended timelines"],
+          ["Complaints filed", "Few, resolved, minor in nature", "A pattern of similar complaints across several projects"],
+          ["Approved plan vs marketing", "Unit mix and amenities match what you were shown", "Amenities in the brochure that appear nowhere in the filing"],
+          ["Land title documents", "Uploaded and clean", "Missing, or showing an unresolved encumbrance"],
+        ],
+      },
+      {
+        type: "quote",
+        text: "The promoter's complaint history across all their projects tells you more than any single project's brochure. Patterns repeat; marketing doesn't.",
+      },
+      { type: "h2", text: "The Phase Trick" },
+      {
+        type: "p",
+        text: "One pattern worth knowing specifically. A large development is often registered in phases. A promoter can legitimately advertise a well-established, registered Phase 1 while selling units in a Phase 3 that is registered separately — or not yet registered at all.",
+      },
+      {
+        type: "p",
+        text: "Always confirm that the registration number you were given covers **the specific tower, phase and unit** you are buying. Ask for it in writing. This is a routine question for a legitimate developer and an awkward one otherwise.",
+      },
+      { type: "h2", text: "What RERA Does Not Do" },
+      {
+        type: "p",
+        text: "Being registered is a floor, not a guarantee. RERA registration confirms the project is declared and disclosed. It does not certify construction quality, guarantee delivery on time, or validate that the price is reasonable. Nor does it remove the need for an independent title search by a lawyer.",
+      },
+      {
+        type: "ul",
+        items: [
+          "It **does** give you disclosure, a complaints mechanism, and a promoter track record you can read.",
+          "It **does not** replace legal due diligence, a title search, or an independent valuation.",
+        ],
+      },
+      { type: "h2", text: "Why This Matters More From Abroad" },
+      {
+        type: "p",
+        text: "A buyer in Pune can visit the site on a Saturday and ask neighbours what they've heard. From Bahrain you have documents and phone calls. That asymmetry is exactly why the public record is worth using properly — it is the one source that isn't being presented to you by someone earning a commission on the sale.",
+      },
+      {
+        type: "crosslink",
+        text: "Once a project checks out, the purchase mechanics — payment trail, banking channels, documentation — are covered in our Bahrain NRI buying guide.",
+        slug: "buying-property-india-from-bahrain-nri-guide",
+      },
+      {
+        type: "crosslink",
+        text: "And if you plan to complete without travelling, read the Power of Attorney guide before signing anything.",
+        slug: "power-of-attorney-nri-property-india-bahrain",
+      },
+      {
+        type: "quote",
+        text: "RERA rules, portals and disclosure requirements differ by state and change over time. Use the register as a starting point, then have an Indian property lawyer run an independent title check before you commit funds.",
+      },
+      {
+        type: "cta",
+        text: "Every developer exhibiting at the expo is asked for project documentation. RSVP and we'll shortlist by the cities you're actually considering.",
+      },
+    ],
+    faqs: [
+      {
+        question: "How do I check if an Indian project is RERA registered from Bahrain?",
+        answer:
+          "Go to the RERA portal for the state the property is in — MahaRERA for Mumbai and Pune, K-RERA for Bangalore, TG-RERA for Hyderabad, HRERA for Gurgaon — and search by project name, promoter name or registration number. The registers are public and free to search from anywhere.",
+      },
+      {
+        question: "Does RERA registration mean a project is safe to buy?",
+        answer:
+          "No. Registration means the project is declared and disclosed, and gives you a complaints mechanism and a promoter track record. It does not certify construction quality, guarantee delivery dates, or replace an independent title search by a lawyer.",
+      },
+      {
+        question: "What is the most useful thing on a RERA listing?",
+        answer:
+          "The promoter's history across all their projects — declared versus actual completion dates, and the pattern of complaints filed. A single project's brochure tells you what is promised; the promoter's record tells you what tends to happen.",
+      },
+      {
+        question: "The developer gave me a registration number but it looks like a different phase.",
+        answer:
+          "Large developments are often registered phase by phase. Confirm in writing that the number covers the specific tower, phase and unit you are buying. A registered Phase 1 says nothing about an unregistered Phase 3.",
+      },
+      {
+        question: "Do I still need a lawyer if the project is RERA registered?",
+        answer:
+          "Yes. RERA disclosure and an independent title search are different things. A property lawyer verifies ownership history, encumbrances and approvals in a way the public register does not.",
       },
     ],
   },

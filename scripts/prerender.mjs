@@ -33,6 +33,10 @@ const blogSlugs = [
   "best-bangalore-projects-nri-investment-bahrain",
   "pune-vs-hyderabad-property-investment-nri-bahrain",
   "luxury-real-estate-mumbai-gurgaon-nri-bahrain",
+  "repatriate-money-india-to-bahrain-nri-guide",
+  "nre-nro-fcnr-accounts-bahrain-nri",
+  "power-of-attorney-nri-property-india-bahrain",
+  "rera-verification-checklist-nri-bahrain",
 ];
 
 // Analytics/tag hosts that must never load while prerendering.

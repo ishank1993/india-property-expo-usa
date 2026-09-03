@@ -4,17 +4,50 @@ import { ArrowRight } from "lucide-react";
 import { Button } from "../ui/button";
 import { blogPosts, type ContentBlock } from "../../content/blogPosts";
 
+// Supports **bold** and [label](href).
+// Internal hrefs (starting "/") route through react-router so they stay SPA
+// navigations; external ones open in a new tab. Deliberately NOT nofollow —
+// these are genuine citations to primary sources (RBI, the Income Tax
+// department, RERA), which is what earns topical trust.
 function renderInline(text: string, keyPrefix: string): React.ReactNode {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]+\))/g);
   return parts.map((part, i) => {
+    const key = `${keyPrefix}-${i}`;
+
     if (part.startsWith("**") && part.endsWith("**")) {
       return (
-        <strong key={`${keyPrefix}-${i}`} className="font-bold text-gray-900">
+        <strong key={key} className="font-bold text-gray-900">
           {part.slice(2, -2)}
         </strong>
       );
     }
-    return <Fragment key={`${keyPrefix}-${i}`}>{part}</Fragment>;
+
+    const link = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(part);
+    if (link) {
+      const [, label, href] = link;
+      const className =
+        "text-red-700 underline underline-offset-2 hover:text-red-800 font-medium";
+      if (href.startsWith("/")) {
+        return (
+          <Link key={key} to={href} className={className}>
+            {label}
+          </Link>
+        );
+      }
+      return (
+        <a
+          key={key}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={className}
+        >
+          {label}
+        </a>
+      );
+    }
+
+    return <Fragment key={key}>{part}</Fragment>;
   });
 }
 
