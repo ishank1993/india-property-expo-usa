@@ -16,14 +16,14 @@
 
 import { createServer } from "node:http";
 import { createReadStream, existsSync, statSync } from "node:fs";
-import { mkdir, writeFile } from "node:fs/promises";
+import { mkdir, writeFile, readFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, "../dist");
 const PORT = 4321;
-const SITE_URL = "https://indiapropertyexpobahrain.com";
+const SITE_URL = "https://www.indiapropertyexpobahrain.com";
 
 // Keep in sync with the slugs in src/app/content/blogPosts.ts.
 const blogSlugs = [
@@ -69,13 +69,21 @@ const MIME = {
   ".txt": "text/plain",
 };
 
-function serveStatic() {
+// `template` is the pristine dist/index.html, read before any prerendering.
+// It must NOT be re-read from disk per request: "/" is prerendered first and
+// overwrites dist/index.html, so later routes falling back to that file would
+// boot from the fully-rendered homepage — inheriting every <head> tag the
+// homepage injected (e.g. FAQSection's FAQ schema) and baking it into pages
+// where those FAQs are not visible.
+function serveStatic(template) {
   return createServer((req, res) => {
     const urlPath = decodeURIComponent((req.url || "/").split("?")[0]);
-    let filePath = path.join(distDir, urlPath);
+    const filePath = path.join(distDir, urlPath);
     if (!existsSync(filePath) || statSync(filePath).isDirectory()) {
       // Same SPA fallback as vercel.json's rewrite rule.
-      filePath = path.join(distDir, "index.html");
+      res.setHeader("Content-Type", "text/html");
+      res.end(template);
+      return;
     }
     const ext = path.extname(filePath);
     res.setHeader("Content-Type", MIME[ext] || "application/octet-stream");
@@ -107,7 +115,10 @@ async function run() {
   const { default: puppeteer } = await import("puppeteer");
   const launchOptions = await getLaunchOptions();
 
-  const server = serveStatic();
+  // Snapshot the untouched template before the loop starts rewriting files.
+  const template = await readFile(path.join(distDir, "index.html"), "utf-8");
+
+  const server = serveStatic(template);
   await new Promise((resolve) => server.listen(PORT, "127.0.0.1", resolve));
 
   const browser = await puppeteer.launch({ headless: true, ...launchOptions });
@@ -144,7 +155,7 @@ async function run() {
         let html = await page.content();
         html = html
           .replace(/https?:\/\/(localhost|127\.0\.0\.1):\d+/gi, SITE_URL)
-          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=indiapropertyexpobahrain.com")
+          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=www.indiapropertyexpobahrain.com")
           // Blocking the request stops the download, but the GTM snippet still
           // inserts its <script> element into the DOM before that — and
           // page.content() captures it. Left in, real visitors would load

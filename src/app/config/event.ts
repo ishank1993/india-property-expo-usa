@@ -13,7 +13,7 @@ export const EVENT = {
   countryCode: "BH",
   currency: "BHD",
   dialCode: "+973",
-  domain: "https://indiapropertyexpobahrain.com",
+  domain: "https://www.indiapropertyexpobahrain.com",
 
   // Bahrain's weekend is Friday–Saturday, so 23–24 Oct 2026 is a full weekend.
   dates: {

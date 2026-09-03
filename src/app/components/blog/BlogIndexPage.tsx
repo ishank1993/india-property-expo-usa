@@ -10,7 +10,7 @@ import { RegistrationModal } from "../RegistrationModal";
 import { Toaster } from "../ui/sonner";
 import { blogPosts } from "../../content/blogPosts";
 
-const SITE_URL = "https://indiapropertyexpobahrain.com";
+const SITE_URL = "https://www.indiapropertyexpobahrain.com";
 
 export function BlogIndexPage() {
   const navigate = useNavigate();

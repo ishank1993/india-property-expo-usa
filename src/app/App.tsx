@@ -185,7 +185,7 @@ function MainApp() {
         <SEOHead
           title="NRI Tax Clinic & GIFT City Baatchit | NRI Nivesh Bahrain"
           description="Free NRI Tax Clinic and GIFT City Baatchit for Bahrain NRIs. Learn about GIFT City regulatory updates, tax planning, and global investment opportunities beyond real estate."
-          canonical="https://indiapropertyexpobahrain.com/wealth"
+          canonical="https://www.indiapropertyexpobahrain.com/wealth"
         />
         <WealthPage 
           onRegisterClick={openRegister} 
@@ -205,7 +205,7 @@ function MainApp() {
         <SEOHead
           title="Terms & Conditions | NRI Nivesh Property Expo 2026"
           description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 in Bahrain. Understand your rights and responsibilities when using our platform."
-          canonical="https://indiapropertyexpobahrain.com/terms"
+          canonical="https://www.indiapropertyexpobahrain.com/terms"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -236,7 +236,7 @@ function MainApp() {
         <SEOHead
           title="Privacy Policy | NRI Nivesh Property Expo 2026"
           description="Learn how NRI Nivesh protects your personal data and privacy in compliance with Bahrain's PDPL requirements."
-          canonical="https://indiapropertyexpobahrain.com/privacy"
+          canonical="https://www.indiapropertyexpobahrain.com/privacy"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -267,7 +267,7 @@ function MainApp() {
         <SEOHead 
           title="Privacy Policy | NRI Nivesh"
           description="Privacy Policy for NRI Nivesh. Learn how we collect, use, and protect your personal data in compliance with Bahrain PDPL, Meta (Facebook/Instagram) Lead Ads, and Google regulations."
-          canonical="https://indiapropertyexpobahrain.com/privacy-policy"
+          canonical="https://www.indiapropertyexpobahrain.com/privacy-policy"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -299,7 +299,7 @@ function MainApp() {
         <SEOHead
           title="Disclaimer | NRI Nivesh Property Expo 2026"
           description="Important disclaimer about property investment information. This site is for informational purposes only and not financial, tax, or legal advice."
-          canonical="https://indiapropertyexpobahrain.com/disclaimer"
+          canonical="https://www.indiapropertyexpobahrain.com/disclaimer"
         />
         <div className="min-h-screen bg-white">
           <Favicon />

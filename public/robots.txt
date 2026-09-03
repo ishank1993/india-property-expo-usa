@@ -1,28 +1,39 @@
-# robots.txt for NRI Nivesh India Property Expo 2026
+# robots.txt — India Property Expo 2026, Bahrain Edition
+# https://www.indiapropertyexpobahrain.com
 
+# ---------------------------------------------------------------
+# Default: everything is open to everyone.
+# No Crawl-delay directive on purpose — it used to be 10 seconds,
+# which throttled every non-Google crawler (Bing and the AI
+# crawlers below) to one page per 10s and got the site
+# deprioritised. The site is 14 static pages; there is nothing to
+# rate-limit.
+# ---------------------------------------------------------------
 User-agent: *
 Allow: /
 
-# Explicitly allow favicon and icon files
+# Icons and manifests — needed for the favicon to appear in search results
 Allow: /favicon.ico
 Allow: /favicon.svg
 Allow: /favicon-16x16.png
 Allow: /favicon-32x32.png
+Allow: /favicon-96x96.png
 Allow: /apple-touch-icon.png
 Allow: /android-chrome-192x192.png
 Allow: /android-chrome-512x512.png
 Allow: /safari-pinned-tab.svg
 Allow: /site.webmanifest
 Allow: /browserconfig.xml
+Allow: /og-image.jpg
+Allow: /llms.txt
 
-# Sitemap
-Sitemap: https://indiapropertyexpobahrain.com/sitemap.xml
-
-# Crawl-delay
-Crawl-delay: 10
-
-# Specific bot instructions
+# ---------------------------------------------------------------
+# Search engines
+# ---------------------------------------------------------------
 User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
@@ -30,3 +41,73 @@ Allow: /
 
 User-agent: Slurp
 Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# ---------------------------------------------------------------
+# AI assistants and answer engines — explicitly welcomed so the
+# expo, dates, venue policy and the NRI guides can be cited.
+# ---------------------------------------------------------------
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# ---------------------------------------------------------------
+Sitemap: https://www.indiapropertyexpobahrain.com/sitemap.xml

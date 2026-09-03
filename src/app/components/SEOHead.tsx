@@ -13,8 +13,8 @@ export function SEOHead({
   title = "India Property Expo 2026 Bahrain | 23\u201324 Oct, Manama | RSVP Free",
   description = "RSVP free for Bahrain's largest India property exhibition, 23\u201324 October 2026 in Manama. Meet 35+ trusted developers, explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR and 35+ cities, and get a shortlist matched to your city and budget before you arrive \u2014 plus NRI tax, legal and home-loan consultations booked in advance.",
   keywords = "India property expo Bahrain 2026, NRI property exhibition Bahrain, property India from Bahrain, India real estate exhibition Bahrain, NRI property developers Bahrain, property information India for NRI, Indian real estate expo Bahrain, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property, Pune Goa Hyderabad property NRI, property exhibition Bahrain 2026, NRI wealth management Bahrain, India information NRI",
-  canonical = "https://indiapropertyexpobahrain.com/",
-  ogImage = "https://indiapropertyexpobahrain.com/og-image.jpg",
+  canonical = "https://www.indiapropertyexpobahrain.com/",
+  ogImage = "https://www.indiapropertyexpobahrain.com/og-image.jpg",
   noindex = false
 }: SEOHeadProps) {
 
@@ -105,7 +105,7 @@ export function SEOHead({
       "organizer": {
         "@type": "Organization",
         "name": "NRI Nivesh",
-        "url": "https://indiapropertyexpobahrain.com"
+        "url": "https://www.indiapropertyexpobahrain.com"
       },
       "offers": {
         "@type": "Offer",
@@ -126,8 +126,8 @@ export function SEOHead({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "NRI Nivesh",
-      "url": "https://indiapropertyexpobahrain.com",
-      "logo": "https://indiapropertyexpobahrain.com/logo.png",
+      "url": "https://www.indiapropertyexpobahrain.com",
+      "logo": "https://www.indiapropertyexpobahrain.com/logo.png",
       "description": "Leading NRI property investment platform connecting global Indians with premium real estate opportunities in India",
       "contactPoint": {
         "@type": "ContactPoint",
@@ -146,7 +146,7 @@ export function SEOHead({
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://indiapropertyexpobahrain.com"
+          "item": "https://www.indiapropertyexpobahrain.com"
         },
         {
           "@type": "ListItem",
@@ -157,48 +157,22 @@ export function SEOHead({
       ]
     };
     
-    // Add FAQ schema for rich snippets
-    const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "When is the India Property Expo 2026 in Bahrain?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "The India Property Expo 2026 Bahrain Edition runs on Friday 23 and Saturday 24 October 2026, 10:00 AM to 7:00 PM each day, at a central Manama venue. It is an RSVP-only event — the exact address is emailed to confirmed guests ahead of the doors opening."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Is registration free for the property expo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, entry is free, but the event is RSVP-only. Confirming your RSVP lets us match you to relevant developers and reserve your one-on-one tax, legal or home-loan consultation before you arrive."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How many developers will be present at the expo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Over 35 trusted real estate developers from India will be present, showcasing 500+ verified projects across 35+ cities."
-          }
-        }
-      ]
-    };
-    
+    // NOTE: no FAQPage schema here on purpose. Google requires FAQ markup to
+    // match FAQs visibly present on that page. This component renders on every
+    // route, so a generic FAQ block was also being emitted on blog posts and
+    // legal pages that don't show those questions — and it duplicated the
+    // FAQPage that FAQSection/BlogPostPage already emit. Those own it now.
+
     // Add WebSite schema for search box
     const websiteSchema = {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "NRI Nivesh",
-      "url": "https://indiapropertyexpobahrain.com",
+      "url": "https://www.indiapropertyexpobahrain.com",
       "description": "Leading NRI property investment platform for global Indians",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://indiapropertyexpobahrain.com/search?q={search_term_string}",
+        "target": "https://www.indiapropertyexpobahrain.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     };
@@ -206,7 +180,7 @@ export function SEOHead({
     // Combine all schemas
     const structuredData = {
       "@context": "https://schema.org",
-      "@graph": [eventSchema, organizationSchema, breadcrumbSchema, faqSchema, websiteSchema]
+      "@graph": [eventSchema, organizationSchema, breadcrumbSchema, websiteSchema]
     };
     
     let scriptTag = document.querySelector('script[type="application/ld+json"]');
