@@ -191,7 +191,7 @@ export function Gallery() {
             Photo Gallery
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
-            Experience the <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">India–Bahrain Connection</span>
+            Experience the <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">India–America Connection</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Glimpses from our past expos — the sessions, consultations and conversations we run
@@ -250,7 +250,7 @@ export function Gallery() {
               {/* Image */}
               <LazyImage
                 src={image.url}
-                alt={`${image.title} - India Property Expo Bahrain 2026`}
+                alt={`${image.title} - India Property Expo America 2026`}
                 width={400}
                 height={400}
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -298,7 +298,7 @@ export function Gallery() {
         {/* Bottom Text */}
         <div className="text-center mt-12">
           <p className="text-gray-600 text-lg">
-            📸 More photos will be added from the upcoming <span className="font-bold text-red-600">23–24 October</span> Bahrain edition!
+            📸 More photos will be added from our upcoming <span className="font-bold text-red-600">America Tour</span> editions!
           </p>
         </div>
       </div>
@@ -352,7 +352,7 @@ export function Gallery() {
             >
               <img
                 src={filteredImages[selectedImage].url}
-                alt={`${filteredImages[selectedImage].title} - India Property Expo Bahrain 2026`}
+                alt={`${filteredImages[selectedImage].title} - India Property Expo America 2026`}
                 width="1200"
                 height="800"
                 loading="eager"

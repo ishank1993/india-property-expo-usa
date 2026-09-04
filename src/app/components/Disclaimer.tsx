@@ -67,9 +67,9 @@ export function Disclaimer() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Regulatory Position (Kingdom of Bahrain)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Regulatory Position (United States)</h2>
             <p className="text-gray-700 leading-relaxed">
-              This website is informational only. NRI Nivesh is not licensed by the Central Bank of Bahrain (CBB) and does not carry on any regulated financial service, investment advisory or investment business activity in the Kingdom of Bahrain. Nothing on this site is an offer, solicitation or recommendation to buy or sell any security or financial instrument.
+              This website is informational only. NRI Nivesh is not a US-registered broker-dealer or investment advisor and does not carry on regulated securities, financial advisory, or investment business in the United States. Nothing on this site is an offer, solicitation, or recommendation to buy or sell any security, financial instrument, or real property.
             </p>
             <p className="text-gray-700 leading-relaxed mt-4">
               Any property investment information presented is general in nature and not tailored to individual financial situations, risk profiles, or investment objectives.
@@ -77,7 +77,7 @@ export function Disclaimer() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Developers & Exhibitors</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">4. Third-Party Developers &amp; Exhibitors</h2>
             <p className="text-gray-700 leading-relaxed">
               The property developers, builders, and exhibitors featured on this platform are independent third parties. NRI Nivesh:
             </p>
@@ -98,9 +98,9 @@ export function Disclaimer() {
               Before making any property investment or financial decision, users MUST consult:
             </p>
             <ul className="list-disc pl-6 space-y-3 text-gray-700">
-              <li><strong>Licensed Financial Advisor:</strong> CBB-licensed in Bahrain, or SEBI-registered in India</li>
-              <li><strong>Tax Consultant:</strong> Qualified chartered accountant familiar with NRI taxation</li>
-              <li><strong>Legal Attorney:</strong> Specialist in property law and cross-border transactions</li>
+              <li><strong>Licensed Financial Advisor:</strong> Licensed financial advisor in the US, or SEBI-registered in India</li>
+              <li><strong>Tax Consultant:</strong> Qualified CPA or Chartered Accountant familiar with US-India NRI taxation</li>
+              <li><strong>Legal Attorney:</strong> Specialist in Indian property law and cross-border transactions</li>
               <li><strong>Immigration Consultant:</strong> For residency or visa-related queries</li>
               <li><strong>RERA-Registered Agent:</strong> For property verification in India</li>
             </ul>

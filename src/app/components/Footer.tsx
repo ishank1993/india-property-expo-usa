@@ -14,7 +14,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
   const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
   const [isTermsOpen, setIsTermsOpen] = useState(false);
 
-  // Sibling expo editions. Bahrain is the current site, so it isn't listed.
+  // Sibling expo editions. America is the current site, so it isn't listed.
   const otherEditions = [
     {
       flag: "\u{1F1F8}\u{1F1EC}",
@@ -25,6 +25,11 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
       flag: "\u{1F1E6}\u{1F1EA}",
       city: "Abu Dhabi",
       href: "https://www.indiapropertyexpoabudhabi.com/",
+    },
+    {
+      flag: "\u{1F1E7}\u{1F1ED}",
+      city: "Bahrain",
+      href: "https://www.indiapropertyexpobahrain.com/",
     },
   ];
 
@@ -71,7 +76,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
             <div className="flex items-center space-x-2">
               <img 
                 src="/logo.png" 
-                alt="NRI Nivesh - India Property Expo Bahrain logo" 
+                alt="NRI Nivesh - India Property Expo America logo" 
                 width="160"
                 height="40"
                 loading="lazy"
@@ -196,7 +201,7 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
               </li>
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-red-400 flex-shrink-0" />
-                <span>Manama, Kingdom of Bahrain<br /><span className="text-amber-300">Venue address sent to confirmed RSVPs</span></span>
+                <span>Major Metros Across the USA<br /><span className="text-amber-300">Exact venue address sent to confirmed RSVPs</span></span>
               </li>
             </ul>
           </div>

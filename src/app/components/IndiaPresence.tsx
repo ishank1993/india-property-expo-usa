@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
-import { Globe, MapPin, Building2, Landmark, Cpu, Palmtree, Crown, Briefcase, Plane, Home } from "lucide-react";
+import { Globe, MapPin, Building2, Landmark, Cpu, Palmtree, Crown, Briefcase } from "lucide-react";
 
 const cities = [
   "Mumbai", "Pune", "Bengaluru", "Chennai", "Hyderabad", 
@@ -42,7 +42,7 @@ export function IndiaPresence() {
               <div className="inline-flex items-center space-x-2 bg-gradient-to-r from-red-500/20 to-transparent border-l-4 border-red-400 px-6 py-2 mb-8 backdrop-blur-sm">
                 <Globe className="w-4 h-4 text-red-400" />
                 <span className="text-red-300 text-sm font-bold tracking-[0.2em] uppercase">
-                    🇧🇭 Bahrain to India Connection
+                    🇺🇸 America to India Connection
                 </span>
               </div>
               
@@ -51,11 +51,11 @@ export function IndiaPresence() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 via-white to-amber-400 bg-[length:200%_auto] animate-gradient">
                     35+ Indian Cities
                 </span>
-                <span className="block text-2xl mt-4 text-red-300">From Bahrain</span>
+                <span className="block text-2xl mt-4 text-red-300">From America</span>
               </h2>
 
               <p className="text-red-100 text-lg leading-relaxed mb-10 border-l-4 border-red-400/50 pl-6">
-                <span className="font-semibold text-white">Exclusively for Bahrain-based NRIs, PIOs & OCIs.</span> Experience the finest real estate opportunities from every major corner of India without leaving the Kingdom. We bring India’s premium properties to Manama.
+                <span className="font-semibold text-white">Exclusively for US-based NRIs, PIOs &amp; OCIs.</span> Experience the finest real estate opportunities from every major corner of India without leaving the United States. We bring India’s premier properties right to your city.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mb-10">

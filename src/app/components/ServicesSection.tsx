@@ -59,13 +59,13 @@ export function ServicesSection({ onRegisterClick }: ServicesSectionProps) {
         {/* Header */}
         <div className="text-center max-w-4xl mx-auto mb-16">
           <div className="inline-block bg-gradient-to-r from-red-600 to-amber-600 text-white px-6 py-2 rounded-full text-sm font-bold uppercase mb-6">
-            India's Premier Property Exhibition in Bahrain
+            India's Premier Property Exhibition in America
           </div>
           <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
             Your Gateway to <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">Verified Premium Properties</span> in India
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Stop browsing endless listings online. <span className="font-bold text-red-600">Meet India's most trusted developers face-to-face</span> right here in Bahrain and explore <span className="font-bold text-amber-600">500+ hand-picked, verified projects</span> across <span className="font-bold text-red-600">35+ prime Indian cities</span>.
+            Stop browsing endless listings online. <span className="font-bold text-red-600">Meet India's most trusted developers face-to-face</span> right here in America and explore <span className="font-bold text-amber-600">500+ hand-picked, verified projects</span> across <span className="font-bold text-red-600">35+ prime Indian cities</span>.
           </p>
           <p className="text-lg text-gray-500 mt-4">
             From residential apartments to luxury villas, commercial spaces to land — discover your perfect property with expert guidance.
@@ -79,13 +79,13 @@ export function ServicesSection({ onRegisterClick }: ServicesSectionProps) {
         <div className="bg-gradient-to-r from-red-600 to-amber-600 rounded-3xl p-12 mb-16 shadow-2xl">
           <div className="text-center">
             <h3 className="text-3xl font-bold text-white mb-4">
-              🎯 Exclusively for Indians Living in Bahrain
+              🎯 Exclusively for Indians Living in America
             </h3>
             <p className="text-xl text-red-100 mb-6 max-w-3xl mx-auto">
               This Exhibition is designed specifically for <span className="font-bold text-white">NRIs, PIOs, OCIs, and Resident Indians abroad</span> who want to learn about India's growing property market
             </p>
             <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              💼 Meet Top Property Developers from across India for personalized 1-on-1 consultations — right here in Bahrain
+              💼 Meet Top Property Developers from across India for personalized 1-on-1 consultations — right here in America
             </p>
           </div>
         </div>
@@ -186,7 +186,7 @@ export function ServicesSection({ onRegisterClick }: ServicesSectionProps) {
             Ready to Invest in Your Dream Property?
           </h3>
           <p className="text-xl text-red-200 mb-8 max-w-2xl mx-auto">
-            Don't miss this exclusive opportunity to meet India's top developers face-to-face in Bahrain
+            Don't miss this exclusive opportunity to meet India's top developers face-to-face across America
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Button 

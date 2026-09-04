@@ -23,20 +23,20 @@ import { fileURLToPath } from "node:url";
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.resolve(__dirname, "../dist");
 const PORT = 4321;
-const SITE_URL = "https://www.indiapropertyexpobahrain.com";
+const SITE_URL = "https://www.indiapropertyexpousa.com";
 
 // Keep in sync with the slugs in src/app/content/blogPosts.ts.
 const blogSlugs = [
-  "buying-property-india-from-bahrain-nri-guide",
-  "gift-city-vs-real-estate-bahrain-nri",
-  "nri-property-tax-filing-bahrain",
-  "best-bangalore-projects-nri-investment-bahrain",
-  "pune-vs-hyderabad-property-investment-nri-bahrain",
-  "luxury-real-estate-mumbai-gurgaon-nri-bahrain",
-  "repatriate-money-india-to-bahrain-nri-guide",
-  "nre-nro-fcnr-accounts-bahrain-nri",
-  "power-of-attorney-nri-property-india-bahrain",
-  "rera-verification-checklist-nri-bahrain",
+  "buying-property-india-from-usa-nri-guide",
+  "gift-city-vs-real-estate-usa-nri",
+  "nri-property-tax-filing-usa",
+  "best-bangalore-projects-nri-investment-usa",
+  "pune-vs-hyderabad-property-investment-nri-usa",
+  "luxury-real-estate-mumbai-gurgaon-nri-usa",
+  "repatriate-money-india-to-usa-nri-guide",
+  "nre-nro-fcnr-accounts-usa-nri",
+  "power-of-attorney-nri-property-india-usa",
+  "rera-verification-checklist-nri-usa",
 ];
 
 // Analytics/tag hosts that must never load while prerendering.
@@ -159,7 +159,7 @@ async function run() {
         let html = await page.content();
         html = html
           .replace(/https?:\/\/(localhost|127\.0\.0\.1):\d+/gi, SITE_URL)
-          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=www.indiapropertyexpobahrain.com")
+          .replace(/domain=(localhost|127\.0\.0\.1)(%3A\d+|:\d+)?/gi, "domain=www.indiapropertyexpousa.com")
           // Blocking the request stops the download, but the GTM snippet still
           // inserts its <script> element into the DOM before that — and
           // page.content() captures it. Left in, real visitors would load

@@ -10,11 +10,11 @@ interface SEOHeadProps {
 }
 
 export function SEOHead({
-  title = "India Property Expo 2026 Bahrain | 23\u201324 Oct, Manama | RSVP Free",
-  description = "RSVP free for Bahrain's largest India property exhibition, 23\u201324 October 2026 in Manama. Meet 35+ trusted developers, explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR and 35+ cities, and get a shortlist matched to your city and budget before you arrive \u2014 plus NRI tax, legal and home-loan consultations booked in advance.",
-  keywords = "India property expo Bahrain 2026, NRI property exhibition Bahrain, property India from Bahrain, India real estate exhibition Bahrain, NRI property developers Bahrain, property information India for NRI, Indian real estate expo Bahrain, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property, Pune Goa Hyderabad property NRI, property exhibition Bahrain 2026, NRI wealth management Bahrain, India information NRI",
-  canonical = "https://www.indiapropertyexpobahrain.com/",
-  ogImage = "https://www.indiapropertyexpobahrain.com/og-image.jpg",
+  title = "India Property Expo America 2026 | Multi-City US Tour | RSVP Free",
+  description = "RSVP free for America's premier India Property Expo tour across major US metropolitan hubs (SF Bay Area, New York/NJ, Dallas, Houston, Chicago, Seattle, Atlanta). Meet 35+ trusted developers, explore 500+ verified projects across Mumbai, Bangalore, Delhi NCR and 35+ cities, with 1-on-1 US-India NRI tax, legal and home-loan consultations booked in advance.",
+  keywords = "India property expo America 2026, NRI property exhibition USA, property India from USA, India real estate exhibition America, NRI property developers US, Indian real estate expo Bay Area New York Dallas Chicago Seattle, NRI home loan assistance, residential apartments India, luxury villas India NRI, commercial property India, GIFT City NRI information, NRI tax planning India US, NRI estate planning, Mumbai property for NRI, Bangalore property for NRI, Delhi NCR property",
+  canonical = "https://www.indiapropertyexpousa.com/",
+  ogImage = "https://www.indiapropertyexpousa.com/og-image.jpg",
   noindex = false
 }: SEOHeadProps) {
 
@@ -39,8 +39,8 @@ export function SEOHead({
       { property: 'og:image', content: ogImage },
       { property: 'og:image:width', content: '1200' },
       { property: 'og:image:height', content: '630' },
-      { property: 'og:locale', content: 'en_BH' },
-      { property: 'og:site_name', content: 'NRI Nivesh - India Property Expo' },
+      { property: 'og:locale', content: 'en_US' },
+      { property: 'og:site_name', content: 'NRI Nivesh - India Property Expo America' },
       
       // Twitter
       { name: 'twitter:card', content: 'summary_large_image' },
@@ -50,8 +50,8 @@ export function SEOHead({
       { name: 'twitter:image', content: ogImage },
       
       // Additional SEO
-      { name: 'geo.region', content: 'SG' },
-      { name: 'geo.placename', content: 'Bahrain' },
+      { name: 'geo.region', content: 'US' },
+      { name: 'geo.placename', content: 'United States' },
       { name: 'language', content: 'English' },
       { name: 'distribution', content: 'global' },
       { name: 'rating', content: 'general' },
@@ -86,34 +86,32 @@ export function SEOHead({
     const eventSchema = {
       "@context": "https://schema.org",
       "@type": "Event",
-      "name": "India Property Expo 2026 - Bahrain Edition",
+      "name": "India Property Expo 2026 - America Multi-City Tour",
       "description": description,
       "image": ogImage,
-      "startDate": "2026-10-23T10:00:00+03:00",
-      "endDate": "2026-10-24T19:00:00+03:00",
       "eventStatus": "https://schema.org/EventScheduled",
       "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
       "location": {
         "@type": "Place",
-        "name": "Manama, Kingdom of Bahrain (venue announced to registered guests)",
+        "name": "Major US Metropolitan Hubs (Venue addresses released to registered guests)",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": "Manama",
-          "addressCountry": "BH"
+          "addressLocality": "United States",
+          "addressCountry": "US"
         }
       },
       "organizer": {
         "@type": "Organization",
         "name": "NRI Nivesh",
-        "url": "https://www.indiapropertyexpobahrain.com"
+        "url": "https://www.indiapropertyexpousa.com"
       },
       "offers": {
         "@type": "Offer",
         "url": canonical,
         "price": "0",
-        "priceCurrency": "BHD",
+        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "validFrom": "2026-03-18"
+        "validFrom": "2026-01-01"
       },
       "performer": {
         "@type": "Organization",
@@ -126,13 +124,13 @@ export function SEOHead({
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "NRI Nivesh",
-      "url": "https://www.indiapropertyexpobahrain.com",
-      "logo": "https://www.indiapropertyexpobahrain.com/logo.png",
-      "description": "Leading NRI property investment platform connecting global Indians with premium real estate opportunities in India",
+      "url": "https://www.indiapropertyexpousa.com",
+      "logo": "https://www.indiapropertyexpousa.com/logo.png",
+      "description": "Leading NRI property investment platform connecting global Indians in the US with premium real estate opportunities in India",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
-        "areaServed": ["BH", "IN", "AE", "GB", "US", "CA"],
+        "areaServed": ["US", "IN", "CA", "GB", "AE", "SG"],
         "availableLanguage": ["English", "Hindi"]
       }
     };
@@ -146,33 +144,27 @@ export function SEOHead({
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.indiapropertyexpobahrain.com"
+          "item": "https://www.indiapropertyexpousa.com"
         },
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Property Expo Bahrain 2026",
+          "name": "Property Expo America 2026",
           "item": canonical
         }
       ]
     };
-    
-    // NOTE: no FAQPage schema here on purpose. Google requires FAQ markup to
-    // match FAQs visibly present on that page. This component renders on every
-    // route, so a generic FAQ block was also being emitted on blog posts and
-    // legal pages that don't show those questions — and it duplicated the
-    // FAQPage that FAQSection/BlogPostPage already emit. Those own it now.
 
     // Add WebSite schema for search box
     const websiteSchema = {
       "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "NRI Nivesh",
-      "url": "https://www.indiapropertyexpobahrain.com",
-      "description": "Leading NRI property investment platform for global Indians",
+      "url": "https://www.indiapropertyexpousa.com",
+      "description": "Leading NRI property investment platform for global Indians in America",
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://www.indiapropertyexpobahrain.com/search?q={search_term_string}",
+        "target": "https://www.indiapropertyexpousa.com/search?q={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     };

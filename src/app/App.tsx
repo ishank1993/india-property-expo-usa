@@ -183,9 +183,9 @@ function MainApp() {
     return (
       <>
         <SEOHead
-          title="NRI Tax Clinic & GIFT City Baatchit | NRI Nivesh Bahrain"
-          description="Free NRI Tax Clinic and GIFT City Baatchit for Bahrain NRIs. Learn about GIFT City regulatory updates, tax planning, and global investment opportunities beyond real estate."
-          canonical="https://www.indiapropertyexpobahrain.com/wealth"
+          title="NRI Tax Clinic & GIFT City Baatchit | NRI Nivesh America"
+          description="Free NRI Tax Clinic and GIFT City Baatchit for US-based NRIs. Learn about GIFT City regulatory updates, tax planning, and global investment opportunities beyond real estate."
+          canonical="https://www.indiapropertyexpousa.com/wealth"
         />
         <WealthPage 
           onRegisterClick={openRegister} 
@@ -203,9 +203,9 @@ function MainApp() {
     return (
       <>
         <SEOHead
-          title="Terms & Conditions | NRI Nivesh Property Expo 2026"
-          description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 in Bahrain. Understand your rights and responsibilities when using our platform."
-          canonical="https://www.indiapropertyexpobahrain.com/terms"
+          title="Terms & Conditions | NRI Nivesh Property Expo America 2026"
+          description="Read the Terms & Conditions for NRI Nivesh India Property Expo 2026 America. Understand your rights and responsibilities when using our platform."
+          canonical="https://www.indiapropertyexpousa.com/terms"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -234,9 +234,9 @@ function MainApp() {
     return (
       <>
         <SEOHead
-          title="Privacy Policy | NRI Nivesh Property Expo 2026"
-          description="Learn how NRI Nivesh protects your personal data and privacy in compliance with Bahrain's PDPL requirements."
-          canonical="https://www.indiapropertyexpobahrain.com/privacy"
+          title="Privacy Policy | NRI Nivesh Property Expo America 2026"
+          description="Learn how NRI Nivesh protects your personal data and privacy."
+          canonical="https://www.indiapropertyexpousa.com/privacy"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -265,9 +265,9 @@ function MainApp() {
     return (
       <>
         <SEOHead 
-          title="Privacy Policy | NRI Nivesh"
-          description="Privacy Policy for NRI Nivesh. Learn how we collect, use, and protect your personal data in compliance with Bahrain PDPL, Meta (Facebook/Instagram) Lead Ads, and Google regulations."
-          canonical="https://www.indiapropertyexpobahrain.com/privacy-policy"
+          title="Privacy Policy | NRI Nivesh America"
+          description="Privacy Policy for NRI Nivesh America. Learn how we collect, use, and protect your personal data in compliance with applicable standards."
+          canonical="https://www.indiapropertyexpousa.com/privacy-policy"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -297,9 +297,9 @@ function MainApp() {
     return (
       <>
         <SEOHead
-          title="Disclaimer | NRI Nivesh Property Expo 2026"
+          title="Disclaimer | NRI Nivesh Property Expo America 2026"
           description="Important disclaimer about property investment information. This site is for informational purposes only and not financial, tax, or legal advice."
-          canonical="https://www.indiapropertyexpobahrain.com/disclaimer"
+          canonical="https://www.indiapropertyexpousa.com/disclaimer"
         />
         <div className="min-h-screen bg-white">
           <Favicon />
@@ -328,8 +328,8 @@ function MainApp() {
     return (
       <>
         <SEOHead
-          title="Admin Dashboard | NRI Nivesh Property Expo 2026"
-          description="Access the admin dashboard to manage registrations and view analytics for NRI Nivesh India Property Expo 2026 in Bahrain."
+          title="Admin Dashboard | NRI Nivesh Property Expo America 2026"
+          description="Access the admin dashboard to manage registrations and view analytics for NRI Nivesh India Property Expo in America."
           noindex
         />
         <div className="min-h-screen bg-white">

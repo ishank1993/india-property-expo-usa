@@ -4,12 +4,13 @@
  * Sheet: https://docs.google.com/spreadsheets/d/1ckQ4-w6Q8a51nRJ0E1ViLwpNcFDvyJdRWMZrbMI71iA/edit
  *
  * This is the SAME Apps Script endpoint the Singapore and Abu Dhabi sites
- * post to — all three editions land in one sheet. Rows are told apart by the
+ * post to — all editions land in one sheet. Rows are told apart by the
  * `country` / `eventCity` columns, so those must be sent on every write.
  *
  *   Singapore  -> country "Singapore", eventCity "Singapore"
  *   Abu Dhabi  -> country "UAE",       eventCity "Abu Dhabi"
  *   Bahrain    -> country "Bahrain",   eventCity "Manama"
+ *   America    -> country "USA",       eventCity "<selected US city>"
  *
  * Do not point this at a new deployment: a separate script would split the
  * leads across sheets and break the shared admin dashboard.
@@ -18,14 +19,15 @@ export const LEADS_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbzA08KCv3DFbFMcKUzpMi5Ug-xUd0_tqDmicwg-xr0ENcNtx7OfJdGvqTaHzHOkYxWw/exec";
 
 /** Tags every row this site writes, matching the sibling editions. */
-export const EVENT_COUNTRY = "Bahrain";
-export const EVENT_CITY = "Manama";
+export const EVENT_COUNTRY = "USA";
+export const EVENT_CITY = "USA Multi-City";
 
 export interface LeadPayload {
   fullName: string;
   email: string;
   countryCode?: string;
   phone: string;
+  eventCity?: string;
   dateOfVisit?: string;
   preferredCity?: string;
   /**
@@ -44,12 +46,12 @@ export async function submitLead(lead: LeadPayload): Promise<void> {
   const params = new URLSearchParams({
     action: "write",
     country: EVENT_COUNTRY,
-    eventCity: EVENT_CITY,
+    eventCity: lead.eventCity || EVENT_CITY,
     fullName: lead.fullName,
     email: lead.email,
-    countryCode: lead.countryCode || "",
+    countryCode: lead.countryCode || "+1",
     phone: lead.phone,
-    dateOfVisit: lead.dateOfVisit || "",
+    dateOfVisit: lead.dateOfVisit || "RSVP Confirmed",
     preferredCity: lead.preferredCity || "",
     consultationService: lead.consultationService || "none",
   });

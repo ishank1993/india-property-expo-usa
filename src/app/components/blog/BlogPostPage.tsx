@@ -17,7 +17,7 @@ import {
 import { getBlogPost, blogPosts } from "../../content/blogPosts";
 import { BlogContent } from "./BlogContent";
 
-const SITE_URL = "https://www.indiapropertyexpobahrain.com";
+const SITE_URL = "https://www.indiapropertyexpousa.com";
 
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>();
@@ -140,7 +140,7 @@ export function BlogPostPage() {
                 <div className="flex items-center gap-6 text-sm text-gray-500">
                   <span className="flex items-center gap-1.5">
                     <Calendar className="w-4 h-4" />
-                    {new Date(post.publishDate).toLocaleDateString("en-SG", {
+                    {new Date(post.publishDate).toLocaleDateString("en-US", {
                       year: "numeric",
                       month: "long",
                       day: "numeric",

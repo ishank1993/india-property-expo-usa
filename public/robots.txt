@@ -1,5 +1,5 @@
-# robots.txt — India Property Expo 2026, Bahrain Edition
-# https://www.indiapropertyexpobahrain.com
+# robots.txt — India Property Expo 2026, America Edition
+# https://www.indiapropertyexpousa.com
 
 # ---------------------------------------------------------------
 # Default: everything is open to everyone.
@@ -110,4 +110,4 @@ User-agent: Diffbot
 Allow: /
 
 # ---------------------------------------------------------------
-Sitemap: https://www.indiapropertyexpobahrain.com/sitemap.xml
+Sitemap: https://www.indiapropertyexpousa.com/sitemap.xml

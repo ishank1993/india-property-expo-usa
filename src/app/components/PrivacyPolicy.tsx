@@ -54,9 +54,9 @@ export function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPL Compliance)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Under Bahrain's Personal Data Protection Law (PDPL), we process your data based on:
+              Under applicable US and international privacy standards, we process your data based on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Consent:</strong> You provide consent when registering for events or subscribing to newsletters</li>
@@ -136,7 +136,7 @@ export function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your data may be transferred to and processed in countries outside Bahrain, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPL requirements.
+              Your data may be transferred to and processed in countries outside the United States, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your personal data.
             </p>
           </section>
 

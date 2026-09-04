@@ -12,10 +12,8 @@ import { Label } from "./ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { Checkbox } from "./ui/checkbox";
 import { toast } from "sonner";
-import { Loader2, CheckCircle2, Sparkles } from "lucide-react";
-import { EVENT } from "../config/event";
+import { Loader2, CheckCircle2, Sparkles, MapPin } from "lucide-react";
 import { submitLead } from "../config/leads";
-
 
 interface RegistrationModalProps {
   isOpen: boolean;
@@ -23,28 +21,40 @@ interface RegistrationModalProps {
   onSuccess?: () => void;
 }
 
-// Country codes — Bahrain first, then the rest of the GCC where NRIs cluster
+// Country codes — USA/Canada first, followed by major NRI regions
 const countryCodes = [
-  { code: "+973", country: "Bahrain", flag: "\u{1F1E7}\u{1F1ED}" },
-  { code: "+966", country: "Saudi Arabia", flag: "\u{1F1F8}\u{1F1E6}" },
-  { code: "+971", country: "UAE", flag: "\u{1F1E6}\u{1F1EA}" },
-  { code: "+974", country: "Qatar", flag: "\u{1F1F6}\u{1F1E6}" },
-  { code: "+965", country: "Kuwait", flag: "\u{1F1F0}\u{1F1FC}" },
-  { code: "+968", country: "Oman", flag: "\u{1F1F4}\u{1F1F2}" },
-  { code: "+91", country: "India", flag: "\u{1F1EE}\u{1F1F3}" },
-  { code: "+44", country: "UK", flag: "\u{1F1EC}\u{1F1E7}" },
-  { code: "+1", country: "USA/Canada", flag: "\u{1F1FA}\u{1F1F8}" },
-  { code: "+65", country: "Singapore", flag: "\u{1F1F8}\u{1F1EC}" },
-  { code: "+61", country: "Australia", flag: "\u{1F1E6}\u{1F1FA}" },
-  { code: "+60", country: "Malaysia", flag: "\u{1F1F2}\u{1F1FE}" },
-  { code: "+852", country: "Hong Kong", flag: "\u{1F1ED}\u{1F1F0}" },
-  { code: "+49", country: "Germany", flag: "\u{1F1E9}\u{1F1EA}" },
-  { code: "+33", country: "France", flag: "\u{1F1EB}\u{1F1F7}" },
-  { code: "+41", country: "Switzerland", flag: "\u{1F1E8}\u{1F1ED}" },
-  { code: "+27", country: "South Africa", flag: "\u{1F1FF}\u{1F1E6}" },
-  { code: "+64", country: "New Zealand", flag: "\u{1F1F3}\u{1F1FF}" },
+  { code: "+1", country: "USA/Canada", flag: "🇺🇸" },
+  { code: "+91", country: "India", flag: "🇮🇳" },
+  { code: "+44", country: "UK", flag: "🇬🇧" },
+  { code: "+971", country: "UAE", flag: "🇦🇪" },
+  { code: "+65", country: "Singapore", flag: "🇸🇬" },
+  { code: "+61", country: "Australia", flag: "🇦🇺" },
+  { code: "+973", country: "Bahrain", flag: "🇧🇭" },
+  { code: "+966", country: "Saudi Arabia", flag: "🇸🇦" },
+  { code: "+974", country: "Qatar", flag: "🇶🇦" },
+  { code: "+965", country: "Kuwait", flag: "🇰🇼" },
+  { code: "+968", country: "Oman", flag: "🇴🇲" },
+  { code: "+49", country: "Germany", flag: "🇩🇪" },
+  { code: "+33", country: "France", flag: "🇫🇷" },
+  { code: "+41", country: "Switzerland", flag: "🇨🇭" },
+  { code: "+852", country: "Hong Kong", flag: "🇭🇰" },
+  { code: "+60", country: "Malaysia", flag: "🇲🇾" },
+  { code: "+27", country: "South Africa", flag: "🇿🇦" },
+  { code: "+64", country: "New Zealand", flag: "🇳🇿" },
 ];
 
+// Major US Metros for the Expo Tour
+const usTourCities = [
+  "San Francisco Bay Area / Silicon Valley, CA",
+  "New York / New Jersey Metro",
+  "Dallas / Fort Worth, TX",
+  "Houston, TX",
+  "Greater Chicago, IL",
+  "Seattle / Bellevue, WA",
+  "Atlanta, GA",
+  "Washington D.C. / Northern Virginia",
+  "Other US Metro / Online Consultation",
+];
 
 // Top 15 cities in India
 const indianCities = [
@@ -69,9 +79,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
-    countryCode: "+973",
+    countryCode: "+1",
     phone: "",
-    dateOfVisit: "",
+    usCity: "",
     preferredCity: "",
     consultationService: "",
     agreeToTerms: false,
@@ -102,6 +112,11 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
       toast.error("Please enter a valid phone number (7-15 digits)");
       return;
     }
+
+    if (!formData.usCity) {
+      toast.error("Please select your preferred US city / event location");
+      return;
+    }
     
     if (!formData.agreeToTerms) {
       toast.error("Please agree to the terms and privacy policy to continue");
@@ -116,7 +131,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
         email: formData.email,
         countryCode: formData.countryCode,
         phone: formData.phone,
-        dateOfVisit: formData.dateOfVisit,
+        eventCity: formData.usCity,
+        dateOfVisit: `RSVP - ${formData.usCity}`,
         preferredCity: formData.preferredCity,
         consultationService: formData.consultationService,
       });
@@ -131,9 +147,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
         setFormData({
           fullName: "",
           email: "",
-          countryCode: "+973",
+          countryCode: "+1",
           phone: "",
-          dateOfVisit: "",
+          usCity: "",
           preferredCity: "",
           consultationService: "",
           agreeToTerms: false,
@@ -156,10 +172,10 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             <CheckCircle2 className="w-16 h-16 sm:w-20 sm:h-20 text-emerald-500 mb-4 sm:mb-6 animate-bounce" />
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">🎉 Your RSVP is Confirmed!</h3>
             <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4 px-2">
-              We’re now building your shortlist. Check your email — your venue address, arrival time and matched developers land there first.
+              We’re now building your shortlist. Check your email — your private venue details, personalized schedule, and matched developers land there first.
             </p>
             <p className="text-xs sm:text-sm text-red-600 font-semibold px-2">
-              See you on 23 or 24 October in Manama — details on their way.
+              See you on the America Tour — exclusive details on their way!
             </p>
           </div>
         </DialogContent>
@@ -175,9 +191,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             🎯 RSVP — Free Entry
           </DialogTitle>
           <DialogDescription className="text-center text-[10px] sm:text-base px-1 sm:px-2 leading-tight sm:leading-normal">
-            Bahrain’s Largest India Property Exhibition · RSVP Only
+            America’s Largest India Property Exhibition Tour · RSVP Only
             <br className="hidden sm:block" />
-            <span className="text-red-600 font-semibold text-[10px] sm:text-base"> 📅 23 & 24 Oct 2026 (Fri & Sat) · Manama</span>
+            <span className="text-red-600 font-semibold text-[10px] sm:text-base"> 🇺🇸 Multi-City US Tour · Dates &amp; Venues Released Upon RSVP</span>
           </DialogDescription>
         </DialogHeader>
 
@@ -186,9 +202,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           <div className="flex gap-2.5 rounded-lg border border-red-200 bg-red-50/70 p-2.5 sm:p-3">
             <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-red-600 flex-shrink-0 mt-0.5" aria-hidden="true" />
             <p className="text-[10px] sm:text-sm text-gray-700 leading-snug sm:leading-relaxed">
-              <span className="font-semibold text-gray-900">This is an RSVP event.</span> The three optional
-              questions below are what let us match you to the right developers and book your advisor slot
-              <span className="font-semibold"> before you arrive</span>. The more you tell us, the better your visit.
+              <span className="font-semibold text-gray-900">This is an RSVP-only event.</span> The questions below allow us to match you directly to the right developers, projects, and book your 1-on-1 advisor slot <span className="font-semibold">before you arrive</span>.
             </p>
           </div>
 
@@ -243,7 +257,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 <Input
                   id="phone"
                   type="tel"
-                  placeholder="12345678"
+                  placeholder="2025550143"
                   value={formData.phone}
                   onChange={(e) => handleInputChange("phone", e.target.value.replace(/\D/g, ""))}
                   required
@@ -255,27 +269,37 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             </div>
           </div>
 
-          {/* Date of Visit */}
+          {/* Preferred US Event City */}
           <div className="space-y-1 sm:space-y-1.5">
-            <Label htmlFor="dateOfVisit" className="text-xs sm:text-sm">Which Day Will You Attend?</Label>
-            <Select onValueChange={(value) => handleInputChange("dateOfVisit", value)}>
+            <Label htmlFor="usCity" className="text-xs sm:text-sm font-semibold flex items-center gap-1.5">
+              <MapPin className="w-3.5 h-3.5 text-red-600" />
+              Select Preferred US City / Event Location *
+            </Label>
+            <Select 
+              value={formData.usCity}
+              onValueChange={(value) => handleInputChange("usCity", value)}
+            >
               <SelectTrigger className="h-9 sm:h-10 text-xs sm:text-sm">
-                <SelectValue placeholder="Select your preferred date" />
+                <SelectValue placeholder="Select your preferred US metro for RSVP" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="oct-23" className="text-xs sm:text-sm">Fri 23 Oct · 10am–7pm</SelectItem>
-                <SelectItem value="oct-24" className="text-xs sm:text-sm">Sat 24 Oct · 10am–7pm</SelectItem>
-                <SelectItem value="both" className="text-xs sm:text-sm">Both Days</SelectItem>
+                {usTourCities.map((city) => (
+                  <SelectItem key={city} value={city} className="text-xs sm:text-sm">
+                    📍 {city}
+                  </SelectItem>
+                ))}
               </SelectContent>
             </Select>
           </div>
 
-          {/* Preferred Investment City */}
+          {/* Preferred Investment City in India */}
           <div className="space-y-1 sm:space-y-1.5">
-            <Label htmlFor="preferredCity" className="text-xs sm:text-sm font-semibold">City of Interest (Optional)</Label>
+            <Label htmlFor="preferredCity" className="text-xs sm:text-sm font-semibold">
+              City of Interest in India (Optional)
+            </Label>
             <Select onValueChange={(value) => handleInputChange("preferredCity", value)}>
               <SelectTrigger className="h-9 sm:h-10 text-xs sm:text-sm">
-                <SelectValue placeholder="Select city or exploring" />
+                <SelectValue placeholder="Select Indian city or exploring" />
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="exploring" className="text-xs sm:text-sm">Still Exploring</SelectItem>
@@ -302,12 +326,12 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 <SelectValue placeholder="Select consultation type" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="tax-advisory" className="text-xs sm:text-sm">💰 Tax Advisory (NRI/OCI)</SelectItem>
-                <SelectItem value="legal-consultation" className="text-xs sm:text-sm">⚖️ Legal Consultation</SelectItem>
-                <SelectItem value="property-evaluation" className="text-xs sm:text-sm">🏘️ Property Evaluation</SelectItem>
-                <SelectItem value="investment-planning" className="text-xs sm:text-sm">📊 Investment Planning</SelectItem>
-                <SelectItem value="home-loan-assistance" className="text-xs sm:text-sm">🏦 Home Loan Assistance</SelectItem>
-                <SelectItem value="repatriation-guidance" className="text-xs sm:text-sm">💱 Repatriation Guidance</SelectItem>
+                <SelectItem value="tax-advisory" className="text-xs sm:text-sm">💰 Tax Advisory (US-India / NRI / OCI)</SelectItem>
+                <SelectItem value="legal-consultation" className="text-xs sm:text-sm">⚖️ Legal &amp; Title Consultation</SelectItem>
+                <SelectItem value="property-evaluation" className="text-xs sm:text-sm">🏘️ Property Shortlisting &amp; Evaluation</SelectItem>
+                <SelectItem value="investment-planning" className="text-xs sm:text-sm">📊 Investment Planning &amp; High ROI</SelectItem>
+                <SelectItem value="home-loan-assistance" className="text-xs sm:text-sm">🏦 NRI Home Loan Assistance</SelectItem>
+                <SelectItem value="repatriation-guidance" className="text-xs sm:text-sm">💱 FEMA &amp; Repatriation Guidance</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -324,9 +348,9 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               htmlFor="agreeToTerms"
               className="text-[10px] sm:text-sm text-gray-600 leading-tight sm:leading-relaxed cursor-pointer"
             >
-              I agree to receive event updates. I accept the{" "}
-              <a href="/privacy-policy.html" target="_blank" rel="noopener noreferrer" className="text-red-600 underline hover:text-red-700">Privacy Policy</a> and{" "}
-              <span className="text-amber-600 underline">Terms</span>.
+              I agree to receive event updates and schedule details. I accept the{" "}
+              <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-red-600 underline hover:text-red-700">Privacy Policy</a> and{" "}
+              <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-amber-600 underline hover:text-amber-700">Terms</a>.
             </label>
           </div>
 
@@ -347,7 +371,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </Button>
 
           <p className="text-[9px] sm:text-xs text-center text-gray-500 pt-0">
-            🔒 Your details are used only to prepare your visit — never sold.
+            🔒 Your details are used solely to prepare your visit and shortlist — never sold or spammed.
           </p>
         </form>
       </DialogContent>

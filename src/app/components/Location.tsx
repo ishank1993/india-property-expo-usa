@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, CalendarCheck, Sparkles, Lock, Clock } from "lucide-react";
+import { MapPin, Sparkles, Lock, ShieldCheck } from "lucide-react";
 import { Button } from "./ui/button";
 import { EVENT } from "../config/event";
 
@@ -7,148 +7,184 @@ interface LocationProps {
   onRegisterClick?: () => void;
 }
 
+const usCities = [
+  {
+    name: "SF Bay Area & Silicon Valley",
+    state: "California",
+    desc: "San Jose • Santa Clara • San Francisco • Fremont",
+    highlight: "High Tech & Venture Corridor",
+  },
+  {
+    name: "New York & New Jersey Metro",
+    state: "NY / NJ",
+    desc: "Edison • Jersey City • Woodbridge • Manhattan",
+    highlight: "East Coast Financial Hub",
+  },
+  {
+    name: "Dallas & Houston Metros",
+    state: "Texas",
+    desc: "Frisco • Plano • Irving • Dallas • Houston • Sugar Land",
+    highlight: "Fastest-Growing NRI Hub",
+  },
+  {
+    name: "Greater Chicago",
+    state: "Illinois",
+    desc: "Naperville • Schaumburg • Chicago Downtown",
+    highlight: "Midwest Center",
+  },
+  {
+    name: "Greater Seattle",
+    state: "Washington",
+    desc: "Bellevue • Redmond • Seattle Downtown",
+    highlight: "Pacific Northwest Tech",
+  },
+  {
+    name: "Atlanta & Southeast",
+    state: "Georgia",
+    desc: "Alpharetta • Cumming • Atlanta Metro",
+    highlight: "Southern Business Center",
+  },
+];
+
 export function Location({ onRegisterClick }: LocationProps) {
-  const { venue, dates, rsvp } = EVENT;
+  const { rsvp } = EVENT;
 
   return (
     <section id="venues" className="py-20 bg-gradient-to-b from-white via-red-50/40 to-white">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-0 rounded-3xl overflow-hidden bg-white shadow-2xl border border-red-100">
+        {/* Section Header */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-amber-600 text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider mb-4 shadow-sm">
+            <span>🇺🇸 Multi-City US Tour • RSVP Only</span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
+            Where We Meet Across <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">America</span>
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Exclusive private exhibitions held in 5-star hotel &amp; conference venues across major US metros. Strictly RSVP-only — no public walk-ins.
+          </p>
+        </div>
 
-          {/* Info Side */}
-          <div className="p-8 sm:p-10 flex flex-col justify-center space-y-8">
+        {/* Main 2-Column Showcase */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 rounded-3xl overflow-hidden bg-white shadow-2xl border border-red-100 p-6 sm:p-10">
+
+          {/* Left Side: Major US Metros Grid (7 columns) */}
+          <div className="lg:col-span-7 flex flex-col justify-between space-y-8">
             <div>
-              <div className="inline-block bg-gradient-to-r from-red-700 to-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-3">
-                Venue &amp; Dates
-              </div>
-              <h2 className="text-4xl font-black text-gray-900 mb-2">Where &amp; When</h2>
-              <p className="text-gray-600 text-lg">
-                Two days in Manama, across the Bahrain weekend.
+              <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <MapPin className="w-6 h-6 text-red-600" />
+                Featured US Tour Destinations
+              </h3>
+              <p className="text-gray-600 text-sm mb-6">
+                Select your city in the RSVP form. Dates, private luxury hotel addresses, and personalized consultation appointments are emailed directly to confirmed guests.
               </p>
-            </div>
 
-            <div className="space-y-6">
-              {/* Dates */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-red-600 to-red-700 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  <CalendarCheck className="text-white w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-xl text-gray-800">{dates.range}</h3>
-                  <p className="text-gray-600 mt-1">
-                    {dates.day1.label}<br />
-                    {dates.day2.label}
-                  </p>
-                  <p className="text-gray-500 text-sm mt-1 flex items-center gap-1.5">
-                    <Clock className="w-4 h-4" /> {dates.hours} both days
-                  </p>
-                </div>
-              </div>
-
-              {/* Venue */}
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-amber-600 rounded-full flex items-center justify-center flex-shrink-0 shadow-lg">
-                  {venue.announced ? (
-                    <MapPin className="text-white w-6 h-6" />
-                  ) : (
-                    <Lock className="text-white w-6 h-6" />
-                  )}
-                </div>
-                <div>
-                  {venue.announced ? (
-                    <>
-                      <h3 className="font-bold text-xl text-gray-800">{venue.name}</h3>
-                      <p className="text-gray-600 mt-1 whitespace-pre-line">{venue.address}</p>
-                    </>
-                  ) : (
-                    <>
-                      <h3 className="font-bold text-xl text-gray-800">
-                        Venue announced to confirmed guests first
-                      </h3>
-                      <p className="text-gray-600 mt-1">{venue.teaser}</p>
-                      <p className="text-red-700 font-semibold text-sm mt-2">
-                        RSVP now and we&apos;ll email you the address and your arrival time the moment it&apos;s locked.
-                      </p>
-                    </>
-                  )}
-                </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {usCities.map((city, idx) => (
+                  <div 
+                    key={idx}
+                    className="p-4 rounded-2xl border border-gray-200 hover:border-red-400/80 bg-gradient-to-br from-gray-50 to-white hover:from-red-50/40 hover:to-white transition-all duration-300 group shadow-sm hover:shadow-md"
+                  >
+                    <div className="flex items-center justify-between mb-1.5">
+                      <h4 className="font-bold text-gray-900 group-hover:text-red-600 transition-colors text-sm">
+                        {city.name}
+                      </h4>
+                      <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-red-100 text-red-700">
+                        {city.state}
+                      </span>
+                    </div>
+                    <p className="text-xs text-gray-600 leading-snug mb-2">
+                      {city.desc}
+                    </p>
+                    <div className="flex items-center gap-1.5 text-[11px] text-amber-700 font-semibold">
+                      <Lock className="w-3 h-3" />
+                      <span>Venue &amp; date sent on RSVP</span>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
 
-            {venue.announced && venue.mapsQuery ? (
-              <Button
-                onClick={() =>
-                  window.open(
-                    `https://www.google.com/maps/dir//${encodeURIComponent(venue.mapsQuery)}`,
-                    "_blank",
-                    "noopener,noreferrer"
-                  )
-                }
-                className="w-fit bg-gradient-to-r from-red-700 to-red-600 hover:from-red-800 hover:to-red-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
-              >
-                📍 Get Directions
-              </Button>
-            ) : (
+            <div className="pt-4 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div className="flex items-center gap-2 text-xs text-gray-600">
+                <ShieldCheck className="w-4 h-4 text-emerald-600 flex-shrink-0" />
+                <span>100% Free Entry • Pre-screened Developers • Direct Builder Pricing</span>
+              </div>
               <Button
                 onClick={onRegisterClick}
-                className="w-fit bg-gradient-to-r from-red-700 to-red-600 hover:from-red-800 hover:to-red-700 text-white font-bold shadow-lg hover:shadow-xl transition-all"
+                className="w-full sm:w-auto bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all"
               >
-                🎟️ RSVP &amp; Get the Address First
+                🎟️ RSVP For Your US City
               </Button>
-            )}
+            </div>
           </div>
 
-          {/* Map / RSVP Side */}
-          <div className="min-h-[400px] lg:h-auto w-full relative">
-            {venue.announced && venue.mapEmbedSrc ? (
-              <iframe
-                src={venue.mapEmbedSrc}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title={`Map to ${venue.name}`}
-                className="absolute inset-0 w-full h-full"
-              />
-            ) : (
-              <div className="absolute inset-0 bg-gradient-to-br from-red-700 via-red-600 to-red-800 flex flex-col justify-center p-8 sm:p-12 text-white">
-                {/* Bahrain flag serration motif */}
-                <div
-                  className="absolute inset-y-0 left-0 w-10 bg-white/95"
-                  style={{
-                    clipPath:
-                      "polygon(0 0, 60% 0, 100% 10%, 60% 20%, 100% 30%, 60% 40%, 100% 50%, 60% 60%, 100% 70%, 60% 80%, 100% 90%, 60% 100%, 0 100%)",
-                  }}
-                  aria-hidden="true"
-                />
-                <div className="pl-8 sm:pl-10">
-                  <Sparkles className="w-8 h-8 text-amber-300 mb-4" aria-hidden="true" />
-                  <h3 className="text-2xl sm:text-3xl font-black mb-3 leading-tight">
-                    {rsvp.headline}
-                  </h3>
-                  <p className="text-red-50 text-base sm:text-lg leading-relaxed mb-6">
-                    {rsvp.reason}
-                  </p>
-                  <ul className="space-y-3 text-red-50 text-sm sm:text-base">
-                    <li className="flex gap-3">
-                      <span className="text-amber-300 font-bold flex-shrink-0">01</span>
-                      <span>Tell us the city and budget you&apos;re looking at.</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-amber-300 font-bold flex-shrink-0">02</span>
-                      <span>We shortlist the developers and projects that actually fit.</span>
-                    </li>
-                    <li className="flex gap-3">
-                      <span className="text-amber-300 font-bold flex-shrink-0">03</span>
-                      <span>Your tax, legal and home-loan slots are booked before you walk in.</span>
-                    </li>
-                  </ul>
+          {/* Right Side: America–India RSVP Advantage (5 columns) */}
+          <div className="lg:col-span-5 rounded-2xl bg-gradient-to-br from-red-700 via-red-600 to-red-800 text-white p-8 sm:p-10 relative overflow-hidden flex flex-col justify-between">
+            {/* Background flag accents */}
+            <div className="absolute top-4 right-4 text-3xl select-none opacity-20">
+              🇺🇸 🇮🇳
+            </div>
+            
+            <div>
+              <div className="inline-flex items-center gap-2 bg-white/15 backdrop-blur-sm px-4 py-1.5 rounded-full text-xs font-semibold mb-6">
+                <Sparkles className="w-4 h-4 text-amber-300" />
+                <span>Private &amp; Tailored Experience</span>
+              </div>
+
+              <h3 className="text-2xl sm:text-3xl font-black mb-3 leading-tight">
+                {rsvp.headline}
+              </h3>
+              <p className="text-red-100 text-sm leading-relaxed mb-6">
+                {rsvp.reason}
+              </p>
+
+              <div className="space-y-4 pt-2">
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+                  <div className="w-7 h-7 rounded-full bg-amber-400 text-red-900 flex items-center justify-center font-bold text-xs flex-shrink-0">
+                    01
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-white text-sm">Tell Us Your Target Cities</h5>
+                    <p className="text-xs text-red-100 mt-0.5">
+                      Mumbai, Bengaluru, Delhi NCR, Hyderabad, Pune, Goa, or other regions.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+                  <div className="w-7 h-7 rounded-full bg-amber-400 text-red-900 flex items-center justify-center font-bold text-xs flex-shrink-0">
+                    02
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-white text-sm">We Pre-Match Top Developers</h5>
+                    <p className="text-xs text-red-100 mt-0.5">
+                      Receive an exclusive shortlist matched precisely to your budget and goals.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 bg-white/10 backdrop-blur-sm p-3.5 rounded-xl border border-white/10">
+                  <div className="w-7 h-7 rounded-full bg-amber-400 text-red-900 flex items-center justify-center font-bold text-xs flex-shrink-0">
+                    03
+                  </div>
+                  <div>
+                    <h5 className="font-bold text-white text-sm">One-on-One Advisory Booked</h5>
+                    <p className="text-xs text-red-100 mt-0.5">
+                      Private sessions with FEMA, US-India tax, and legal specialists reserved before you arrive.
+                    </p>
+                  </div>
                 </div>
               </div>
-            )}
+            </div>
+
+            <div className="mt-8 pt-6 border-t border-white/20 text-center sm:text-left">
+              <p className="text-xs text-amber-200 font-medium">
+                📍 Exact hotel address, venue map, and suggested arrival window are dispatched directly to confirmed RSVPs.
+              </p>
+            </div>
           </div>
+
         </div>
       </div>
     </section>

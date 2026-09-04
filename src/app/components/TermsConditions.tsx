@@ -104,9 +104,9 @@ export function TermsConditions() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Data Protection & Privacy</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">9. Data Protection &amp; Privacy</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your use of this website is also governed by our Privacy Policy. We collect, store, and process personal data in accordance with applicable data protection laws including PDPL (Bahrain).
+              Your use of this website is also governed by our Privacy Policy. We collect, store, and process personal data in accordance with applicable US and international data protection laws and standards.
             </p>
           </section>
 
@@ -118,9 +118,9 @@ export function TermsConditions() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Governing Law & Jurisdiction</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">11. Governing Law &amp; Jurisdiction</h2>
             <p className="text-gray-700 leading-relaxed">
-              These terms are governed by the laws of Bahrain. Any dispute arising from the use of this website will be subject to the exclusive jurisdiction of the courts in Bahrain.
+              These terms are governed by applicable laws. Any legal action or dispute arising from the use of this website or event registration will be subject to applicable jurisdiction.
             </p>
           </section>
 

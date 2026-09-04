@@ -54,9 +54,9 @@ export function PrivacyPolicyStandalone() {
           </section>
 
           <section>
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing (PDPL Compliance)</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">3. Legal Basis for Processing</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              Under Bahrain's Personal Data Protection Law (PDPL), we process your data based on:
+              Under applicable US and international data privacy regulations, we process your data based on:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
               <li><strong>Consent:</strong> You provide consent when registering for events or subscribing to newsletters</li>
@@ -136,7 +136,7 @@ export function PrivacyPolicyStandalone() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4">8. International Data Transfers</h2>
             <p className="text-gray-700 leading-relaxed">
-              Your data may be transferred to and processed in countries outside Bahrain, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with PDPL requirements.
+              Your data may be transferred to and processed in countries outside the United States, including India and other regions where our service providers operate. We ensure adequate safeguards are in place to protect your data in accordance with applicable requirements.
             </p>
           </section>
 
@@ -241,10 +241,10 @@ export function PrivacyPolicyStandalone() {
               In the unlikely event of a data breach that affects your personal information:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>Notification Timeline:</strong> We will notify affected users within 72 hours of discovering the breach, in compliance with Bahrain PDPL requirements</li>
+              <li><strong>Notification Timeline:</strong> We will notify affected users promptly without unreasonable delay upon discovering any confirmed breach</li>
               <li><strong>Method of Notification:</strong> Email notification to the address you provided during registration</li>
               <li><strong>Information Provided:</strong> Nature of the breach, data affected, steps taken to mitigate harm, and recommended actions for users</li>
-              <li><strong>Regulatory Reporting:</strong> We will report significant breaches to the Personal Data Protection Commission (PDPC) in Bahrain</li>
+              <li><strong>Regulatory Reporting:</strong> We will report significant breaches to relevant regulatory authorities as required by law</li>
               <li><strong>Remedial Actions:</strong> Immediate measures to secure systems, investigate the breach, and prevent future incidents</li>
             </ul>
             <p className="text-red-700 font-semibold mt-4">
@@ -294,24 +294,16 @@ export function PrivacyPolicyStandalone() {
           </section>
 
           <section className="bg-teal-50 p-6 rounded-lg border-l-4 border-teal-600">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">20. Governing Law & Jurisdiction</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-4">20. Governing Law &amp; Jurisdiction</h2>
             <p className="text-gray-700 leading-relaxed mb-3">
-              This Privacy Policy is governed by the laws of:
+              This Privacy Policy is governed by:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li><strong>Bahrain:</strong> Compliance with Bahrain's Personal Data Protection Law (PDPL), Law No. 30 of 2018</li>
-              <li><strong>India:</strong> Compliance with India's Information Technology Act, 2000 and Digital Personal Data Protection Act (DPDPA) 2023</li>
+              <li><strong>United States:</strong> Applicable US state and federal privacy standards</li>
+              <li><strong>India:</strong> Information Technology Act, 2000 and Digital Personal Data Protection Act (DPDPA) 2023</li>
             </ul>
             <p className="text-gray-700 leading-relaxed mt-3">
-              <strong>Dispute Resolution:</strong>
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-700">
-              <li>For Bahrain residents: Disputes will be subject to the exclusive jurisdiction of the courts of Bahrain</li>
-              <li>For India residents: Disputes will be subject to the jurisdiction of courts in Delhi, India</li>
-              <li>For other jurisdictions: Disputes will be governed by the laws of Bahrain</li>
-            </ul>
-            <p className="text-teal-700 font-semibold mt-4">
-              If you have privacy-related complaints, you may also contact the Personal Data Protection Commission (PDPC) in Bahrain or the relevant data protection authority in your country.
+              <strong>Dispute Resolution:</strong> Any disputes arising under this Privacy Policy will be handled in good faith and submitted to appropriate legal jurisdiction.
             </p>
           </section>
 

@@ -40,7 +40,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
     name: "",
     email: "",
     whatsapp: "",
-    country: "Bahrain"
+    country: "USA"
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -355,7 +355,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
 
                   <div className="space-y-4 mb-8">
                     {[
-                      "NRI tax filing for India + UAE + Canada + UK + Bahrain",
+                      "NRI tax filing for India + USA + Canada + UK + UAE",
                       "DTAA (Double Taxation Avoidance Agreement) planning",
                       "Avoiding double tax on global income",
                       "TDS optimization on Indian investments",
@@ -522,10 +522,10 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       <Landmark className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-gray-800">Manama, Kingdom of Bahrain</h3>
+                      <h3 className="font-bold text-xl text-gray-800">Multi-City US Tour</h3>
                       <p className="text-gray-600 mt-1">
-                        Central Manama venue<br />
-                        <span className="text-red-700 font-semibold">Address emailed to confirmed RSVPs</span>
+                        SF Bay Area • New York / NJ • Dallas • Houston • Chicago • Seattle • Atlanta<br />
+                        <span className="text-red-700 font-semibold">Private venue address emailed to confirmed RSVPs</span>
                       </p>
                     </div>
                   </div>
@@ -535,10 +535,10 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       <Calendar className="text-white w-6 h-6" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-xl text-gray-800">Event Date</h3>
+                      <h3 className="font-bold text-xl text-gray-800">Tour Schedule</h3>
                       <p className="text-gray-600 mt-1">
-                        23rd & 24th October 2026 | 10am–7pm<br />
-                        Check-in starts 30 minutes before sessions
+                        Exclusive RSVP sessions across major US cities<br />
+                        Personalized appointment slots reserved upon registration
                       </p>
                     </div>
                   </div>
@@ -649,11 +649,12 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       onChange={(e) => setFormData({ ...formData, country: e.target.value })}
                       className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
                     >
-                      <option value="Bahrain">Bahrain</option>
-                      <option value="UAE">UAE</option>
-                      <option value="UK">United Kingdom</option>
                       <option value="USA">United States</option>
                       <option value="Canada">Canada</option>
+                      <option value="UK">United Kingdom</option>
+                      <option value="UAE">UAE</option>
+                      <option value="Bahrain">Bahrain</option>
+                      <option value="Singapore">Singapore</option>
                       <option value="Australia">Australia</option>
                       <option value="Other">Other</option>
                     </select>

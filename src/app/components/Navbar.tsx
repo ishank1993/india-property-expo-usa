@@ -86,11 +86,11 @@ export function Navbar({ onRegisterClick, onNavigateHome, onNavigateWealth, curr
         >
           <img 
             src="/logo.png" 
-            alt="NRI Nivesh - India Property Expo Bahrain logo" 
+            alt="NRI Nivesh - India Property Expo America logo" 
             width="160"
             height="48"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
             decoding="sync"
             className="h-10 md:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
             onError={(e) => {
