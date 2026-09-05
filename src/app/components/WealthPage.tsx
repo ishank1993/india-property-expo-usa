@@ -95,11 +95,11 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
             <div className="absolute inset-0 opacity-5">
               <svg className="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M200,300 Q400,250 600,300 T1000,300" stroke="#ce1126" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
-                <path d="M600,300 Q700,400 800,350 T1200,400" stroke="#D4AF37" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
+                <path d="M600,300 Q700,400 800,350 T1200,400" stroke="#2f5fd6" strokeWidth="2" strokeDasharray="5,5" opacity="0.3"/>
                 <circle cx="600" cy="300" r="8" fill="#ce1126"/>
-                <circle cx="400" cy="250" r="6" fill="#D4AF37"/>
+                <circle cx="400" cy="250" r="6" fill="#2f5fd6"/>
                 <circle cx="1000" cy="300" r="6" fill="#ce1126"/>
-                <circle cx="800" cy="350" r="6" fill="#D4AF37"/>
+                <circle cx="800" cy="350" r="6" fill="#2f5fd6"/>
               </svg>
             </div>
             

@@ -22,7 +22,7 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Enhanced Gradient Overlay blending USA deep navy/red with warm Indian saffron/gold tones */}
+        {/* Enhanced Gradient Overlay in Old Glory red, white & blue tones */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/85 via-black/65 to-black/85" />
         <div className="absolute inset-0 bg-gradient-to-r from-red-950/60 via-black/30 to-amber-950/50" />
       </div>

@@ -4,10 +4,13 @@
 @import 'tw-animate-css';
 
 /* ============================================================
-   AMERICA EDITION PALETTE
-   Flag colours: red #CE1126 + white. Gold used as the single
-   supporting accent. Overrides Tailwind's default red/amber
-   scales so every existing utility class inherits the brand.
+   AMERICA EDITION PALETTE — Old Glory: red, white and blue.
+   Overrides Tailwind's default red/amber scales so every existing
+   utility class inherits the brand. The amber scale below is
+   deliberately re-keyed to blue: it used to hold a gold accent,
+   which read as Gulf/Middle-Eastern luxury branding rather than
+   American. Every red-to-amber gradient in the components is now
+   a red-to-blue flag gradient.
    ============================================================ */
 @theme {
   --color-red-50:  #fef2f3;
@@ -22,16 +25,16 @@
   --color-red-900: #6e0f1a;
   --color-red-950: #3d0409;
 
-  --color-amber-50:  #fdf9ed;
-  --color-amber-100: #faf0d1;
-  --color-amber-200: #f4e0a3;
-  --color-amber-300: #eccd6f;
-  --color-amber-400: #e0c060;
-  --color-amber-500: #d4af37; /* gold accent */
-  --color-amber-600: #b8942a;
-  --color-amber-700: #96771f;
-  --color-amber-800: #78601c;
-  --color-amber-900: #624f1b;
+  --color-amber-50:  #eff6ff;
+  --color-amber-100: #dbeafe;
+  --color-amber-200: #bfdbfe;
+  --color-amber-300: #93c5fd;
+  --color-amber-400: #5b9df5;
+  --color-amber-500: #2f5fd6; /* American flag blue accent */
+  --color-amber-600: #1f47b8;
+  --color-amber-700: #17399a;
+  --color-amber-800: #14307d;
+  --color-amber-900: #0a3161; /* Old Glory Blue */
 }
 
 
@@ -67,11 +70,11 @@
   .animate-spin-slow {
     animation: spin-slow 40s linear infinite;
   }
-  
+
   .animate-spin-reverse-slow {
     animation: spin-reverse-slow 30s linear infinite;
   }
-  
+
   .animate-gradient {
     animation: gradient 3s ease infinite;
   }
