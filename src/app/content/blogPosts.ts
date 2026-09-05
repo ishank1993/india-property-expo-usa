@@ -694,7 +694,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "crosslink",
-        text: "Buying in Bangalore without flying back? The Power of Attorney guide covers how to complete registration from Manama.",
+        text: "Buying in Bangalore without flying back? The Power of Attorney guide covers how to complete registration from the USA.",
         slug: "power-of-attorney-nri-property-india-usa",
       },
       {
@@ -1331,7 +1331,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Is NRE or FCNR better for a US NRI?",
         answer:
-          "It depends on whether the money is coming back out. NRE pays higher nominal rupee rates but leaves you carrying rupee depreciation. FCNR holds the deposit in foreign currency at a lower rate with no currency risk until maturity. Since the dinar is pegged to the dollar, an FCNR dollar deposit is close to currency-neutral for you.",
+          "It depends on whether the money is coming back out. NRE pays higher nominal rupee rates but leaves you carrying rupee depreciation risk. FCNR holds the deposit in US dollars at a lower rate with no currency risk until maturity — since you already earn and spend in dollars, an FCNR dollar deposit is fully currency-neutral for you.",
       },
       {
         question: "Do I need both an NRE and an NRO account?",
@@ -1352,7 +1352,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "power-of-attorney-nri-property-india-usa",
     title: "Power of Attorney from the USA: Buying Indian Property Without Flying Back",
-    dek: "A PoA is the document that lets a purchase complete while you're at work in Manama. Drafted loosely, it's also the document that hands someone else control of your asset.",
+    dek: "A PoA is the document that lets a purchase complete while you're at work in the USA. Drafted loosely, it's also the document that hands someone else control of your asset.",
     metaTitle: "NRI Power of Attorney for Indian Property from USA | Guide",
     metaDescription:
       "How US NRIs execute a Power of Attorney for Indian property: apostille vs consular attestation, special vs general PoA, stamping in India, and the clauses that protect you.",
@@ -1460,7 +1460,7 @@ export const blogPosts: BlogPost[] = [
       {
         question: "Does a PoA signed in the USA need consular attestation or apostille?",
         answer:
-          "It must be made legally recognisable in India, either by execution and attestation at the Indian Embassy in Manama or via notarisation and apostille where that route applies. Confirm the currently accepted route with the embassy, as procedures change.",
+          "It must be made legally recognisable in India, either by execution and attestation at the Indian Embassy in Washington D.C. or your regional Indian Consulate, or via notarisation and apostille through your US Secretary of State where that route applies. Confirm the currently accepted route with the embassy, as procedures change.",
       },
       {
         question: "Does the PoA need stamping in India as well?",
@@ -1499,7 +1499,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         type: "p",
-        text: "You can check all of it from a laptop in Manama, before you speak to anyone. Twenty minutes of this is worth more than a month of brochures.",
+        text: "You can check all of it from a laptop anywhere in the USA, before you speak to anyone. Twenty minutes of this is worth more than a month of brochures.",
       },
       { type: "h2", text: "Start Here: Find the Registration Number" },
       {

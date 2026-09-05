@@ -43,15 +43,15 @@ const countryCodes = [
   { code: "+64", country: "New Zealand", flag: "🇳🇿" },
 ];
 
-// Major US Metros for the Expo Tour
+// Major US Metros for the Expo Tour — each stop runs on a weekend
 const usTourCities = [
-  "San Francisco Bay Area / Silicon Valley, CA",
-  "New York / New Jersey Metro",
-  "Dallas / Fort Worth, TX",
-  "Houston, TX",
-  "Greater Chicago, IL",
-  "Seattle / Bellevue, WA",
-  "Atlanta, GA",
+  "San Francisco Bay Area / Silicon Valley, CA — Oct 3–4, 2026",
+  "New York / New Jersey Metro — Oct 10–11, 2026",
+  "Dallas / Fort Worth, TX — Oct 17–18, 2026",
+  "Houston, TX — Oct 17–18, 2026",
+  "Greater Chicago, IL — Oct 24–25, 2026",
+  "Seattle / Bellevue, WA — Nov 7–8, 2026",
+  "Atlanta, GA — Nov 14–15, 2026",
   "Washington D.C. / Northern Virginia",
   "Other US Metro / Online Consultation",
 ];
@@ -193,7 +193,7 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           <DialogDescription className="text-center text-[10px] sm:text-base px-1 sm:px-2 leading-tight sm:leading-normal">
             America’s Largest India Property Exhibition Tour · RSVP Only
             <br className="hidden sm:block" />
-            <span className="text-red-600 font-semibold text-[10px] sm:text-base"> 🇺🇸 Multi-City US Tour · Dates &amp; Venues Released Upon RSVP</span>
+            <span className="text-red-600 font-semibold text-[10px] sm:text-base"> 🇺🇸 Multi-City US Tour · Weekend Dates Published · Venue Released Upon RSVP</span>
           </DialogDescription>
         </DialogHeader>
 

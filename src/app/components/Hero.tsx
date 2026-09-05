@@ -150,8 +150,8 @@ export function Hero({ onRegisterClick, onNavigateToWealth }: HeroProps) {
                 </div>
                 <div>
                   <h3 className="font-bold text-2xl text-red-300 mb-1">MULTI-CITY TOUR</h3>
-                  <p className="text-red-200 font-medium">Major US Metros</p>
-                  <p className="text-red-300 text-sm mt-1">Dates emailed on RSVP</p>
+                  <p className="text-red-200 font-medium">Every Stop On a Weekend</p>
+                  <p className="text-red-300 text-sm mt-1">Oct 3 – Nov 15, 2026</p>
                 </div>
               </div>
             </div>

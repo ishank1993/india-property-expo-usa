@@ -60,8 +60,8 @@ const faqs = [
     answer: "Yes, we prioritize data privacy and confidentiality in full accordance with applicable privacy standards. Your contact details are encrypted, stored securely, and used exclusively for your RSVP coordination and personal builder shortlist. We never sell or share your data with unauthorized third parties. You can request data updates or removal anytime by contacting info@nrinivesh.in."
   },
   {
-    question: "What are the event cities, venues, and how do dates work?",
-    answer: "Our America tour visits major metropolitan centers with large NRI communities, including the San Francisco Bay Area / Silicon Valley, New York / New Jersey Metro, Dallas, Houston, Greater Chicago, Greater Seattle, and Atlanta. Because all events are strictly RSVP-only to ensure high-touch, private 1-on-1 consultations with developers and advisors, exact 5-star venue locations, dates, and dedicated consultation time slots are emailed directly to confirmed RSVPs."
+    question: "What are the event cities, dates, and how do venues work?",
+    answer: "Our America tour visits major metropolitan centers with large NRI communities every weekend from October 3 through November 15, 2026: SF Bay Area / Silicon Valley (Oct 3-4), New York / New Jersey Metro (Oct 10-11), Dallas & Houston (Oct 17-18), Greater Chicago (Oct 24-25), Greater Seattle (Nov 7-8), and Atlanta (Nov 14-15). Because all events are strictly RSVP-only to ensure high-touch, private 1-on-1 consultations with developers and advisors, the exact 5-star venue location and your dedicated consultation time slot are emailed directly to confirmed RSVPs."
   },
   {
     question: "Will there be any special offers or pre-launch projects?",

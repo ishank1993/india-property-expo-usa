@@ -1,5 +1,5 @@
 import React from "react";
-import { MapPin, Sparkles, Lock, ShieldCheck } from "lucide-react";
+import { MapPin, Sparkles, Lock, ShieldCheck, Calendar } from "lucide-react";
 import { Button } from "./ui/button";
 import { EVENT } from "../config/event";
 
@@ -13,36 +13,42 @@ const usCities = [
     state: "California",
     desc: "San Jose • Santa Clara • San Francisco • Fremont",
     highlight: "High Tech & Venture Corridor",
+    dates: "Sat–Sun, Oct 3–4, 2026",
   },
   {
     name: "New York & New Jersey Metro",
     state: "NY / NJ",
     desc: "Edison • Jersey City • Woodbridge • Manhattan",
     highlight: "East Coast Financial Hub",
+    dates: "Sat–Sun, Oct 10–11, 2026",
   },
   {
     name: "Dallas & Houston Metros",
     state: "Texas",
     desc: "Frisco • Plano • Irving • Dallas • Houston • Sugar Land",
     highlight: "Fastest-Growing NRI Hub",
+    dates: "Sat–Sun, Oct 17–18, 2026",
   },
   {
     name: "Greater Chicago",
     state: "Illinois",
     desc: "Naperville • Schaumburg • Chicago Downtown",
     highlight: "Midwest Center",
+    dates: "Sat–Sun, Oct 24–25, 2026",
   },
   {
     name: "Greater Seattle",
     state: "Washington",
     desc: "Bellevue • Redmond • Seattle Downtown",
     highlight: "Pacific Northwest Tech",
+    dates: "Sat–Sun, Nov 7–8, 2026",
   },
   {
     name: "Atlanta & Southeast",
     state: "Georgia",
     desc: "Alpharetta • Cumming • Atlanta Metro",
     highlight: "Southern Business Center",
+    dates: "Sat–Sun, Nov 14–15, 2026",
   },
 ];
 
@@ -76,7 +82,7 @@ export function Location({ onRegisterClick }: LocationProps) {
                 Featured US Tour Destinations
               </h3>
               <p className="text-gray-600 text-sm mb-6">
-                Select your city in the RSVP form. Dates, private luxury hotel addresses, and personalized consultation appointments are emailed directly to confirmed guests.
+                Every stop runs on a weekend so you don't have to take time off work. Select your city in the RSVP form — the private luxury hotel address and your personalized consultation slot are emailed directly to confirmed guests.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -96,9 +102,13 @@ export function Location({ onRegisterClick }: LocationProps) {
                     <p className="text-xs text-gray-600 leading-snug mb-2">
                       {city.desc}
                     </p>
+                    <div className="flex items-center gap-1.5 text-[11px] text-blue-700 font-bold mb-1.5">
+                      <Calendar className="w-3 h-3" />
+                      <span>{city.dates} (Weekend)</span>
+                    </div>
                     <div className="flex items-center gap-1.5 text-[11px] text-amber-700 font-semibold">
                       <Lock className="w-3 h-3" />
-                      <span>Venue &amp; date sent on RSVP</span>
+                      <span>Exact venue sent on RSVP</span>
                     </div>
                   </div>
                 ))}

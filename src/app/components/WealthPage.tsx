@@ -511,7 +511,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                 <h2 className="text-4xl md:text-5xl font-black text-gray-900 mb-4">
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-amber-600">Event Venue</span>
                 </h2>
-                <p className="text-xl text-gray-600">Join us in Manama — venue address sent to confirmed RSVPs</p>
+                <p className="text-xl text-gray-600">Join us across America — venue address sent to confirmed RSVPs</p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-8 bg-white rounded-3xl shadow-2xl overflow-hidden">
@@ -537,7 +537,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                     <div>
                       <h3 className="font-bold text-xl text-gray-800">Tour Schedule</h3>
                       <p className="text-gray-600 mt-1">
-                        Exclusive RSVP sessions across major US cities<br />
+                        Every city runs on a weekend, Oct 3 – Nov 15, 2026<br />
                         Personalized appointment slots reserved upon registration
                       </p>
                     </div>
@@ -635,7 +635,7 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       value={formData.whatsapp}
                       onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
                       className="w-full px-4 py-4 border-2 border-gray-200 rounded-xl focus:border-red-500 focus:outline-none transition-colors"
-                      placeholder="+973 XXXX XXXX"
+                      placeholder="+1 XXX XXX XXXX"
                     />
                   </div>
 
@@ -653,7 +653,6 @@ export function WealthPage({ onRegisterClick, onNavigateHome, onNavigateWealth, 
                       <option value="Canada">Canada</option>
                       <option value="UK">United Kingdom</option>
                       <option value="UAE">UAE</option>
-                      <option value="Bahrain">Bahrain</option>
                       <option value="Singapore">Singapore</option>
                       <option value="Australia">Australia</option>
                       <option value="Other">Other</option>

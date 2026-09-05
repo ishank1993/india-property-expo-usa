@@ -2,7 +2,8 @@
  * Single source of truth for the America edition event details.
  *
  * Multi-city US Tour across major American metropolitan hubs.
- * All events are strictly RSVP-only without fixed public dates.
+ * Each city's weekend dates are published up front; the venue stays
+ * unannounced and is emailed only to confirmed RSVPs.
  */
 
 export const EVENT = {
@@ -13,13 +14,13 @@ export const EVENT = {
   dialCode: "+1",
   domain: "https://www.indiapropertyexpousa.com",
 
-  // Multi-city US tour — no single event date, all RSVP only
+  // Multi-city US tour — weekend dates published per city, all RSVP only
   dates: {
-    range: "Multi-City US Tour",
-    rangeShort: "Multi-City US Tour",
+    range: "Weekends, Oct 3 – Nov 15, 2026",
+    rangeShort: "Weekends • Oct–Nov 2026",
     hours: "Exclusive RSVP Consultation Sessions",
     hoursShort: "RSVP Only",
-    announcement: "Dates & Personalized Slots Emailed to Confirmed RSVPs",
+    announcement: "Weekend Dates Published Per City — Venue Emailed to Confirmed RSVPs",
   },
 
   venue: {

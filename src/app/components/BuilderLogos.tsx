@@ -24,13 +24,13 @@ const builders = [
 export function BuilderLogos() {
   return (
     <section className="py-20 relative overflow-hidden" aria-labelledby="builders-heading">
-      {/* Background: Manama waterfront, heavily washed out behind the grid */}
-      <div 
+      {/* Background: American city skyline, heavily washed out behind the grid */}
+      <div
         className="absolute inset-0 z-0"
         role="img"
-        aria-label="Manama waterfront skyline"
+        aria-label="American city skyline"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1748366546170-1ee68388f183?fm=jpg&q=70&w=1600&auto=format&fit=crop')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1496588152823-86ff7695e68f?fm=jpg&q=70&w=1600&auto=format&fit=crop')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
