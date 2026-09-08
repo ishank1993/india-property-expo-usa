@@ -164,23 +164,23 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto p-3 sm:p-6">
-        <DialogHeader className="space-y-1 sm:space-y-2 mb-1 sm:mb-0">
-          <DialogTitle className="text-base sm:text-2xl font-bold text-center bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent px-1 sm:px-2 pr-8 sm:pr-10">
+      <DialogContent className="sm:max-w-2xl max-h-[90vh] overflow-y-auto p-6 sm:p-8">
+        <DialogHeader className="space-y-2 mb-2">
+          <DialogTitle className="text-2xl sm:text-3xl font-bold text-center bg-gradient-to-r from-red-600 to-amber-600 bg-clip-text text-transparent px-2 pr-8 sm:pr-10">
             Register Your Interest
           </DialogTitle>
-          <DialogDescription className="text-center text-[11px] sm:text-base px-1 sm:px-2 leading-tight sm:leading-normal">
+          <DialogDescription className="text-center text-base px-2 leading-normal">
             Tell us a little about your interest and our team will provide you with the RSVP details.
           </DialogDescription>
         </DialogHeader>
 
-        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-4 pt-1 sm:pt-3">
+        <form onSubmit={handleSubmit} className="space-y-6 pt-2">
           {/* What are you interested in? */}
-          <div className="space-y-1 sm:space-y-1.5">
-            <Label className="text-xs sm:text-sm">
+          <div className="space-y-2">
+            <Label className="text-base font-semibold">
               What are you interested in? <span className="text-red-600">*</span>
             </Label>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-3 gap-3">
               {productInterests.map((option) => (
                 <button
                   key={option}
@@ -188,10 +188,10 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                   onClick={() => setProductInterest(option)}
                   aria-pressed={productInterest === option}
                   className={cn(
-                    "h-9 sm:h-10 rounded-md border text-[11px] sm:text-sm font-medium px-1.5 sm:px-2 text-center transition-colors",
+                    "h-14 sm:h-16 rounded-xl border text-sm sm:text-base font-semibold px-2 text-center transition-colors",
                     productInterest === option
                       ? "border-amber-600 bg-amber-50 text-amber-800"
-                      : "border-input bg-background text-foreground hover:bg-accent",
+                      : "border-border bg-background text-foreground hover:bg-accent",
                   )}
                 >
                   {option}
@@ -201,8 +201,8 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
           </div>
 
           {/* Full Name */}
-          <div className="space-y-1 sm:space-y-1.5">
-            <Label htmlFor="fullName" className="text-xs sm:text-sm">
+          <div className="space-y-2">
+            <Label htmlFor="fullName" className="text-base font-semibold">
               Full Name <span className="text-red-600">*</span>
             </Label>
             <Input
@@ -212,25 +212,25 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
               required
-              className="w-full h-9 sm:h-10 text-sm sm:text-base"
+              className="w-full h-14 rounded-xl text-base"
               aria-required="true"
             />
           </div>
 
           {/* Phone and Email */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 md:gap-3">
-            <div className="space-y-1 sm:space-y-1.5">
-              <Label htmlFor="phone" className="text-xs sm:text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <Label htmlFor="phone" className="text-base font-semibold">
                 Phone Number <span className="text-red-600">*</span>
               </Label>
-              <div className="flex gap-1.5 sm:gap-2">
+              <div className="flex gap-2">
                 <Select value={dialCode} onValueChange={setDialCode}>
-                  <SelectTrigger className="w-[90px] sm:w-[120px] h-9 sm:h-10 text-xs sm:text-sm">
+                  <SelectTrigger className="w-[110px] sm:w-[130px] h-14 rounded-xl text-sm sm:text-base">
                     <SelectValue />
                   </SelectTrigger>
                   <SelectContent>
                     {countryCodes.map((item) => (
-                      <SelectItem key={item.code} value={item.code} className="text-xs sm:text-sm">
+                      <SelectItem key={item.code} value={item.code} className="text-sm sm:text-base">
                         {item.flag} {item.code}
                       </SelectItem>
                     ))}
@@ -243,14 +243,14 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                   value={phoneNumber}
                   onChange={(e) => setPhoneNumber(e.target.value.replace(/\D/g, ""))}
                   required
-                  className="flex-1 h-9 sm:h-10 text-sm sm:text-base"
+                  className="flex-1 h-14 rounded-xl text-base"
                   pattern="\d{7,15}"
                   aria-required="true"
                 />
               </div>
             </div>
-            <div className="space-y-1 sm:space-y-1.5">
-              <Label htmlFor="email" className="text-xs sm:text-sm">
+            <div className="space-y-2">
+              <Label htmlFor="email" className="text-base font-semibold">
                 Email Address <span className="text-red-600">*</span>
               </Label>
               <Input
@@ -260,26 +260,26 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="h-9 sm:h-10 text-sm sm:text-base"
+                className="h-14 rounded-xl text-base"
                 aria-required="true"
               />
             </div>
           </div>
 
           {/* Preferred City of Interest */}
-          <div className="space-y-1 sm:space-y-1.5">
-            <Label htmlFor="preferredCity" className="text-xs sm:text-sm">
+          <div className="space-y-2">
+            <Label htmlFor="preferredCity" className="text-base font-semibold">
               Preferred City of Interest
             </Label>
             <Select value={preferredCity} onValueChange={setPreferredCity}>
-              <SelectTrigger id="preferredCity" className="h-9 sm:h-10 text-xs sm:text-sm">
+              <SelectTrigger id="preferredCity" className="h-14 rounded-xl text-base">
                 <SelectValue placeholder="Select a city" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="exploring" className="text-xs sm:text-sm">Still Exploring</SelectItem>
-                <SelectItem value="multiple" className="text-xs sm:text-sm">Multiple Cities</SelectItem>
+                <SelectItem value="exploring" className="text-base">Still Exploring</SelectItem>
+                <SelectItem value="multiple" className="text-base">Multiple Cities</SelectItem>
                 {indianCities.map((city) => (
-                  <SelectItem key={city} value={city} className="text-xs sm:text-sm">
+                  <SelectItem key={city} value={city} className="text-base">
                     {city}
                   </SelectItem>
                 ))}
@@ -287,19 +287,19 @@ export function RegistrationModal({ isOpen, onClose, onSuccess }: RegistrationMo
             </Select>
           </div>
 
-          <p className="text-[10px] sm:text-xs text-center text-gray-500">
+          <p className="text-sm text-center text-gray-500 leading-relaxed">
             Once you enter your information, our team will provide you with the RSVP details, including the date, venue and other relevant information.
           </p>
 
           {/* Submit Button */}
           <Button
             type="submit"
-            className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold text-sm sm:text-lg py-4 sm:py-6 h-auto shadow-lg"
+            className="w-full bg-gradient-to-r from-red-600 to-amber-600 hover:from-red-700 hover:to-amber-700 text-white font-bold text-lg py-4 h-14 rounded-xl shadow-lg"
             disabled={isSubmitting}
           >
             {isSubmitting ? (
               <>
-                <Loader2 className="mr-2 h-4 w-4 sm:h-5 sm:w-5 animate-spin" />
+                <Loader2 className="mr-2 h-5 w-5 animate-spin" />
                 Submitting...
               </>
             ) : (
