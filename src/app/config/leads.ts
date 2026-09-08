@@ -62,3 +62,38 @@ export async function submitLead(lead: LeadPayload): Promise<void> {
     throw new Error(result.error || "Sheet rejected the write");
   }
 }
+
+/**
+ * The universal RSVP form schema shared by every NRI NIVESH country site.
+ * This is the shape every edition will eventually feed straight into the
+ * same Zoho CRM with no per-site field mapping — keep these field names
+ * exactly as they are here.
+ */
+export interface RsvpLead {
+  product_interest: string;
+  country: string;
+  full_name: string;
+  /** Combined dial code + number, e.g. "+1 2025550143". */
+  phone: string;
+  email: string;
+  preferred_city: string;
+}
+
+/**
+ * Adapter: submits a canonical RsvpLead through the existing Google Sheet
+ * endpoint above, which this site's admin dashboard already reads from.
+ * The sheet has no `product_interest` column, so it rides along in
+ * `consultationService` — the same free-text tag column the wealth-page
+ * enquiry form already uses for its own provenance marker.
+ */
+export async function submitRsvpLead(lead: RsvpLead): Promise<void> {
+  const [countryCode, ...rest] = lead.phone.split(" ");
+  await submitLead({
+    fullName: lead.full_name,
+    email: lead.email,
+    countryCode,
+    phone: rest.join(" "),
+    preferredCity: lead.preferred_city,
+    consultationService: lead.product_interest,
+  });
+}
