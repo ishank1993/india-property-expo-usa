@@ -27,10 +27,18 @@ import { PrivacyPolicy } from "./components/PrivacyPolicy";
 import { PrivacyPolicyStandalone } from "./components/PrivacyPolicyStandalone";
 import { Disclaimer } from "./components/Disclaimer";
 import { AdminDashboard } from "./components/AdminDashboard";
+import { captureFirstTouch } from "./utils/attribution";
 
 // Top-level router: blog gets real URL paths, everything else keeps
 // the existing hash-based page switching in MainApp.
 export default function App() {
+  // Runs once per browser session, on whichever page the visitor actually
+  // lands on, so the registration form's Zoho relay can attribute a lead
+  // back to its real entry page even after internal navigation.
+  useEffect(() => {
+    captureFirstTouch();
+  }, []);
+
   return (
     <Routes>
       <Route path="/blog" element={<BlogIndexPage />} />

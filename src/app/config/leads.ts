@@ -15,6 +15,8 @@
  * Do not point this at a new deployment: a separate script would split the
  * leads across sheets and break the shared admin dashboard.
  */
+import { getAttributionSnapshot } from "../utils/attribution";
+
 export const LEADS_ENDPOINT =
   "https://script.google.com/macros/s/AKfycbzA08KCv3DFbFMcKUzpMi5Ug-xUd0_tqDmicwg-xr0ENcNtx7OfJdGvqTaHzHOkYxWw/exec";
 
@@ -89,7 +91,7 @@ function forwardToZoho(lead: RsvpLead): void {
   fetch("/api/zoho-lead", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ ...lead, referrer_url: window.location.href }),
+    body: JSON.stringify({ ...lead, attribution: getAttributionSnapshot() }),
   }).catch((err) => console.error("Zoho lead forward failed:", err));
 }
 

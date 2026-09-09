@@ -8,9 +8,22 @@
  *
  * The endpoint below is Zoho's own undocumented internal API — the same one
  * their hosted form's JS uses, reverse-engineered by driving the real form
- * headlessly and capturing its network request (see PR description). It is
- * unofficial and could silently break if Zoho changes it; worth a spot
- * check in Zoho after a batch of real registrations.
+ * headlessly and capturing its network request. It is unofficial and could
+ * silently break if Zoho changes it; worth a spot check in Zoho after a
+ * batch of real registrations.
+ *
+ * IMPORTANT — marketing attribution (UTMs/gclid/fbclid): confirmed live
+ * against this endpoint that it validates strictly against the target
+ * form's exact field schema. Sending ANY key the form doesn't define
+ * (utm_source, gclid, fbclid, ...) rejects the WHOLE submission with a 400
+ * — it does not just ignore the extra key. This specific form has no
+ * dedicated fields for those, only this free-text REFERRER_NAME, so all
+ * attribution data gets packed into that one field below instead of being
+ * dropped. For it to land as separate, reportable Lead columns, the Zoho
+ * Forms admin needs to add real fields for utm_source/utm_medium/
+ * utm_campaign/utm_term/utm_content/gclid/fbclid in the form builder and
+ * map them to custom Lead fields in Zoho CRM — then this relay's payload
+ * can be extended to populate them directly instead of packing text.
  */
 
 const ZOHO_RECORDS_URL =
@@ -28,12 +41,34 @@ const ZOHO_CITY_OPTIONS = new Set([
   "Lucknow", "Coimbatore",
 ]);
 
+// Keep REFERRER_NAME well under Zoho's own ~1800-char cap for this field
+// even though our built string is normally far shorter than that.
+const REFERRER_NAME_MAX_LENGTH = 1700;
+
 function splitName(fullName) {
   const trimmed = (fullName || "").trim().replace(/\s+/g, " ");
   if (!trimmed) return { first: "", last: "" };
   const parts = trimmed.split(" ");
   if (parts.length === 1) return { first: parts[0], last: "" };
   return { first: parts.slice(0, -1).join(" "), last: parts[parts.length - 1] };
+}
+
+function buildReferrerName(attribution, country) {
+  const a = attribution || {};
+  const parts = [
+    country && `Country: ${country}`,
+    a.landing_page_url && `Landing: ${a.landing_page_url}`,
+    a.current_url && `Current: ${a.current_url}`,
+    a.referrer_url && `Referrer: ${a.referrer_url}`,
+    (a.current_utm_source || a.current_utm_medium || a.current_utm_campaign || a.current_utm_term || a.current_utm_content) &&
+      `UTM: source=${a.current_utm_source || "-"} medium=${a.current_utm_medium || "-"} campaign=${a.current_utm_campaign || "-"} term=${a.current_utm_term || "-"} content=${a.current_utm_content || "-"}`,
+    (a.current_gclid || a.current_fbclid) &&
+      `ClickIDs: gclid=${a.current_gclid || "-"} fbclid=${a.current_fbclid || "-"}`,
+    (a.first_touch_utm_source || a.first_touch_utm_medium || a.first_touch_utm_campaign || a.first_touch_gclid || a.first_touch_fbclid) &&
+      `First-touch UTM: source=${a.first_touch_utm_source || "-"} medium=${a.first_touch_utm_medium || "-"} campaign=${a.first_touch_utm_campaign || "-"} term=${a.first_touch_utm_term || "-"} content=${a.first_touch_utm_content || "-"} gclid=${a.first_touch_gclid || "-"} fbclid=${a.first_touch_fbclid || "-"}`,
+  ].filter(Boolean);
+
+  return parts.join(" | ").slice(0, REFERRER_NAME_MAX_LENGTH);
 }
 
 export default async function handler(req, res) {
@@ -45,7 +80,7 @@ export default async function handler(req, res) {
   // Best-effort forward only: whatever happens with Zoho, this must never
   // surface an error to the caller or block the real lead pipeline.
   try {
-    const { product_interest, full_name, phone, email, preferred_city, referrer_url } = req.body || {};
+    const { product_interest, full_name, phone, email, preferred_city, country, attribution } = req.body || {};
 
     if (!ZOHO_CITY_OPTIONS.has(preferred_city)) {
       console.error(
@@ -64,7 +99,7 @@ export default async function handler(req, res) {
       PhoneNumber: phone || "",
       Email: email || "",
       Dropdown: preferred_city,
-      REFERRER_NAME: referrer_url || "",
+      REFERRER_NAME: buildReferrerName(attribution, country),
       ADDED_LANGUAGE: "en",
     };
 
