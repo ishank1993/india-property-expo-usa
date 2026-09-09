@@ -80,6 +80,20 @@ export interface RsvpLead {
 }
 
 /**
+ * Best-effort relay into the shared Zoho Form (see api/zoho-lead.js), fired
+ * alongside the sheet write below, never in place of it. Deliberately not
+ * awaited by callers and never throws — a Zoho hiccup must never affect our
+ * own lead pipeline.
+ */
+function forwardToZoho(lead: RsvpLead): void {
+  fetch("/api/zoho-lead", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ ...lead, referrer_url: window.location.href }),
+  }).catch((err) => console.error("Zoho lead forward failed:", err));
+}
+
+/**
  * Adapter: submits a canonical RsvpLead through the existing Google Sheet
  * endpoint above, which this site's admin dashboard already reads from.
  * The sheet has no `product_interest` column, so it rides along in
@@ -96,4 +110,6 @@ export async function submitRsvpLead(lead: RsvpLead): Promise<void> {
     preferredCity: lead.preferred_city,
     consultationService: lead.product_interest,
   });
+
+  forwardToZoho(lead);
 }
