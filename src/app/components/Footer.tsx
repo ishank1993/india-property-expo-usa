@@ -31,6 +31,26 @@ export function Footer({ onNavigateToPrivacy, onNavigateToTerms, onNavigateToDis
       city: "Bahrain",
       href: "https://www.indiapropertyexpobahrain.com/",
     },
+    {
+      flag: "\u{1F1F6}\u{1F1E6}",
+      city: "Qatar",
+      href: "https://www.indiapropertyexpoqatar.com/",
+    },
+    {
+      flag: "\u{1F1E8}\u{1F1E6}",
+      city: "Canada",
+      href: "https://www.indiapropertyexpocanada.com/",
+    },
+    {
+      flag: "\u{1F1E6}\u{1F1FA}",
+      city: "Australia",
+      href: "https://www.indiapropertyexpoaustralia.com/",
+    },
+    {
+      flag: "\u{1F1F3}\u{1F1FF}",
+      city: "New Zealand",
+      href: "https://www.indiapropertyexponewzealand.com/",
+    },
   ];
 
   const socialLinks = [
